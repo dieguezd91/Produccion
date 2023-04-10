@@ -13,7 +13,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Transform shootController;
     [SerializeField] private GameObject bullet;
 
-    private UIManager manager;
+    public UIManager manager;
 
     void Start()
     {
