@@ -36,4 +36,6 @@ public class PlayerController : MonoBehaviour
     {
         rb2D.MovePosition(rb2D.position + moveInput * speed * Time.fixedDeltaTime);
     }
+
+
 }
