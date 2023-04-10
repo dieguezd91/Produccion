@@ -36,7 +36,7 @@ public class CharacterStats : MonoBehaviour
     private void Update()
     {
         SubirExp();
-        //Texto_UI();
+        Texto_UI();
     }
 
     void SubirExp()
@@ -99,7 +99,7 @@ public class CharacterStats : MonoBehaviour
         }
     }    
 
-    /*public void Texto_UI()
+    public void Texto_UI()
     {
         HP_texto.text = "" + HP + "/" + HP_Max;
         Nivel_texto.text = "" + Nivel;
@@ -112,6 +112,6 @@ public class CharacterStats : MonoBehaviour
         Defensa_texto.text = "" + Defensa;
 
         Puntos_texto.text = "" + Puntos;
-    }*/
+    }
 
 }
