@@ -10,9 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1395730696270280856}
   - component: {fileID: 1395730696270280857}
-  - component: {fileID: 1395730696270280858}
+  - component: {fileID: 436710637867566002}
   - component: {fileID: 1395730696270280837}
-  - component: {fileID: 8954221305904848234}
   - component: {fileID: 1395730696270280839}
   - component: {fileID: 1395730696270280838}
   m_Layer: 0
@@ -33,7 +32,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 5033840953562764456}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -75,8 +75,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -875673051
-  m_SortingLayer: 0
+  m_SortingLayerID: 2095082407
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 408364818, guid: 1e2e5749a7519cf45a98375b6aaf8873, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -89,7 +89,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1395730696270280858
+--- !u!114 &436710637867566002
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -134,20 +134,6 @@ MonoBehaviour:
   Magia_texto: {fileID: 0}
   Defensa_texto: {fileID: 0}
   Puntos_texto: {fileID: 0}
---- !u!114 &8954221305904848234
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1395730696270280859}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2fad3dd90e44b7241855adda1e7a4114, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  shootController: {fileID: 0}
-  bullet: {fileID: 0}
 --- !u!50 &1395730696270280839
 Rigidbody2D:
   serializedVersion: 4
@@ -195,3 +181,34 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.8, y: 0.95}
   m_EdgeRadius: 0
+--- !u!1 &8515810723797781147
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5033840953562764456}
+  m_Layer: 0
+  m_Name: controladorDisparo
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5033840953562764456
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8515810723797781147}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.26, y: -0.314, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1395730696270280856}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
