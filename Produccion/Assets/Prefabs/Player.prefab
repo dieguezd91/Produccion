@@ -102,10 +102,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce9605345652a1449a9ee6fed9d7ad52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
-  walksRight: 1
-  shootController: {fileID: 0}
-  bullet: {fileID: 0}
+  moveSpeed: 5
+  bulletPrefab: {fileID: 0}
+  firePoint: {fileID: 0}
 --- !u!114 &1395730696270280837
 MonoBehaviour:
   m_ObjectHideFlags: 0

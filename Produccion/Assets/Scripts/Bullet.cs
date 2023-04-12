@@ -4,22 +4,26 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    [SerializeField] private float velocity;
+    public float speed = 10f;
+    public float lifetime = 2f;
 
-    [SerializeField] private float damage;
-
-    
-    private void Update()
+    void Start()
     {
-        transform.Translate(Vector2.up * velocity * Time.deltaTime);
+        Destroy(gameObject, lifetime);
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.CompareTag("Enemy"))
+        if (collision.gameObject.CompareTag("Enemy"))
         {
-            //collision.GetComponent<Enemy>().GetDamage(damage);
-            Destroy(gameObject);
+            // CALCULA LA DISTANCIA ENTRE EL PLAYER Y EL ENEMIGO
+            Vector3 direction = transform.position - collision.transform.position;
+            direction.z = 0f;
+            direction.Normalize();
         }
+
+        //DESTRUIR LA BALA
+        Destroy(gameObject);
     }
 }
+

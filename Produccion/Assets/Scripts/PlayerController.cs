@@ -4,43 +4,28 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    [SerializeField] private float speed = 3f;
-    private Rigidbody2D rb2D;
-    private Vector2 moveInput;
-
-    [SerializeField] private Transform shootController;
-    [SerializeField] private GameObject bullet;
-
-    private UIManager manager;
-
-    void Start()
-    {
-        rb2D = GetComponent<Rigidbody2D>();
-    }
+    public float moveSpeed = 5f;
+    public GameObject bulletPrefab;
+    public Transform firePoint;
 
     void Update()
     {
-        float horizontal = Input.GetAxisRaw("Horizontal");
-        float vertical = Input.GetAxisRaw("Vertical");
+        // MOVIMIENTO
+        float horizontalInput = Input.GetAxisRaw("Horizontal");
+        float verticalInput = Input.GetAxisRaw("Vertical");
+        Vector3 movement = new Vector3(horizontalInput, verticalInput, 0f);
+        transform.position += movement.normalized * moveSpeed * Time.deltaTime;
 
-        //NORMALIZAMOS EL VECTOR EN DIAGONAL PARA QUE SE MUEVA A LA MISMA VELOCIDAD QUE EN HORIZONTAL/VERTICAL
-        moveInput = new Vector2(horizontal, vertical).normalized;
-
-        rb2D.MovePosition(rb2D.position + moveInput * speed * Time.deltaTime);
-
-        
-            //DISPARO
-            if (Input.GetButtonDown("Fire1"))
+        // APUNTADO Y DISPARO
+        if (Input.GetButtonDown("Fire1"))
         {
-            Shooting(); 
+            Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            Vector3 direction = mousePosition - transform.position;
+            direction.z = 0f;
+            direction.Normalize();
+
+            GameObject bullet = Instantiate(bulletPrefab, firePoint.position, Quaternion.identity);
+            bullet.GetComponent<Rigidbody2D>().velocity = direction * bullet.GetComponent<Bullet>().speed;
         }
-
-        if (Input.GetKeyDown(KeyCode.Escape)) manager.OpenPauseMenu();
     }
-
-    private void Shooting()
-    {
-        Instantiate(bullet, transform.position, Quaternion.identity);
-    }    
-
 }

@@ -10,10 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 7945840067191641040}
   - component: {fileID: 2383482288010233660}
+  - component: {fileID: 1846565626707908517}
   - component: {fileID: 1530916805181239630}
-  - component: {fileID: -317023008596343860}
   - component: {fileID: 7577764728010952162}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: bullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -87,23 +87,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!70 &1530916805181239630
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1463751732035153264}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 1, y: 2}
-  m_Direction: 0
---- !u!114 &-317023008596343860
+--- !u!114 &1846565626707908517
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -115,8 +99,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22d41f1accb8ff24392072d0b1e7f608, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocity: 20
-  damage: 20
+  speed: 10
+  lifetime: 2
+--- !u!70 &1530916805181239630
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1463751732035153264}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 1, y: 2}
+  m_Direction: 0
 --- !u!50 &7577764728010952162
 Rigidbody2D:
   serializedVersion: 4
@@ -137,4 +137,4 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 0
   m_CollisionDetection: 1
-  m_Constraints: 0
+  m_Constraints: 4
