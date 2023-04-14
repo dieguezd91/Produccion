@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1395730696270280856}
   - component: {fileID: 1395730696270280857}
   - component: {fileID: 436710637867566002}
+  - component: {fileID: 173712890273069791}
   - component: {fileID: 1395730696270280837}
   - component: {fileID: 6313132995531106048}
   - component: {fileID: 1395730696270280839}
@@ -105,6 +106,30 @@ MonoBehaviour:
   moveSpeed: 5
   bulletPrefab: {fileID: 0}
   firePoint: {fileID: 0}
+--- !u!114 &173712890273069791
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1395730696270280859}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1bb7837001a7e7d48a087d9cfddd892c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Bag:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  inv: {fileID: 0}
+  Activar_inv: 0
 --- !u!114 &1395730696270280837
 MonoBehaviour:
   m_ObjectHideFlags: 0
