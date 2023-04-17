@@ -12,18 +12,25 @@ public class Bullet : MonoBehaviour
         Destroy(gameObject, lifetime);
     }
 
-    void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Enemy"))
         {
+            collision.gameObject.GetComponent<Salud>().GetDamage();
+
             // CALCULA LA DISTANCIA ENTRE EL PLAYER Y EL ENEMIGO
             Vector3 direction = transform.position - collision.transform.position;
             direction.z = 0f;
             direction.Normalize();
         }
 
-        //DESTRUIR LA BALA
-        Destroy(gameObject);
+        if (collision.gameObject.CompareTag("Destroyable"))
+        {
+            collision.gameObject.GetComponent<Salud>().GetDamage();
+        }
+
+            //DESTRUIR LA BALA
+            Destroy(gameObject);
     }
 }
 
