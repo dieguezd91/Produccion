@@ -9,6 +9,7 @@ public class UIManager: MonoBehaviour
     public GameObject pauseMenu;
     public GameObject optionsMenu;
     public GameObject UI;
+    public GameObject mainMenu;
 
     public Image lifeBar;
     public Image magicBar;
@@ -47,13 +48,15 @@ public class UIManager: MonoBehaviour
 
     public void OpenOptionsMenu()
     {
-        pauseMenu.SetActive(false);
+        if (pauseMenu != null) pauseMenu.SetActive(false);
+        else if (mainMenu != null) mainMenu.SetActive(false);
         optionsMenu.SetActive(true);
     }
 
     public void CloseOptionsMenu()
     {
-        pauseMenu.SetActive(true);
+        if (pauseMenu != null) pauseMenu.SetActive(true);
+        else if (mainMenu != null) mainMenu.SetActive(true);
         optionsMenu.SetActive(false);
     }
 }
