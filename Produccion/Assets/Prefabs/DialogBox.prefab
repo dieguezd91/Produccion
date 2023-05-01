@@ -227,9 +227,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueText: {fileID: 6239700760474332882}
+  XPBar: {fileID: 0}
   lines:
-  - Hola!
-  - Bienvenido a NeoCity...
+  - Hello!
+  - Welcome to NeoCity!
+  - I wish you luck!
   textSpeed: 0.1
 --- !u!1 &6239700760474332892
 GameObject:

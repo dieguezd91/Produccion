@@ -16,7 +16,7 @@ public class DialogueManager : MonoBehaviour
 
     void Start()
     {
-        XPBar.SetActive(false);
+        if(XPBar != null) XPBar.SetActive(false);
         dialogueText.text = string.Empty;
         StartDialogue();
     }
@@ -39,6 +39,7 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue()
     {
+        dialogueText.text = string.Empty;
         index = 0;
         StartCoroutine(WriteLine());
     }
@@ -63,7 +64,7 @@ public class DialogueManager : MonoBehaviour
         else
         {
             gameObject.SetActive(false);
-            XPBar.SetActive(true);
+            if (XPBar != null) XPBar.SetActive(true);
         }
     }
 }
