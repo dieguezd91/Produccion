@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 3744631617439260315}
   - component: {fileID: 3744631617439260312}
   - component: {fileID: 3744631617439260313}
-  - component: {fileID: 3744631617439260318}
   - component: {fileID: 3744631617439260314}
+  - component: {fileID: -2051962686457359016}
   m_Layer: 0
   m_Name: botas
   m_TagString: Destroyable
@@ -100,7 +100,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 1.5
---- !u!61 &3744631617439260318
+--- !u!114 &3744631617439260314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3744631617439260319}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38d89961314246249809f89a9eddf766, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HP: 0
+  maxHP: 10
+  damage: 5
+--- !u!61 &-2051962686457359016
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -126,18 +141,3 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &3744631617439260314
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3744631617439260319}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 38d89961314246249809f89a9eddf766, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  HP: 0
-  maxHP: 10
-  damage: 5
