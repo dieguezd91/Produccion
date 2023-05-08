@@ -5,11 +5,11 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     public List<GameObject> itemPrefabs;
-    CharacterStats charStats;
+    Unit unit;
 
     private void Start()
     {
-        charStats = GetComponent<CharacterStats>();
+        unit = GetComponent<Unit>();
     }
 
     public void OnDestroy()
@@ -23,7 +23,5 @@ public class Enemy : MonoBehaviour
             // Spawn the item at the position of the destroyed enemy
             Instantiate(randomItem, transform.position, Quaternion.identity);
         }
-
-        charStats.Exp += 20;
     }
 }

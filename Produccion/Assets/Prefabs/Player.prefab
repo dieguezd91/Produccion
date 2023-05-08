@@ -12,8 +12,7 @@ GameObject:
   - component: {fileID: 1395730696270280857}
   - component: {fileID: 436710637867566002}
   - component: {fileID: 173712890273069791}
-  - component: {fileID: 1395730696270280837}
-  - component: {fileID: 6313132995531106048}
+  - component: {fileID: 9142871785229417891}
   - component: {fileID: 1395730696270280839}
   - component: {fileID: 1395730696270280838}
   m_Layer: 0
@@ -80,7 +79,7 @@ SpriteRenderer:
   m_SortingLayerID: 2095082407
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 408364818, guid: 1e2e5749a7519cf45a98375b6aaf8873, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5b0cc37da5597b445bb8b00e62381700, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -106,6 +105,7 @@ MonoBehaviour:
   moveSpeed: 5
   bulletPrefab: {fileID: 0}
   firePoint: {fileID: 0}
+  playerStats: {fileID: 0}
 --- !u!114 &173712890273069791
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -128,9 +128,15 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  inv: {fileID: 0}
+  inv:
+  - {fileID: 0}
   Activar_inv: 0
---- !u!114 &1395730696270280837
+  Selector: {fileID: 0}
+  ID: 0
+  Equipo: []
+  ID_equipo: 0
+  Fases_inv: 0
+--- !u!114 &9142871785229417891
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -139,50 +145,28 @@ MonoBehaviour:
   m_GameObject: {fileID: 1395730696270280859}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d607a55033a14249a5deb85b54ae4b2, type: 3}
+  m_Script: {fileID: 11500000, guid: d905b903415283d49b83ee2b11946d2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HP: 100
-  HP_Max: 100
-  Nivel: 1
-  Exp: 0
-  Exp_Max: 15
-  Vitalidad: 50
-  Fuerza: 10
-  Agilidad: 15
-  Magia: 5
-  Defensa: 15
-  Puntos: 0
-  HP_texto: {fileID: 0}
-  Nivel_texto: {fileID: 0}
-  Exp_texto: {fileID: 0}
-  Vitalidad_texto: {fileID: 0}
-  Fuerza_texto: {fileID: 0}
-  Agilidad_texto: {fileID: 0}
-  Magia_texto: {fileID: 0}
-  Defensa_texto: {fileID: 0}
-  Puntos_texto: {fileID: 0}
---- !u!114 &6313132995531106048
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1395730696270280859}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a08c396f853ec5a4c80c1a0fb92adac9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  manager: {fileID: 0}
-  life: 0
-  maxLife: 0
-  magic: 0
-  maxMagic: 0
-  XP: 0
-  maxXP: 0
+  unitName: 
+  unitLevel: 0
+  damage: 0
+  maxHP: 0
+  currentHP: 0
   level: 0
-  credits: 0
+  exp: 0
+  exp_Max: 0
+  fuerza: 0
+  destreza: 0
+  defensa: 0
+  puntos: 0
+  HP_texto: {fileID: 0}
+  level_texto: {fileID: 0}
+  exp_texto: {fileID: 0}
+  fuerza_texto: {fileID: 0}
+  destreza_texto: {fileID: 0}
+  defensa_texto: {fileID: 0}
+  puntos_texto: {fileID: 0}
 --- !u!50 &1395730696270280839
 Rigidbody2D:
   serializedVersion: 4
@@ -217,18 +201,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.0033921003, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.8, y: 0.95}
+    oldSize: {x: 0.5, y: 1}
     newSize: {x: 0.8, y: 0.95}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.8, y: 0.95}
+  m_Size: {x: 0.50826526, y: 0.9907073}
   m_EdgeRadius: 0
 --- !u!1 &8515810723797781147
 GameObject:
