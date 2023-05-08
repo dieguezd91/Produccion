@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 5924590219229795898}
   m_Layer: 0
   m_Name: chaleco
-  m_TagString: Destroyable
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

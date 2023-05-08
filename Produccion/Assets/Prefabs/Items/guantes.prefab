@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: -7111753440326930894}
   m_Layer: 0
   m_Name: guantes
-  m_TagString: Destroyable
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
