@@ -10,8 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d31f229f4bc652d4684fdfdf2906dbb5, type: 3}
-  m_Name: Item
+  m_Name: Shotgun
   m_EditorClassIdentifier: 
-  objectName: Item
-  image: {fileID: 21300000, guid: 6d3acc5fca2075447b30268602b53ebb, type: 3}
-  price: 250
+  objectName: Escopeta
+  image: {fileID: 0}
+  price: 135
+  damage: 37
+  accuarcy: 25

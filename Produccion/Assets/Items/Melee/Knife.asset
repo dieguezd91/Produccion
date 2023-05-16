@@ -10,8 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d31f229f4bc652d4684fdfdf2906dbb5, type: 3}
-  m_Name: Weapon
+  m_Name: Knife
   m_EditorClassIdentifier: 
-  objectName: Weapon
-  image: {fileID: 264205953, guid: 1e2e5749a7519cf45a98375b6aaf8873, type: 3}
-  price: 100
+  objectName: Cuchillo
+  image: {fileID: 0}
+  price: 25
+  damage: 5
+  accuarcy: 87

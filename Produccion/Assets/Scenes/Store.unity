@@ -158,8 +158,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: 0, y: -85}
+  m_SizeDelta: {x: 1920, y: 850}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &93003686
 MonoBehaviour:
@@ -181,10 +181,10 @@ MonoBehaviour:
   m_ChildAlignment: 4
   m_StartCorner: 0
   m_StartAxis: 0
-  m_CellSize: {x: 300, y: 500}
-  m_Spacing: {x: 50, y: 50}
+  m_CellSize: {x: 250, y: 500}
+  m_Spacing: {x: 20, y: 25}
   m_Constraint: 1
-  m_ConstraintCount: 6
+  m_ConstraintCount: 7
 --- !u!114 &93003687
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -198,8 +198,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemInfo:
+  - {fileID: 11400000, guid: 0fdd250f24069744b9138796a6fbd499, type: 2}
+  - {fileID: 11400000, guid: bc7b58d75f33ef041afb15f4be2d2804, type: 2}
   - {fileID: 11400000, guid: 80c161e4f414bff4bac360cf65e74d06, type: 2}
   - {fileID: 11400000, guid: fd6a4dd7cf8a6a545a478c5bafb87a75, type: 2}
+  - {fileID: 11400000, guid: c8005b3250b3ef64e836421877712216, type: 2}
+  - {fileID: 11400000, guid: 88ef8e0e608a88e4b836e596f44e0313, type: 2}
+  - {fileID: 11400000, guid: 9a5648d276dd6bc4baa15af80ca96d21, type: 2}
   storeItemTemplate: {fileID: 5729476418845997541, guid: a6d6218b9c00fd54aab732def696dda1, type: 3}
   totalCoinsText: {fileID: 1805451474}
 --- !u!1 &710801060

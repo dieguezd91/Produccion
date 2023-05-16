@@ -21,7 +21,7 @@ public class StoreScript : MonoBehaviour
         foreach (var item in  itemInfo) 
         {
             itemTemplate.image.sprite = item.image;
-            itemTemplate.objectName.text = item.name;
+            itemTemplate.objectName.text = item.objectName;
             itemTemplate.priceTag.text = item.price.ToString();
 
             Instantiate(itemTemplate, transform);
