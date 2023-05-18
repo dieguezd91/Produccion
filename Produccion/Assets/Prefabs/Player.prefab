@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 1395730696270280856}
   - component: {fileID: 1395730696270280857}
   - component: {fileID: 436710637867566002}
-  - component: {fileID: 9142871785229417891}
   - component: {fileID: 1395730696270280839}
   - component: {fileID: 1395730696270280838}
   - component: {fileID: 1117385375}
@@ -31,10 +30,9 @@ Transform:
   m_GameObject: {fileID: 1395730696270280859}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.5, y: 2.5, z: 2.5}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 5033840953562764456}
+  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -77,9 +75,9 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 2095082407
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 55caced1067b5144d8f008bc392b6908, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6baf9cb5807dc0a41aea2811d8e87dc5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -103,40 +101,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
-  bulletPrefab: {fileID: 1463751732035153264, guid: 37d0982b7836f4542872b0bae425ae8c, type: 3}
-  firePoint: {fileID: 5033840953562764456}
+  isMoving: 0
   playerStats: {fileID: 0}
---- !u!114 &9142871785229417891
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1395730696270280859}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d905b903415283d49b83ee2b11946d2b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  unitName: Robert
-  unitLevel: 1
-  damage: 15
-  maxHP: 100
-  currentHP: 0
-  level: 1
-  exp: 36
-  exp_Max: 100
-  fuerza: 15
-  destreza: 10
-  defensa: 10
-  puntos: 0
-  HP_texto: {fileID: 0}
-  level_texto: {fileID: 0}
-  exp_texto: {fileID: 0}
-  fuerza_texto: {fileID: 0}
-  destreza_texto: {fileID: 0}
-  defensa_texto: {fileID: 0}
-  puntos_texto: {fileID: 0}
 --- !u!50 &1395730696270280839
 Rigidbody2D:
   serializedVersion: 4
@@ -205,34 +171,3 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!1 &8515810723797781147
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 5033840953562764456}
-  m_Layer: 7
-  m_Name: shootController
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &5033840953562764456
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8515810723797781147}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.17, y: -0.131, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1395730696270280856}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
