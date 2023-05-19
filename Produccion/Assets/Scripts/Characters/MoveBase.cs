@@ -12,9 +12,10 @@ public class MoveBase : ScriptableObject
     [SerializeField] string description;
 
     [SerializeField] CharacterType characterType;
+
     //Stats
-    [SerializeField] int ataqueMelee;
-    [SerializeField] int ataqueADistancia;
+    [SerializeField] int fuerza;
+    [SerializeField] int destreza;
     [SerializeField] int defensa;
     [SerializeField] int presicion;
     [SerializeField] int evasion;
@@ -36,14 +37,14 @@ public class MoveBase : ScriptableObject
         get { return characterType; }
     }
 
-    public int AtaqueMelee
+    public int Fuerza
     { 
-        get { return ataqueMelee; }     
+        get { return fuerza; }     
     }
 
-    public int AtaqueADistancia
+    public int Destreza
     { 
-        get { return ataqueADistancia; }     
+        get { return destreza; }     
     }
 
     public int Defensa

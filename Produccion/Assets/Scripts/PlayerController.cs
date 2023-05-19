@@ -6,20 +6,19 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     public float moveSpeed;
-    Rigidbody2D rb2D;
+    public LayerMask battleLayer;
 
     public event Action OnEncountered;
 
     public bool isMoving;
     private Vector2 input;
 
-    public CharacterStats playerStats;
+    //public CharacterStats playerStats;
     private Animator animator;
 
     private void Awake()
     {
-        playerStats = GetComponent<CharacterStats>();
-        rb2D = GetComponent<Rigidbody2D>();
+        //playerStats = GetComponent<CharacterStats>();
         animator = GetComponent<Animator>();
     }
 
@@ -62,5 +61,20 @@ public class PlayerController : MonoBehaviour
         transform.position = targetPos;
 
         isMoving = false;
+
+        CheckForEncounters();
+    }
+
+    private void CheckForEncounters()
+    {
+        if(Physics2D.OverlapCircle(transform.position, 0.2f, battleLayer) !=null)
+        {
+            if (UnityEngine.Random.Range(1, 101) <= 10)
+            {
+                animator.SetBool("isMoving", false);
+                OnEncountered();
+                Debug.Log("battle");
+            }
+        }
     }
 }

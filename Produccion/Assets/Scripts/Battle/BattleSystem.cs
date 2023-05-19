@@ -1,4 +1,5 @@
 using System.Collections;
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -12,11 +13,13 @@ public class BattleSystem : MonoBehaviour
     [SerializeField] BattleHud enemyHud;
     [SerializeField] BattleDialogBox dialogBox;
 
+    public event Action<bool> OnBattleOver;
+
     BattleState state;
     int currentAction;
     int currentMove;
 
-    private void Start()
+    public void StartBattle()
     {
         StartCoroutine(SetupBattle());
     }
@@ -56,6 +59,7 @@ public class BattleSystem : MonoBehaviour
         state = BattleState.Busy;
 
         var move = playerUnit.Character.Moves[currentMove];
+        move.PP--;
         yield return dialogBox.TypeDialog($"{ playerUnit.Character.Base.Name} uso {move.Base.Name}");
 
         yield return new WaitForSeconds(1f);
@@ -66,6 +70,9 @@ public class BattleSystem : MonoBehaviour
         if(isDead)
         {
             yield return dialogBox.TypeDialog($"{ enemyUnit.Character.Base.Name} es derrotado");
+
+            yield return new WaitForSeconds(2f);
+            OnBattleOver(true);
         }
         else
         {
@@ -76,7 +83,9 @@ public class BattleSystem : MonoBehaviour
     IEnumerator EnemyMove()
     {
         state = BattleState.EnemyMove;
+
         var move = enemyUnit.Character.GetRandomMove();
+        move.PP--;
         yield return dialogBox.TypeDialog($"{ enemyUnit.Character.Base.Name} uso {move.Base.Name}");
 
         yield return new WaitForSeconds(1f);
@@ -87,6 +96,9 @@ public class BattleSystem : MonoBehaviour
         if (isDead)
         {
             yield return dialogBox.TypeDialog($"{ playerUnit.Character.Base.Name} es derrotado");
+            
+            yield return new WaitForSeconds(2f);
+            OnBattleOver(false);
         }
         else
         {

@@ -58,8 +58,9 @@ public class Character
 
         float modifiers = Random.Range(0.85f, 1f);
         float a = (2 * attacker.Level + 10) / 250f;
-        float d = a * move.Base.AtaqueMelee * ((float)attacker.Strenght / Defence) + 2;
+        float d = a * move.Base.Fuerza * ((float)attacker.Strenght / Defence) + 2;
         int damage = Mathf.FloorToInt(d * modifiers);
+        Debug.Log(damage);
 
         HP -= damage;
         if(HP <= 0)

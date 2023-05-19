@@ -15,8 +15,8 @@ MonoBehaviour:
   name: Ataque a distancia
   description: 
   characterType: 0
-  ataqueMelee: 0
-  ataqueADistancia: 15
+  fuerza: 10
+  destreza: 0
   defensa: 0
   presicion: 50
   evasion: 50

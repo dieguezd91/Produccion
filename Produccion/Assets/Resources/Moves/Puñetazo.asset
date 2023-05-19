@@ -15,8 +15,8 @@ MonoBehaviour:
   name: "Pu\xF1etazo"
   description: 
   characterType: 0
-  ataqueMelee: 5
-  ataqueADistancia: 0
+  fuerza: 5
+  destreza: 0
   defensa: 0
   presicion: 100
   evasion: 0

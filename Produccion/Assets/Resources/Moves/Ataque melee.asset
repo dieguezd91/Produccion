@@ -15,10 +15,10 @@ MonoBehaviour:
   name: Ataque melee
   description: 
   characterType: 0
-  ataqueMelee: 15
-  ataqueADistancia: 0
+  fuerza: 15
+  destreza: 0
   defensa: 0
-  presicion: 100
-  evasion: 0
+  presicion: 75
+  evasion: 10
   critico: 30
   pp: 50
