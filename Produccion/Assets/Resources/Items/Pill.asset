@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Pildora
   description: Restaura 20 de HP
-  icon: {fileID: 7482667652216324306, guid: 165d0e3b5fbae62459a1b390cc11328b, type: 3}
+  icon: {fileID: 21300000, guid: a11bb89eb8b2ece4eb959e037d9789aa, type: 3}
   hpAmount: 20
   restoreMaxHP: 0

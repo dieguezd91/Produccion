@@ -62,7 +62,7 @@ public class BattleDialogBox : MonoBehaviour
             if (i == selectedAction)
                 actionTexts[i].color = highlightedColor;
             else
-                actionTexts[i].color = Color.black;
+                actionTexts[i].color = Color.white;
         }
     }
 
@@ -73,7 +73,7 @@ public class BattleDialogBox : MonoBehaviour
             if (i == selectedMove)
                 moveTexts[i].color = highlightedColor;
             else
-                moveTexts[i].color = Color.black;
+                moveTexts[i].color = Color.white;
         }
 
         ppText.text = $"PP{move.PP}/{move.Base.Pp}";

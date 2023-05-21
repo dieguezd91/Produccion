@@ -106,6 +106,25 @@ public class BattleSystem : MonoBehaviour
         }
     }
 
+    IEnumerator HandleCharacterDefeated(BattleUnit defeatedUnit)
+    {
+        yield return dialogBox.TypeDialog($"{ defeatedUnit.Character.Base.Name} es derrotado");
+
+        yield return new WaitForSeconds(2f);
+
+        //if(!defeatedUnit.IsPlayerUnit)
+        //{
+        //    //Exp Gain
+        //    int expYield = defeatedUnit.Character.Base.ExpYield;
+        //    int enemyLevel = defeatedUnit.Character.Level;
+        //    int expGain = Mathf.FloorToInt((expYield * enemyLevel) / 7);
+        //    playerUnit.Character.Exp += expGain;
+        //    yield return dialogBox.TypeDialog($"{playerUnit.Character.Base.Name} gano {expGain} exp");
+        //}
+
+
+    }
+
     public void HandleUpdate()
     {
         if(state==BattleState.PlayerAction)

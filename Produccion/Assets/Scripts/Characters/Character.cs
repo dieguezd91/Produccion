@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class Character
 {
-    public CharacterBase Base { get; set; }
-    public int Level { get; set; }
+    [SerializeField] public CharacterBase Base { get; set; }
+    [SerializeField] int level;
 
+    public int Exp { get; set; }
     public int HP { get; set; }
 
     public List<Move> Moves { get; set; }
@@ -14,18 +15,14 @@ public class Character
     public Character(CharacterBase pBase, int pLevel)
     {
         Base = pBase;
-        Level = pLevel;
-        HP = MaxHp;
+        level = pLevel;
 
-        Moves = new List<Move>();
-        foreach(var move in Base.Attacks)
-        {
-            if (move.Level <= Level)
-                Moves.Add(new Move(move.Base));
+        Init();
+    }
 
-            if (Moves.Count >= 4)
-                break;
-        }
+    public int Level
+    {
+        get { return level; }
     }
 
     public int Strenght
@@ -46,6 +43,25 @@ public class Character
     public int MaxHp
     {
         get { return Mathf.FloorToInt((Base.MaxHp * Level) / 100f) + 10;}
+    }
+
+    public void Init()
+    {
+        Moves = new List<Move>();
+        foreach (var move in Base.Attacks)
+        {
+            if (move.Level <= Level)
+                Moves.Add(new Move(move.Base));
+
+            if (Moves.Count >= 4)
+                break;
+        }
+
+        //Exp = Base.GetExpForLevel(Level);
+
+        HP = MaxHp;
+
+
     }
 
     public bool TakeDamage(Move move, Character attacker)
@@ -77,5 +93,4 @@ public class Character
         int r = Random.Range(0, Moves.Count);
         return Moves[r];
     }
-
 }

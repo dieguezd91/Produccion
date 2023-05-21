@@ -18,8 +18,19 @@ public class CharacterBase : ScriptableObject
     [SerializeField] int strenght;
     [SerializeField] int dexterity;
     [SerializeField] int defense;
+    [SerializeField] int speed;
+
+    [SerializeField] int expYield;
+    [SerializeField] GrowthRate growthRate;
 
     [SerializeField] List<AvailableAttack> availableAttacks;
+
+    public GrowthRate GrowthRate => GrowthRate;
+
+    //public int GetExpForLevel(int level)
+    //{
+
+    //}
 
     public string Name
     {
@@ -60,6 +71,16 @@ public class CharacterBase : ScriptableObject
     {
         get { return defense; }
     }
+    
+    public int Speed
+    {
+        get { return speed; }
+    }
+
+    public int ExpYield
+    {
+        get { return expYield; }
+    }
 
     public List<AvailableAttack> Attacks
     {
@@ -93,4 +114,10 @@ public enum CharacterType
     MiniBoss,
     Boss,
     Dron
+}
+
+public enum GrowthRate
+{
+    MediumFast, 
+    Fast
 }

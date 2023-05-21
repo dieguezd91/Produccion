@@ -70,7 +70,7 @@ public class InventoryUI : MonoBehaviour
             if (i == selectedItem)
                 slotUIList[i].NameText.color = GlobalSettings.i.HighlightedColor;
             else
-                slotUIList[i].NameText.color = Color.black;
+                slotUIList[i].NameText.color = Color.white;
         }
 
         var item = inventory.Slots[selectedItem].Item;
