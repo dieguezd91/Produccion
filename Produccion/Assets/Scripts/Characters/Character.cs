@@ -78,6 +78,8 @@ public class Character
         int damage = Mathf.FloorToInt(d * modifiers);
         Debug.Log(damage);
 
+        DecreaseHP(damage);
+
         HP -= damage;
         if(HP <= 0)
         {
@@ -86,6 +88,20 @@ public class Character
         }
 
         return false;
+    }
+
+    public void DecreaseHP(int damage)
+    {
+        HP = Mathf.Clamp(HP - damage, 0, MaxHp);
+        //OnHPChanged?.Invoke();
+        //HpChanged = true;
+    }
+
+    public void IncreaseHP(int amount)
+    {
+        HP = Mathf.Clamp(HP + amount, 0, MaxHp);
+        //OnHPChanged?.Invoke();
+        //HpChanged = true;
     }
 
     public Move GetRandomMove()

@@ -9,4 +9,19 @@ public class RecoveryItem : ItemBase
     [Header("HP")]
     [SerializeField] int hpAmount;
     [SerializeField] bool restoreMaxHP;
+
+    public override bool Use(Character character)
+    {
+        if (hpAmount > 0)
+        {
+            if (character.HP == character.MaxHp)
+                return false;
+
+            character.DecreaseHP(hpAmount);
+        }
+
+        return true;
+    }
+
+
 }

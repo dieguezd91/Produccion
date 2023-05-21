@@ -58,6 +58,7 @@ public class GameController : MonoBehaviour
         if(state == GameState.FreeRoam)
         {
             playerController.HandleUpdate();
+
             if(Input.GetKeyDown(KeyCode.M))
             {
                 menuController.OpenMenu();
@@ -89,7 +90,7 @@ public class GameController : MonoBehaviour
         if(selectedItem == 0)
         {
             inventoryUI.gameObject.SetActive(true);
-            state = GameState.Bag;
+            state = GameState.Bag;            
         }
         else if(selectedItem == 1)
         {
@@ -97,10 +98,10 @@ public class GameController : MonoBehaviour
         }
         else if(selectedItem == 2)
         {
+            state = GameState.FreeRoam;
             //menuItem (3)
         }
 
-        state = GameState.FreeRoam;
 
     }
 }

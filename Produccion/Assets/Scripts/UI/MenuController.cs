@@ -43,15 +43,16 @@ public class MenuController : MonoBehaviour
             --selectedItem;
 
         selectedItem = Mathf.Clamp(selectedItem, 0, menuItems.Count - 1);
+
         if(prevSelection != selectedItem)
            UpdateItemSelection();     
         
-        if(Input.GetKeyDown(KeyCode.Return))
+        if(Input.GetKeyDown(KeyCode.Z))
         {
             onMenuSelected?.Invoke(selectedItem);
             CloseMenu();
         }
-        else if(Input.GetKeyDown(KeyCode.Escape))
+        else if(Input.GetKeyDown(KeyCode.X))
         {
             onBack?.Invoke();
             CloseMenu();
@@ -65,7 +66,7 @@ public class MenuController : MonoBehaviour
             if (i == selectedItem)
                 menuItems[i].color = GlobalSettings.i.HighlightedColor;
             else
-                menuItems[i].color = Color.black;
+                menuItems[i].color = Color.white;
         }
     }
 }

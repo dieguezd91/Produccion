@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+public enum InventoryUIState { ItemSelection, CharacterSelection, Busy}
+
 public class InventoryUI : MonoBehaviour
 {
     [SerializeField] GameObject itemList;
@@ -11,7 +13,10 @@ public class InventoryUI : MonoBehaviour
     [SerializeField] Image itemIcon;
     [SerializeField] Text itemDescription;
 
+    [SerializeField] Character character;
+
     int selectedItem = 0;
+    InventoryUIState state;
 
     List<ItemSlotUI> slotUIList;
 
@@ -47,20 +52,31 @@ public class InventoryUI : MonoBehaviour
 
     public void HandleUpdate(Action onBack)
     {
-        int prevSelection = selectedItem;
+        if(state == InventoryUIState.ItemSelection)
+        {
+            int prevSelection = selectedItem;
 
-        if (Input.GetKeyDown(KeyCode.DownArrow))
-            ++selectedItem;
-        else if (Input.GetKeyDown(KeyCode.UpArrow))
-            --selectedItem;
+            if (Input.GetKeyDown(KeyCode.DownArrow))
+                ++selectedItem;
+            else if (Input.GetKeyDown(KeyCode.UpArrow))
+                --selectedItem;
 
-        selectedItem = Mathf.Clamp(selectedItem, 0, inventory.Slots.Count - 1);
+            selectedItem = Mathf.Clamp(selectedItem, 0, inventory.Slots.Count - 1);
 
-        if (prevSelection != selectedItem)
-            UpdateItemSelection();
+            if (prevSelection != selectedItem)
+                UpdateItemSelection();
 
-        if (Input.GetKeyDown(KeyCode.Escape))
-            onBack?.Invoke();
+            if (Input.GetKeyDown(KeyCode.X))
+                onBack?.Invoke();
+        }
+        else if(state== InventoryUIState.CharacterSelection)
+        {
+            Action onSelected = () =>
+            {
+                inventory.UseItem(selectedItem, character);
+            };
+        }
+
     }
 
     void UpdateItemSelection()
