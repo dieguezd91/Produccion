@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7b2196153e3f0c44bc8a6a3ae694e0a, type: 3}
+  m_Name: Pill
+  m_EditorClassIdentifier: 
+  name: Pildora
+  description: Restaura 20 de HP
+  icon: {fileID: 21300000, guid: a11bb89eb8b2ece4eb959e037d9789aa, type: 3}
+  hpAmount: 20
+  restoreMaxHP: 0
