@@ -9,13 +9,11 @@ public class NPCScript : MonoBehaviour
     void Update()
     {
 
-        if(Physics2D.OverlapCircle(transform.position, 1f).CompareTag("Player"))
+        if (Physics2D.OverlapCircle(transform.position, 1f).CompareTag("Player"))
         {
             pjNearby = true;
         }
         else pjNearby = false;
-
-        Debug.Log(pjNearby);
 
         if (pjNearby && Input.GetKeyDown(KeyCode.Space))
         {

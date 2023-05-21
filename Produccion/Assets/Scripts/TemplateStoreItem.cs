@@ -11,7 +11,9 @@ public class TemplateStoreItem : MonoBehaviour
     public TextMeshProUGUI objectName;
     public Button buyButton;
     int price;
-    int totalCoins;
+    public InformationTemplateItem item;
+    public InventoryScript playerInventory;
+
 
     void Start()
     {
@@ -20,8 +22,7 @@ public class TemplateStoreItem : MonoBehaviour
 
     void Update()
     {
-        totalCoins = PlayerPrefs.GetInt("totalCoins");
-        if(price > totalCoins)
+        if(price > playerInventory.credits)
         {
             buyButton.interactable = false;
         }
@@ -29,7 +30,7 @@ public class TemplateStoreItem : MonoBehaviour
 
     public void BuyItem()
     {
-        totalCoins -= price;
-        PlayerPrefs.SetInt("totalCoins", totalCoins);
+        playerInventory.credits -= price;
+        playerInventory.items.Add(item);
     }
 }
