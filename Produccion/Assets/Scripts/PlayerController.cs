@@ -1,63 +1,80 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    public float moveSpeed = 5f;
-    private float horizontal;
-    private float vertical;
-    private Vector2 moveInput;
-    Rigidbody2D rb2D;
+    public float moveSpeed;
+    public LayerMask battleLayer;
 
-    public GameObject bulletPrefab;
-    public Transform firePoint;
+    public event Action OnEncountered;
 
-    public CharacterStats playerStats;
+    public bool isMoving;
+    private Vector2 input;
+
+    //public CharacterStats playerStats;
     private Animator animator;
 
-    private void Start()
+    private void Awake()
     {
-        playerStats = GetComponent<CharacterStats>();
-        rb2D = GetComponent<Rigidbody2D>();
+        //playerStats = GetComponent<CharacterStats>();
         animator = GetComponent<Animator>();
     }
 
-    void Update()
+    public void HandleUpdate()
     {
         // MOVIMIENTO
-        horizontal = Input.GetAxisRaw("Horizontal");
-        vertical = Input.GetAxisRaw("Vertical");
-        moveInput = new Vector2(horizontal, vertical).normalized;
-
-        animator.SetFloat("movimientoY", vertical);
-        animator.SetFloat("movimientoX", horizontal);
-        animator.SetFloat("speed", moveInput.sqrMagnitude);
-
-        //if (vertical != 0 || horizontal != 0)
-        //{
-        //    animator.SetFloat("ultimoX", horizontal);
-        //    animator.SetFloat("ultimoY", vertical);
-        //}
-
-        //Vector3 movement = new Vector3(horizontal, vertical, 0f);
-        //transform.position += movement.normalized * moveSpeed * Time.deltaTime;
-
-        // APUNTADO Y DISPARO
-        if (Input.GetButtonDown("Fire1"))
+        if(!isMoving)
         {
-            Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            Vector3 direction = mousePosition - transform.position;
-            direction.z = 0f;
-            direction.Normalize();
+            input.x = Input.GetAxisRaw("Horizontal");
+            input.y = Input.GetAxisRaw("Vertical");
 
-            GameObject bullet = Instantiate(bulletPrefab, firePoint.position, Quaternion.identity);
-            bullet.GetComponent<Rigidbody2D>().velocity = direction * bullet.GetComponent<Bullet>().speed;
+            //remueve el movimiento en diagonal
+            //if (input.x != 0) input.y = 0;
+
+            if(input != Vector2.zero)
+            {
+                animator.SetFloat("moveX", input.x);
+                animator.SetFloat("moveY", input.y);
+
+                var targetPos = transform.position;
+                targetPos.x += input.x;
+                targetPos.y += input.y;
+
+                StartCoroutine(Move(targetPos));
+            }
         }
+
+        animator.SetBool("isMoving", isMoving);
     }
 
-    private void FixedUpdate()
+    IEnumerator Move(Vector3 targetPos)
     {
-        rb2D.MovePosition(rb2D.position + moveInput * moveSpeed * Time.fixedDeltaTime);
+        isMoving = true;
+
+        while((targetPos - transform.position).sqrMagnitude > Mathf.Epsilon)
+        {
+            transform.position = Vector3.MoveTowards(transform.position, targetPos, moveSpeed * Time.deltaTime);
+            yield return null;
+        }
+        transform.position = targetPos;
+
+        isMoving = false;
+
+        CheckForEncounters();
+    }
+
+    private void CheckForEncounters()
+    {
+        if(Physics2D.OverlapCircle(transform.position, 0.2f, battleLayer) !=null)
+        {
+            if (UnityEngine.Random.Range(1, 101) <= 10)
+            {
+                animator.SetBool("isMoving", false);
+                OnEncountered();
+                Debug.Log("battle");
+            }
+        }
     }
 }
