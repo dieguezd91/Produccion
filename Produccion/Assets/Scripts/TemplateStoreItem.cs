@@ -6,13 +6,13 @@ using UnityEngine.UI;
 
 public class TemplateStoreItem : MonoBehaviour
 {
-    public Image image;
+    public Sprite icon;
     public TextMeshProUGUI priceTag;
     public TextMeshProUGUI objectName;
     public Button buyButton;
     int price;
-    public InformationTemplateItem item;
-    public InventoryScript playerInventory;
+    public ItemBase item;
+    public Inventory playerInventory;
 
 
     void Start()
@@ -30,7 +30,11 @@ public class TemplateStoreItem : MonoBehaviour
 
     public void BuyItem()
     {
-        playerInventory.credits -= price;
-        playerInventory.items.Add(item);
+        if (playerInventory.slotNumber <= 4)
+        {
+            playerInventory.credits -= price;
+            playerInventory.AddItem(item);
+        }
+        else Debug.Log("Inventario lleno");
     }
 }

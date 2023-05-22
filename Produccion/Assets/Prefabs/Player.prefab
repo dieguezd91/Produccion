@@ -11,11 +11,16 @@ GameObject:
   - component: {fileID: 1395730696270280856}
   - component: {fileID: 1395730696270280857}
   - component: {fileID: 436710637867566002}
+<<<<<<< Updated upstream
   - component: {fileID: 8345912051471567283}
   - component: {fileID: 173712890273069791}
   - component: {fileID: 1395730696270280837}
   - component: {fileID: 6313132995531106048}
   - component: {fileID: 1395730696270280839}
+=======
+  - component: {fileID: 1190620380206878437}
+  - component: {fileID: 122048940978588870}
+>>>>>>> Stashed changes
   - component: {fileID: 1395730696270280838}
   m_Layer: 0
   m_Name: Player
@@ -105,8 +110,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
+<<<<<<< Updated upstream
   playerStats: {fileID: 0}
 --- !u!114 &8345912051471567283
+=======
+  battleLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  isMoving: 0
+--- !u!114 &1190620380206878437
+>>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -131,6 +144,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1bb7837001a7e7d48a087d9cfddd892c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< Updated upstream
   Bag:
   - {fileID: 0}
   - {fileID: 0}
@@ -205,11 +219,23 @@ MonoBehaviour:
 --- !u!50 &1395730696270280839
 Rigidbody2D:
   serializedVersion: 4
+=======
+  slots:
+  - item: {fileID: 11400000, guid: 8cb99a7b81b6485469a60f1f0efcc39c, type: 2}
+    count: 3
+  - item: {fileID: 11400000, guid: da03d0168dacb6148973e13623316678, type: 2}
+    count: 3
+  credits: 0
+  items: []
+--- !u!114 &122048940978588870
+MonoBehaviour:
+>>>>>>> Stashed changes
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1395730696270280859}
+<<<<<<< Updated upstream
   m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
@@ -223,6 +249,17 @@ Rigidbody2D:
   m_SleepingMode: 0
   m_CollisionDetection: 1
   m_Constraints: 4
+=======
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38b012231e9a7d04d9f59c1e40b09734, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemList: {fileID: 0}
+  itemSlotUI: {fileID: 0}
+  itemIcon: {fileID: 0}
+  itemDescription: {fileID: 0}
+>>>>>>> Stashed changes
 --- !u!61 &1395730696270280838
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -236,7 +273,11 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
+<<<<<<< Updated upstream
   m_Offset: {x: 0, y: -0.37581995}
+=======
+  m_Offset: {x: -0.014284037, y: -0.34399903}
+>>>>>>> Stashed changes
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -247,7 +288,11 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
+<<<<<<< Updated upstream
   m_Size: {x: 0.40063626, y: 0.19836003}
+=======
+  m_Size: {x: 0.2790925, y: 0.12631285}
+>>>>>>> Stashed changes
   m_EdgeRadius: 0
 --- !u!1 &8515810723797781147
 GameObject:
