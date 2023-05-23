@@ -6,10 +6,10 @@ using UnityEngine;
 
 public class StoreScript : MonoBehaviour
 {
-    [SerializeField] List<InformationTemplateItem> itemInfo;
+    [SerializeField] List<ItemBase> itemInfo;
     [SerializeField] GameObject storeItemTemplate;
     [SerializeField] TextMeshProUGUI totalCoinsText;
-    [SerializeField] InventoryScript playerInventory;
+    [SerializeField] Inventory playerInventory;
     void Start()
     {
         var itemTemplate = storeItemTemplate.GetComponent<TemplateStoreItem>();
@@ -18,9 +18,9 @@ public class StoreScript : MonoBehaviour
         {
             itemTemplate.playerInventory = playerInventory;
             itemTemplate.item = item;
-            itemTemplate.image.sprite = item.image;
-            itemTemplate.objectName.text = item.objectName;
-            itemTemplate.priceTag.text = item.price.ToString();
+            itemTemplate.icon = item.Icon;
+            itemTemplate.objectName.text = item.Name;
+            itemTemplate.priceTag.text = item.Price.ToString();
 
             Instantiate(itemTemplate, transform);
         }

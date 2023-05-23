@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum BattleState { Start, PlayerAction, PlayerMove, EnemyMove, Busy}
+public enum BattleState { Start, PlayerAction, PlayerMove, EnemyMove, Busy, BattleInventory}
 
 public class BattleSystem : MonoBehaviour
 {
@@ -12,12 +12,14 @@ public class BattleSystem : MonoBehaviour
     [SerializeField] BattleHud playerHud;
     [SerializeField] BattleHud enemyHud;
     [SerializeField] BattleDialogBox dialogBox;
+    [SerializeField] GameObject battleInventory;
 
     public event Action<bool> OnBattleOver;
 
     BattleState state;
     int currentAction;
     int currentMove;
+    bool open = false;
 
     public void StartBattle()
     {
@@ -135,33 +137,40 @@ public class BattleSystem : MonoBehaviour
         {
             HandleMoveSelection();
         }
+        else if(state == BattleState.BattleInventory  && Input.GetKeyDown(KeyCode.Escape))
+        {
+            Inventory();
+        }
     }
 
     void HandleActionSelection()
     {
-        if(Input.GetKeyDown(KeyCode.DownArrow))
+        if(state == BattleState.PlayerAction)
         {
-            if (currentAction < 1)
-                ++currentAction;
-        }
-        else if(Input.GetKeyDown(KeyCode.UpArrow))
-        {
-            if (currentAction > 0)
-                --currentAction;
+            if(Input.GetKeyDown(KeyCode.DownArrow))
+            {
+                if (currentAction < 1)
+                    ++currentAction;
+            }
+            else if(Input.GetKeyDown(KeyCode.UpArrow))
+            {
+                if (currentAction > 0)
+                    --currentAction;
+            }
         }
 
         dialogBox.UpdateActionSelection(currentAction);
 
         if(Input.GetKeyDown(KeyCode.Z))
         {
-            if(currentAction == 0)
+            switch (currentAction)
             {
-                //fight
-                PlayerMove();
-            }
-            else if(currentAction ==1)
-            {
-                //run
+                case 0:
+                    PlayerMove();
+                    break;
+                case 1:
+                    Inventory();
+                    break;
             }
         }
     }
@@ -197,5 +206,20 @@ public class BattleSystem : MonoBehaviour
             dialogBox.EnableDialogText(true);
             StartCoroutine(PerformPlayerMove());
         }
+    }
+
+    void Inventory()
+    {
+        if(!open) 
+        { 
+        state = BattleState.BattleInventory;
+        Debug.Log("Abrir inventario");
+        }
+        else
+        {
+            state = BattleState.PlayerAction;
+            Debug.Log("Cerrar inventario");
+        }
+        open = !open;
     }
 }

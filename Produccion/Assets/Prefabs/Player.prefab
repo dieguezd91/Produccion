@@ -101,8 +101,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
+  battleLayer:
+    serializedVersion: 2
+    m_Bits: 0
   isMoving: 0
-  playerStats: {fileID: 0}
 --- !u!114 &1190620380206878437
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -117,9 +119,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   slots:
   - item: {fileID: 11400000, guid: 8cb99a7b81b6485469a60f1f0efcc39c, type: 2}
-    count: 3
+    count: 0
   - item: {fileID: 11400000, guid: da03d0168dacb6148973e13623316678, type: 2}
-    count: 3
+    count: 0
+  items: []
+  credits: 200
 --- !u!61 &1395730696270280838
 BoxCollider2D:
   m_ObjectHideFlags: 0

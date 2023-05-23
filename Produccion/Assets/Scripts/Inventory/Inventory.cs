@@ -11,6 +11,10 @@ public class Inventory : MonoBehaviour
 
     public List<ItemSlot> Slots => slots;
 
+    public List<ItemBase> items;
+
+    public int credits;
+
     public ItemBase UseItem(int itemIndex, Character character)
     {
         var item = slots[itemIndex].Item;
@@ -22,6 +26,17 @@ public class Inventory : MonoBehaviour
         }
 
         return null;
+    }
+
+    public void AddItem(ItemBase item)
+    {   
+        for(int n = 0; n < slots.Count; n++)
+        {
+            if (item.Name == slots[n].Item.Name)
+            {
+                slots[n].Count++;
+            }
+        }
     }
 
     public void RemoveItem(ItemBase item)
@@ -45,11 +60,14 @@ public class ItemSlot
     [SerializeField] ItemBase item;
     [SerializeField] int count;
 
-    public ItemBase Item => item;
-
     public int Count
     {
         get => count;
         set => count = value;
+    }
+    public ItemBase Item
+    {
+        get => item;
+        set => item = value;
     }
 }
