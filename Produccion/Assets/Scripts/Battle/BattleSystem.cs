@@ -20,10 +20,12 @@ public class BattleSystem : MonoBehaviour
     int currentAction;
     int currentMove;
     bool open = false;
+    bool ran;
 
     public void StartBattle()
     {
         StartCoroutine(SetupBattle());
+        ran = false;
     }
 
     public IEnumerator SetupBattle()
@@ -71,7 +73,7 @@ public class BattleSystem : MonoBehaviour
         
         if(isDead)
         {
-            yield return dialogBox.TypeDialog($"{ enemyUnit.Character.Base.Name} es derrotado");
+            yield return dialogBox.TypeDialog($"{ enemyUnit.Character.Base.Name} es derrotado.");
 
             yield return new WaitForSeconds(2f);
             OnBattleOver(true);
@@ -102,9 +104,13 @@ public class BattleSystem : MonoBehaviour
             yield return new WaitForSeconds(2f);
             OnBattleOver(false);
         }
-        else
-        {
+        else if(!ran)
             PlayerAction();
+        else if(ran)
+        {
+            yield return dialogBox.TypeDialog($"{playerUnit.Character.Base.Name} huye.");
+            yield return new WaitForSeconds(2f);
+            OnBattleOver(false);
         }
     }
 
@@ -149,7 +155,7 @@ public class BattleSystem : MonoBehaviour
         {
             if(Input.GetKeyDown(KeyCode.DownArrow))
             {
-                if (currentAction < 1)
+                if (currentAction < 3)
                     ++currentAction;
             }
             else if(Input.GetKeyDown(KeyCode.UpArrow))
@@ -170,6 +176,12 @@ public class BattleSystem : MonoBehaviour
                     break;
                 case 1:
                     Inventory();
+                    break;
+                case 2:
+                    UseGun();
+                    break;
+                case 3:
+                    RunAway();
                     break;
             }
         }
@@ -198,7 +210,7 @@ public class BattleSystem : MonoBehaviour
                 currentMove -= 2;
         }
 
-        dialogBox.UpdateMoveSelection(currentMove, playerUnit.Character.Moves[currentMove]);
+        dialogBox.UpdateMoveSelection(currentMove, playerUnit.Character.Moves[currentMove]);       
 
         if(Input.GetKeyDown(KeyCode.Z))
         {
@@ -221,5 +233,17 @@ public class BattleSystem : MonoBehaviour
             Debug.Log("Cerrar inventario");
         }
         open = !open;
+    }
+
+    void UseGun()
+    {
+        Debug.Log("Ataque a rango");
+    }
+
+    void RunAway()
+    {
+        Debug.Log("Huir");
+        ran = true;
+        StartCoroutine(EnemyMove());
     }
 }
