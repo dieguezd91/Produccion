@@ -103,10 +103,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
+<<<<<<< Updated upstream
   bulletPrefab: {fileID: 0}
   firePoint: {fileID: 0}
   playerStats: {fileID: 0}
 --- !u!114 &173712890273069791
+=======
+  battleLayer:
+    serializedVersion: 2
+    m_Bits: 4096
+  isMoving: 0
+--- !u!114 &1190620380206878437
+>>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
