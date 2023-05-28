@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: Lineas Peatonales para sin bordes
+  m_Name: Lineas Blancas esquina
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: 21300000, guid: da5e05ebd36f34b46bd971fdf11d11c4, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3e50cc6390cff9b4da6e4645892e055c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1
