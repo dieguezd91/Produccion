@@ -11,9 +11,14 @@ GameObject:
   - component: {fileID: 1395730696270280856}
   - component: {fileID: 1395730696270280857}
   - component: {fileID: 436710637867566002}
+<<<<<<< Updated upstream
   - component: {fileID: 173712890273069791}
   - component: {fileID: 9142871785229417891}
   - component: {fileID: 1395730696270280839}
+=======
+  - component: {fileID: 4634621032695728913}
+  - component: {fileID: 1190620380206878437}
+>>>>>>> Stashed changes
   - component: {fileID: 1395730696270280838}
   m_Layer: 0
   m_Name: Player
@@ -103,10 +108,38 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
+<<<<<<< Updated upstream
   bulletPrefab: {fileID: 0}
   firePoint: {fileID: 0}
   playerStats: {fileID: 0}
 --- !u!114 &173712890273069791
+=======
+  battleLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  isMoving: 0
+--- !u!114 &4634621032695728913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1395730696270280859}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53f2ae4053c1dc642b58f7d08578326c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerName: Robert
+  playerLevel: 1
+  currentXP: 27
+  maxHP: 100
+  currentHP: 100
+  dexterity: 10
+  strenght: 5
+  defence: 5
+--- !u!114 &1190620380206878437
+>>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -201,7 +234,11 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
+<<<<<<< Updated upstream
   m_Offset: {x: -0.0033921003, y: 0}
+=======
+  m_Offset: {x: -0.015029356, y: -0.34264153}
+>>>>>>> Stashed changes
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -212,7 +249,11 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
+<<<<<<< Updated upstream
   m_Size: {x: 0.50826526, y: 0.9907073}
+=======
+  m_Size: {x: 0.2811388, y: 0.12721002}
+>>>>>>> Stashed changes
   m_EdgeRadius: 0
 --- !u!1 &8515810723797781147
 GameObject:
