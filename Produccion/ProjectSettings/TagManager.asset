@@ -7,6 +7,12 @@ TagManager:
   - Enemy
   - Item
   - Destroyable
+<<<<<<< Updated upstream
+=======
+  - Drone
+  - Buildings
+  - Aliado
+>>>>>>> Stashed changes
   layers:
   - Default
   - TransparentFX
