@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1395730696270280856}
   - component: {fileID: 1395730696270280857}
   - component: {fileID: 436710637867566002}
+  - component: {fileID: 7705510061202412979}
   - component: {fileID: 1190620380206878437}
   - component: {fileID: 1395730696270280838}
   - component: {fileID: 1117385375}
@@ -103,8 +104,32 @@ MonoBehaviour:
   moveSpeed: 5
   battleLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 4096
   isMoving: 0
+--- !u!114 &7705510061202412979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1395730696270280859}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53f2ae4053c1dc642b58f7d08578326c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerName: Robert
+  characterImage: {fileID: 0}
+  playerLevel: 1
+  maxLevel: 50
+  currentXP: 36
+  xpForNextLevel: 
+  baseLevelXP: 100
+  maxHP: 100
+  currentHP: 0
+  dexterity: 5
+  strength: 10
+  defence: 5
 --- !u!114 &1190620380206878437
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -117,13 +142,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1bb7837001a7e7d48a087d9cfddd892c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slots:
-  - item: {fileID: 11400000, guid: 8cb99a7b81b6485469a60f1f0efcc39c, type: 2}
-    count: 0
-  - item: {fileID: 11400000, guid: da03d0168dacb6148973e13623316678, type: 2}
-    count: 0
-  items: []
-  credits: 200
 --- !u!61 &1395730696270280838
 BoxCollider2D:
   m_ObjectHideFlags: 0

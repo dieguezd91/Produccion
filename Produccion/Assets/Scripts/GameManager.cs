@@ -8,12 +8,21 @@ public class GameManager : MonoBehaviour
     public GameObject player;
     public static GameManager instance;
 
+    [SerializeField] PlayerStats[] playerStats;
+
     private void Awake()
     {
-        if(instance == null)
+        if (instance != null && instance != this)
+        {
+            Destroy(this.gameObject);
+        }
+        else
         {
             instance = this;
         }
+        DontDestroyOnLoad(gameObject);
+
+        playerStats = FindObjectsOfType<PlayerStats>();
     }
 
     void Start()
@@ -25,5 +34,10 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public PlayerStats[] GetPlayerStats()
+    {
+        return playerStats;
     }
 }

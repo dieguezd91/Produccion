@@ -9,6 +9,7 @@ TagManager:
   - Destroyable
   - Drone
   - Buildings
+  - Weapons
   layers:
   - Default
   - TransparentFX
@@ -43,17 +44,17 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: Default
-    uniqueID: 0
-    locked: 0
   - name: Background
     uniqueID: 3719023549
+    locked: 0
+  - name: UI
+    uniqueID: 3273741767
     locked: 0
   - name: Player
     uniqueID: 2095082407
     locked: 0
-  - name: UI
-    uniqueID: 3273741767
+  - name: Default
+    uniqueID: 0
     locked: 0
   - name: Decoracion_bar
     uniqueID: 3824933019

@@ -7,67 +7,134 @@ using UnityEngine.UI;
 
 public class Inventory : MonoBehaviour
 {
-    [SerializeField] List<ItemSlot> slots;
+    public static Inventory instance;
+    private List<ItemsManager> itemsList;
 
-    public List<ItemSlot> Slots => slots;
-
-    public List<ItemBase> items;
-
-    public int credits;
-
-    public ItemBase UseItem(int itemIndex, Character character)
+    private void Start()
     {
-        var item = slots[itemIndex].Item;
-        bool itemUsed = item.Use(character);
-        if(itemUsed)
-        {
-            RemoveItem(item);
-            return item;
-        }
-
-        return null;
+        instance = this;
+        itemsList = new List<ItemsManager>();
+        Debug.Log("nuevo inventario");
     }
 
-    public void AddItem(ItemBase item)
-    {   
-        for(int n = 0; n < slots.Count; n++)
+    public void AddItems(ItemsManager item)
+    {
+        if(item.isStackable)
         {
-            if (item.Name == slots[n].Item.Name)
+            bool itemAlreadyInInventory = false;
+
+            foreach (ItemsManager itemInInventory in itemsList)
             {
-                slots[n].Count++;
+                if(itemInInventory.itemName == item.itemName)
+                {
+                    itemInInventory.amount += item.amount;
+                    itemAlreadyInInventory = true;
+                }
+            }
+
+            if(!itemAlreadyInInventory)
+            {
+                itemsList.Add(item);
             }
         }
+        else
+        {
+            itemsList.Add(item);
+        }
     }
 
-    public void RemoveItem(ItemBase item)
+    public void RemoveItem(ItemsManager item)
     {
-        var itemSlot = slots.First(slot => slot.Item == item);
-        itemSlot.Count--;
-        if (itemSlot.Count == 0)
-            slots.Remove(itemSlot);
+        if(item.isStackable)
+        {
+            ItemsManager inventoryItem = null;
+            foreach(ItemsManager itemInInventory in itemsList)
+            {
+                if(itemInInventory.itemName == item.itemName)
+                {
+                    itemInInventory.amount--;
+                    inventoryItem = itemInInventory;
+                }
+            }
+
+            if(inventoryItem != null && inventoryItem.amount <=0)
+            {
+                itemsList.Remove(inventoryItem);
+            }
+        }
+        else
+        {
+            itemsList.Remove(item);
+        }
     }
 
-    public static Inventory GetInventory()
+
+    public List<ItemsManager> GetItemsList()
     {
-        return FindObjectOfType<PlayerController>().GetComponent<Inventory>();
+        return itemsList;
     }
-}
 
-[Serializable]
+    //    [SerializeField] List<ItemSlot> slots;
 
-public class ItemSlot
-{
-    [SerializeField] ItemBase item;
-    [SerializeField] int count;
+    //    public List<ItemSlot> Slots => slots;
 
-    public int Count
-    {
-        get => count;
-        set => count = value;
-    }
-    public ItemBase Item
-    {
-        get => item;
-        set => item = value;
-    }
+    //    public List<ItemBase> items;
+
+    //    public int credits;
+
+    //    public ItemBase UseItem(int itemIndex, Character character)
+    //    {
+    //        var item = slots[itemIndex].Item;
+    //        bool itemUsed = item.Use(character);
+    //        if(itemUsed)
+    //        {
+    //            RemoveItem(item);
+    //            return item;
+    //        }
+
+    //        return null;
+    //    }
+
+    //    public void AddItem(ItemBase item)
+    //    {   
+    //        for(int n = 0; n < slots.Count; n++)
+    //        {
+    //            if (item.Name == slots[n].Item.Name)
+    //            {
+    //                slots[n].Count++;
+    //            }
+    //        }
+    //    }
+
+    //    public void RemoveItem(ItemBase item)
+    //    {
+    //        var itemSlot = slots.First(slot => slot.Item == item);
+    //        itemSlot.Count--;
+    //        if (itemSlot.Count == 0)
+    //            slots.Remove(itemSlot);
+    //    }
+
+    //    public static Inventory GetInventory()
+    //    {
+    //        return FindObjectOfType<PlayerController>().GetComponent<Inventory>();
+    //    }
+    //}
+
+    //[Serializable]
+
+    //public class ItemSlot
+    //{
+    //    [SerializeField] ItemBase item;
+    //    [SerializeField] int count;
+
+    //    public int Count
+    //    {
+    //        get => count;
+    //        set => count = value;
+    //    }
+    //    public ItemBase Item
+    //    {
+    //        get => item;
+    //        set => item = value;
+    //    }
 }

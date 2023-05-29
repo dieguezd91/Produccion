@@ -10,7 +10,6 @@ public class GameController : MonoBehaviour
     [SerializeField] PlayerController playerController;
     [SerializeField] BattleSystem battleSystem;
     [SerializeField] Camera worldCamera;
-    [SerializeField] InventoryUI inventoryUI;
 
     GameState state;
 
@@ -34,7 +33,7 @@ public class GameController : MonoBehaviour
             state = GameState.FreeRoam;
         };
 
-        menuController.onMenuSelected += OnMenuSelected;
+        //menuController.onMenuSelected += OnMenuSelected;
     }
 
     void StartBattle()
@@ -73,35 +72,33 @@ public class GameController : MonoBehaviour
         {
             menuController.HandleUpdate();
         }
-        else if( state == GameState.Bag)
-        {
-            Action onBack = () =>
-            {
-                inventoryUI.gameObject.SetActive(false);
-                state = GameState.FreeRoam;
-            };
+        //else if( state == GameState.Bag)
+        //{
+        //    Action onBack = () =>
+        //    {
+        //        inventoryUI.gameObject.SetActive(false);
+        //        state = GameState.FreeRoam;
+        //    };
 
-            inventoryUI.HandleUpdate(onBack);
-        }
+        //    inventoryUI.HandleUpdate(onBack);
+        //}
     }
 
-    void OnMenuSelected(int selectedItem)
-    {
-        if(selectedItem == 0)
-        {
-            inventoryUI.gameObject.SetActive(true);
-            state = GameState.Bag;            
-        }
-        else if(selectedItem == 1)
-        {
-            //menuItem (2)
-        }
-        else if(selectedItem == 2)
-        {
-            state = GameState.FreeRoam;
-            //menuItem (3)
-        }
-
-
-    }
+    //void OnMenuSelected(int selectedItem)
+    //{
+    //    if(selectedItem == 0)
+    //    {
+    //        inventoryUI.gameObject.SetActive(true);
+    //        state = GameState.Bag;            
+    //    }
+    //    else if(selectedItem == 1)
+    //    {
+    //        //menuItem (2)
+    //    }
+    //    else if(selectedItem == 2)
+    //    {
+    //        state = GameState.FreeRoam;
+    //        //menuItem (3)
+    //    }
+    //}
 }

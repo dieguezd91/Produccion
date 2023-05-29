@@ -10,8 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 889587858163832672}
   - component: {fileID: 889587858163832673}
-  - component: {fileID: 889587858163832675}
-  - component: {fileID: 889587858163832674}
   m_Layer: 0
   m_Name: GameController
   m_TagString: Untagged
@@ -49,31 +47,3 @@ MonoBehaviour:
   playerController: {fileID: 0}
   battleSystem: {fileID: 0}
   worldCamera: {fileID: 0}
-  inventoryUI: {fileID: 0}
---- !u!114 &889587858163832675
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 889587858163832678}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 726fd4792f58c9b4f96469846829b185, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  menu: {fileID: 0}
-  highlightedColor: {r: 1, g: 0, b: 0, a: 0}
---- !u!114 &889587858163832674
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 889587858163832678}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd13b20d525723345bd91d7ba48c9b8e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  highlightedColor: {r: 1, g: 0, b: 0.3404808, a: 1}
