@@ -7,8 +7,12 @@ TagManager:
   - Enemy
   - Item
   - Destroyable
+<<<<<<< Updated upstream
+=======
   - Drone
   - Buildings
+  - Aliado
+>>>>>>> Stashed changes
   layers:
   - Default
   - TransparentFX
@@ -19,12 +23,12 @@ TagManager:
   - Background
   - Player
   - Items
-  - Buildings
+  - 
   - Ammo
-  - Drone
-  - BattleDetection
-  - Decoracion
-  - Enemigos
+  - 
+  - 
+  - 
+  - 
   - 
   - 
   - 
@@ -46,9 +50,6 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Background
-    uniqueID: 3719023549
-    locked: 0
   - name: Player
     uniqueID: 2095082407
     locked: 0
@@ -57,7 +58,4 @@ TagManager:
     locked: 0
   - name: Decoracion_bar
     uniqueID: 3824933019
-    locked: 0
-  - name: Decoracion
-    uniqueID: 715634155
     locked: 0
