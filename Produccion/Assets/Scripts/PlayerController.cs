@@ -2,9 +2,12 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Tilemaps;
 
 public class PlayerController : MonoBehaviour
 {
+    public static PlayerController instance;
+
     public float moveSpeed;
     public LayerMask battleLayer;
 
@@ -13,13 +16,31 @@ public class PlayerController : MonoBehaviour
     public bool isMoving;
     private Vector2 input;
 
+    private Vector3 bottomLeftEdge;
+    private Vector3 topRightEdge;
+
     //public CharacterStats playerStats;
     private Animator animator;
+
 
     private void Awake()
     {
         //playerStats = GetComponent<CharacterStats>();
         animator = GetComponent<Animator>();
+    }
+
+    private void Start()
+    {
+        if(instance != null && instance !=this)
+        {
+            Destroy(this.gameObject);
+        }
+        else
+        {
+            instance = this;
+        }
+
+        DontDestroyOnLoad(gameObject);
     }
 
     public void HandleUpdate()
@@ -69,7 +90,7 @@ public class PlayerController : MonoBehaviour
     {
         if(Physics2D.OverlapCircle(transform.position, 0.2f, battleLayer) !=null)
         {
-            if (UnityEngine.Random.Range(1, 101) <= 10)
+            if (UnityEngine.Random.Range(1, 1) <= 10)
             {
                 animator.SetBool("isMoving", false);
                 OnEncountered();
