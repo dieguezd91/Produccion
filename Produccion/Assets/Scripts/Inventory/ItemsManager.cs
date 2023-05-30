@@ -24,22 +24,21 @@ public class ItemsManager : MonoBehaviour
 
     public void UseItem(int characterToUseOn)
     {
-
         PlayerStats selectedCharacter = GameManager.instance.GetPlayerStats()[characterToUseOn]; 
         if(affectType == AffectType.HP)
         {
             selectedCharacter.AddHP(amountOfAffect);
         }
-        else if(itemType == ItemType.MeleeWeapon)
+        if(itemType == ItemType.MeleeWeapon)
         {
-            if(selectedCharacter.equippedMeleeWeaponName != "")
+            if (selectedCharacter.equippedMeleeWeaponName != "")
             {
                 Inventory.instance.AddItems(selectedCharacter.equipedMeleeWeapon);
             }
 
             selectedCharacter.EquipMeleeWeapon(this);
         }
-        else if(itemType == ItemType.RangeWeapon)
+        if(itemType == ItemType.RangeWeapon)
         {
             if(selectedCharacter.equippedRangeWeaponName != "")
             {

@@ -74,14 +74,12 @@ public class MenuManager : MonoBehaviour
 
     public void StatsMenu()
     {
+        StatsMenuUpdate(0);
         for(int i = 0; i < playerStats.Length; i++)
         {
             statsButtons[i].SetActive(true);
-
             statsButtons[i].GetComponentInChildren<Text>().text = playerStats[i].playerName;
         }
-
-        StatsMenuUpdate(0);
     }
 
     public void StatsMenuUpdate(int playerSelectedNumber)
