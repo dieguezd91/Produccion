@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &3195020073775177083
+--- !u!1 &6088158150903226152
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,39 +8,39 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 3195020073775177080}
-  - component: {fileID: 3195020073775177078}
-  - component: {fileID: 3195020073775177081}
-  - component: {fileID: 3195020073775177079}
+  - component: {fileID: 6088158150903226153}
+  - component: {fileID: 6088158150903226159}
+  - component: {fileID: 6088158150903226158}
+  - component: {fileID: 6088158150903226156}
   m_Layer: 8
-  m_Name: Subfusil
+  m_Name: Escopeta
   m_TagString: Weapons
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &3195020073775177080
+--- !u!4 &6088158150903226153
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3195020073775177083}
+  m_GameObject: {fileID: 6088158150903226152}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.08, y: -1.55, z: 0}
+  m_LocalPosition: {x: 0.36, y: -1.55, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &3195020073775177078
+--- !u!212 &6088158150903226159
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3195020073775177083}
+  m_GameObject: {fileID: 6088158150903226152}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -75,48 +75,50 @@ SpriteRenderer:
   m_SortingLayerID: 2095082407
   m_SortingLayer: -1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: fa8e196d1f3d8da41bea44831dfbb187, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 795377d7d0f525844910d5fa06a35583, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.90625, y: 0.4375}
+  m_Size: {x: 0.875, y: 0.375}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &3195020073775177081
+--- !u!114 &6088158150903226158
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3195020073775177083}
+  m_GameObject: {fileID: 6088158150903226152}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 33af999ed269ba44da74255f76447d9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemType: 1
-  itemName: SMG
-  itemDescription: A submachine gun (SMG) is a magazine-fed, automatic carbine designed
-    to fire handgun cartridges
-  valueCoins: 20
-  itemsImage: {fileID: 21300000, guid: fa8e196d1f3d8da41bea44831dfbb187, type: 3}
+  itemType: 2
+  itemName: Shotgun
+  itemDescription: Is a long-barreled firearm designed to shoot a straight-walled
+    cartridge known as a shotshell, which usually discharges numerous small pellet-like
+    spherical sub-projectiles called shot, or sometimes a single solid projectile
+    called a slug
+  valueCoins: 35
+  itemsImage: {fileID: 21300000, guid: 795377d7d0f525844910d5fa06a35583, type: 3}
   amountOfAffect: 0
   affectType: 0
-  weaponDexterity: 25
+  weaponDexterity: 30
   weaponStrength: 0
   isStackable: 0
-  amount: 0
---- !u!61 &3195020073775177079
+  amount: 1
+--- !u!61 &6088158150903226156
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3195020073775177083}
+  m_GameObject: {fileID: 6088158150903226152}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -127,12 +129,12 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.90625, y: 0.4375}
-    newSize: {x: 0.90625, y: 0.4375}
+    oldSize: {x: 0.875, y: 0.375}
+    newSize: {x: 0.875, y: 0.375}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.90625, y: 0.4375}
+  m_Size: {x: 0.875, y: 0.375}
   m_EdgeRadius: 0

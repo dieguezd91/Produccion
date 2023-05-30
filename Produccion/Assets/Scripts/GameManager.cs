@@ -7,10 +7,11 @@ public class GameManager : MonoBehaviour
     public Transform playerSpawnPoint;
     public GameObject player;
     public static GameManager instance;
+    public bool battleIsActive;
 
     [SerializeField] PlayerStats[] playerStats;
 
-    private void Awake()
+    void Start()
     {
         if (instance != null && instance != this)
         {
@@ -23,17 +24,21 @@ public class GameManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
 
         playerStats = FindObjectsOfType<PlayerStats>();
-    }
 
-    void Start()
-    {
         player = GameObject.FindGameObjectWithTag("Player");
         player.transform.position = playerSpawnPoint.position;
     }
 
     void Update()
     {
-        
+        if(battleIsActive)
+        {
+            //Player.instance.deactivateMovement = true;
+        }
+        else
+        {
+            //Player.instance.deactivateMovement = false;
+        }
     }
 
     public PlayerStats[] GetPlayerStats()

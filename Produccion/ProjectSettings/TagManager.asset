@@ -10,6 +10,7 @@ TagManager:
   - Drone
   - Buildings
   - Weapons
+  - Aliado
   layers:
   - Default
   - TransparentFX
@@ -20,11 +21,11 @@ TagManager:
   - Background
   - Player
   - Items
-  - Buildings
-  - Ammo
+  - 
+  - 
   - Drone
   - BattleDetection
-  - Decoracion
+  - 
   - Enemigos
   - 
   - 
@@ -56,9 +57,12 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Decoracion_bar
+  - name: Battle BG
     uniqueID: 3824933019
     locked: 0
-  - name: Decoracion
+  - name: Battle Characters
     uniqueID: 715634155
+    locked: 0
+  - name: Dron
+    uniqueID: 1321244363
     locked: 0

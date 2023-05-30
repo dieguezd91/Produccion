@@ -5,24 +5,30 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    public static PlayerController instance;
+
     public float moveSpeed;
-    public LayerMask battleLayer;
-
-    public event Action OnEncountered;
-
     public bool isMoving;
     private Vector2 input;
 
-    //public CharacterStats playerStats;
     private Animator animator;
 
     private void Awake()
     {
-        //playerStats = GetComponent<CharacterStats>();
+        if (instance != null && instance != this)
+        {
+            Destroy(this.gameObject);
+        }
+        else
+        {
+            instance = this;
+        }
+        DontDestroyOnLoad(gameObject);
+
         animator = GetComponent<Animator>();
     }
 
-    public void HandleUpdate()
+    public void Update()
     {
         // MOVIMIENTO
         if(!isMoving)
@@ -61,20 +67,5 @@ public class PlayerController : MonoBehaviour
         transform.position = targetPos;
 
         isMoving = false;
-
-        CheckForEncounters();
-    }
-
-    private void CheckForEncounters()
-    {
-        if(Physics2D.OverlapCircle(transform.position, 0.2f, battleLayer) !=null)
-        {
-            if (UnityEngine.Random.Range(1, 101) <= 10)
-            {
-                animator.SetBool("isMoving", false);
-                OnEncountered();
-                Debug.Log("battle");
-            }
-        }
     }
 }

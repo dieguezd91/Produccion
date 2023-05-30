@@ -22,6 +22,14 @@ public class PlayerStats : MonoBehaviour
     [SerializeField] public int strength;
     [SerializeField] public int defence;
 
+    public string equippedMeleeWeaponName;
+    public string equippedRangeWeaponName;
+
+    public int meleeDamage;
+    public int rangeDamage;
+
+    public ItemsManager equipedMeleeWeapon, equipedRangeWeapon;
+
     private void Start()
     {
         instance = this;
@@ -72,4 +80,20 @@ public class PlayerStats : MonoBehaviour
             currentHP = maxHP;
         }
     }
+
+    public void EquipMeleeWeapon(ItemsManager meleeWeaponToEquip)
+    {
+        equipedMeleeWeapon = meleeWeaponToEquip;
+        equippedMeleeWeaponName = equipedMeleeWeapon.itemName;
+        meleeDamage = equipedMeleeWeapon.weaponStrength;
+
+    }
+    
+    public void EquipRangeWeapon(ItemsManager rangeWeaponToEquip)
+    {
+        equipedRangeWeapon = rangeWeaponToEquip;
+        equippedRangeWeaponName = equipedRangeWeapon.itemName;
+        rangeDamage = equipedRangeWeapon.weaponDexterity;
+    }
+        
 }
