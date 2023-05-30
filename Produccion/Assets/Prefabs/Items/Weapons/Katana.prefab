@@ -103,7 +103,7 @@ MonoBehaviour:
     a circular or squared guard and long grip to accommodate two hands.
   itemDescription: 
   valueCoins: 0
-  itemsImage: {fileID: 0}
+  itemsImage: {fileID: 21300000, guid: fe8cf707c8bfc8748bb5f49acd9ae2db, type: 3}
   amountOfAffect: 0
   affectType: 0
   weaponDexterity: 0
