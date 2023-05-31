@@ -71,11 +71,11 @@ public class PlayerController : MonoBehaviour
         isMoving = false;
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.CompareTag("Enemy"))
-        {
-            BattleManager.instance.StartBattle(new string[] { "Patrol" });
-        }
-    }
+    //private void OnTriggerEnter2D(Collider2D collision)
+    //{
+    //    if (collision.CompareTag("Enemy"))
+    //    {
+    //        BattleManager.instance.StartBattle(new string[] { "Patrol" });
+    //    }
+    //}
 }

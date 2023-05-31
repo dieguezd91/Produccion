@@ -103,9 +103,9 @@ MonoBehaviour:
   characterName: Patrol
   currentHP: 100
   maxHP: 100
-  dexterity: 15
+  dexterity: 20
   strength: 5
-  defence: 15
-  meleeWeaponDamage: 0
-  rangeWeaponDamage: 25
+  defence: 10
+  meleeWeaponDamage: 25
+  rangeWeaponDamage: 5
   isDead: 0

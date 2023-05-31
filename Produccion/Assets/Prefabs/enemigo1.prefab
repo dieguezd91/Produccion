@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2586104397415910345}
   - component: {fileID: 2586104397415910388}
   - component: {fileID: 2586104397415910391}
+  - component: {fileID: 2023212777416247014}
   m_Layer: 14
   m_Name: enemigo1
   m_TagString: Enemy
@@ -133,3 +134,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.5, y: 0.8}
   m_EdgeRadius: 0
+--- !u!114 &2023212777416247014
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2586104397415910344}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c653b9edf4e5a344ac2bab2f9791252, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  names:
+  - Thug

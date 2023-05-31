@@ -35,6 +35,7 @@ public class BattleCharacters : MonoBehaviour
     
     public void TakeHPDamage(int damageToReceive)
     {
+        Debug.Log("Take damage " + damageToReceive);
         currentHP -= damageToReceive;
 
         if(currentHP < 0)

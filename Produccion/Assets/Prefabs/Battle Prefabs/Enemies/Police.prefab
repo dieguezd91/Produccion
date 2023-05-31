@@ -26,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9052234373549132992}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.000015258789, y: -0.000024318695, z: 0}
+  m_LocalPosition: {x: 0.00001525879, y: -0.0000243187, z: 0}
   m_LocalScale: {x: 6, y: 6, z: 6}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -106,6 +106,6 @@ MonoBehaviour:
   dexterity: 15
   strength: 5
   defence: 10
-  meleeWeaponDamage: 0
-  rangeWeaponDamage: 15
+  meleeWeaponDamage: 10
+  rangeWeaponDamage: 25
   isDead: 0

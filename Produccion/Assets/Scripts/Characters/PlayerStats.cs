@@ -48,12 +48,14 @@ public class PlayerStats : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.L))
         {
-            AddXP(100);
+            AddXP(20);
         }
     }
 
     public void AddXP(int amountOfXp)
     {
+        Debug.Log(currentXP);
+        Debug.Log(amountOfXp);
         currentXP += amountOfXp;
         if(currentXP > xpForNextLevel[playerLevel])
         {
@@ -70,6 +72,7 @@ public class PlayerStats : MonoBehaviour
         {
             defence++;
         }
+        Debug.Log(currentXP);
     }
 
     public void AddHP(int amountHPToAdd)

@@ -37,7 +37,7 @@ public class MenuManager : MonoBehaviour
 
     private void Update()
     {
-        if(Input.GetKeyDown(KeyCode.V))
+        if(Input.GetKeyDown(KeyCode.V) && !BattleManager.instance.isBattleActive)
         {
             if (menu.activeInHierarchy)
             {

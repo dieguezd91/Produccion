@@ -125,9 +125,9 @@ MonoBehaviour:
   baseLevelXP: 100
   maxHP: 100
   currentHP: 60
-  dexterity: 5
+  dexterity: 30
   strength: 10
-  defence: 5
+  defence: 15
   equippedMeleeWeaponName: 
   equippedRangeWeaponName: 
   meleeDamage: 0

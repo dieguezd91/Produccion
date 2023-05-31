@@ -6,7 +6,8 @@ using UnityEngine.UI;
 public class BattleManager : MonoBehaviour
 {
     public static BattleManager instance;
-    private bool isBattleActive;
+    public bool isBattleActive;
+    bool inventoryIsOpen;
 
     [SerializeField] GameObject battleScene;
     [SerializeField] List<BattleCharacters> activeCharacters = new List<BattleCharacters>();
@@ -36,7 +37,7 @@ public class BattleManager : MonoBehaviour
     [SerializeField] GameObject characterChoicePanel;
     [SerializeField] Text[] playerChoiceName;
 
-    [SerializeField] public int amountOfXp = 100;
+    private int amountOfXp = 99;
 
     void Start()
     {
@@ -84,6 +85,7 @@ public class BattleManager : MonoBehaviour
             AddingPlayers();
             AddingEnemies(enemiesToSpawn);
             UpdatePlayerStats();
+            
 
             waitingForTurn = true;
             currentTurn = 0;//Random.Range(0, activeCharacters.Count);
@@ -153,6 +155,21 @@ public class BattleManager : MonoBehaviour
         activeCharacters[i].rangeWeaponDamage = player.rangeDamage;
     }
 
+    private void ExportPlayerStats(int i)
+    {
+        PlayerStats player = GameManager.instance.GetPlayerStats()[i];
+
+        player.currentHP = activeCharacters[i].currentHP;
+        player.maxHP = activeCharacters[i].maxHP;
+
+        player.dexterity = activeCharacters[i].dexterity;
+        player.strength = activeCharacters[i].strength;
+        player.defence = activeCharacters[i].defence;
+
+        player.meleeDamage = activeCharacters[i].meleeWeaponDamage;
+        player.rangeDamage = activeCharacters[i].rangeWeaponDamage;
+    }
+
     private void SettingUpBattle()
     {
         isBattleActive = true;
@@ -198,6 +215,7 @@ public class BattleManager : MonoBehaviour
             {
                 if (activeCharacters[i].IsPlayer())
                     allPlayersAreDead = false;
+
                 else
                     allEnemiesAreDead = false;
             }
@@ -206,9 +224,16 @@ public class BattleManager : MonoBehaviour
         if(allEnemiesAreDead || allPlayersAreDead)
         {
             if (allEnemiesAreDead)
+            {
                 PlayerStats.instance.AddXP(amountOfXp);
+                ExportPlayerStats(0);
+                Debug.Log("Won");
+            }
             else if (allPlayersAreDead)
-                print("lost");
+            {
+                print("Lost");
+                ExportPlayerStats(0);
+            }
 
             battleScene.SetActive(false);
             GameManager.instance.battleIsActive = false;
@@ -281,7 +306,7 @@ public class BattleManager : MonoBehaviour
         float defenceAmount = activeCharacters[selectedCharacterToAttack].defence; //ACA SE PUEDE IMPLEMENTAR ALGO QUE SUME DEFENSA COMO UN CHALECO ANTIBALAS 
 
         //float meleeDamageAmount = (attackMelee / defenceAmount) * movePower * Random.Range(0.9f, 1.1f); 
-        float damageAmount = (attackPower / defenceAmount) * movePower * Random.Range(0.9f, 1.1f);
+        float damageAmount = (attackPower - defenceAmount) * movePower * Random.Range(0.9f, 1.1f);
         //int meleeDamageToGive = (int)meleeDamageAmount;
         int rangeDamageToGive = (int)damageAmount;
 
@@ -289,7 +314,7 @@ public class BattleManager : MonoBehaviour
         rangeDamageToGive = CalculateCritical(rangeDamageToGive);
 
         //Debug.Log(activeCharacters[currentTurn].characterName + " use melee attack and cause " + (int)meleeDamageAmount + "(" + meleeDamageToGive + ") to " + activeCharacters[selectedCharacterToAttack]);
-        Debug.Log(activeCharacters[currentTurn].characterName + " attack and cause " + (int)damageAmount + "(" + rangeDamageToGive + ") of damage to " + activeCharacters[selectedCharacterToAttack]);
+        Debug.Log(activeCharacters[currentTurn].characterName + " attack and causes " + (int)damageAmount + "(" + rangeDamageToGive + ") of damage to " + activeCharacters[selectedCharacterToAttack]);
 
         //activeCharacters[selectedCharacterToAttack].TakeHPMeleeDamage(meleeDamageToGive);
         activeCharacters[selectedCharacterToAttack].TakeHPDamage(rangeDamageToGive);
@@ -336,7 +361,7 @@ public class BattleManager : MonoBehaviour
 
     public void PlayerAttack(string moveName)//, int selectEnemyTarget)
     {
-        int selectEnemyTarget = 0;
+        int selectEnemyTarget = 1;
         int movePower = 1;
 
         DealDamageToCharacters(selectEnemyTarget, movePower);
@@ -356,11 +381,16 @@ public class BattleManager : MonoBehaviour
         {
             NextTurn();
         }
+        ExportPlayerStats(0);
     }
 
     public void UpdateItemsInInventory()
     {
-        itemsToUseMenu.SetActive(true);
+        if (!inventoryIsOpen)
+            itemsToUseMenu.SetActive(true);
+        else
+            itemsToUseMenu.SetActive(false);
+        inventoryIsOpen = !inventoryIsOpen;
 
         foreach (Transform itemSlot in itemSlotContainerParent)
         {
