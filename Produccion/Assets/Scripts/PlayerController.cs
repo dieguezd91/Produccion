@@ -53,6 +53,8 @@ public class PlayerController : MonoBehaviour
         }
 
         animator.SetBool("isMoving", isMoving);
+
+        
     }
 
     IEnumerator Move(Vector3 targetPos)
@@ -67,5 +69,13 @@ public class PlayerController : MonoBehaviour
         transform.position = targetPos;
 
         isMoving = false;
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Enemy"))
+        {
+            BattleManager.instance.StartBattle(new string[] { "Patrol" });
+        }
     }
 }

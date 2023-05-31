@@ -11,8 +11,35 @@ public class BattleCharacters : MonoBehaviour
     public int currentHP, maxHP, dexterity, strength, defence, meleeWeaponDamage, rangeWeaponDamage;
     public bool isDead;
 
+    PlayerStats playerStats;
+
     public bool IsPlayer()
     {
         return isPlayer;
+    }
+
+    public string[] AttackMovesAvailable()
+    {
+        return attacksAvailable;
+    }
+
+    /*public void TakeHPMeleeDamage(int meleeDamageToReceive)
+    {
+        currentHP -= meleeDamageToReceive;
+
+        if(currentHP < 0)
+        {
+            currentHP = 0;
+        }
+    }*/
+    
+    public void TakeHPDamage(int damageToReceive)
+    {
+        currentHP -= damageToReceive;
+
+        if(currentHP < 0)
+        {
+            currentHP = 0;
+        }
     }
 }

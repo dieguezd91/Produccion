@@ -98,13 +98,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 0
-  attacksAvailable: []
+  attacksAvailable:
+  - Ataque rango
   characterName: Patrol
   currentHP: 100
   maxHP: 100
   dexterity: 15
   strength: 5
   defence: 15
-  meleeWeaponDamage: 10
+  meleeWeaponDamage: 0
   rangeWeaponDamage: 25
   isDead: 0
