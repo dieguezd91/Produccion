@@ -51,8 +51,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemInfo:
-  - {fileID: 11400000, guid: da03d0168dacb6148973e13623316678, type: 2}
-  - {fileID: 11400000, guid: 8cb99a7b81b6485469a60f1f0efcc39c, type: 2}
+  - {fileID: 2883702999994761639, guid: db51b8d552338534498b0b81a3e06335, type: 3}
+  - {fileID: 5535137720794825954, guid: e1ddba5c1271b984da6c43be22c19719, type: 3}
+  - {fileID: 4148716458519559724, guid: 18fa4b966b5fcdc4ea2daa821b112a38, type: 3}
+  - {fileID: 6677260924725681817, guid: a1576b41e4f81f04a93cc966aec5b3db, type: 3}
+  - {fileID: 1651149948662077764, guid: 3983ed74911b8f14a9a157e2d63f6e5c, type: 3}
   storeItemTemplate: {fileID: 5729476418845997541, guid: a6d6218b9c00fd54aab732def696dda1, type: 3}
   totalCoinsText: {fileID: 0}
   playerInventory: {fileID: 0}

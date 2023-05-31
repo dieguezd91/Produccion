@@ -8,7 +8,8 @@ using UnityEngine.UI;
 public class Inventory : MonoBehaviour
 {
     public static Inventory instance;
-    private List<ItemsManager> itemsList;
+    public List<ItemsManager> itemsList;
+    public int credits;
 
     private void Start()
     {

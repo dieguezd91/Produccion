@@ -6,31 +6,31 @@ using UnityEngine.UI;
 
 public class TemplateStoreItem : MonoBehaviour
 {
-    //public Sprite icon;
-    //public TextMeshProUGUI priceTag;
-    //public TextMeshProUGUI objectName;
-    //public Button buyButton;
-    //int price;
-    //public ItemBase item;
-    //public Inventory playerInventory;
+    public Sprite icon;
+    public TextMeshProUGUI priceTag;
+    public TextMeshProUGUI objectName;
+    public Button buyButton;
+    int price;
+    public ItemsManager item;
+    public Inventory playerInventory;
 
 
-    //void Start()
-    //{
-    //    price = int.Parse(priceTag.text);
-    //}
+    void Start()
+    {
+        price = int.Parse(priceTag.text);
+    }
 
-    //void Update()
-    //{
-    //    if(price > playerInventory.credits)
-    //    {
-    //        buyButton.interactable = false;
-    //    }
-    //}
+    void Update()
+    {
+        if (price > playerInventory.credits)
+        {
+            buyButton.interactable = false;
+        }
+    }
 
-    //public void BuyItem()
-    //{
-    //    playerInventory.credits -= price;
-    //    playerInventory.AddItem(item);
-    //}
+    public void BuyItem()
+    {
+        playerInventory.credits -= price;
+        playerInventory.AddItems(item);
+    }
 }

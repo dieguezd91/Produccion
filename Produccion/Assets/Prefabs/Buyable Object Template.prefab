@@ -726,7 +726,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   icon: {fileID: 0}
-  image: {fileID: 5729476418015697333}
   priceTag: {fileID: 5729476418152378626}
   objectName: {fileID: 5729476417205146337}
   buyButton: {fileID: 5729476419255937174}

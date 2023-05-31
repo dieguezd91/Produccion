@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 1395730696270280857}
   - component: {fileID: 436710637867566002}
   - component: {fileID: 7705510061202412979}
-  - component: {fileID: 1190620380206878437}
   - component: {fileID: 1395730696270280838}
   - component: {fileID: 1117385375}
   - component: {fileID: 6575109909328544490}
@@ -134,18 +133,6 @@ MonoBehaviour:
   rangeDamage: 0
   equipedMeleeWeapon: {fileID: 0}
   equipedRangeWeapon: {fileID: 0}
---- !u!114 &1190620380206878437
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1395730696270280859}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1bb7837001a7e7d48a087d9cfddd892c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &1395730696270280838
 BoxCollider2D:
   m_ObjectHideFlags: 0
