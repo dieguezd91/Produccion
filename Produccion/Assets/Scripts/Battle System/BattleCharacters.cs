@@ -42,4 +42,20 @@ public class BattleCharacters : MonoBehaviour
             currentHP = 0;
         }
     }
+
+    public void UseItemInBattle(ItemsManager itemToUse)
+    {
+        if(itemToUse.itemType == ItemsManager.ItemType.Item)
+        {
+            if(itemToUse.affectType == ItemsManager.AffectType.HP)
+            {
+                AddHP(itemToUse.amountOfAffect);
+            }            
+        }
+    }
+
+    private void AddHP(int amountOfAffect)
+    {
+        currentHP += amountOfAffect;
+    }
 }

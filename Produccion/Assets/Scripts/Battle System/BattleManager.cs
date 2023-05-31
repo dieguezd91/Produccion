@@ -26,6 +26,18 @@ public class BattleManager : MonoBehaviour
     [SerializeField] Text[] playersNameText;
     [SerializeField] Slider[] playerHealthSlider;
 
+    [SerializeField] float chanceToRunAway = 0.5f;
+    public GameObject itemsToUseMenu;
+    [SerializeField] ItemsManager selectedItem;
+    [SerializeField] GameObject itemSlotContainer;
+    [SerializeField] Transform itemSlotContainerParent;
+    [SerializeField] Text itemName, itemDescription;
+
+    [SerializeField] GameObject characterChoicePanel;
+    [SerializeField] Text[] playerChoiceName;
+
+    [SerializeField] public int amountOfXp = 100;
+
     void Start()
     {
         instance = this;
@@ -194,7 +206,7 @@ public class BattleManager : MonoBehaviour
         if(allEnemiesAreDead || allPlayersAreDead)
         {
             if (allEnemiesAreDead)
-                print("won");
+                PlayerStats.instance.AddXP(amountOfXp);
             else if (allPlayersAreDead)
                 print("lost");
 
@@ -331,4 +343,93 @@ public class BattleManager : MonoBehaviour
 
         NextTurn();
     }
+
+    public void RunAway()
+    {
+        if(Random.value > chanceToRunAway)
+        {
+            //Hay 50% de chances de no poder escapar y perdes el turno
+            isBattleActive = false;
+            battleScene.SetActive(false);
+        }
+        else
+        {
+            NextTurn();
+        }
+    }
+
+    public void UpdateItemsInInventory()
+    {
+        itemsToUseMenu.SetActive(true);
+
+        foreach (Transform itemSlot in itemSlotContainerParent)
+        {
+            Destroy(itemSlot.gameObject);
+        }
+
+        foreach (ItemsManager item in Inventory.instance.GetItemsList())
+        {
+            RectTransform itemSlot = Instantiate(itemSlotContainer, itemSlotContainerParent).GetComponent<RectTransform>();
+
+            Image itemImage = itemSlot.Find("Item image").GetComponent<Image>();
+            itemImage.sprite = item.itemsImage;
+
+            Text itemsAmountText = itemSlot.Find("Amount Text").GetComponent<Text>();
+            if (item.amount > 1)
+                itemsAmountText.text = item.amount.ToString();
+            else
+                itemsAmountText.text = "";
+
+            itemSlot.GetComponent<ItemButton>().itemOnButton = item;
+        }
+    }
+
+    public void SelectedItemToUse(ItemsManager itemToUse)
+    {
+        selectedItem = itemToUse;
+        itemName.text = itemToUse.itemName;
+        itemDescription.text = itemToUse.itemDescription;
+    }
+
+    public void OpenCharacterMenu()
+    {
+        if(selectedItem)
+        {
+            characterChoicePanel.SetActive(true);
+            for(int i = 0; i < activeCharacters.Count; i++)
+            {
+                if(activeCharacters[i].IsPlayer())
+                {
+                    PlayerStats activePlayer = GameManager.instance.GetPlayerStats()[i];
+                    playerChoiceName[i].text = activePlayer.playerName;
+
+                    bool activePlayerInHierarchy = activePlayer.gameObject.activeInHierarchy;
+                    playerChoiceName[i].transform.parent.gameObject.SetActive(activePlayerInHierarchy);
+                }
+            }            
+        }
+        else
+        {
+            print("no item selected");
+        }
+    }
+
+    public void UseItemButton(int selectedPlayer)
+    {
+        activeCharacters[selectedPlayer].UseItemInBattle(selectedItem);
+        Inventory.instance.RemoveItem(selectedItem);
+
+        UpdatePlayerStats();
+        CloseCharacterChoicePanel();
+        UpdateItemsInInventory();
+        itemsToUseMenu.SetActive(false);
+        NextTurn();
+    }
+
+    public void CloseCharacterChoicePanel()
+    {
+        characterChoicePanel.SetActive(false);
+        itemsToUseMenu.SetActive(false);
+    }
 }
+

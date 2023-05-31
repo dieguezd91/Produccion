@@ -8,10 +8,15 @@ public class ItemButton : MonoBehaviour
     public ItemsManager itemOnButton;
     
     public void Press()
-    {
+    {        
         MenuManager.instance.itemName.text = itemOnButton.itemName;
         MenuManager.instance.itemDescription.text = itemOnButton.itemDescription;
 
         MenuManager.instance.activeItem = itemOnButton;
+
+        if(BattleManager.instance.itemsToUseMenu.activeInHierarchy)
+        {
+            BattleManager.instance.SelectedItemToUse(itemOnButton);
+        }
     }
 }
