@@ -33,6 +33,6 @@ public class EventScript : MonoBehaviour
     private void Fight(object sender,EventArgs e)
     {
         Debug.Log("Fight!");
-        //battleManager.StartBattle(enemies);
+        battleManager.StartBattle(enemies);
     }
 }
