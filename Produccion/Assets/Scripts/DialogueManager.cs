@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,17 +7,17 @@ using TMPro;
 public class DialogueManager : MonoBehaviour
 {
     public TextMeshProUGUI dialogueText;
-    public GameObject XPBar;
 
     public string[] lines;
 
-    public float textSpeed = 0.1f;
+    public float textSpeed = 0.05f;
 
     int index;
 
-    void Start()
+    public event EventHandler OnDialogueEnd;
+
+    public void Start()
     {
-        if(XPBar != null) XPBar.SetActive(false);
         dialogueText.text = string.Empty;
         StartDialogue();
     }
@@ -63,8 +64,8 @@ public class DialogueManager : MonoBehaviour
         }
         else
         {
+            OnDialogueEnd?.Invoke(this, EventArgs.Empty);
             gameObject.SetActive(false);
-            if (XPBar != null) XPBar.SetActive(true);
         }
     }
 }
