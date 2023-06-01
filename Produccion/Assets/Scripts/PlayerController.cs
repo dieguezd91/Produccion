@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour
     public float moveSpeed;
     public bool isMoving;
     private Vector2 input;
+    private Rigidbody2D rb;
 
     private Animator animator;
 
@@ -28,33 +29,41 @@ public class PlayerController : MonoBehaviour
         animator = GetComponent<Animator>();
     }
 
+    private void Start()
+    {
+        rb = GetComponent<Rigidbody2D>();
+    }
+
     public void Update()
     {
         // MOVIMIENTO
-        if(!isMoving)
+        input.x = Input.GetAxisRaw("Horizontal");
+        input.y = Input.GetAxisRaw("Vertical");
+        
+        if(input != Vector2.zero)
         {
-            input.x = Input.GetAxisRaw("Horizontal");
-            input.y = Input.GetAxisRaw("Vertical");
+            rb.MovePosition(new Vector2(transform.position.x + input.x * moveSpeed * Time.deltaTime,
+                                            transform.position.y + input.y * moveSpeed * Time.deltaTime));
+        }
+        else
+            isMoving = false;
+
+
+        if (!isMoving)
+        {
 
             //remueve el movimiento en diagonal
             //if (input.x != 0) input.y = 0;
 
-            if(input != Vector2.zero)
-            {
-                animator.SetFloat("moveX", input.x);
+            //var targetPos = transform.position;
+            //targetPos.x += input.x;
+            //targetPos.y += input.y;
+            //StartCoroutine(Move(targetPos));
+
+            animator.SetFloat("moveX", input.x);
                 animator.SetFloat("moveY", input.y);
-
-                var targetPos = transform.position;
-                targetPos.x += input.x;
-                targetPos.y += input.y;
-
-                StartCoroutine(Move(targetPos));
-            }
         }
-
         animator.SetBool("isMoving", isMoving);
-
-        
     }
 
     IEnumerator Move(Vector3 targetPos)
