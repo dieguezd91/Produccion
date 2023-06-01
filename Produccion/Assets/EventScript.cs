@@ -9,7 +9,7 @@ public class EventScript : MonoBehaviour
     [SerializeField] private DialogueManager dialogueManagerInstance;
     [SerializeField] private BattleManager battleManager;
 
-    private string[] enemies = { "Thug" };
+    private string[] enemies = { "Negro" };
 
     private void Start()
     {

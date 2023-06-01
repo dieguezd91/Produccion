@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1756301149484005943}
   - component: {fileID: 8299695002426701587}
   m_Layer: 0
-  m_Name: Thug
+  m_Name: Negro
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -74,7 +74,7 @@ SpriteRenderer:
   m_SortingLayerID: 715634155
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: ed672587f204e9647a9819a074759abf, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3ca3b84521097ea4e8a492261176d196, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -99,7 +99,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlayer: 0
   attacksAvailable: []
-  characterName: Thug
+  characterName: Negro
   currentHP: 100
   maxHP: 100
   dexterity: 25
