@@ -283,6 +283,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueText: {fileID: 7720495034954173671}
   player: {fileID: 0}
+  disableAfter: 1
   collisionEvent: {fileID: 0}
   lines:
   - "Robert Smith: S\xEDrvame otra copa."

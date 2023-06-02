@@ -27,6 +27,8 @@ public class EventScript : MonoBehaviour
             
             if (lockDoor)
                 door.SetActive(false);
+
+            GameManager.instance.tutorial = false;
         }
     }
 

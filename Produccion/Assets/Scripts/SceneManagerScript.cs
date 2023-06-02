@@ -6,10 +6,13 @@ using UnityEngine.SceneManagement;
 public class SceneManagerScript : MonoBehaviour
 {
     public static SceneManagerScript instance;
+    //public string scene;
+
+    //public Vector2 spawnpoint;
 
     private void Start()
     {
-        if(instance != null && instance != this)
+        if (instance != null && instance != this)
         {
             Destroy(this.gameObject);
         }
@@ -18,9 +21,32 @@ public class SceneManagerScript : MonoBehaviour
             instance = this;
         }
     }
-    public void LoadScene(string scene)
+
+    private void Update()
     {
-        SceneManager.LoadScene(scene);
+        //scene = SceneManager.GetActiveScene().name;
+        //Debug.Log(scene);
+
+        //switch (scene)
+        //{
+        //    case "Bar":
+        //        if (GameManager.instance.tutorial)
+        //            spawnpoint = new Vector2(13.4f, 0.94f);
+        //        else if (!GameManager.instance.tutorial)
+        //            spawnpoint = new Vector2(-0.15f, 0.33f);
+        //        break;
+        //    case "Garage":
+        //        spawnpoint = new Vector2(-6.83f, 0.58f);
+        //        break;
+        //    case "Ciudad":
+        //        spawnpoint = new Vector2(-6.98f, 1.75f);
+        //        break;
+        //}
+    }
+    public void LoadScene(string newScene)
+    {
+        SceneManager.LoadScene(newScene);
+        //GameManager.instance.player.transform.position = spawnpoint;
     }
 
     public void ExitGame()
