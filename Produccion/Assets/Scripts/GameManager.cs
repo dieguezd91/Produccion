@@ -11,7 +11,7 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] PlayerStats[] playerStats;
 
-    void Start()
+    void Awake()
     {
         if (instance != null && instance != this)
         {
@@ -36,5 +36,6 @@ public class GameManager : MonoBehaviour
     public void RespawnPlayer()
     {
         SceneManagerScript.instance.LoadScene("Garage");
+        PlayerStats.instance.currentHP = PlayerStats.instance.maxHP;
     }
 }

@@ -13,7 +13,16 @@ public class Inventory : MonoBehaviour
     public bool hasRookiePistol;
     private void Start()
     {
-        instance = this;
+        if (instance != null && instance != this)
+        {
+            Destroy(this.gameObject);
+        }
+        else
+        {
+            instance = this;
+        }
+        DontDestroyOnLoad(gameObject);
+
         itemsList = new List<ItemsManager>();
     }
 

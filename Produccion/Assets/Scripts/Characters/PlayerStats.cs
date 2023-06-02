@@ -34,7 +34,15 @@ public class PlayerStats : MonoBehaviour
 
     private void Start()
     {
-        instance = this;
+        if (instance != null && instance != this)
+        {
+            Destroy(this.gameObject);
+        }
+        else
+        {
+            instance = this;
+        }
+        DontDestroyOnLoad(gameObject);
 
         xpForNextLevel = new int[maxLevel];
         xpForNextLevel[1] = baseLevelXP;

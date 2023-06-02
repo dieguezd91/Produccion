@@ -31,9 +31,17 @@ public class MenuManager : MonoBehaviour
     [SerializeField] GameObject characterChoicePanel;
     [SerializeField] Text[] itemsCharacterChoiceNames;
 
-    private void Start()
+    private void Awake()
     {
-        instance = this;
+        if (instance != null && instance != this)
+        {
+            Destroy(this.gameObject);
+        }
+        else
+        {
+            instance = this;
+        }
+        DontDestroyOnLoad(gameObject);
     }
 
     private void Update()

@@ -39,7 +39,7 @@ public class BattleManager : MonoBehaviour
 
     private int amountOfXp = 99;
 
-    void Start()
+    void Awake()
     {
         if (instance != null && instance != this)
         {
