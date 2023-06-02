@@ -24,6 +24,7 @@ public class DialogueManager : MonoBehaviour
 
     public void Start()
     {
+        player = GameManager.instance.player.GetComponent<PlayerController>();
         dialogueText.text = string.Empty;
         StartDialogue();
         lastSpeed = player.moveSpeed;

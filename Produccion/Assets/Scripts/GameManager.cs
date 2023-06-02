@@ -28,18 +28,6 @@ public class GameManager : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player");    
     }
 
-    void Update()
-    {
-        if(battleIsActive)
-        {
-            //Player.instance.deactivateMovement = true;
-        }
-        else
-        {
-            //Player.instance.deactivateMovement = false;
-        }
-    }
-
     public PlayerStats[] GetPlayerStats()
     {
         return playerStats;

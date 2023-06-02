@@ -9,7 +9,6 @@ public class SpawnpointScript : MonoBehaviour
 
     void Start()
     {
-        //GameManager.instance.player.transform.position = spawnpoint.transform.position;
         player = GameManager.instance.player;
         Spawn();
     }

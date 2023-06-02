@@ -6,9 +6,9 @@ using UnityEngine.SceneManagement;
 public class SceneManagerScript : MonoBehaviour
 {
     public static SceneManagerScript instance;
-    //public string scene;
+    public string scene;
 
-    //public Vector2 spawnpoint;
+    public Vector2 spawnpoint;
 
     private void Start()
     {
@@ -22,10 +22,10 @@ public class SceneManagerScript : MonoBehaviour
         }
     }
 
-    private void Update()
+    public void Update()
     {
-        //scene = SceneManager.GetActiveScene().name;
-        //Debug.Log(scene);
+        scene = SceneManager.GetActiveScene().name;
+        Debug.Log(scene);
 
         //switch (scene)
         //{
@@ -42,11 +42,11 @@ public class SceneManagerScript : MonoBehaviour
         //        spawnpoint = new Vector2(-6.98f, 1.75f);
         //        break;
         //}
+        //SpawnpointScript.instance.Spawn(spawnpoint);
     }
     public void LoadScene(string newScene)
     {
         SceneManager.LoadScene(newScene);
-        //GameManager.instance.player.transform.position = spawnpoint;
     }
 
     public void ExitGame()
