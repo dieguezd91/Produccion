@@ -39,33 +39,34 @@ public class PlayerController : MonoBehaviour
         // MOVIMIENTO
         input.x = Input.GetAxisRaw("Horizontal");
         input.y = Input.GetAxisRaw("Vertical");
-
-        input = new Vector2(input.x, input.y).normalized;
-
-        animator.SetFloat("Horizontal", input.x);
-        animator.SetFloat("Vertical", input.y);
-        animator.SetFloat("Speed", input.sqrMagnitude);
-
-        /*if(input != Vector2.zero)
+        
+        if(input != Vector2.zero)
         {
             rb.MovePosition(new Vector2(transform.position.x + input.x * moveSpeed * Time.deltaTime,
-            transform.position.y + input.y * moveSpeed * Time.deltaTime));
-            isMoving = true;
-            animator.SetBool("isMoving", isMoving);
+                                            transform.position.y + input.y * moveSpeed * Time.deltaTime));
         }
         else
-        { 
-            animator.SetFloat("moveX", input.x);
-            animator.SetFloat("moveY", input.y);        
             isMoving = false;
-        }*/
+
+
+        if (!isMoving)
+        {
+
+            //remueve el movimiento en diagonal
+            //if (input.x != 0) input.y = 0;
+
+            //var targetPos = transform.position;
+            //targetPos.x += input.x;
+            //targetPos.y += input.y;
+            //StartCoroutine(Move(targetPos));
+
+            animator.SetFloat("moveX", input.x);
+                animator.SetFloat("moveY", input.y);
+        }
+        animator.SetBool("isMoving", isMoving);
     }
 
-    private void FixedUpdate()
-    {
-        rb.MovePosition(rb.position + input * moveSpeed * Time.fixedDeltaTime);
-    }
-    /*IEnumerator Move(Vector3 targetPos)
+    IEnumerator Move(Vector3 targetPos)
     {
         isMoving = true;
 
@@ -77,7 +78,7 @@ public class PlayerController : MonoBehaviour
         transform.position = targetPos;
 
         isMoving = false;
-    }*/
+    }
 
     //private void OnTriggerEnter2D(Collider2D collision)
     //{

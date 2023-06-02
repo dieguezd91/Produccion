@@ -170,6 +170,10 @@ PrefabInstance:
       propertyPath: m_Text
       value: 'Fuerza:'
       objectReference: {fileID: 0}
+    - target: {fileID: 259557128097694241, guid: 0a07d4dab86f6bf4d9e7a7029383c7fe, type: 3}
+      propertyPath: m_Name
+      value: Load
+      objectReference: {fileID: 0}
     - target: {fileID: 374122886575002231, guid: 0a07d4dab86f6bf4d9e7a7029383c7fe, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -621,6 +625,34 @@ PrefabInstance:
     - target: {fileID: 5554131806030606504, guid: 0a07d4dab86f6bf4d9e7a7029383c7fe, type: 3}
       propertyPath: m_Text
       value: Estadisticas
+      objectReference: {fileID: 0}
+    - target: {fileID: 5658837928778002167, guid: 0a07d4dab86f6bf4d9e7a7029383c7fe, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5658837928778002167, guid: 0a07d4dab86f6bf4d9e7a7029383c7fe, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5658837928778002167, guid: 0a07d4dab86f6bf4d9e7a7029383c7fe, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 110914571886354093, guid: f2a701de30b0ebf46a1762f6af235349, type: 3}
+    - target: {fileID: 5658837928778002167, guid: 0a07d4dab86f6bf4d9e7a7029383c7fe, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5658837928778002167, guid: 0a07d4dab86f6bf4d9e7a7029383c7fe, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LoadData
+      objectReference: {fileID: 0}
+    - target: {fileID: 5658837928778002167, guid: 0a07d4dab86f6bf4d9e7a7029383c7fe, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: gameDataController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5658837928778002167, guid: 0a07d4dab86f6bf4d9e7a7029383c7fe, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 5897495120165936494, guid: 0a07d4dab86f6bf4d9e7a7029383c7fe, type: 3}
       propertyPath: m_AnchorMax.y
