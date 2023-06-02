@@ -21,11 +21,11 @@ public class CameraFollow : MonoBehaviour
     public bool encendida = true;
 
     // Start is called before the first frame update
-    void Awaker()
+    void Awake()
     {
-        posX = target_poseX + derechaMax;
-        posY = target_poseY + alturaMin;
-        transform.position = Vector3.Lerp(transform.position, new Vector3(posX, posY, -1), 1);
+        //posX = target_poseX + derechaMax;
+        //posY = target_poseY + alturaMin;
+        //transform.position = Vector3.Lerp(transform.position, new Vector3(posX, posY, -1), 1);
     }
 
     // Update is called once per frame

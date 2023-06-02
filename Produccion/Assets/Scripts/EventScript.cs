@@ -12,6 +12,7 @@ public class EventScript : MonoBehaviour
     public bool fightAfter;
     public string[] enemies;
     public bool lockDoor;
+    public bool onlyOnce;
     public GameObject door;
 
     private void Start()
@@ -24,7 +25,6 @@ public class EventScript : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             dialogueManager.SetActive(true);
-            
             if (lockDoor)
                 door.SetActive(false);
 

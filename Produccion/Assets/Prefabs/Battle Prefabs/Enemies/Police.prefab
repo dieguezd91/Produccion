@@ -101,11 +101,11 @@ MonoBehaviour:
   attacksAvailable:
   - Ataque rango
   characterName: Police
-  currentHP: 100
+  currentHP: 80
   maxHP: 100
-  dexterity: 15
+  dexterity: 5
   strength: 5
-  defence: 10
+  defence: 5
   meleeWeaponDamage: 10
   rangeWeaponDamage: 25
   isDead: 0

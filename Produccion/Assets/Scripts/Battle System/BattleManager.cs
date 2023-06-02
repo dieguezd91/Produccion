@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,6 +7,7 @@ using UnityEngine.UI;
 public class BattleManager : MonoBehaviour
 {
     public static BattleManager instance;
+    PlayerController playerController;
     public bool isBattleActive;
     bool inventoryIsOpen;
 
@@ -52,6 +54,10 @@ public class BattleManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
 
+    void Start()
+    {
+        playerController = GameManager.instance.player.GetComponent<PlayerController>();
+    }
     void Update()
     {
         /*if (Input.GetKeyDown(KeyCode.B))
@@ -84,6 +90,14 @@ public class BattleManager : MonoBehaviour
         }
     }
 
+    void RemoveElement<T>(ref T[] arr, int index)
+    {
+        for(int i = index; i < arr.Length - 1; i++)
+        {
+            arr[i] = arr[i + 1];
+        }
+        Array.Resize(ref arr, arr.Length - 1);
+    }
     public void StartBattle(string[] enemiesToSpawn)
     {
         if (!isBattleActive)
@@ -105,6 +119,23 @@ public class BattleManager : MonoBehaviour
         {
             if (enemiesToSpawn[i] != "")
             {
+                for (int j = 0; j < enemiesPrefabs.Length; j++)
+                {
+                    if (enemiesPrefabs[j].characterName == enemiesToSpawn[i])
+                    {
+                        BattleCharacters newEnemy = Instantiate(
+                            enemiesPrefabs[j],
+                            enemiesPositions[i].position,
+                            enemiesPositions[i].rotation,
+                            enemiesPositions[i]
+                            );
+                        activeCharacters.Add(newEnemy);
+                    }
+                }
+            }
+            else
+            {
+                activeCharacters.Clear();
                 for (int j = 0; j < enemiesPrefabs.Length; j++)
                 {
                     if (enemiesPrefabs[j].characterName == enemiesToSpawn[i])
@@ -188,7 +219,7 @@ public class BattleManager : MonoBehaviour
         transform.position.z
         );
         
-        battleScene.SetActive(true);    
+        battleScene.SetActive(true);   
     }
 
     private void NextTurn()
@@ -283,9 +314,9 @@ public class BattleManager : MonoBehaviour
             }
         }
 
-        int selectedPlayerToAttack = players[Random.Range(0, players.Count)];
+        int selectedPlayerToAttack = players[UnityEngine.Random.Range(0, players.Count)];
 
-        int selectedAttack = Random.Range(0, activeCharacters[currentTurn].AttackMovesAvailable().Length);
+        int selectedAttack = UnityEngine.Random.Range(0, activeCharacters[currentTurn].AttackMovesAvailable().Length);
 
         /*for(int i = 0; i < battleMovesList.Length; i++)
         {
@@ -314,11 +345,11 @@ public class BattleManager : MonoBehaviour
         float defenceAmount = activeCharacters[selectedCharacterToAttack].defence; //ACA SE PUEDE IMPLEMENTAR ALGO QUE SUME DEFENSA COMO UN CHALECO ANTIBALAS 
 
         //float meleeDamageAmount = (attackMelee / defenceAmount) * movePower * Random.Range(0.9f, 1.1f); 
-        float damageAmount = (attackPower - defenceAmount) * movePower * Random.Range(0.9f, 1.1f);
+        float damageAmount = (attackPower - defenceAmount) * movePower * UnityEngine.Random.Range(0.9f, 1.1f);
         //int meleeDamageToGive = (int)meleeDamageAmount;
         int rangeDamageToGive = (int)damageAmount;
 
-        //iguala el valor del daño a critico si es necesario
+        //iguala el valor del daï¿½o a critico si es necesario
         rangeDamageToGive = CalculateCritical(rangeDamageToGive);
 
         //Debug.Log(activeCharacters[currentTurn].characterName + " use melee attack and cause " + (int)meleeDamageAmount + "(" + meleeDamageToGive + ") to " + activeCharacters[selectedCharacterToAttack]);
@@ -330,13 +361,13 @@ public class BattleManager : MonoBehaviour
 
     private int CalculateCritical(int damageToGive)
     {
-        if(Random.value <= 0.1f)// si es critico multiplica x2
+        if(UnityEngine.Random.value <= 0.1f)// si es critico multiplica x2
         {
             Debug.Log("Critical hit! instead of " + damageToGive + " points. " + (damageToGive * 2));
 
             return (damageToGive * 2);
         }
-        // sino hace el daño normal
+        // sino hace el daï¿½o normal
         return damageToGive;
     }
 
@@ -379,7 +410,7 @@ public class BattleManager : MonoBehaviour
 
     public void RunAway()
     {
-        if(Random.value > chanceToRunAway)
+        if(UnityEngine.Random.value > chanceToRunAway)
         {
             //Hay 50% de chances de no poder escapar y perdes el turno
             isBattleActive = false;

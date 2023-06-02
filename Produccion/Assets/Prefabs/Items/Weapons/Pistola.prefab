@@ -106,8 +106,8 @@ MonoBehaviour:
   itemsImage: {fileID: 21300000, guid: 6d0143c448b1ec1428b558fd8e137a3b, type: 3}
   amountOfAffect: 0
   affectType: 0
-  weaponDexterity: 15
-  weaponStrength: 0
+  weaponDexterity: 100
+  weaponStrength: 100
   isStackable: 0
   amount: 1
 --- !u!61 &1651149948662077766
