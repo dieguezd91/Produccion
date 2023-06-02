@@ -589,6 +589,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1852283237}
     - target: {fileID: 7720495035560547093, guid: 6e2bae30def3cd8419d4023646a53b17, type: 3}
+      propertyPath: disableAfter
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7720495035560547093, guid: 6e2bae30def3cd8419d4023646a53b17, type: 3}
       propertyPath: collisionEvent
       value: 
       objectReference: {fileID: 1063143030}
@@ -2976,7 +2980,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 548820072042954802, guid: 8c9691819bc588344a8644e75f59021e, type: 3}
       propertyPath: orthographic size
-      value: 7.5
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 548820072042954957, guid: 8c9691819bc588344a8644e75f59021e, type: 3}
       propertyPath: m_RootOrder
@@ -2984,11 +2988,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 548820072042954957, guid: 8c9691819bc588344a8644e75f59021e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.0299978
+      value: 7.1054
       objectReference: {fileID: 0}
     - target: {fileID: 548820072042954957, guid: 8c9691819bc588344a8644e75f59021e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.572998
+      value: -1.0891736
       objectReference: {fileID: 0}
     - target: {fileID: 548820072042954957, guid: 8c9691819bc588344a8644e75f59021e, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5048,6 +5052,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1053081817}
   - component: {fileID: 1053081816}
+  - component: {fileID: 1053081818}
   m_Layer: 6
   m_Name: sillon Vertical frente
   m_TagString: Untagged
@@ -5122,6 +5127,32 @@ Transform:
   m_Father: {fileID: 997475862}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1053081818
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1053081815}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.9375, y: 1.9375}
+    newSize: {x: 1.9375, y: 1.9375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.9375, y: 1.9375}
+  m_EdgeRadius: 0
 --- !u!1 &1063143030 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2976986416159150030, guid: 5523c2a8f36db97439918291f7ec9ae1, type: 3}
@@ -8873,10 +8904,10 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 16.95386, y: 5.1292267}
-      - {x: -11.158824, y: 5.0990624}
-      - {x: -11.126003, y: -11.068874}
-      - {x: 16.926666, y: -11.101725}
+    - - {x: 15.9950285, y: 4.0059776}
+      - {x: -10.004785, y: 4.0041533}
+      - {x: -10.002585, y: -10.005045}
+      - {x: 15.994003, y: -9.994029}
 --- !u!4 &1832235589
 Transform:
   m_ObjectHideFlags: 0
@@ -22742,7 +22773,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ad980451443d70438faac0bc6c235a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_TrackedObjectOffset: {x: -10.220002, y: -3.8199985, z: 0}
+  m_TrackedObjectOffset: {x: 5.1399994, y: -2.3370008, z: 0}
   m_LookaheadTime: 0
   m_LookaheadSmoothing: 0
   m_LookaheadIgnoreY: 0
@@ -22840,7 +22871,7 @@ MonoBehaviour:
   m_Follow: {fileID: 218791568}
   m_Lens:
     FieldOfView: 60
-    OrthographicSize: 7.5
+    OrthographicSize: 5
     NearClipPlane: 0.3
     FarClipPlane: 1000
     Dutch: 0
@@ -22912,7 +22943,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7523837970677592773}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.0299978, y: -2.572998, z: -10}
+  m_LocalPosition: {x: 18.39, y: -1.0900006, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -22975,6 +23006,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1852283237}
+    - target: {fileID: 7720495035560547093, guid: 6e2bae30def3cd8419d4023646a53b17, type: 3}
+      propertyPath: disableAfter
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7720495035560547093, guid: 6e2bae30def3cd8419d4023646a53b17, type: 3}
       propertyPath: collisionEvent
       value: 
