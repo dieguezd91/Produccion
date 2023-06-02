@@ -8,10 +8,11 @@ public class DoorScript : MonoBehaviour
 {
     public string place;
     public bool pjNearby;
+    public LayerMask layer;
 
     void Update()
     {
-        pjNearby = Physics2D.OverlapBox(transform.position, transform.localScale, 0f).CompareTag("Player");
+        pjNearby = Physics2D.OverlapBox(transform.position, transform.localScale, 0f, layer);
 
         if (pjNearby)
         {

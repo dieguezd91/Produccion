@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    //public Transform playerSpawnPoint;
     public GameObject player;
     public static GameManager instance;
     public bool battleIsActive;
+    public bool tutorial;
 
     [SerializeField] PlayerStats[] playerStats;
 
@@ -25,8 +25,7 @@ public class GameManager : MonoBehaviour
 
         playerStats = FindObjectsOfType<PlayerStats>();
 
-        player = GameObject.FindGameObjectWithTag("Player");
-        //player.transform.position = playerSpawnPoint.position;
+        player = GameObject.FindGameObjectWithTag("Player");    
     }
 
     void Update()

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static Cinemachine.DocumentationSortingAttribute;
 
 public class PlayerStats : MonoBehaviour
 {
@@ -14,6 +15,7 @@ public class PlayerStats : MonoBehaviour
     [SerializeField] public int currentXP;
     [SerializeField] public int[] xpForNextLevel;
     [SerializeField] public int baseLevelXP = 100;
+    public GameObject levelUp;
 
     [SerializeField] public int maxHP = 100;
     [SerializeField] public int currentHP;
@@ -58,10 +60,7 @@ public class PlayerStats : MonoBehaviour
         Debug.Log(amountOfXp);
         currentXP += amountOfXp;
         if(currentXP > xpForNextLevel[playerLevel])
-        {
-            currentXP -= xpForNextLevel[playerLevel];
-            playerLevel++;
-        }
+            LevelUp();
 
         if(playerLevel % 2 == 0)
         {
@@ -73,6 +72,14 @@ public class PlayerStats : MonoBehaviour
             defence++;
         }
         Debug.Log(currentXP);
+    }
+
+    void LevelUp()
+    {
+        currentXP -= xpForNextLevel[playerLevel];
+        playerLevel++;
+        levelUp.SetActive(true);
+        StartCoroutine(Wait());
     }
 
     public void AddHP(int amountHPToAdd)
@@ -99,4 +106,9 @@ public class PlayerStats : MonoBehaviour
         rangeDamage = equipedRangeWeapon.weaponDexterity;
     }
         
+    IEnumerator Wait()
+    {
+        yield return new WaitForSeconds(2f);
+        levelUp.SetActive(false);
+    }
 }

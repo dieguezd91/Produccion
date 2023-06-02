@@ -8,6 +8,7 @@ public class MenuManager : MonoBehaviour
     [SerializeField] GameObject menu;
     [SerializeField] GameObject[] statsButtons;
     public static MenuManager instance;
+    public Inventory inventory;
 
     private PlayerStats[] playerStats;
     [SerializeField] Text[] nameText, hpText, levelText, xpText, currentXPText;
@@ -15,7 +16,7 @@ public class MenuManager : MonoBehaviour
     [SerializeField] Image[] characterImage;
     [SerializeField] GameObject[] characterPanel;
 
-    [SerializeField] Text statName, statHP, statDex, statStr, statDef; 
+    [SerializeField] Text statName, statCredits, statHP, statDex, statStr, statDef; 
     [SerializeField] Text statEquipedMeleeWeapon, statEquipedRangeWeapon, statMeleeWeaponDamage, statRangeWeaponDamage;
 
     [SerializeField] Image characterStatImage;
@@ -87,6 +88,7 @@ public class MenuManager : MonoBehaviour
         PlayerStats playerSelected = playerStats[playerSelectedNumber];
 
         statName.text = playerSelected.playerName;
+        statCredits.text = inventory.credits.ToString();
 
         statHP.text = playerSelected.currentHP.ToString() + "/" + playerSelected.maxHP;
 
