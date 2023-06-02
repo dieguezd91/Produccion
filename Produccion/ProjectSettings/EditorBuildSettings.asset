@@ -11,10 +11,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Bar.unity
     guid: 90fffb137326db74db57adbd6b783a93
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Garage.unity
     guid: e2eb72e90da4a9a4b92807b759d9afa3
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Ciudad.unity
     guid: 7580d19cad76a514e99d8e309bd0b139
   - enabled: 0
