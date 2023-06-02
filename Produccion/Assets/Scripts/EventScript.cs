@@ -9,30 +9,32 @@ public class EventScript : MonoBehaviour
     [SerializeField] private DialogueManager dialogueManagerInstance;
     [SerializeField] private BattleManager battleManager;
 
-    private string[] enemies = { "Negro" };
+    public bool fightAfter;
+    public string[] enemies;
+    public bool lockDoor;
+    public GameObject door;
 
     private void Start()
     {
         dialogueManagerInstance.OnDialogueEnd += Fight;
     }
-    private void Update()
-    {
-        if(Input.GetKeyDown(KeyCode.Space)) 
-        {
-            dialogueManager.SetActive(true);
-        }
-    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
         {
             dialogueManager.SetActive(true);
+            
+            if (lockDoor)
+                door.SetActive(false);
         }
     }
 
     private void Fight(object sender,EventArgs e)
     {
-        Debug.Log("Fight!");
-        battleManager.StartBattle(enemies);
+        if(fightAfter == true)
+        {
+            battleManager.StartBattle(enemies);
+        }
     }
 }

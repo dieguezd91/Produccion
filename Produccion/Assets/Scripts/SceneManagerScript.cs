@@ -5,7 +5,20 @@ using UnityEngine.SceneManagement;
 
 public class SceneManagerScript : MonoBehaviour
 {
-    public void LoadScene(int scene)
+    public static SceneManagerScript instance;
+
+    private void Start()
+    {
+        if(instance != null && instance != this)
+        {
+            Destroy(this.gameObject);
+        }
+        else
+        {
+            instance = this;
+        }
+    }
+    public void LoadScene(string scene)
     {
         SceneManager.LoadScene(scene);
     }
