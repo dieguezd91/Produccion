@@ -8442,6 +8442,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -125
       objectReference: {fileID: 0}
+    - target: {fileID: 8950019174119425279, guid: df092f85b3317ad4f8029bb6b3dea30c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: df092f85b3317ad4f8029bb6b3dea30c, type: 3}
 --- !u!1001 &445988666
@@ -9417,7 +9421,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 27787649106789280, guid: f73f40a194348d54c8614455e88432a8, type: 3}
       propertyPath: place
-      value: Bar
+      value: Ciudad
       objectReference: {fileID: 0}
     - target: {fileID: 1612909640611839299, guid: f73f40a194348d54c8614455e88432a8, type: 3}
       propertyPath: m_Name
