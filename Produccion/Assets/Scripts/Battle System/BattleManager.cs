@@ -233,7 +233,6 @@ public class BattleManager : MonoBehaviour
             {
                 print("Lost");
                 ExportPlayerStats(0);
-                GameManager.instance.RespawnPlayer();
             }
 
             battleScene.SetActive(false);

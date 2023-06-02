@@ -45,9 +45,4 @@ public class GameManager : MonoBehaviour
     {
         return playerStats;
     }
-
-    public void RespawnPlayer()
-    {
-        SceneManagerScript.instance.LoadScene("Garage");
-    }
 }

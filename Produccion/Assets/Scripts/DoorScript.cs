@@ -9,19 +9,21 @@ public class DoorScript : MonoBehaviour
 {
     public string place;
     public bool pjNearby;
+    public LayerMask Player;
 
     void Update()
     {
-        pjNearby = Physics2D.OverlapBox(transform.position, transform.localScale, 0f).CompareTag("Player");
+        pjNearby = Physics2D.OverlapBox(new Vector2(transform.position.x, transform.position.y - 1.05f), new Vector2(1f, 0.5f), 0f);
+        Debug.Log(pjNearby);
 
-        if (pjNearby)
+        if (pjNearby && Input.GetKeyDown(KeyCode.Space))
         {
-            SceneManagerScript.instance.LoadScene(place);
+            SceneManager.LoadScene(place);
         }
     }
 
     void OnDrawGizmos()
     {
-        Gizmos.DrawCube(transform.position, transform.localScale);
+        Gizmos.DrawCube(new Vector2(transform.position.x, transform.position.y - 1.05f), new Vector2(1f, 0.5f));
     }
 }

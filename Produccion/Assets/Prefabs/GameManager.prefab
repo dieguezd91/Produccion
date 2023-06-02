@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 3898644280530377690}
   - component: {fileID: 1582111679940479652}
   - component: {fileID: 3215382351134247269}
-  - component: {fileID: 2124574425971895885}
-  - component: {fileID: 110914571886354093}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -47,6 +45,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aef7a1be1c46a2647828f6b505625369, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerSpawnPoint: {fileID: 0}
   player: {fileID: 0}
   battleIsActive: 0
   playerStats: []
@@ -62,31 +61,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1bb7837001a7e7d48a087d9cfddd892c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemsList: []
   credits: 200
---- !u!114 &2124574425971895885
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1023917621793773397}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6542cba494536be4a8c445f9a76b3933, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &110914571886354093
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1023917621793773397}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0d15019e3f338774e9b800f45e194ebe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  saveArchives: 

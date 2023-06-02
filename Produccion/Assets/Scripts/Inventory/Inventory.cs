@@ -15,6 +15,7 @@ public class Inventory : MonoBehaviour
     {
         instance = this;
         itemsList = new List<ItemsManager>();
+        Debug.Log("nuevo inventario");
     }
 
     public void AddItems(ItemsManager item)

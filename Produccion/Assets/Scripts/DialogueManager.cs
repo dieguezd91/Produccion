@@ -7,10 +7,6 @@ using TMPro;
 public class DialogueManager : MonoBehaviour
 {
     public TextMeshProUGUI dialogueText;
-    public PlayerController player;
-
-    public bool disableAfter;
-    public GameObject collisionEvent;
 
     public string[] lines;
 
@@ -18,18 +14,12 @@ public class DialogueManager : MonoBehaviour
 
     int index;
 
-    float lastSpeed;
-
     public event EventHandler OnDialogueEnd;
 
     public void Start()
     {
         dialogueText.text = string.Empty;
         StartDialogue();
-        lastSpeed = player.moveSpeed;
-        player.moveSpeed = 0;
-        if(disableAfter)
-            collisionEvent.SetActive(false);
     }
 
     void Update()
@@ -76,7 +66,6 @@ public class DialogueManager : MonoBehaviour
         {
             OnDialogueEnd?.Invoke(this, EventArgs.Empty);
             gameObject.SetActive(false);
-            player.moveSpeed = lastSpeed;
         }
     }
 }
