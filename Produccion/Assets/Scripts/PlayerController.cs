@@ -46,7 +46,8 @@ public class PlayerController : MonoBehaviour
         animator.SetFloat("Vertical", input.y);
         animator.SetFloat("Speed", input.sqrMagnitude);
 
-        /*if(input != Vector2.zero)
+        /*
+         * if(input != Vector2.zero)
         {
             rb.MovePosition(new Vector2(transform.position.x + input.x * moveSpeed * Time.deltaTime,
 <<<<<<< Updated upstream
@@ -65,12 +66,10 @@ public class PlayerController : MonoBehaviour
 <<<<<<< Updated upstream
             animator.SetFloat("moveY", input.y);        
             isMoving = false;
-        }*/
-=======
-            animator.SetFloat("moveY", input.y);
         }
+        */
+        animator.SetFloat("moveY", input.y);
         animator.SetBool("isMoving", isMoving);
->>>>>>> Stashed changes
     }
 
     private void FixedUpdate()
@@ -99,7 +98,4 @@ public class PlayerController : MonoBehaviour
     //        BattleManager.instance.StartBattle(new string[] { "Patrol" });
     //    }
     //}
-=======
-    }
->>>>>>> Stashed changes
 }
