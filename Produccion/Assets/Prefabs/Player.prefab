@@ -101,7 +101,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce9605345652a1449a9ee6fed9d7ad52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< Updated upstream
   moveSpeed: 5
+=======
+  moveSpeed: 12
+>>>>>>> Stashed changes
   isMoving: 0
 --- !u!114 &7705510061202412979
 MonoBehaviour:
@@ -123,7 +127,7 @@ MonoBehaviour:
   xpForNextLevel: 
   baseLevelXP: 100
   maxHP: 100
-  currentHP: 60
+  currentHP: 55
   dexterity: 30
   strength: 10
   defence: 15

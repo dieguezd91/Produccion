@@ -49,16 +49,28 @@ public class PlayerController : MonoBehaviour
         /*if(input != Vector2.zero)
         {
             rb.MovePosition(new Vector2(transform.position.x + input.x * moveSpeed * Time.deltaTime,
+<<<<<<< Updated upstream
             transform.position.y + input.y * moveSpeed * Time.deltaTime));
             isMoving = true;
             animator.SetBool("isMoving", isMoving);
+=======
+                                        transform.position.y + input.y * moveSpeed * Time.deltaTime));
+
+            isMoving = true;
+>>>>>>> Stashed changes
         }
         else
         { 
             animator.SetFloat("moveX", input.x);
+<<<<<<< Updated upstream
             animator.SetFloat("moveY", input.y);        
             isMoving = false;
         }*/
+=======
+            animator.SetFloat("moveY", input.y);
+        }
+        animator.SetBool("isMoving", isMoving);
+>>>>>>> Stashed changes
     }
 
     private void FixedUpdate()
@@ -77,6 +89,7 @@ public class PlayerController : MonoBehaviour
         transform.position = targetPos;
 
         isMoving = false;
+<<<<<<< Updated upstream
     }*/
 
     //private void OnTriggerEnter2D(Collider2D collision)
@@ -86,4 +99,7 @@ public class PlayerController : MonoBehaviour
     //        BattleManager.instance.StartBattle(new string[] { "Patrol" });
     //    }
     //}
+=======
+    }
+>>>>>>> Stashed changes
 }
