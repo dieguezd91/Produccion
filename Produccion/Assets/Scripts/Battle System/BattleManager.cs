@@ -12,6 +12,7 @@ public class BattleManager : MonoBehaviour
     bool inventoryIsOpen;
 
     [SerializeField] GameObject battleScene;
+    [SerializeField] Camera worldCamera;
     [SerializeField] List<BattleCharacters> activeCharacters = new List<BattleCharacters>();
 
     [SerializeField] Transform[] playersPositions;
@@ -98,6 +99,7 @@ public class BattleManager : MonoBehaviour
         }
         Array.Resize(ref arr, arr.Length - 1);
     }
+
     public void StartBattle(string[] enemiesToSpawn)
     {
         if (!isBattleActive)
@@ -213,13 +215,16 @@ public class BattleManager : MonoBehaviour
         isBattleActive = true;
         GameManager.instance.battleIsActive = true;
 
-        transform.position = new Vector3(
-        Camera.main.transform.position.x,
-        Camera.main.transform.position.y,
-        transform.position.z
-        );
-        
-        battleScene.SetActive(true);   
+
+
+        //transform.position = new Vector3(
+        //Camera.main.transform.position.x,
+        //Camera.main.transform.position.y,
+        //transform.position.z
+        //);
+
+        battleScene.gameObject.SetActive(true);
+        worldCamera.gameObject.SetActive(false); ;
     }
 
     private void NextTurn()
@@ -277,6 +282,9 @@ public class BattleManager : MonoBehaviour
             battleScene.SetActive(false);
             GameManager.instance.battleIsActive = false;
             isBattleActive = false;
+            battleScene.gameObject.SetActive(false);
+            worldCamera.gameObject.SetActive(true);
+
         }
         else
         {
