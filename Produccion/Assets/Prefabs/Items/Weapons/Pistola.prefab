@@ -103,7 +103,7 @@ MonoBehaviour:
   itemDescription: Is a device or ranged weapon designed to throw a projectile using
     pressure or explosive force.
   valueCoins: 15
-  itemsImage: {fileID: 21300000, guid: 6d0143c448b1ec1428b558fd8e137a3b, type: 3}
+  icon: {fileID: 21300000, guid: 4769a33e9398036498090ea6e2e434ca, type: 3}
   amountOfAffect: 0
   affectType: 0
   weaponDexterity: 100

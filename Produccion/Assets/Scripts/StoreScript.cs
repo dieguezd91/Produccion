@@ -20,7 +20,7 @@ public class StoreScript : MonoBehaviour
         {
             itemTemplate.playerInventory = playerInventory;
             itemTemplate.item = item;
-            itemTemplate.icon = item.itemsImage;
+            itemTemplate.iconImage.sprite = item.icon;
             itemTemplate.objectName.text = item.itemName;
             itemTemplate.priceTag.text = item.valueCoins.ToString();
 

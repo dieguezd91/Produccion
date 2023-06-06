@@ -102,7 +102,7 @@ MonoBehaviour:
   itemName: Bate
   itemDescription: Baseball bat with nails
   valueCoins: 5
-  itemsImage: {fileID: 21300000, guid: 615a0f4f85b57884db028ff711ed07ca, type: 3}
+  icon: {fileID: 21300000, guid: b4974f1fe13a0ac48bd10a5af4cdac3e, type: 3}
   amountOfAffect: 0
   affectType: 0
   weaponDexterity: 0

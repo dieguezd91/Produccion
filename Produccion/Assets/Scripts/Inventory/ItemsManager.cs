@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ItemsManager : MonoBehaviour
 {
@@ -9,7 +10,7 @@ public class ItemsManager : MonoBehaviour
 
     public string itemName, itemDescription;
     public int valueCoins;
-    public Sprite itemsImage;
+    public Sprite icon;
 
     public int amountOfAffect;
 

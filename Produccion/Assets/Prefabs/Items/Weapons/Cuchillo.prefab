@@ -102,7 +102,7 @@ MonoBehaviour:
   itemName: Knife
   itemDescription: A military knife
   valueCoins: 7
-  itemsImage: {fileID: 21300000, guid: 37b84180e404ef1489b1475cd66a12db, type: 3}
+  icon: {fileID: 21300000, guid: 86e691d7b7e677348b3c5af1edb8309a, type: 3}
   amountOfAffect: 0
   affectType: 0
   weaponDexterity: 0

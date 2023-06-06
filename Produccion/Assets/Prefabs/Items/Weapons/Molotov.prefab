@@ -103,7 +103,7 @@ MonoBehaviour:
   itemDescription: Is a hand-thrown incendiary weapon constructed from a frangible
     container filled with flammable substances equipped with a fuse
   valueCoins: 5
-  itemsImage: {fileID: 21300000, guid: 0a97440a69487714d94fa776a55f70d6, type: 3}
+  icon: {fileID: 21300000, guid: 98397bcf9868ec64eb5f89e9f926744a, type: 3}
   amountOfAffect: 0
   affectType: 0
   weaponDexterity: 0

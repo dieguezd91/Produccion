@@ -105,7 +105,7 @@ MonoBehaviour:
     spherical sub-projectiles called shot, or sometimes a single solid projectile
     called a slug
   valueCoins: 35
-  itemsImage: {fileID: 21300000, guid: 795377d7d0f525844910d5fa06a35583, type: 3}
+  icon: {fileID: 21300000, guid: f8c45e34212190d47877ebf3e928984a, type: 3}
   amountOfAffect: 0
   affectType: 0
   weaponDexterity: 30

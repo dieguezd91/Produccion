@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class TemplateStoreItem : MonoBehaviour
 {
-    public Sprite icon;
+    public Image iconImage;
     public TextMeshProUGUI priceTag;
     public TextMeshProUGUI objectName;
     public Button buyButton;
