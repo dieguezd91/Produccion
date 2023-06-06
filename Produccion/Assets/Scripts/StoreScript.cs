@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class StoreScript : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class StoreScript : MonoBehaviour
     [SerializeField] GameObject storeItemTemplate;
     [SerializeField] TextMeshProUGUI totalCoinsText;
     [SerializeField] Inventory playerInventory;
+
     void Start()
     {
         var itemTemplate = storeItemTemplate.GetComponent<TemplateStoreItem>();

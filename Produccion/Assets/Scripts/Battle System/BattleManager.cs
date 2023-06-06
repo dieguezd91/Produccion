@@ -61,16 +61,6 @@ public class BattleManager : MonoBehaviour
     }
     void Update()
     {
-        /*if (Input.GetKeyDown(KeyCode.B))
-        {
-            StartBattle(new string[] { "Police", "Patrol" });
-        }*/
-
-        if (Input.GetKeyDown(KeyCode.N))
-        {
-            NextTurn();
-        }
-
         CheckPlayerButtonHolder();
     }
 
