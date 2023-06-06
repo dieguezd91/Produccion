@@ -103,7 +103,7 @@ MonoBehaviour:
   itemDescription: A submachine gun (SMG) is a magazine-fed, automatic carbine designed
     to fire handgun cartridges
   valueCoins: 20
-  itemsImage: {fileID: 21300000, guid: fa8e196d1f3d8da41bea44831dfbb187, type: 3}
+  icon: {fileID: 21300000, guid: ad78d34ae71cf9d499c1477ef3a13427, type: 3}
   amountOfAffect: 0
   affectType: 0
   weaponDexterity: 25

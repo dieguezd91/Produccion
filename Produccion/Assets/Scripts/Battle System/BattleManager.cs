@@ -434,7 +434,7 @@ public class BattleManager : MonoBehaviour
             RectTransform itemSlot = Instantiate(itemSlotContainer, itemSlotContainerParent).GetComponent<RectTransform>();
 
             Image itemImage = itemSlot.Find("Item image").GetComponent<Image>();
-            itemImage.sprite = item.itemsImage;
+            itemImage.sprite = item.icon;
 
             Text itemsAmountText = itemSlot.Find("Amount Text").GetComponent<Text>();
             if (item.amount > 1)
