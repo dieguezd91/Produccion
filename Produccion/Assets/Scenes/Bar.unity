@@ -288,6 +288,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8334505}
     - target: {fileID: 2976986416159150031, guid: 5523c2a8f36db97439918291f7ec9ae1, type: 3}
+      propertyPath: onlyOnTutorial
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2976986416159150031, guid: 5523c2a8f36db97439918291f7ec9ae1, type: 3}
       propertyPath: dialogueManager
       value: 
       objectReference: {fileID: 1277314149}
@@ -5419,6 +5423,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2976986416159150031, guid: 5523c2a8f36db97439918291f7ec9ae1, type: 3}
+      propertyPath: onlyOnce
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2976986416159150031, guid: 5523c2a8f36db97439918291f7ec9ae1, type: 3}
       propertyPath: fightAfter
       value: 0
       objectReference: {fileID: 0}
@@ -5430,6 +5438,10 @@ PrefabInstance:
       propertyPath: battleManager
       value: 
       objectReference: {fileID: 8334505}
+    - target: {fileID: 2976986416159150031, guid: 5523c2a8f36db97439918291f7ec9ae1, type: 3}
+      propertyPath: onlyOnTutorial
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2976986416159150031, guid: 5523c2a8f36db97439918291f7ec9ae1, type: 3}
       propertyPath: dialogueManager
       value: 

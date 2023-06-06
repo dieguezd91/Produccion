@@ -12,12 +12,14 @@ public class EventScript : MonoBehaviour
     public bool fightAfter;
     public string[] enemies;
     public bool lockDoor;
-    public bool onlyOnce;
+    public bool onlyOnTutorial;
     public GameObject door;
 
     private void Start()
     {
         dialogueManagerInstance.OnDialogueEnd += Fight;
+        if(onlyOnTutorial && Inventory.instance.hasRookiePistol)
+            this.gameObject.SetActive(false);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
