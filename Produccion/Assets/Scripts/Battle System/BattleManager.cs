@@ -91,15 +91,6 @@ public class BattleManager : MonoBehaviour
         }
     }
 
-    void RemoveElement<T>(ref T[] arr, int index)
-    {
-        for(int i = index; i < arr.Length - 1; i++)
-        {
-            arr[i] = arr[i + 1];
-        }
-        Array.Resize(ref arr, arr.Length - 1);
-    }
-
     public void StartBattle(string[] enemiesToSpawn)
     {
         if (!isBattleActive)
@@ -131,13 +122,14 @@ public class BattleManager : MonoBehaviour
                             enemiesPositions[i].rotation,
                             enemiesPositions[i]
                             );
+                        
                         activeCharacters.Add(newEnemy);
                     }
                 }
             }
             else
             {
-                activeCharacters.Clear();
+                enemiesToSpawn[i] = null;
                 for (int j = 0; j < enemiesPrefabs.Length; j++)
                 {
                     if (enemiesPrefabs[j].characterName == enemiesToSpawn[i])
@@ -148,6 +140,7 @@ public class BattleManager : MonoBehaviour
                             enemiesPositions[i].rotation,
                             enemiesPositions[i]
                             );
+                        
                         activeCharacters.Add(newEnemy);
                     }
                 }
@@ -215,16 +208,8 @@ public class BattleManager : MonoBehaviour
         isBattleActive = true;
         GameManager.instance.battleIsActive = true;
 
-
-
-        //transform.position = new Vector3(
-        //Camera.main.transform.position.x,
-        //Camera.main.transform.position.y,
-        //transform.position.z
-        //);
-
         battleScene.gameObject.SetActive(true);
-        worldCamera.gameObject.SetActive(false); ;
+        worldCamera.gameObject.SetActive(false);
     }
 
     private void NextTurn()
@@ -279,7 +264,7 @@ public class BattleManager : MonoBehaviour
                 GameManager.instance.RespawnPlayer();
             }
 
-            battleScene.SetActive(false);
+            
             GameManager.instance.battleIsActive = false;
             isBattleActive = false;
             battleScene.gameObject.SetActive(false);
