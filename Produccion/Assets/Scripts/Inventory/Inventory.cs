@@ -10,7 +10,9 @@ public class Inventory : MonoBehaviour
     public static Inventory instance;
     public List<ItemsManager> itemsList;
     public int credits;
+    private int creditsAmount;
     public bool hasRookiePistol;
+
     private void Start()
     {
         if (instance != null && instance != this)
@@ -75,6 +77,13 @@ public class Inventory : MonoBehaviour
         {
             itemsList.Remove(item);
         }
+    }
+
+    public void AddCredits(int creditsAmount)
+    {
+        Debug.Log("suma");
+        int creditsToGive = UnityEngine.Random.Range(50, 150);
+        credits += creditsToGive;
     }
 
 
