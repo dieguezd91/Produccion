@@ -21,6 +21,7 @@ public class PickUpItem : MonoBehaviour
         item.SetActive(false);
         door.SetActive(true);
         dialogue.SetActive(false);
+        Inventory.instance.hasRookiePistol = true;
         Inventory.instance.itemsList.Add(invItem);
     }
 }

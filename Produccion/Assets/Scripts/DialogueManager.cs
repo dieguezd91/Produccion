@@ -10,7 +10,8 @@ public class DialogueManager : MonoBehaviour
     public PlayerController player;
 
     public bool disableAfter;
-    public GameObject collisionEvent;
+    [SerializeField] GameObject collisionEvent;
+    [SerializeField] GameObject objectToDisable;
 
     public string[] lines;
 
@@ -77,6 +78,8 @@ public class DialogueManager : MonoBehaviour
         {
             OnDialogueEnd?.Invoke(this, EventArgs.Empty);
             gameObject.SetActive(false);
+            if(objectToDisable != null)
+                objectToDisable.SetActive(false);
             player.moveSpeed = lastSpeed;
         }
     }

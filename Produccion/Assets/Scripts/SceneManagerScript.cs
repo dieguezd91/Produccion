@@ -25,7 +25,6 @@ public class SceneManagerScript : MonoBehaviour
     public void Update()
     {
         scene = SceneManager.GetActiveScene().name;
-        Debug.Log(scene);
 
         //switch (scene)
         //{
@@ -42,7 +41,7 @@ public class SceneManagerScript : MonoBehaviour
         //        spawnpoint = new Vector2(-6.98f, 1.75f);
         //        break;
         //}
-        //SpawnpointScript.instance.Spawn(spawnpoint);
+        //SpawnpointScript.Spawn(spawnpoint);
     }
     public void LoadScene(string newScene)
     {
