@@ -99,8 +99,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: 0
-  itemName: Syringe
-  itemDescription: Restore 50 HP
+  itemName: Adrenalina
+  itemDescription: Restaura 50 PS
   valueCoins: 10
   icon: {fileID: 21300000, guid: 98c0c4b2131af9344884bd478097025a, type: 3}
   amountOfAffect: 50
