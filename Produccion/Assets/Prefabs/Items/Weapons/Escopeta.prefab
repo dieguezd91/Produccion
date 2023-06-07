@@ -99,16 +99,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: 2
-  itemName: Shotgun
-  itemDescription: Is a long-barreled firearm designed to shoot a straight-walled
-    cartridge known as a shotshell, which usually discharges numerous small pellet-like
-    spherical sub-projectiles called shot, or sometimes a single solid projectile
-    called a slug
+  itemName: Escopeta
+  itemDescription: "Es un arma de fuego de ca\xF1\xF3n largo dise\xF1ada para disparar
+    un cartucho de pared recta conocido como cartucho de perdigones, que generalmente
+    descarga numerosos subproyectiles esf\xE9ricos llamados perdigones, o a veces
+    un solo proyectil s\xF3lido llamado posta."
   valueCoins: 35
   icon: {fileID: 21300000, guid: f8c45e34212190d47877ebf3e928984a, type: 3}
   amountOfAffect: 0
   affectType: 0
-  weaponDexterity: 30
+  weaponDexterity: 37
   weaponStrength: 0
   isStackable: 0
   amount: 1

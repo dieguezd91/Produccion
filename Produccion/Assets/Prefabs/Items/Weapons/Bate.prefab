@@ -100,13 +100,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemType: 1
   itemName: Bate
-  itemDescription: Baseball bat with nails
+  itemDescription: Bate de beisbol con alambre de puas
   valueCoins: 5
   icon: {fileID: 21300000, guid: b4974f1fe13a0ac48bd10a5af4cdac3e, type: 3}
   amountOfAffect: 0
   affectType: 0
   weaponDexterity: 0
-  weaponStrength: 10
+  weaponStrength: 9
   isStackable: 0
   amount: 1
 --- !u!61 &6677260924725681819
