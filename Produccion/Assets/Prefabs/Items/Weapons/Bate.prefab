@@ -101,7 +101,7 @@ MonoBehaviour:
   itemType: 1
   itemName: Bate
   itemDescription: Bate de beisbol con alambre de puas
-  valueCoins: 5
+  valueCoins: 50
   icon: {fileID: 21300000, guid: b4974f1fe13a0ac48bd10a5af4cdac3e, type: 3}
   amountOfAffect: 0
   affectType: 0
