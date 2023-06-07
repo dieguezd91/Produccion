@@ -7,6 +7,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     public static PlayerController instance;
+    public GameObject worldCamera;
 
     public float moveSpeed;
     public bool isMoving;

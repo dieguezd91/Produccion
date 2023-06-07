@@ -1,6 +1,8 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Reflection;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -41,6 +43,9 @@ public class BattleManager : MonoBehaviour
     [SerializeField] GameObject characterChoicePanel;
     [SerializeField] Text[] playerChoiceName;
 
+    [SerializeField] TextMeshProUGUI damageReceived;
+    [SerializeField] TextMeshProUGUI damageDealt;
+
     private int amountOfXp = 99;
 
     void Awake()
@@ -56,6 +61,11 @@ public class BattleManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
 
+    private void Start()
+    {
+        worldCamera = PlayerController.instance.worldCamera.GetComponent<Camera>();
+    }
+
     void Update()
     {
         CheckPlayerButtonHolder();
@@ -68,11 +78,15 @@ public class BattleManager : MonoBehaviour
             if (waitingForTurn)
             {
                 if (activeCharacters[currentTurn].IsPlayer())
+                {
                     UIButtonHolder.SetActive(true);
+                    Debug.Log("Activar botones");
+                }
                 else
                 {
                     UIButtonHolder.SetActive(false);
                     StartCoroutine(EnemyMoveCoroutine());
+                    Debug.Log("Desactivar botones");
                 }
             }
         }
@@ -233,7 +247,7 @@ public class BattleManager : MonoBehaviour
             }
             else if (allPlayersAreDead)
             {
-                print("Lost");
+                Debug.Log("Lost");
                 ExportPlayerStats(0);
                 GameManager.instance.RespawnPlayer();
             }
@@ -323,6 +337,9 @@ public class BattleManager : MonoBehaviour
         Debug.Log(activeCharacters[currentTurn].characterName + " attack and causes " + (int)damageAmount + "(" + rangeDamageToGive + ") of damage to " + activeCharacters[selectedCharacterToAttack]);
 
         //activeCharacters[selectedCharacterToAttack].TakeHPMeleeDamage(meleeDamageToGive);
+
+        StartCoroutine(ShowDamage(rangeDamageToGive));
+        Debug.Log("Take damage " + rangeDamageToGive);
         activeCharacters[selectedCharacterToAttack].TakeHPDamage(rangeDamageToGive);
     }
 
@@ -447,7 +464,7 @@ public class BattleManager : MonoBehaviour
         }
         else
         {
-            print("no item selected");
+            Debug.Log("no item selected");
         }
     }
 
@@ -468,5 +485,22 @@ public class BattleManager : MonoBehaviour
         characterChoicePanel.SetActive(false);
         itemsToUseMenu.SetActive(false);
     }
-}
 
+    IEnumerator ShowDamage(int damage)
+    {
+    if (currentTurn == 0)
+    {
+        damageDealt.text = damage.ToString();
+        yield return new WaitForSeconds(2f);
+        damageDealt.text = string.Empty;
+    }
+    else if (currentTurn == 1)
+    {
+        damageReceived.text = damage.ToString();
+        Debug.Log("1");
+        yield return new WaitForSeconds(2f);
+        Debug.Log("2");
+        damageReceived.text = string.Empty;
+    }
+}
+}
