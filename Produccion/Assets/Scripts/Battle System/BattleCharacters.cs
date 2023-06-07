@@ -11,8 +11,6 @@ public class BattleCharacters : MonoBehaviour
     public int currentHP, maxHP, dexterity, strength, defence, meleeWeaponDamage, rangeWeaponDamage;
     public bool isDead;
 
-    PlayerStats playerStats;
-
     public bool IsPlayer()
     {
         return isPlayer;

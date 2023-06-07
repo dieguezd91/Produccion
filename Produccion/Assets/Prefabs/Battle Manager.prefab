@@ -32,7 +32,7 @@ RectTransform:
   m_Children:
   - {fileID: 1196768551771276113}
   m_Father: {fileID: 116928169071442417}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -124,6 +124,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isBattleActive: 0
   battleScene: {fileID: 116928169104389185}
+  battleCamera: {fileID: 403158077764045675}
   worldCamera: {fileID: 0}
   activeCharacters: []
   lastEnemy: {fileID: 0}
@@ -152,6 +153,12 @@ MonoBehaviour:
   - {fileID: 116928169379857646}
   playerHealthSlider:
   - {fileID: 116928169482471942}
+  enemyBattleStats:
+  - {fileID: 2848570156708106785}
+  enemysNameText:
+  - {fileID: 7359744472911340612}
+  enemyHealthSlider:
+  - {fileID: 5334868204532326367}
   chanceToRunAway: 0.5
   itemsToUseMenu: {fileID: 116928169597965960}
   selectedItem: {fileID: 0}
@@ -338,7 +345,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1227, y: -114}
+  m_AnchoredPosition: {x: 1138, y: -114}
   m_SizeDelta: {x: 128, y: 128}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &116928167725022300
@@ -472,7 +479,7 @@ RectTransform:
   - {fileID: 116928167725022303}
   - {fileID: 8254180511378850928}
   m_Father: {fileID: 116928169071442417}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
@@ -1296,7 +1303,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 693, y: -114}
+  m_AnchoredPosition: {x: 604, y: -114}
   m_SizeDelta: {x: 128, y: 128}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &116928168328773573
@@ -1903,8 +1910,8 @@ RectTransform:
   - {fileID: 116928167918252061}
   - {fileID: 116928169597965967}
   - {fileID: 116928167997438232}
-  - {fileID: 116928167884403413}
   - {fileID: 2390614626828324973}
+  - {fileID: 116928167884403413}
   - {fileID: 7432770416965752688}
   m_Father: {fileID: 116928169104389184}
   m_RootOrder: 1
@@ -2108,7 +2115,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 871, y: -114}
+  m_AnchoredPosition: {x: 782, y: -114}
   m_SizeDelta: {x: 128, y: 128}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &116928169292437672
@@ -2321,7 +2328,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1049, y: -114}
+  m_AnchoredPosition: {x: 960, y: -114}
   m_SizeDelta: {x: 128, y: 128}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &116928169418225312
@@ -2943,7 +2950,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 999
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3c521e4d7a1976546aae7b5c00951f44, type: 2}
   m_sharedMaterial: {fileID: -5709013910873464010, guid: 3c521e4d7a1976546aae7b5c00951f44, type: 2}
@@ -3078,7 +3085,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 999
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3c521e4d7a1976546aae7b5c00951f44, type: 2}
   m_sharedMaterial: {fileID: -5709013910873464010, guid: 3c521e4d7a1976546aae7b5c00951f44, type: 2}
@@ -3292,10 +3299,10 @@ RectTransform:
   m_Father: {fileID: 116928167884403413}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 33.5}
-  m_SizeDelta: {x: 534, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 1316, y: -114}
+  m_SizeDelta: {x: 128, y: 128}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &4245161993123645803
 GameObject:
@@ -3314,7 +3321,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &992989182249339693
 Transform:
   m_ObjectHideFlags: 0

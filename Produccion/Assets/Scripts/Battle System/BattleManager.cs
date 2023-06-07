@@ -13,6 +13,7 @@ public class BattleManager : MonoBehaviour
     bool inventoryIsOpen;
 
     [SerializeField] GameObject battleScene;
+    [SerializeField] Camera battleCamera;
     [SerializeField] Camera worldCamera;
     [SerializeField] List<BattleCharacters> activeCharacters = new List<BattleCharacters>();
     [SerializeField] GameObject lastEnemy;
@@ -32,6 +33,10 @@ public class BattleManager : MonoBehaviour
     [SerializeField] GameObject[] playerBattleStats;
     [SerializeField] Text[] playersNameText;
     [SerializeField] Slider[] playerHealthSlider;
+
+    [SerializeField] GameObject[] enemyBattleStats;
+    [SerializeField] Text[] enemysNameText;
+    [SerializeField] Slider[] enemyHealthSlider;
 
     [SerializeField] float chanceToRunAway = 0.5f;
     public GameObject itemsToUseMenu;
@@ -103,7 +108,8 @@ public class BattleManager : MonoBehaviour
             AddingPlayers();
             AddingEnemies(enemiesToSpawn);
             UpdatePlayerStats();
-            
+            UpdateEnemyStats();
+
 
             waitingForTurn = true;
             currentTurn = 0;//Random.Range(0, activeCharacters.Count);
@@ -198,6 +204,7 @@ public class BattleManager : MonoBehaviour
 
         battleScene.gameObject.SetActive(true);
         worldCamera.gameObject.SetActive(false);
+        battleCamera.gameObject.SetActive(true);
     }
 
     private void NextTurn()
@@ -209,6 +216,7 @@ public class BattleManager : MonoBehaviour
         waitingForTurn = true;
         UpdateBattle();
         UpdatePlayerStats();
+        UpdateEnemyStats();
     }
 
     private void UpdateBattle()
@@ -259,6 +267,7 @@ public class BattleManager : MonoBehaviour
             isBattleActive = false;
             battleScene.gameObject.SetActive(false);
             worldCamera.gameObject.SetActive(true);
+            battleCamera.gameObject.SetActive(true);
 
         }
         else
@@ -380,6 +389,25 @@ public class BattleManager : MonoBehaviour
             else
             {
                 playerBattleStats[i].SetActive(false);
+            }
+        }
+    }
+    private void UpdateEnemyStats()
+    {
+        for (int i = 0; i < enemysNameText.Length; i++)
+        {
+            if (activeCharacters.Count > i)
+            {
+                BattleCharacters enemyData = activeCharacters[i];
+
+                enemysNameText[i].text = enemyData.characterName;
+
+                enemyHealthSlider[i].maxValue = enemyData.maxHP;
+                enemyHealthSlider[i].value = enemyData.currentHP;
+            }
+            else
+            {
+                enemyBattleStats[i].SetActive(false);
             }
         }
     }
