@@ -42,6 +42,7 @@ public class BattleManager : MonoBehaviour
     [SerializeField] Text[] playerChoiceName;
 
     private int amountOfXp = 99;
+    private int creditsAmount;
 
     void Awake()
     {
@@ -227,6 +228,7 @@ public class BattleManager : MonoBehaviour
             if (allEnemiesAreDead)
             {
                 PlayerStats.instance.AddXP(amountOfXp);
+                Inventory.instance.AddCredits(creditsAmount);
                 ExportPlayerStats(0);
                 Destroy(enemyGO);
                 Debug.Log("Won");
@@ -334,7 +336,7 @@ public class BattleManager : MonoBehaviour
 
             return (damageToGive * 2);
         }
-        // sino hace el da�o normal
+        // sino hace el daño normal
         return damageToGive;
     }
 
