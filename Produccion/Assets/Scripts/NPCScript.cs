@@ -8,7 +8,7 @@ public class NPCScript : MonoBehaviour
     public GameObject menu;
     void Update()
     {
-        if (Physics2D.OverlapCircle(transform.position, 1.5f).CompareTag("Player"))
+        if (Physics2D.OverlapCircle(transform.position, 3f).CompareTag("Player"))
         {
             pjNearby = true;
         }
@@ -27,6 +27,6 @@ public class NPCScript : MonoBehaviour
 
     void OnDrawGizmos()
     {
-        Gizmos.DrawSphere(transform.position, 1f);
+        Gizmos.DrawSphere(transform.position, 3f);
     }
 }

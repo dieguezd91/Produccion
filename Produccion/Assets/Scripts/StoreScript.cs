@@ -11,6 +11,7 @@ public class StoreScript : MonoBehaviour
     [SerializeField] GameObject storeItemTemplate;
     [SerializeField] TextMeshProUGUI totalCoinsText;
     [SerializeField] Inventory playerInventory;
+
     void Start()
     {
         var itemTemplate = storeItemTemplate.GetComponent<TemplateStoreItem>();
