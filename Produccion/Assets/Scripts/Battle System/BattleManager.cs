@@ -7,16 +7,17 @@ using UnityEngine.UI;
 public class BattleManager : MonoBehaviour
 {
     public static BattleManager instance;
-    PlayerController playerController;
     public bool isBattleActive;
     bool inventoryIsOpen;
 
     [SerializeField] GameObject battleScene;
     [SerializeField] Camera worldCamera;
     [SerializeField] List<BattleCharacters> activeCharacters = new List<BattleCharacters>();
+    [SerializeField] GameObject lastEnemy;
+    [SerializeField] GameObject enemyGO;
 
-    [SerializeField] Transform[] playersPositions;
-    [SerializeField] Transform[] enemiesPositions;
+    [SerializeField] Transform playersPositions;
+    [SerializeField] Transform enemiesPositions;
 
     [SerializeField] BattleCharacters[] playerPrefabs, enemiesPrefabs;
 
@@ -55,10 +56,6 @@ public class BattleManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
 
-    void Start()
-    {
-        playerController = GameManager.instance.player.GetComponent<PlayerController>();
-    }
     void Update()
     {
         /*if (Input.GetKeyDown(KeyCode.B))
@@ -91,8 +88,10 @@ public class BattleManager : MonoBehaviour
         }
     }
 
-    public void StartBattle(string[] enemiesToSpawn)
+    public void StartBattle(GameObject enemy, string enemiesToSpawn)
     {
+        Destroy(lastEnemy);
+        enemyGO = enemy;
         if (!isBattleActive)
         {
             SettingUpBattle();
@@ -106,50 +105,31 @@ public class BattleManager : MonoBehaviour
         }
     }
 
-    private void AddingEnemies(string[] enemiesToSpawn)
+    private void AddingEnemies(string enemiesToSpawn)
     {
-        for (int i = 0; i < enemiesToSpawn.Length; i++)
+        for (int j = 0; j < enemiesPrefabs.Length; j++)
         {
-            if (enemiesToSpawn[i] != "")
+            if (enemiesPrefabs[j].characterName == enemiesToSpawn)
             {
-                for (int j = 0; j < enemiesPrefabs.Length; j++)
-                {
-                    if (enemiesPrefabs[j].characterName == enemiesToSpawn[i])
-                    {
-                        BattleCharacters newEnemy = Instantiate(
-                            enemiesPrefabs[j],
-                            enemiesPositions[i].position,
-                            enemiesPositions[i].rotation,
-                            enemiesPositions[i]
-                            );
-                        
-                        activeCharacters.Add(newEnemy);
-                    }
-                }
-            }
-            else
-            {
-                enemiesToSpawn[i] = null;
-                for (int j = 0; j < enemiesPrefabs.Length; j++)
-                {
-                    if (enemiesPrefabs[j].characterName == enemiesToSpawn[i])
-                    {
-                        BattleCharacters newEnemy = Instantiate(
-                            enemiesPrefabs[j],
-                            enemiesPositions[i].position,
-                            enemiesPositions[i].rotation,
-                            enemiesPositions[i]
-                            );
-                        
-                        activeCharacters.Add(newEnemy);
-                    }
-                }
+                BattleCharacters newEnemy = Instantiate(
+                    enemiesPrefabs[j],
+                    enemiesPositions.position,
+                    enemiesPositions.rotation,
+                    enemiesPositions
+                    );
+                if (activeCharacters.Count == 1)
+                    activeCharacters.Add(newEnemy);
+                else
+                    activeCharacters[1] = newEnemy;
+                lastEnemy = activeCharacters[1].gameObject;
             }
         }
     }
 
     private void AddingPlayers()
     {
+        if (activeCharacters.Count > 0)
+            Destroy(activeCharacters[0].gameObject);
         for (int i = 0; i < GameManager.instance.GetPlayerStats().Length; i++)
         {
             if (GameManager.instance.GetPlayerStats()[i].gameObject.activeInHierarchy)
@@ -160,12 +140,15 @@ public class BattleManager : MonoBehaviour
                     {
                         BattleCharacters newPlayer = Instantiate(
                             playerPrefabs[j],
-                            playersPositions[i].position,
-                            playersPositions[i].rotation,
-                            playersPositions[i]
+                            playersPositions.position,
+                            playersPositions.rotation,
+                            playersPositions
                             );
 
-                        activeCharacters.Add(newPlayer);
+                        if (activeCharacters.Count == 0)
+                            activeCharacters.Add(newPlayer);
+                        else
+                            activeCharacters[0] = newPlayer;
                         ImportPlayerStats(i);
                     }
                 }
@@ -255,6 +238,7 @@ public class BattleManager : MonoBehaviour
             {
                 PlayerStats.instance.AddXP(amountOfXp);
                 ExportPlayerStats(0);
+                Destroy(enemyGO);
                 Debug.Log("Won");
             }
             else if (allPlayersAreDead)
@@ -408,6 +392,7 @@ public class BattleManager : MonoBehaviour
             //Hay 50% de chances de no poder escapar y perdes el turno
             isBattleActive = false;
             battleScene.SetActive(false);
+            worldCamera.gameObject.SetActive(true);
         }
         else
         {

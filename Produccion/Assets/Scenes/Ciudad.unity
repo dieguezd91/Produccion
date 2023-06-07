@@ -3061,7 +3061,7 @@ BoxCollider2D:
   m_Offset: {x: 2.047165, y: -0.09225273}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0.5225919, y: 0.3767714}
     oldSize: {x: 1, y: 1}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
@@ -3617,7 +3617,7 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 1.8413343}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0.5225919, y: 0.3767714}
     oldSize: {x: 1, y: 1}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
@@ -72558,7 +72558,7 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 1.854495}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0.5225919, y: 0.3767714}
     oldSize: {x: 1, y: 1}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
@@ -73882,7 +73882,7 @@ BoxCollider2D:
   m_Offset: {x: -2.0088234, y: 0.14451885}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0.5225919, y: 0.3767714}
     oldSize: {x: 1, y: 1}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
@@ -74314,7 +74314,7 @@ BoxCollider2D:
   m_Offset: {x: -1.4696336, y: 1.8760681}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0.5225919, y: 0.3767714}
     oldSize: {x: 1, y: 1}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
@@ -75059,7 +75059,7 @@ BoxCollider2D:
   m_Offset: {x: 0, y: -2.1201935}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0.5225919, y: 0.3767714}
     oldSize: {x: 1, y: 1}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
@@ -75332,7 +75332,7 @@ BoxCollider2D:
   m_Offset: {x: 2.0682907, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0.5225919, y: 0.3767714}
     oldSize: {x: 1, y: 1}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
@@ -75512,8 +75512,8 @@ Transform:
   - {fileID: 947150099}
   - {fileID: 998642258}
   - {fileID: 1436114095}
-  - {fileID: 172340117}
   - {fileID: 1757243804}
+  - {fileID: 172340117}
   - {fileID: 463384039}
   - {fileID: 590316947}
   - {fileID: 1622164807}
@@ -75610,7 +75610,7 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 1.8185408}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0.5225919, y: 0.3767714}
     oldSize: {x: 1, y: 1}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
@@ -75741,7 +75741,7 @@ BoxCollider2D:
   m_Offset: {x: 0, y: -2.112957}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0.5225919, y: 0.3767714}
     oldSize: {x: 1, y: 1}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
@@ -75952,7 +75952,7 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 1.907896}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0.5225919, y: 0.3767714}
     oldSize: {x: 1, y: 1}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
@@ -76142,7 +76142,7 @@ BoxCollider2D:
   m_Offset: {x: 2.0626235, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0.5225919, y: 0.3767714}
     oldSize: {x: 1, y: 1}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
@@ -76364,7 +76364,7 @@ BoxCollider2D:
   m_Offset: {x: 0, y: -1.6354275}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0.5225919, y: 0.3767714}
     oldSize: {x: 1, y: 1}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
@@ -76743,11 +76743,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7277363986584689379, guid: b704549afed9e8445881ad0bda96f2a6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.12
+      value: -2.64
       objectReference: {fileID: 0}
     - target: {fileID: 7277363986584689379, guid: b704549afed9e8445881ad0bda96f2a6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.1
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 7277363986584689379, guid: b704549afed9e8445881ad0bda96f2a6, type: 3}
       propertyPath: m_LocalPosition.z

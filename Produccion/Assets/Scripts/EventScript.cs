@@ -10,7 +10,7 @@ public class EventScript : MonoBehaviour
     [SerializeField] private BattleManager battleManager;
 
     public bool fightAfter;
-    public string[] enemies;
+    public string enemies;
     public bool lockDoor;
     public bool onlyOnTutorial;
     public GameObject door;
@@ -38,7 +38,7 @@ public class EventScript : MonoBehaviour
     {
         if(fightAfter == true)
         {
-            battleManager.StartBattle(enemies);
+            battleManager.StartBattle(null, enemies) ;
         }
     }
 }

@@ -276,6 +276,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 2976986416159150031, guid: 5523c2a8f36db97439918291f7ec9ae1, type: 3}
+      propertyPath: enemies
+      value: Negro
+      objectReference: {fileID: 0}
+    - target: {fileID: 2976986416159150031, guid: 5523c2a8f36db97439918291f7ec9ae1, type: 3}
       propertyPath: fightAfter
       value: 1
       objectReference: {fileID: 0}
@@ -297,11 +301,11 @@ PrefabInstance:
       objectReference: {fileID: 1277314149}
     - target: {fileID: 2976986416159150031, guid: 5523c2a8f36db97439918291f7ec9ae1, type: 3}
       propertyPath: enemies.Array.size
-      value: 1
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2976986416159150031, guid: 5523c2a8f36db97439918291f7ec9ae1, type: 3}
       propertyPath: enemies.Array.data[0]
-      value: Negro
+      value: 78
       objectReference: {fileID: 0}
     - target: {fileID: 2976986416159150031, guid: 5523c2a8f36db97439918291f7ec9ae1, type: 3}
       propertyPath: dialogueManagerInstance
