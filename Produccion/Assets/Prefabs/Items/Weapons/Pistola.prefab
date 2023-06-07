@@ -102,7 +102,7 @@ MonoBehaviour:
   itemName: Pistola
   itemDescription: "Es un dispositivo o arma a distancia dise\xF1ada para lanzar
     un proyectil usando presi\xF3n o fuerza explosiva."
-  valueCoins: 15
+  valueCoins: 80
   icon: {fileID: 21300000, guid: 4769a33e9398036498090ea6e2e434ca, type: 3}
   amountOfAffect: 0
   affectType: 0

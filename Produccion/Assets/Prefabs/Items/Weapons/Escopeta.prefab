@@ -104,7 +104,7 @@ MonoBehaviour:
     un cartucho de pared recta conocido como cartucho de perdigones, que generalmente
     descarga numerosos subproyectiles esf\xE9ricos llamados perdigones, o a veces
     un solo proyectil s\xF3lido llamado posta."
-  valueCoins: 35
+  valueCoins: 135
   icon: {fileID: 21300000, guid: f8c45e34212190d47877ebf3e928984a, type: 3}
   amountOfAffect: 0
   affectType: 0

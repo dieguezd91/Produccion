@@ -101,7 +101,7 @@ MonoBehaviour:
   itemType: 1
   itemName: Cuchillo
   itemDescription: Un cuchillo de carnicero
-  valueCoins: 7
+  valueCoins: 25
   icon: {fileID: 21300000, guid: 86e691d7b7e677348b3c5af1edb8309a, type: 3}
   amountOfAffect: 0
   affectType: 0

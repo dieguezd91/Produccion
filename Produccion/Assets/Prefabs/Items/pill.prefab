@@ -101,7 +101,7 @@ MonoBehaviour:
   itemType: 0
   itemName: Aspirina
   itemDescription: Restaura 20 PS
-  valueCoins: 5
+  valueCoins: 15
   icon: {fileID: 21300000, guid: a11bb89eb8b2ece4eb959e037d9789aa, type: 3}
   amountOfAffect: 20
   affectType: 0

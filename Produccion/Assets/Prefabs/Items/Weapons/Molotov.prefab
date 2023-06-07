@@ -102,7 +102,7 @@ MonoBehaviour:
   itemName: Molotov
   itemDescription: Es un arma incendiaria arrojadiza a mano construida a partir de
     un recipiente frangible lleno de sustancias inflamables equipada con un fusible
-  valueCoins: 5
+  valueCoins: 50
   icon: {fileID: 21300000, guid: 98397bcf9868ec64eb5f89e9f926744a, type: 3}
   amountOfAffect: 0
   affectType: 0
