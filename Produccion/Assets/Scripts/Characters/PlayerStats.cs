@@ -56,10 +56,7 @@ public class PlayerStats : MonoBehaviour
 
     private void Update()
     {
-        if(Input.GetKeyDown(KeyCode.L))
-        {
-            AddXP(20);
-        }
+      
     }
 
     public void AddXP(int amountOfXp)

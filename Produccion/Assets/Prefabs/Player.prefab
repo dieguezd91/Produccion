@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 1395730696270280838}
   - component: {fileID: 1117385375}
   - component: {fileID: 6575109909328544490}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -105,6 +105,9 @@ MonoBehaviour:
   worldCamera: {fileID: 1719437029604839736}
   moveSpeed: 5
   isMoving: 0
+  enemiesLayer:
+    serializedVersion: 2
+    m_Bits: 512
 --- !u!114 &7705510061202412979
 MonoBehaviour:
   m_ObjectHideFlags: 0

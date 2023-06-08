@@ -340,6 +340,8 @@ public class BattleManager : MonoBehaviour
         float damageAmount = (attackPower - defenceAmount) * movePower * UnityEngine.Random.Range(0.9f, 1.1f);
         //int meleeDamageToGive = (int)meleeDamageAmount;
         int rangeDamageToGive = (int)damageAmount;
+        if (rangeDamageToGive <= 0)
+            rangeDamageToGive = 0;
 
         //iguala el valor del da�o a critico si es necesario
         rangeDamageToGive = CalculateCritical(rangeDamageToGive);
