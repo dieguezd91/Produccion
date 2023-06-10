@@ -4,13 +4,13 @@ using System.Linq;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class Inventory : MonoBehaviour
 {
     public static Inventory instance;
     public List<ItemsManager> itemsList;
     public int credits;
-    private int creditsAmount;
     public bool hasRookiePistol;
 
     private void Start()
@@ -30,20 +30,20 @@ public class Inventory : MonoBehaviour
 
     public void AddItems(ItemsManager item)
     {
-        if(item.isStackable)
+        if (item.isStackable)
         {
             bool itemAlreadyInInventory = false;
 
             foreach (ItemsManager itemInInventory in itemsList)
             {
-                if(itemInInventory.itemName == item.itemName)
+                if (itemInInventory.itemName == item.itemName)
                 {
                     itemInInventory.amount += item.amount;
                     itemAlreadyInInventory = true;
                 }
             }
 
-            if(!itemAlreadyInInventory)
+            if (!itemAlreadyInInventory)
             {
                 itemsList.Add(item);
             }
@@ -56,19 +56,19 @@ public class Inventory : MonoBehaviour
 
     public void RemoveItem(ItemsManager item)
     {
-        if(item.isStackable)
+        if (item.isStackable)
         {
             ItemsManager inventoryItem = null;
-            foreach(ItemsManager itemInInventory in itemsList)
+            foreach (ItemsManager itemInInventory in itemsList)
             {
-                if(itemInInventory.itemName == item.itemName)
+                if (itemInInventory.itemName == item.itemName)
                 {
                     itemInInventory.amount--;
                     inventoryItem = itemInInventory;
                 }
             }
 
-            if(inventoryItem != null && inventoryItem.amount <=0)
+            if (inventoryItem != null && inventoryItem.amount <= 0)
             {
                 itemsList.Remove(inventoryItem);
             }
@@ -79,16 +79,14 @@ public class Inventory : MonoBehaviour
         }
     }
 
-    public void AddCredits(int creditsAmount)
+    public void AddCredits(int creditsToGive)
     {
-        Debug.Log("suma");
-        int creditsToGive = UnityEngine.Random.Range(50, 150);
         credits += creditsToGive;
+        Debug.Log("Ganaste " + creditsToGive.ToString() + " creditos");
     }
-
 
     public List<ItemsManager> GetItemsList()
     {
         return itemsList;
-    }    
+    }
 }

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1582111679940479652}
   - component: {fileID: 3215382351134247269}
   - component: {fileID: 2124574425971895885}
-  - component: {fileID: 110914571886354093}
+  - component: {fileID: 8757958218246885331}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -65,6 +65,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemsList: []
   credits: 200
+  hasRookiePistol: 0
 --- !u!114 &2124574425971895885
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -77,7 +78,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6542cba494536be4a8c445f9a76b3933, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &110914571886354093
+  scene: 
+  spawnpoint: {x: 0, y: 0}
+--- !u!114 &8757958218246885331
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

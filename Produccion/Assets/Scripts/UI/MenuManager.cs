@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class MenuManager : MonoBehaviour
 {
     [SerializeField] GameObject menu;
+    [SerializeField] GameObject ConfirmQuit;
     [SerializeField] GameObject[] statsButtons;
     public static MenuManager instance;
     public Inventory inventory;
@@ -31,6 +33,10 @@ public class MenuManager : MonoBehaviour
     [SerializeField] GameObject characterChoicePanel;
     [SerializeField] Text[] itemsCharacterChoiceNames;
 
+
+    [SerializeField] TextMeshProUGUI newCreditsUI;
+    [SerializeField] TextMeshProUGUI CreditsUI;
+
     private void Awake()
     {
         if (instance != null && instance != this)
@@ -50,6 +56,8 @@ public class MenuManager : MonoBehaviour
         {
             if (menu.activeInHierarchy)
             {
+                if (ConfirmQuit.activeInHierarchy)
+                    ConfirmQuit.SetActive(false);
                 menu.SetActive(false);
             }
             else
@@ -57,6 +65,12 @@ public class MenuManager : MonoBehaviour
                 UpdateStats();
                 menu.SetActive(true);
             }
+        }
+
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            AddCreditsUI();
+            Debug.Log("Nuevos creditos");
         }
     }
 
@@ -172,9 +186,14 @@ public class MenuManager : MonoBehaviour
         characterChoicePanel.SetActive(false);
     }
 
-    public void QuitGame()
+    public void AddCreditsUI()
     {
-        Application.Quit();
-        Debug.Log("Quit");
+        int creditsToGive = UnityEngine.Random.Range(50, 150);
+        newCreditsUI.gameObject.SetActive(true);
+        newCreditsUI.text = "+" + creditsToGive.ToString();
+        newCreditsUI.gameObject.SetActive(false);
+        Inventory.instance.AddCredits(creditsToGive);
+        CreditsUI.text = Inventory.instance.credits.ToString();
+        Debug.Log("Ganaste " + creditsToGive.ToString() + " creditos");
     }
 }

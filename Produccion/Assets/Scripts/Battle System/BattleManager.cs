@@ -52,7 +52,6 @@ public class BattleManager : MonoBehaviour
     [SerializeField] TextMeshProUGUI damageDealt;
 
     private int amountOfXp = 99;
-    private int creditsAmount;
 
     void Awake()
     {
@@ -250,7 +249,7 @@ public class BattleManager : MonoBehaviour
             if (allEnemiesAreDead)
             {
                 PlayerStats.instance.AddXP(amountOfXp);
-                Inventory.instance.AddCredits(creditsAmount);
+                MenuManager.instance.AddCreditsUI();
                 ExportPlayerStats(0);
                 Destroy(enemyGO);
                 Debug.Log("Won");

@@ -7,20 +7,14 @@ public class gameDataController : MonoBehaviour
 {
     public GameObject player;
 
-    public string saveArchives;
+    private string saveArchives;
     public gameData gameData = new gameData();
 
     private void Awake()
     {
-        saveArchives = Application.dataPath + "/gameData.json";
+        saveArchives = Application.dataPath + "/datos.json";
         player = GameObject.FindGameObjectWithTag("Player");
     }
-
-    //private void Update()
-    //{
-    //    if (Input.GetKeyDown(KeyCode.C)) LoadData();
-    //    if (Input.GetKeyDown(KeyCode.G)) SaveData();
-    //}
 
     public void LoadData()
     {
@@ -50,10 +44,5 @@ public class gameDataController : MonoBehaviour
         File.WriteAllText(saveArchives, JSONchain);
 
         Debug.Log("Data saved");
-    }
-
-    public void ExitGame()
-    {
-        Application.Quit();
     }
 }
