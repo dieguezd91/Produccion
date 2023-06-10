@@ -9,6 +9,9 @@ public class MenuManager : MonoBehaviour
     [SerializeField] GameObject menu;
     [SerializeField] GameObject ConfirmQuit;
     [SerializeField] GameObject[] statsButtons;
+    [SerializeField] GameObject characterInfo;
+    [SerializeField] GameObject inventoryPanel;
+    [SerializeField] GameObject statsPanel;
     public static MenuManager instance;
     public Inventory inventory;
 
@@ -31,6 +34,7 @@ public class MenuManager : MonoBehaviour
     public ItemsManager activeItem;
 
     [SerializeField] GameObject characterChoicePanel;
+    [SerializeField] GameObject itemsDescription;
     [SerializeField] Text[] itemsCharacterChoiceNames;
 
 
@@ -64,6 +68,9 @@ public class MenuManager : MonoBehaviour
             {
                 UpdateStats();
                 menu.SetActive(true);
+                inventoryPanel.SetActive(false);
+                statsPanel.SetActive(false);
+                characterInfo.SetActive(true);
             }
         }
 
@@ -184,6 +191,7 @@ public class MenuManager : MonoBehaviour
     public void CloseCharacterChoicePanel()
     {
         characterChoicePanel.SetActive(false);
+        itemsDescription.SetActive(false);
     }
 
     public void AddCreditsUI()
