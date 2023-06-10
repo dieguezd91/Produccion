@@ -454,6 +454,7 @@ GameObject:
   - component: {fileID: 116928167884403402}
   - component: {fileID: 116928167884403403}
   - component: {fileID: 116928167884403412}
+  - component: {fileID: 450087237795049577}
   m_Layer: 12
   m_Name: Menu
   m_TagString: Untagged
@@ -548,6 +549,21 @@ MonoBehaviour:
   m_Spacing: {x: 50, y: 50}
   m_Constraint: 0
   m_ConstraintCount: 2
+--- !u!114 &450087237795049577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 116928167884403414}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2bb1b172f903884a9da61a8db3775dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  runButton: {fileID: 116928167725022296}
+  itemsButton: {fileID: 116928169418225324}
+  rangeButton: {fileID: 116928169292437684}
 --- !u!1 &116928167918252062
 GameObject:
   m_ObjectHideFlags: 0

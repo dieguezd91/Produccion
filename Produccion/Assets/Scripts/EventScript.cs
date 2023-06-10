@@ -32,8 +32,6 @@ public class EventScript : MonoBehaviour
             dialogueManager.SetActive(true);
             if (lockDoor)
                 door.SetActive(false);
-
-            GameManager.instance.tutorial = false;
         }
     }
 
