@@ -11,7 +11,7 @@ public class PlayerController : MonoBehaviour
 
     public float moveSpeed;
     public bool isMoving;
-    private Vector2 input;
+    public Vector2 input;
     private Rigidbody2D rb;
 
     public LayerMask enemiesLayer;
@@ -40,17 +40,21 @@ public class PlayerController : MonoBehaviour
 
     public void Update()
     {
+
         // MOVIMIENTO
         float moveX = Input.GetAxisRaw("Horizontal");
         float moveY = Input.GetAxisRaw("Vertical");
         input = new Vector2(moveX, moveY).normalized;
 
-        animator.SetFloat("Horizontal", input.x);
-        animator.SetFloat("Vertical", input.y);
-        animator.SetFloat("Speed", input.sqrMagnitude);
+        if (!GameManager.instance.chatting)
+        {
+            // ANIMACIONES
+            animator.SetFloat("Horizontal", input.x);
+            animator.SetFloat("Vertical", input.y);
+            animator.SetFloat("Speed", input.sqrMagnitude);
 
-        CheckForEncounters();
-
+            CheckForEncounters();
+        }
     }
 
     private void FixedUpdate()

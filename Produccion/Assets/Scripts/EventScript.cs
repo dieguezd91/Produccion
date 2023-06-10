@@ -8,6 +8,7 @@ public class EventScript : MonoBehaviour
     [SerializeField] private GameObject dialogueManager;
     [SerializeField] private DialogueManager dialogueManagerInstance;
     [SerializeField] private BattleManager battleManager;
+    Inventory inventory;
 
     public bool fightAfter;
     public string enemies;
@@ -17,9 +18,11 @@ public class EventScript : MonoBehaviour
 
     private void Start()
     {
+        inventory = GameManager.instance.GetComponent<Inventory>();
         dialogueManagerInstance.OnDialogueEnd += Fight;
-        if(onlyOnTutorial && Inventory.instance.hasRookiePistol)
-            this.gameObject.SetActive(false);
+
+        if (onlyOnTutorial && inventory.hasRookiePistol)
+            Debug.Log("Evento");//this.gameObject.SetActive(false);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

@@ -133,4 +133,4 @@ MonoBehaviour:
   pjNearby: 0
   layer:
     serializedVersion: 2
-    m_Bits: 128
+    m_Bits: 136

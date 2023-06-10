@@ -8,6 +8,7 @@ public class DialogueManager : MonoBehaviour
 {
     public TextMeshProUGUI dialogueText;
     public PlayerController player;
+    Animator animator;
 
     public bool disableAfter;
     [SerializeField] GameObject collisionEvent;
@@ -26,6 +27,7 @@ public class DialogueManager : MonoBehaviour
     public void Start()
     {
         player = GameManager.instance.player.GetComponent<PlayerController>();
+        animator = GameManager.instance.player.GetComponent<Animator>();
         dialogueText.text = string.Empty;
         StartDialogue();
         lastSpeed = player.moveSpeed;
@@ -52,6 +54,8 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue()
     {
+        GameManager.instance.chatting = true;
+        animator.enabled = false;
         dialogueText.text = string.Empty;
         index = 0;
         StartCoroutine(WriteLine());
@@ -81,6 +85,8 @@ public class DialogueManager : MonoBehaviour
             if(objectToDisable != null)
                 objectToDisable.SetActive(false);
             player.moveSpeed = lastSpeed;
+            GameManager.instance.chatting = false;
+            animator.enabled = true;
         }
     }
 }

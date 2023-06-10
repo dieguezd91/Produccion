@@ -5,14 +5,14 @@ using UnityEngine;
 
 public class PickUpItem : MonoBehaviour
 {
-    public GameObject item;
-    public ItemsManager invItem;
-    public GameObject door;
-    public GameObject dialogue;
+    [SerializeField] GameObject item;
+    [SerializeField] ItemsManager invItem;
+    [SerializeField] GameObject door;
+    [SerializeField] GameObject dialogue;
 
     private void Start()
     {
-        if(Inventory.instance.hasRookiePistol == true)
+        if(Inventory.instance.hasRookiePistol)
             item.SetActive(false);
     }
 
