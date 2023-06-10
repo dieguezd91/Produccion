@@ -51,7 +51,9 @@ public class BattleManager : MonoBehaviour
     [SerializeField] TextMeshProUGUI damageReceived;
     [SerializeField] TextMeshProUGUI damageDealt;
 
-    private int amountOfXp = 99;
+    private int amountOfXp;
+    private int creditsAmount;
+
 
     void Awake()
     {
@@ -393,6 +395,7 @@ public class BattleManager : MonoBehaviour
             }
         }
     }
+
     private void UpdateEnemyStats()
     {
         for (int i = 0; i < enemysNameText.Length; i++)
