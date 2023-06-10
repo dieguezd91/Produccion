@@ -1,0 +1,8 @@
+ARMA,TIPO,OBJETIVO,DMG,PRESICIÓN,PRECIO
+Cuchillo,Melee,Único,5,87,25
+Bate,Melee,Área,9,79,50
+Katana,Melee,Área,16,100,200
+Pistola,Distancia,Único,23,53,80
+Subfusil,Distancia,Único,29,38,120
+Escopeta,Distancia,Área,37,25,135
+Granada,Lanzable,Área,52,48,50

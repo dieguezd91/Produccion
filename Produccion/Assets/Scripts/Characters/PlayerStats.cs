@@ -61,9 +61,10 @@ public class PlayerStats : MonoBehaviour
 
     public void AddXP(int amountOfXp)
     {
+        int amountToGive = UnityEngine.Random.Range(105, 250);
         Debug.Log(currentXP);
         Debug.Log(amountOfXp);
-        currentXP += amountOfXp;
+        currentXP += amountToGive;
         if(currentXP > xpForNextLevel[playerLevel])
             LevelUp();
 

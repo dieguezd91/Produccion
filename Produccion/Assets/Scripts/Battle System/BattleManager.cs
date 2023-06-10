@@ -51,7 +51,12 @@ public class BattleManager : MonoBehaviour
     [SerializeField] TextMeshProUGUI damageReceived;
     [SerializeField] TextMeshProUGUI damageDealt;
 
+<<<<<<< Updated upstream
     private int amountOfXp = 99;
+=======
+    private int amountOfXp;
+    private int creditsAmount;
+>>>>>>> Stashed changes
 
     void Awake()
     {
@@ -393,6 +398,7 @@ public class BattleManager : MonoBehaviour
             }
         }
     }
+
     private void UpdateEnemyStats()
     {
         for (int i = 0; i < enemysNameText.Length; i++)
