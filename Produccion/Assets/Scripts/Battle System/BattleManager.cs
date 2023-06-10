@@ -377,7 +377,7 @@ public class BattleManager : MonoBehaviour
             {
                 if(activeCharacters[i].IsPlayer())
                 {
-                    BattleCharacters playerData = activeCharacters[i];
+                    BattleCharacters playerData = activeCharacters[0];
 
                     playersNameText[i].text = playerData.characterName;
 
@@ -402,7 +402,7 @@ public class BattleManager : MonoBehaviour
         {
             if (activeCharacters.Count > i)
             {
-                BattleCharacters enemyData = activeCharacters[i];
+                BattleCharacters enemyData = activeCharacters[1];
 
                 enemysNameText[i].text = enemyData.characterName;
 
@@ -531,9 +531,7 @@ public class BattleManager : MonoBehaviour
     else if (currentTurn == 1)
     {
         damageReceived.text = damage.ToString();
-        Debug.Log("1");
         yield return new WaitForSeconds(2f);
-        Debug.Log("2");
         damageReceived.text = string.Empty;
     }
 }

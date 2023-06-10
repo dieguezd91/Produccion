@@ -132,13 +132,13 @@ MonoBehaviour:
   playersPositions: {fileID: 116928168144188952}
   enemiesPositions: {fileID: 116928168912082065}
   playerPrefabs:
-  - {fileID: 5464349049900020014, guid: d4a9d1e5880f17446a99e56903db116e, type: 3}
   - {fileID: 8869506991540711628, guid: ac0f5d0afc1eaae4facc03b1723ba4cd, type: 3}
   enemiesPrefabs:
   - {fileID: 2992778607054572379, guid: fcd99365776df7540bb8e32323459ee9, type: 3}
   - {fileID: 5347475773130916875, guid: 5c5e75eacc693104cb2af578a9b390f8, type: 3}
   - {fileID: 8299695002426701587, guid: 4f7f7473bb0ef6a44a6b08ae4e9e3247, type: 3}
   - {fileID: 8299695002426701587, guid: 1e1a0015764f0094385e535b6f28cf26, type: 3}
+  - {fileID: 5464349049900020014, guid: d4a9d1e5880f17446a99e56903db116e, type: 3}
   currentTurn: 0
   waitingForTurn: 0
   UIButtonHolder: {fileID: 116928167884403414}

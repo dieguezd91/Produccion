@@ -9,10 +9,12 @@ public class PickUpItem : MonoBehaviour
     [SerializeField] ItemsManager invItem;
     [SerializeField] GameObject door;
     [SerializeField] GameObject dialogue;
+    Inventory inventory;
 
     private void Start()
     {
-        if(Inventory.instance.hasRookiePistol)
+        inventory = GameManager.instance.GetComponent<Inventory>();
+        if(inventory.hasRookiePistol)
             item.SetActive(false);
     }
 

@@ -98,13 +98,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 0
-  attacksAvailable: []
+  attacksAvailable:
+  - Ataque rango
   characterName: Dinnie
-  currentHP: 0
-  maxHP: 0
-  dexterity: 0
-  strength: 0
-  defence: 0
+  currentHP: 100
+  maxHP: 100
+  dexterity: 35
+  strength: 40
+  defence: 1
   meleeWeaponDamage: 0
   rangeWeaponDamage: 0
   isDead: 0
