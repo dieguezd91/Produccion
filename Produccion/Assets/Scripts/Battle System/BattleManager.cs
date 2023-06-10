@@ -51,12 +51,9 @@ public class BattleManager : MonoBehaviour
     [SerializeField] TextMeshProUGUI damageReceived;
     [SerializeField] TextMeshProUGUI damageDealt;
 
-<<<<<<< Updated upstream
-    private int amountOfXp = 99;
-=======
     private int amountOfXp;
     private int creditsAmount;
->>>>>>> Stashed changes
+
 
     void Awake()
     {

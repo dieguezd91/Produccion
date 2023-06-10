@@ -20,6 +20,7 @@ public class CVSReader : MonoBehaviour
     }
 
     [System.Serializable]
+
     public class EnemyList
     {
         public Enemy[] enemy;
@@ -45,10 +46,10 @@ public class CVSReader : MonoBehaviour
             enemyList.enemy[i] = new Enemy();
             enemyList.enemy[i].enemigo = data[6 * (i + 1)];
             enemyList.enemy[i].strength = int.Parse(data[6 * (i + 1) + 1]);
-            enemyList.enemy[i].dexterity = int.Parse(data[6 * (i + 1) + 1]);
-            enemyList.enemy[i].defence = int.Parse(data[6 * (i + 1) + 1]);
-            enemyList.enemy[i].critical = float.Parse(data[6 * (i + 1) + 1]);
-            enemyList.enemy[i].evasion = float.Parse(data[6 * (i + 1) + 1]);
+            enemyList.enemy[i].dexterity = int.Parse(data[6 * (i + 2) + 1]);
+            enemyList.enemy[i].defence = int.Parse(data[6 * (i + 3) + 1]);
+            enemyList.enemy[i].critical = float.Parse(data[6 * (i + 4) + 1]);
+            enemyList.enemy[i].evasion = float.Parse(data[6 * (i + 5) + 1]);
         }
     }
 }
