@@ -12,6 +12,7 @@ public class ItemButton : MonoBehaviour
         MenuManager.instance.itemName.text = itemOnButton.itemName;
         MenuManager.instance.itemDescription.text = itemOnButton.itemDescription;
         MenuManager.instance.activeItem = itemOnButton;
+        MenuManager.instance.itemsDescription.SetActive(true);
 
         if(BattleManager.instance.itemsToUseMenu.activeInHierarchy)
         {

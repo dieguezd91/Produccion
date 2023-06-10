@@ -34,7 +34,7 @@ public class MenuManager : MonoBehaviour
     public ItemsManager activeItem;
 
     [SerializeField] GameObject characterChoicePanel;
-    [SerializeField] GameObject itemsDescription;
+    public GameObject itemsDescription;
     [SerializeField] Text[] itemsCharacterChoiceNames;
 
 
