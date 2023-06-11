@@ -54,6 +54,7 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue()
     {
+        MenuManager.instance.menu.SetActive(false);
         GameManager.instance.chatting = true;
         animator.enabled = false;
         dialogueText.text = string.Empty;

@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
     public bool battleIsActive;
     public bool tutorial;
     public bool chatting;
+    public bool inStore;
 
     [SerializeField] PlayerStats[] playerStats;
 

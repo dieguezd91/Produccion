@@ -51,5 +51,6 @@ public class SceneManagerScript : MonoBehaviour
     public void ExitGame()
     {
         Application.Quit();
+        Debug.Log("I'm outta here!");
     }
 }

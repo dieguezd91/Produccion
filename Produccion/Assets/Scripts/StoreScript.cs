@@ -9,11 +9,11 @@ public class StoreScript : MonoBehaviour
 {
     [SerializeField] List<ItemsManager> itemInfo;
     [SerializeField] GameObject storeItemTemplate;
-    [SerializeField] TextMeshProUGUI totalCoinsText;
-    [SerializeField] Inventory playerInventory;
+    Inventory playerInventory;
 
     void Start()
     {
+        playerInventory = GameManager.instance.GetComponent<Inventory>();
         var itemTemplate = storeItemTemplate.GetComponent<TemplateStoreItem>();
 
         foreach (var item in itemInfo)
@@ -26,10 +26,5 @@ public class StoreScript : MonoBehaviour
 
             Instantiate(itemTemplate, transform);
         }
-    }
-
-    void Update()
-    {
-        totalCoinsText.text = playerInventory.credits.ToString();
     }
 }

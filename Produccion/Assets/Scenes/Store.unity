@@ -12762,17 +12762,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1879001113 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1356396790069476596, guid: 3b4efe27a958a4949b130a85c18f6b7e, type: 3}
-  m_PrefabInstance: {fileID: 1356396789982194473}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1880607622
 GameObject:
   m_ObjectHideFlags: 0
@@ -13797,11 +13786,19 @@ PrefabInstance:
     - target: {fileID: 1356396789423963809, guid: 3b4efe27a958a4949b130a85c18f6b7e, type: 3}
       propertyPath: totalCoinsText
       value: 
-      objectReference: {fileID: 1879001113}
+      objectReference: {fileID: 0}
     - target: {fileID: 1356396789423963809, guid: 3b4efe27a958a4949b130a85c18f6b7e, type: 3}
       propertyPath: playerInventory
       value: 
       objectReference: {fileID: 1356345981}
+    - target: {fileID: 1356396789423963823, guid: 3b4efe27a958a4949b130a85c18f6b7e, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1526.7803
+      objectReference: {fileID: 0}
+    - target: {fileID: 1356396789423963823, guid: 3b4efe27a958a4949b130a85c18f6b7e, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 673.178
+      objectReference: {fileID: 0}
     - target: {fileID: 1356396789604206402, guid: 3b4efe27a958a4949b130a85c18f6b7e, type: 3}
       propertyPath: m_Name
       value: Store
@@ -13909,6 +13906,18 @@ PrefabInstance:
     - target: {fileID: 1356396790069476596, guid: 3b4efe27a958a4949b130a85c18f6b7e, type: 3}
       propertyPath: m_VerticalAlignment
       value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 1356396790336735536, guid: 3b4efe27a958a4949b130a85c18f6b7e, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: -393.2198
+      objectReference: {fileID: 0}
+    - target: {fileID: 1356396790336735536, guid: 3b4efe27a958a4949b130a85c18f6b7e, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -224.6681
+      objectReference: {fileID: 0}
+    - target: {fileID: 1356396790336735536, guid: 3b4efe27a958a4949b130a85c18f6b7e, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -17.68219
       objectReference: {fileID: 0}
     - target: {fileID: 1356396790336735539, guid: 3b4efe27a958a4949b130a85c18f6b7e, type: 3}
       propertyPath: m_Type

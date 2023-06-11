@@ -6,14 +6,13 @@ using UnityEngine.UI;
 
 public class MenuManager : MonoBehaviour
 {
-    [SerializeField] GameObject menu;
+    public GameObject menu;
     [SerializeField] GameObject ConfirmQuit;
     [SerializeField] GameObject[] statsButtons;
     [SerializeField] GameObject characterInfo;
     [SerializeField] GameObject inventoryPanel;
     [SerializeField] GameObject statsPanel;
     public static MenuManager instance;
-    public Inventory inventory;
 
     private PlayerStats[] playerStats;
     [SerializeField] Text[] nameText, hpText, levelText, xpText, currentXPText;
@@ -56,7 +55,7 @@ public class MenuManager : MonoBehaviour
 
     private void Update()
     {
-        if(Input.GetKeyDown(KeyCode.V) && !BattleManager.instance.isBattleActive)
+        if(Input.GetKeyDown(KeyCode.V) && !BattleManager.instance.isBattleActive && !GameManager.instance.chatting && !GameManager.instance.inStore)
         {
             if (menu.activeInHierarchy)
             {
@@ -79,6 +78,8 @@ public class MenuManager : MonoBehaviour
             AddCreditsUI();
             Debug.Log("Nuevos creditos");
         }
+
+        CreditsUI.text = Inventory.instance.credits.ToString();
     }
 
     public void UpdateStats()
@@ -201,7 +202,6 @@ public class MenuManager : MonoBehaviour
         newCreditsUI.text = "+" + creditsToGive.ToString();
         newCreditsUI.gameObject.SetActive(false);
         Inventory.instance.AddCredits(creditsToGive);
-        CreditsUI.text = Inventory.instance.credits.ToString();
         Debug.Log("Ganaste " + creditsToGive.ToString() + " creditos");
     }
 }

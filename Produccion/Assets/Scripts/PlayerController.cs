@@ -46,7 +46,7 @@ public class PlayerController : MonoBehaviour
         float moveY = Input.GetAxisRaw("Vertical");
         input = new Vector2(moveX, moveY).normalized;
 
-        if (!GameManager.instance.chatting)
+        if (!GameManager.instance.chatting || !GameManager.instance.inStore || !MenuManager.instance.menu.activeInHierarchy)
         {
             // ANIMACIONES
             animator.SetFloat("Horizontal", input.x);
