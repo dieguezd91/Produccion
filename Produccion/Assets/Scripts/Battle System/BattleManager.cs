@@ -447,7 +447,7 @@ public class BattleManager : MonoBehaviour
 
     public void UpdateItemsInInventory()
     {
-        if (!inventoryIsOpen)
+        if (!inventoryIsOpen && isBattleActive)
             itemsToUseMenu.SetActive(true);
         else
             itemsToUseMenu.SetActive(false);
