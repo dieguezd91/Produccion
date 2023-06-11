@@ -99,8 +99,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlayer: 0
   attacksAvailable:
-  - 
-  characterName: Negro
+  - Ataque melee
+  characterName: Mercenario
   currentHP: 100
   maxHP: 100
   dexterity: 25
