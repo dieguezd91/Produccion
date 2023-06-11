@@ -38,7 +38,7 @@ public class Inventory : MonoBehaviour
             {
                 if (itemInInventory.itemName == item.itemName)
                 {
-                    itemInInventory.amount += item.amount;
+                    itemInInventory.amount++;
                     itemAlreadyInInventory = true;
                 }
             }
