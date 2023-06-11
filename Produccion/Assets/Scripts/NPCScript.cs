@@ -17,11 +17,13 @@ public class NPCScript : MonoBehaviour
         if (pjNearby && Input.GetKeyDown(KeyCode.Space))
         {
             menu.SetActive(true);
+            GameManager.instance.inStore = true;
         }
 
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             menu.SetActive(false);
+            GameManager.instance.inStore = false;
         }
     }
 

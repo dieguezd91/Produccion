@@ -70,6 +70,7 @@ public class MenuManager : MonoBehaviour
                 inventoryPanel.SetActive(false);
                 statsPanel.SetActive(false);
                 characterInfo.SetActive(true);
+                 
             }
         }
 
