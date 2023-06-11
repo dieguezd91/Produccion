@@ -52,7 +52,9 @@ public class BattleManager : MonoBehaviour
     [SerializeField] TextMeshProUGUI damageDealt;
 
     private int amountOfXp;
-    private int creditsAmount;
+
+    public bool allEnemiesAreDead = true;
+    public bool allPlayersAreDead = true;
 
 
     void Awake()
@@ -225,14 +227,14 @@ public class BattleManager : MonoBehaviour
         bool allEnemiesAreDead = true;
         bool allPlayersAreDead = true;
 
-        for(int i = 0; i < activeCharacters.Count; i++)
+        for (int i = 0; i < activeCharacters.Count; i++)
         {
-            if(activeCharacters[i].currentHP < 0)
+            if (activeCharacters[i].currentHP < 0)
             {
                 activeCharacters[i].currentHP = 0;
             }
-            
-            if(activeCharacters[i].currentHP == 0)
+
+            if (activeCharacters[i].currentHP == 0)
             {
                 //kill character
             }
@@ -246,7 +248,7 @@ public class BattleManager : MonoBehaviour
             }
         }
 
-        if(allEnemiesAreDead || allPlayersAreDead)
+        if (allEnemiesAreDead || allPlayersAreDead)
         {
             if (allEnemiesAreDead)
             {
@@ -255,6 +257,7 @@ public class BattleManager : MonoBehaviour
                 ExportPlayerStats(0);
                 Destroy(enemyGO);
                 Debug.Log("Won");
+
             }
             else if (allPlayersAreDead)
             {
@@ -263,7 +266,7 @@ public class BattleManager : MonoBehaviour
                 GameManager.instance.RespawnPlayer();
             }
 
-            
+
             GameManager.instance.battleIsActive = false;
             isBattleActive = false;
             battleScene.gameObject.SetActive(false);
@@ -273,10 +276,10 @@ public class BattleManager : MonoBehaviour
         }
         else
         {
-            while(activeCharacters[currentTurn].currentHP == 0)
+            while (activeCharacters[currentTurn].currentHP == 0)
             {
                 currentTurn++;
-                if(currentTurn >= activeCharacters.Count)
+                if (currentTurn >= activeCharacters.Count)
                 {
                     currentTurn = 0;
                 }
@@ -290,18 +293,18 @@ public class BattleManager : MonoBehaviour
 
         yield return new WaitForSeconds(1f);
         EnemyAttack();
-        
+
         yield return new WaitForSeconds(1f);
-        NextTurn();        
-    }  
-    
+        NextTurn();
+    }
+
     private void EnemyAttack()
     {
         List<int> players = new List<int>();
 
-        for(int i = 0; i < activeCharacters.Count; i++)
+        for (int i = 0; i < activeCharacters.Count; i++)
         {
-            if(activeCharacters[i].IsPlayer() && activeCharacters[i].currentHP > 0)
+            if (activeCharacters[i].IsPlayer() && activeCharacters[i].currentHP > 0)
             {
                 players.Add(i);
             }
@@ -328,6 +331,16 @@ public class BattleManager : MonoBehaviour
         DealDamageToCharacters(selectedPlayerToAttack, movePower);
 
         UpdatePlayerStats();
+    }
+
+    public void PlayerAttack(string moveName)//, int selectEnemyTarget)
+    {
+        int selectEnemyTarget = 1;
+        int movePower = 1;
+
+        DealDamageToCharacters(selectEnemyTarget, movePower);
+
+        NextTurn();
     }
 
     private void DealDamageToCharacters(int selectedCharacterToAttack, int movePower)
@@ -359,7 +372,7 @@ public class BattleManager : MonoBehaviour
 
     private int CalculateCritical(int damageToGive)
     {
-        if(UnityEngine.Random.value <= 0.1f)// si es critico multiplica x2
+        if (UnityEngine.Random.value <= 0.1f)// si es critico multiplica x2
         {
             Debug.Log("Critical hit! instead of " + damageToGive + " points. " + (damageToGive * 2));
 
@@ -371,18 +384,18 @@ public class BattleManager : MonoBehaviour
 
     private void UpdatePlayerStats()
     {
-        for(int i = 0; i < playersNameText.Length; i++)
+        for (int i = 0; i < playersNameText.Length; i++)
         {
-            if(activeCharacters.Count > i)
+            if (activeCharacters.Count > i)
             {
-                if(activeCharacters[i].IsPlayer())
+                if (activeCharacters[i].IsPlayer())
                 {
                     BattleCharacters playerData = activeCharacters[0];
 
                     playersNameText[i].text = playerData.characterName;
 
                     playerHealthSlider[i].maxValue = playerData.maxHP;
-                    playerHealthSlider[i].value = playerData.currentHP;                    
+                    playerHealthSlider[i].value = playerData.currentHP;
                 }
                 else
                 {
@@ -416,19 +429,9 @@ public class BattleManager : MonoBehaviour
         }
     }
 
-    public void PlayerAttack(string moveName)//, int selectEnemyTarget)
-    {
-        int selectEnemyTarget = 1;
-        int movePower = 1;
-
-        DealDamageToCharacters(selectEnemyTarget, movePower);
-
-        NextTurn();
-    }
-
     public void RunAway()
     {
-        if(UnityEngine.Random.value > chanceToRunAway)
+        if (UnityEngine.Random.value > chanceToRunAway)
         {
             //Hay 50% de chances de no poder escapar y perdes el turno
             isBattleActive = false;
@@ -481,12 +484,12 @@ public class BattleManager : MonoBehaviour
 
     public void OpenCharacterMenu()
     {
-        if(selectedItem)
+        if (selectedItem)
         {
             characterChoicePanel.SetActive(true);
-            for(int i = 0; i < activeCharacters.Count; i++)
+            for (int i = 0; i < activeCharacters.Count; i++)
             {
-                if(activeCharacters[i].IsPlayer())
+                if (activeCharacters[i].IsPlayer())
                 {
                     PlayerStats activePlayer = GameManager.instance.GetPlayerStats()[i];
                     playerChoiceName[i].text = activePlayer.playerName;
@@ -494,7 +497,7 @@ public class BattleManager : MonoBehaviour
                     bool activePlayerInHierarchy = activePlayer.gameObject.activeInHierarchy;
                     playerChoiceName[i].transform.parent.gameObject.SetActive(activePlayerInHierarchy);
                 }
-            }            
+            }
         }
         else
         {
@@ -522,17 +525,18 @@ public class BattleManager : MonoBehaviour
 
     IEnumerator ShowDamage(int damage)
     {
-    if (currentTurn == 0)
-    {
-        damageDealt.text = damage.ToString();
-        yield return new WaitForSeconds(2f);
-        damageDealt.text = string.Empty;
-    }
-    else if (currentTurn == 1)
-    {
-        damageReceived.text = damage.ToString();
-        yield return new WaitForSeconds(2f);
-        damageReceived.text = string.Empty;
+        if (currentTurn == 0)
+        {
+            damageDealt.text = damage.ToString();
+            yield return new WaitForSeconds(2f);
+            damageDealt.text = string.Empty;
+        }
+        else if (currentTurn == 1)
+        {
+            damageReceived.text = damage.ToString();
+            yield return new WaitForSeconds(2f);
+            damageReceived.text = string.Empty;
+        }
     }
 }
-}
+    

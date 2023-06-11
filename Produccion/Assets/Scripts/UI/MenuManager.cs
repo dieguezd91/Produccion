@@ -90,9 +90,9 @@ public class MenuManager : MonoBehaviour
             characterPanel[i].SetActive(true);
 
             nameText[i].text = playerStats[i].playerName;
-            hpText[i].text = "HP: " + playerStats[i].currentHP + "/" + playerStats[i].maxHP;
-            levelText[i].text = "Level: " + playerStats[i].playerLevel;
-            currentXPText[i].text = "Current XP: " + playerStats[i].currentXP;
+            hpText[i].text = "PS: " + playerStats[i].currentHP + "/" + playerStats[i].maxHP;
+            levelText[i].text = "Nivel: " + playerStats[i].playerLevel;
+            currentXPText[i].text = "EXP Actual: " + playerStats[i].currentXP;
 
             characterImage[i].sprite = playerStats[i].characterImage;
 
@@ -196,7 +196,7 @@ public class MenuManager : MonoBehaviour
 
     public void AddCreditsUI()
     {
-        int creditsToGive = UnityEngine.Random.Range(50, 150);
+        int creditsToGive = UnityEngine.Random.Range(25, 100);
         newCreditsUI.gameObject.SetActive(true);
         newCreditsUI.text = "+" + creditsToGive.ToString();
         newCreditsUI.gameObject.SetActive(false);

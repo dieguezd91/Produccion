@@ -53,8 +53,9 @@ public class PlayerController : MonoBehaviour
             animator.SetFloat("Vertical", input.y);
             animator.SetFloat("Speed", input.sqrMagnitude);
 
-            CheckForEncounters();
         }
+        
+        CheckForEncounters();
     }
 
     private void FixedUpdate()

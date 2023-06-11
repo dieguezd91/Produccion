@@ -25,5 +25,6 @@ public class PickUpItem : MonoBehaviour
         dialogue.SetActive(false);
         Inventory.instance.hasRookiePistol = true;
         Inventory.instance.itemsList.Add(invItem);
+        GameManager.instance.tutorial = false;
     }
 }

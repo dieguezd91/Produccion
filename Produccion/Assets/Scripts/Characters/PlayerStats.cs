@@ -1,7 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using static Cinemachine.DocumentationSortingAttribute;
+using UnityEngine.UI;
+
 
 public class PlayerStats : MonoBehaviour
 {
@@ -23,6 +24,9 @@ public class PlayerStats : MonoBehaviour
     [SerializeField] public int dexterity;
     [SerializeField] public int strength;
     [SerializeField] public int defence;
+
+    [SerializeField] GameObject expUp;
+    [SerializeField] Text experienceGained;
 
     public string equippedMeleeWeaponName;
     public string equippedRangeWeaponName;
@@ -78,6 +82,8 @@ public class PlayerStats : MonoBehaviour
             defence++;
         }
         Debug.Log(currentXP);
+        //expUp.SetActive(true);
+        //ShowExpGained(amountToGive);
     }
 
     void LevelUp()
@@ -117,4 +123,10 @@ public class PlayerStats : MonoBehaviour
         yield return new WaitForSeconds(2f);
         levelUp.SetActive(false);
     }
+
+    //IEnumerator ShowExpGained(int amountToGive)
+    //{
+    //    experienceGained.text = "+ " + amountToGive.ToString() + " de experiencia";
+    //    yield return amountToGive;
+    //}
 }

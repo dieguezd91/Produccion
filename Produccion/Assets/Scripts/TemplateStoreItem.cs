@@ -17,6 +17,7 @@ public class TemplateStoreItem : MonoBehaviour
 
     void Start()
     {
+        playerInventory = Inventory.instance.GetComponent<Inventory>();
         price = int.Parse(priceTag.text);
     }
 
