@@ -4304,7 +4304,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8684356913238160024, guid: 2c94ae9717451714d8a2ec673cc36214, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8684356913238160024, guid: 2c94ae9717451714d8a2ec673cc36214, type: 3}
       propertyPath: m_LocalScale.x
@@ -4320,11 +4320,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8684356913238160024, guid: 2c94ae9717451714d8a2ec673cc36214, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.03
+      value: 1.5254999
       objectReference: {fileID: 0}
     - target: {fileID: 8684356913238160024, guid: 2c94ae9717451714d8a2ec673cc36214, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.55
+      value: 1.54
       objectReference: {fileID: 0}
     - target: {fileID: 8684356913238160024, guid: 2c94ae9717451714d8a2ec673cc36214, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4375,6 +4375,18 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: b62f1a10781302d439da0062f677326f, type: 3}
     - target: {fileID: 8684356913238160025, guid: 2c94ae9717451714d8a2ec673cc36214, type: 3}
+      propertyPath: m_SortingLayer
+      value: -3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8684356913238160025, guid: 2c94ae9717451714d8a2ec673cc36214, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8684356913238160025, guid: 2c94ae9717451714d8a2ec673cc36214, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -575943747
+      objectReference: {fileID: 0}
+    - target: {fileID: 8684356913238160025, guid: 2c94ae9717451714d8a2ec673cc36214, type: 3}
       propertyPath: m_WasSpriteAssigned
       value: 1
       objectReference: {fileID: 0}
@@ -4385,6 +4397,10 @@ PrefabInstance:
     - target: {fileID: 8684356913238160027, guid: 2c94ae9717451714d8a2ec673cc36214, type: 3}
       propertyPath: m_Name
       value: StoreOwner
+      objectReference: {fileID: 0}
+    - target: {fileID: 8684356913238160027, guid: 2c94ae9717451714d8a2ec673cc36214, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2c94ae9717451714d8a2ec673cc36214, type: 3}
@@ -4399,7 +4415,7 @@ GameObject:
   - component: {fileID: 82317234}
   - component: {fileID: 82317233}
   - component: {fileID: 82317232}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: gondola
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4470,9 +4486,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: -575943747
+  m_SortingLayer: -3
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 5c63a874e46dbc546aee11ea79c62d40, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -4518,7 +4534,7 @@ GameObject:
   - component: {fileID: 82721819}
   - component: {fileID: 82721818}
   - component: {fileID: 82721820}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: mostrador
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4563,9 +4579,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: -575943747
+  m_SortingLayer: -3
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 0394dad1ec2b4204f87a921f98087862, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -4585,7 +4601,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 82721817}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.1145, y: 0.58, z: 0}
+  m_LocalPosition: {x: 1.61, y: 0.57, z: 0}
   m_LocalScale: {x: 3.7616138, y: 2.2266, z: 2.2266}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4695,8 +4711,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 158398957}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.3899999, y: 4.85, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 2.5965002, y: 4.7978, z: 0}
+  m_LocalScale: {x: 0.8956, y: 0.8956, z: 0.8956}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1922619652}
@@ -4800,7 +4816,7 @@ GameObject:
   m_Component:
   - component: {fileID: 188032387}
   - component: {fileID: 188032388}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: laser (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4884,7 +4900,7 @@ GameObject:
   m_Component:
   - component: {fileID: 192463394}
   - component: {fileID: 192463395}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: pill (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5051,7 +5067,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7277363986584689379, guid: b704549afed9e8445881ad0bda96f2a6, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7277363986584689379, guid: b704549afed9e8445881ad0bda96f2a6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5193,7 +5209,7 @@ GameObject:
   m_Component:
   - component: {fileID: 270569493}
   - component: {fileID: 270569494}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Katana
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5277,7 +5293,7 @@ GameObject:
   m_Component:
   - component: {fileID: 277899328}
   - component: {fileID: 277899329}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: syringe (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5460,7 +5476,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1395730696270280856, guid: b3d2f8d83aba2814290876fc518be8f8, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1395730696270280856, guid: b3d2f8d83aba2814290876fc518be8f8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5618,7 +5634,7 @@ GameObject:
   m_Component:
   - component: {fileID: 371842196}
   - component: {fileID: 371842197}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: pill (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5709,7 +5725,7 @@ PrefabInstance:
       objectReference: {fileID: 2002631218}
     - target: {fileID: 3898644280530377690, guid: f2a701de30b0ebf46a1762f6af235349, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3898644280530377690, guid: f2a701de30b0ebf46a1762f6af235349, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5763,7 +5779,7 @@ GameObject:
   m_Component:
   - component: {fileID: 418878365}
   - component: {fileID: 418878366}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: pill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5847,7 +5863,7 @@ GameObject:
   m_Component:
   - component: {fileID: 422493121}
   - component: {fileID: 422493122}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: laser (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6100,7 +6116,7 @@ GameObject:
   - component: {fileID: 499225622}
   - component: {fileID: 499225621}
   - component: {fileID: 499225620}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: gondola (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6171,9 +6187,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: -575943747
+  m_SortingLayer: -3
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 5c63a874e46dbc546aee11ea79c62d40, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -6235,7 +6251,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8958934450127123627, guid: f73f40a194348d54c8614455e88432a8, type: 3}
       propertyPath: m_RootOrder
-      value: 14
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 8958934450127123627, guid: f73f40a194348d54c8614455e88432a8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9124,7 +9140,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 116928167587642210, guid: fc72844b2bc96684e8026b1035fb1b5a, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 116928167587642210, guid: fc72844b2bc96684e8026b1035fb1b5a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9441,8 +9457,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 744175556}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.364, y: 4.85, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -1.6613, y: 4.7978, z: 0}
+  m_LocalScale: {x: 0.8956, y: 0.8956, z: 0.8956}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 344310053}
@@ -9450,7 +9466,7 @@ Transform:
   - {fileID: 2019797839}
   - {fileID: 815315806}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &767461566
 GameObject:
@@ -9462,7 +9478,7 @@ GameObject:
   m_Component:
   - component: {fileID: 767461567}
   - component: {fileID: 767461568}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: syringe (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9630,7 +9646,7 @@ GameObject:
   m_Component:
   - component: {fileID: 826450814}
   - component: {fileID: 826450815}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: laser (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9798,7 +9814,7 @@ GameObject:
   m_Component:
   - component: {fileID: 908045749}
   - component: {fileID: 908045750}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: laser (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9971,7 +9987,7 @@ GameObject:
   m_Component:
   - component: {fileID: 928250564}
   - component: {fileID: 928250565}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: laser (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10056,7 +10072,7 @@ GameObject:
   - component: {fileID: 948823348}
   - component: {fileID: 948823347}
   - component: {fileID: 948823346}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: gondola individual
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10127,9 +10143,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: -575943747
+  m_SortingLayer: -3
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 0480799c40f188844accd62196048167, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -10170,7 +10186,7 @@ GameObject:
   m_Component:
   - component: {fileID: 968659219}
   - component: {fileID: 968659220}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Katana
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10254,7 +10270,7 @@ GameObject:
   m_Component:
   - component: {fileID: 969478654}
   - component: {fileID: 969478655}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: syringe (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10975,7 +10991,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!224 &1177477029 stripped
 RectTransform:
@@ -10992,7 +11008,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1217042889}
   - component: {fileID: 1217042890}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: pill (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11076,7 +11092,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1223852092}
   - component: {fileID: 1223852093}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: laser (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11160,7 +11176,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1228077548}
   - component: {fileID: 1228077549}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: syringe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11245,7 +11261,7 @@ GameObject:
   - component: {fileID: 1280135256}
   - component: {fileID: 1280135255}
   - component: {fileID: 1280135257}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: mostrador lateral
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11290,9 +11306,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: -575943747
+  m_SortingLayer: -3
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 824f391acf4d5c94394c7aeb6197871f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -11312,7 +11328,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1280135254}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.407, y: 2.005, z: 0}
+  m_LocalPosition: {x: -0.91150004, y: 1.9950001, z: 0}
   m_LocalScale: {x: 2.6252, y: 2.6252, z: 2.6252}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -11422,8 +11438,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1321310783}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.8640003, y: 4.85, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0.31779993, y: 4.7978, z: 0}
+  m_LocalScale: {x: 0.8956, y: 0.8956, z: 0.8956}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1586031860}
@@ -11431,7 +11447,7 @@ Transform:
   - {fileID: 1407841989}
   - {fileID: 485345688}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1337312636
 GameObject:
@@ -11443,7 +11459,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1337312637}
   - component: {fileID: 1337312638}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: pill (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11538,7 +11554,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1383607439}
   - component: {fileID: 1383607440}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: pill (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11622,7 +11638,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1399669148}
   - component: {fileID: 1399669149}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: pill (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11857,8 +11873,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1470392217}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.8899999, y: 4.85, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 3.94, y: 4.7978, z: 0}
+  m_LocalScale: {x: 0.8956, y: 0.8956, z: 0.8956}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1082759026}
@@ -11878,7 +11894,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1531495183}
   - component: {fileID: 1531495184}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: pill (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12043,7 +12059,7 @@ GameObject:
   - component: {fileID: 1540336324}
   - component: {fileID: 1540336323}
   - component: {fileID: 1540336322}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: gondola individual (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12114,9 +12130,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: -575943747
+  m_SortingLayer: -3
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 0480799c40f188844accd62196048167, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -12241,7 +12257,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1630001952}
   - component: {fileID: 1630001953}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: syringe (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12410,7 +12426,7 @@ GameObject:
   - component: {fileID: 1639105212}
   - component: {fileID: 1639105211}
   - component: {fileID: 1639105213}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: mostrador lateral (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12455,9 +12471,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: -575943747
+  m_SortingLayer: -3
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 824f391acf4d5c94394c7aeb6197871f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -12477,7 +12493,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1639105210}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.69, y: 2.005, z: 0}
+  m_LocalPosition: {x: 4.1855, y: 1.9950001, z: 0}
   m_LocalScale: {x: 2.6252, y: 2.6252, z: 2.6252}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -12604,7 +12620,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1803306827}
   - component: {fileID: 1803306828}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: laser (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12688,7 +12704,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1859081624}
   - component: {fileID: 1859081625}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: laser
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12856,7 +12872,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1893181467}
   - component: {fileID: 1893181468}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: syringe (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13091,8 +13107,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1956642147}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.11000013, y: 4.85, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 1.2531002, y: 4.7978, z: 0}
+  m_LocalScale: {x: 0.8956, y: 0.8956, z: 0.8956}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 912032853}
@@ -13146,7 +13162,7 @@ Transform:
   - {fileID: 28024702}
   - {fileID: 546054513}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2002631218 stripped
 GameObject:
@@ -13314,8 +13330,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2030578651}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.39, y: 4.85, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 5.2834, y: 4.7978, z: 0}
+  m_LocalScale: {x: 0.8956, y: 0.8956, z: 0.8956}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 299228744}
@@ -13419,7 +13435,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2046073161}
   - component: {fileID: 2046073162}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Katana
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13503,7 +13519,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2063325933}
   - component: {fileID: 2063325934}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: laser (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13672,7 +13688,7 @@ GameObject:
   - component: {fileID: 2114582477}
   - component: {fileID: 2114582476}
   - component: {fileID: 2114582475}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: gondola individual (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13743,9 +13759,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: -575943747
+  m_SortingLayer: -3
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 0480799c40f188844accd62196048167, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
