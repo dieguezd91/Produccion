@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Piso_NivelInterno_0 3
   m_EditorClassIdentifier: 
   m_Sprite: {fileID: -1108281980, guid: 5474fe52f8068164c824ed39a5b11fef, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.4627451}
+  m_Color: {r: 0.4811321, g: 0.4811321, b: 0.4811321, a: 1}
   m_Transform:
     e00: 1
     e01: 0
