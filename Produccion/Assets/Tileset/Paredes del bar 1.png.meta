@@ -70,7 +70,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -262,13 +262,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Paredes del bar 1_2: 713905429
-      Paredes del bar 1_4: -964745676
       Paredes del bar 1_0: -1814220284
       Paredes del bar 1_1: -689787375
+      Paredes del bar 1_2: 713905429
+      Paredes del bar 1_3: 922009356
+      Paredes del bar 1_4: -964745676
       Paredes del bar 1_5: 1690462818
       Paredes del bar 1_6: -1286298639
-      Paredes del bar 1_3: 922009356
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

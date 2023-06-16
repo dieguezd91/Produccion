@@ -70,7 +70,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -200,9 +200,9 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       Baldosa borde_0: 32246359
+      Baldosa borde_1: 860959551
       Baldosa borde_2: 183703907
       Baldosa borde_3: 1625411343
-      Baldosa borde_1: 860959551
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

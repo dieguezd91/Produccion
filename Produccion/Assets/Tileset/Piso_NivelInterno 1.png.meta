@@ -70,7 +70,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -262,13 +262,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Piso_NivelInterno_6: -302972753
-      Piso_NivelInterno_3: -1686891715
-      Piso_NivelInterno_2: 346052542
-      Piso_NivelInterno_4: -2058265349
-      Piso_NivelInterno_1: -114533697
       Piso_NivelInterno_0: -1108281980
+      Piso_NivelInterno_1: -114533697
+      Piso_NivelInterno_2: 346052542
+      Piso_NivelInterno_3: -1686891715
+      Piso_NivelInterno_4: -2058265349
       Piso_NivelInterno_5: -146600905
+      Piso_NivelInterno_6: -302972753
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

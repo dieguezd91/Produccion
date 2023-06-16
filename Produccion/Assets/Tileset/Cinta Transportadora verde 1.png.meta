@@ -70,7 +70,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -325,16 +325,16 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      Cinta Transportadora verde 1_0: -248321385
+      Cinta Transportadora verde 1_1: -1039945283
+      Cinta Transportadora verde 1_2: -1322211925
+      Cinta Transportadora verde 1_3: -1676087704
       Cinta Transportadora verde 1_4: 1805972073
       Cinta Transportadora verde 1_5: 81351178
-      Cinta Transportadora verde 1_9: -163856647
-      Cinta Transportadora verde 1_0: -248321385
-      Cinta Transportadora verde 1_7: -847086118
       Cinta Transportadora verde 1_6: -1157435574
+      Cinta Transportadora verde 1_7: -847086118
       Cinta Transportadora verde 1_8: -575482934
-      Cinta Transportadora verde 1_3: -1676087704
-      Cinta Transportadora verde 1_2: -1322211925
-      Cinta Transportadora verde 1_1: -1039945283
+      Cinta Transportadora verde 1_9: -163856647
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

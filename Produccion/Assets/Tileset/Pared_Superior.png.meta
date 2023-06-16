@@ -70,7 +70,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -241,12 +241,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Pared_Superior_4: 168180679
-      Pared_Superior_2: -2095064531
-      Pared_Superior_1: -991147917
-      Pared_Superior_5: -1205051359
       Pared_Superior_0: -225751184
+      Pared_Superior_1: -991147917
+      Pared_Superior_2: -2095064531
       Pared_Superior_3: 1119959728
+      Pared_Superior_4: 168180679
+      Pared_Superior_5: -1205051359
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -338,21 +338,24 @@ public class BattleManager : MonoBehaviour
         int selectEnemyTarget = 1;
         int movePower = 1;
 
+        //float attackMelee = activeCharacters[currentTurn].strength + activeCharacters[currentTurn].meleeWeaponDamage;
+        //float meleeDamageAmount = (attackMelee / defenceAmount) * movePower * Random.Range(0.9f, 1.1f); 
+        //int meleeDamageToGive = (int)meleeDamageAmount;
+        //activeCharacters[selectedCharacterToAttack].TakeHPDamage(rangeDamageToGive);
+
         DealDamageToCharacters(selectEnemyTarget, movePower);
 
         NextTurn();
     }
 
-    private void DealDamageToCharacters(int selectedCharacterToAttack, int movePower)
+    private void DealDamageToCharacters(int selectedCharacterToAttack, int movePower = 1)
     {
 
-        //float attackMelee = activeCharacters[currentTurn].strength + activeCharacters[currentTurn].meleeWeaponDamage;
         float attackPower = activeCharacters[currentTurn].dexterity + activeCharacters[currentTurn].rangeWeaponDamage;
         float defenceAmount = activeCharacters[selectedCharacterToAttack].defence; //ACA SE PUEDE IMPLEMENTAR ALGO QUE SUME DEFENSA COMO UN CHALECO ANTIBALAS 
 
-        //float meleeDamageAmount = (attackMelee / defenceAmount) * movePower * Random.Range(0.9f, 1.1f); 
-        float damageAmount = (attackPower - defenceAmount) * movePower * UnityEngine.Random.Range(0.9f, 1.1f);
-        //int meleeDamageToGive = (int)meleeDamageAmount;
+        float damageAmount = (attackPower - defenceAmount) * movePower * UnityEngine.Random.Range(0.8f, 1.2f);
+
         int rangeDamageToGive = (int)damageAmount;
         if (rangeDamageToGive <= 0)
             rangeDamageToGive = 0;

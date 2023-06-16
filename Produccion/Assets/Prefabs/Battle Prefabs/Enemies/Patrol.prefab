@@ -102,7 +102,7 @@ MonoBehaviour:
   - Ataque rango
   characterName: Patrol
   currentHP: 50
-  maxHP: 100
+  maxHP: 50
   dexterity: 20
   strength: 5
   defence: 10

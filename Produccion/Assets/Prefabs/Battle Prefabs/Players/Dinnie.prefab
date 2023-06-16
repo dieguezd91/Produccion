@@ -99,6 +99,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlayer: 0
   attacksAvailable:
+  - Ataque melee
   - Ataque rango
   characterName: Dinnie
   currentHP: 100

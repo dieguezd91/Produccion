@@ -102,7 +102,7 @@ MonoBehaviour:
   - Ataque rango
   characterName: Police
   currentHP: 75
-  maxHP: 100
+  maxHP: 75
   dexterity: 20
   strength: 0
   defence: 26

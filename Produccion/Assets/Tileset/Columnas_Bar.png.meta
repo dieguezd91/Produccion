@@ -70,7 +70,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -304,15 +304,15 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Columnas_Bar_8: -568757237
-      Columnas_Bar_7: -154028162
+      Columnas_Bar_0: 1047847406
+      Columnas_Bar_1: 1536114269
       Columnas_Bar_2: 763757495
       Columnas_Bar_3: 234684360
       Columnas_Bar_4: 1841904847
       Columnas_Bar_5: 138044005
       Columnas_Bar_6: -34140452
-      Columnas_Bar_0: 1047847406
-      Columnas_Bar_1: 1536114269
+      Columnas_Bar_7: -154028162
+      Columnas_Bar_8: -568757237
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

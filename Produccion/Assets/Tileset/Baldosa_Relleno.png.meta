@@ -70,7 +70,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -199,10 +199,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Baldosa_Relleno_3: 90082672
       Baldosa_Relleno_0: 604650528
-      Baldosa_Relleno_2: 1630188590
       Baldosa_Relleno_1: -449480412
+      Baldosa_Relleno_2: 1630188590
+      Baldosa_Relleno_3: 90082672
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
