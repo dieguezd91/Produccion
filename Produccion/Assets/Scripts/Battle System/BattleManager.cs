@@ -328,49 +328,64 @@ public class BattleManager : MonoBehaviour
         }*/
 
         int movePower = 1;
-        DealDamageToCharacters(selectedPlayerToAttack, movePower);
+        DealRangeDamageToCharacters(selectedPlayerToAttack, movePower);
 
         UpdatePlayerStats();
     }
 
-    public void PlayerAttack(string moveName)//, int selectEnemyTarget)
+    public void PlayerRangeAttack(string moveName)
     {
         int selectEnemyTarget = 1;
         int movePower = 1;
 
-        //float attackMelee = activeCharacters[currentTurn].strength + activeCharacters[currentTurn].meleeWeaponDamage;
-        //float meleeDamageAmount = (attackMelee / defenceAmount) * movePower * Random.Range(0.9f, 1.1f); 
-        //int meleeDamageToGive = (int)meleeDamageAmount;
-        //activeCharacters[selectedCharacterToAttack].TakeHPDamage(rangeDamageToGive);
-
-        DealDamageToCharacters(selectEnemyTarget, movePower);
+        DealRangeDamageToCharacters(selectEnemyTarget, movePower);
 
         NextTurn();
     }
 
-    private void DealDamageToCharacters(int selectedCharacterToAttack, int movePower = 1)
+    public void PlayerMeleeAttack(string moveName)
     {
+        int selectEnemyTarget = 1;
+        int movePower = 1;
 
+        DealMeleeDamageToCharacters(selectEnemyTarget, movePower);
+
+        NextTurn();
+    }
+
+    private void DealRangeDamageToCharacters(int selectedCharacterToAttack, int movePower = 1)
+    {
         float attackPower = activeCharacters[currentTurn].dexterity + activeCharacters[currentTurn].rangeWeaponDamage;
-        float defenceAmount = activeCharacters[selectedCharacterToAttack].defence; //ACA SE PUEDE IMPLEMENTAR ALGO QUE SUME DEFENSA COMO UN CHALECO ANTIBALAS 
-
+        float defenceAmount = activeCharacters[selectedCharacterToAttack].defence;
         float damageAmount = (attackPower - defenceAmount) * movePower * UnityEngine.Random.Range(0.8f, 1.2f);
 
-        int rangeDamageToGive = (int)damageAmount;
-        if (rangeDamageToGive <= 0)
-            rangeDamageToGive = 0;
+        int damageToGive = (int)damageAmount;
+        if (damageToGive <= 0)
+            damageToGive = 0;
 
         //iguala el valor del da�o a critico si es necesario
-        rangeDamageToGive = CalculateCritical(rangeDamageToGive);
+        damageToGive = CalculateCritical(damageToGive);
+        Debug.Log(activeCharacters[currentTurn].characterName + " use range attack and cause " + (int)damageAmount + "(" + damageToGive + ") of damage to " + activeCharacters[selectedCharacterToAttack]);
 
-        //Debug.Log(activeCharacters[currentTurn].characterName + " use melee attack and cause " + (int)meleeDamageAmount + "(" + meleeDamageToGive + ") to " + activeCharacters[selectedCharacterToAttack]);
-        Debug.Log(activeCharacters[currentTurn].characterName + " attack and causes " + (int)damageAmount + "(" + rangeDamageToGive + ") of damage to " + activeCharacters[selectedCharacterToAttack]);
+        StartCoroutine(ShowDamage(damageToGive));
+        Debug.Log("Take damage " + damageToGive);
+        activeCharacters[selectedCharacterToAttack].TakeHPDamage(damageToGive);
+    }
 
-        //activeCharacters[selectedCharacterToAttack].TakeHPMeleeDamage(meleeDamageToGive);
+    private void DealMeleeDamageToCharacters(int selectedCharacterToAttack, int movePower = 1)
+    {
+        float attackPower = activeCharacters[currentTurn].strength + activeCharacters[currentTurn].meleeWeaponDamage;
+        float defenceAmount = activeCharacters[selectedCharacterToAttack].defence;
+        float damageAmount = (attackPower - defenceAmount) * movePower * UnityEngine.Random.Range(0.8f, 1.2f);
 
-        StartCoroutine(ShowDamage(rangeDamageToGive));
-        Debug.Log("Take damage " + rangeDamageToGive);
-        activeCharacters[selectedCharacterToAttack].TakeHPDamage(rangeDamageToGive);
+        int damageToGive = (int)damageAmount;
+        if (damageToGive <= 0)
+            damageToGive = 0;
+        Debug.Log(activeCharacters[currentTurn].characterName + " use melee attack and cause " + (int)damageAmount + "(" + damageToGive + ") of damage to " + activeCharacters[selectedCharacterToAttack]);
+
+        StartCoroutine(ShowDamage(damageToGive));
+        Debug.Log("Take damage " + damageToGive);
+        activeCharacters[selectedCharacterToAttack].TakeHPDamage(damageToGive);
     }
 
     private int CalculateCritical(int damageToGive)

@@ -105,7 +105,7 @@ MonoBehaviour:
   maxHP: 75
   dexterity: 20
   strength: 0
-  defence: 26
+  defence: 13
   meleeWeaponDamage: 10
   rangeWeaponDamage: 25
   isDead: 0
