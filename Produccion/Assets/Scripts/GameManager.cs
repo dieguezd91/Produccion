@@ -13,6 +13,8 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] PlayerStats[] playerStats;
 
+    public Vector3 lastPosition;
+
     void Awake()
     {
         if (instance != null && instance != this)

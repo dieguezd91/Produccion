@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class DoorScript : MonoBehaviour
 {
@@ -16,6 +15,7 @@ public class DoorScript : MonoBehaviour
 
         if (pjNearby)
         {
+            if(place != "Ciudad")   GameManager.instance.lastPosition = GameManager.instance.player.transform.position - new Vector3(0f, 0.5f,0f);
             SceneManagerScript.instance.LoadScene(place);
         }
     }

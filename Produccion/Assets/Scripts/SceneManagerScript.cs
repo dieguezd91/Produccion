@@ -21,30 +21,9 @@ public class SceneManagerScript : MonoBehaviour
             instance = this;
         }
     }
-
-    public void Update()
-    {
-        scene = SceneManager.GetActiveScene().name;
-
-        //switch (scene)
-        //{
-        //    case "Bar":
-        //        if (GameManager.instance.tutorial)
-        //            spawnpoint = new Vector2(13.4f, 0.94f);
-        //        else if (!GameManager.instance.tutorial)
-        //            spawnpoint = new Vector2(-0.15f, 0.33f);
-        //        break;
-        //    case "Garage":
-        //        spawnpoint = new Vector2(-6.83f, 0.58f);
-        //        break;
-        //    case "Ciudad":
-        //        spawnpoint = new Vector2(-6.98f, 1.75f);
-        //        break;
-        //}
-        //SpawnpointScript.Spawn(spawnpoint);
-    }
     public void LoadScene(string newScene)
     {
+        scene = newScene;
         SceneManager.LoadScene(newScene);
     }
 

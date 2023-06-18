@@ -45,4 +45,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1395730696270280859, guid: b3d2f8d83aba2814290876fc518be8f8, type: 3}
-  spawnpoint: {fileID: 7277363986584689389}
+  spawnpoint: {fileID: 7277363986584689379}

@@ -5,16 +5,18 @@ using UnityEngine;
 public class SpawnpointScript : MonoBehaviour
 {
     public GameObject player;
-    public GameObject spawnpoint;
+    public Transform spawnpoint;
+    public static SpawnpointScript instance;
 
     void Start()
     {
         player = GameManager.instance.player;
-        Spawn();
+        if (SceneManagerScript.instance.scene != "Ciudad") Spawn(spawnpoint.position);
+        else Spawn(GameManager.instance.lastPosition);
     }
 
-    public void Spawn()
+    public void Spawn(Vector3 spawnpoint)
     {
-        player.transform.position = spawnpoint.transform.position;
+        player.transform.position = spawnpoint;
     }
 }
