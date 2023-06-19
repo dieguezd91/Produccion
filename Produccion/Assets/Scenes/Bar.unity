@@ -277,7 +277,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2976986416159150031, guid: 5523c2a8f36db97439918291f7ec9ae1, type: 3}
       propertyPath: enemies
-      value: Mercenario
+      value: MiniBoss1
       objectReference: {fileID: 0}
     - target: {fileID: 2976986416159150031, guid: 5523c2a8f36db97439918291f7ec9ae1, type: 3}
       propertyPath: fightAfter
@@ -305,7 +305,7 @@ PrefabInstance:
       objectReference: {fileID: 2062716181}
     - target: {fileID: 2976986416159150031, guid: 5523c2a8f36db97439918291f7ec9ae1, type: 3}
       propertyPath: enemies.Array.size
-      value: 10
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 2976986416159150031, guid: 5523c2a8f36db97439918291f7ec9ae1, type: 3}
       propertyPath: enemies.Array.data[0]
@@ -3366,14 +3366,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Battle Manager
       objectReference: {fileID: 0}
-    - target: {fileID: 116928168328773575, guid: fc72844b2bc96684e8026b1035fb1b5a, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: PlayerMeleeAttack
-      objectReference: {fileID: 0}
-    - target: {fileID: 116928169292437674, guid: fc72844b2bc96684e8026b1035fb1b5a, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: PlayerRangeAttack
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc72844b2bc96684e8026b1035fb1b5a, type: 3}
 --- !u!1 &777522540
@@ -3388,7 +3380,7 @@ GameObject:
   - component: {fileID: 777522541}
   - component: {fileID: 777522543}
   m_Layer: 0
-  m_Name: negro 1 barra
+  m_Name: Mercenario
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3436,7 +3428,7 @@ SpriteRenderer:
   m_SortingLayer: -3
   m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 69ec0d1c26461b94c960a363abf962b7, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.67058825, g: 0.44705883, b: 0.34901962, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -8545,7 +8537,7 @@ GameObject:
   - component: {fileID: 1828282431}
   - component: {fileID: 1828282433}
   m_Layer: 0
-  m_Name: negro 2 barra
+  m_Name: Mercenario (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8593,7 +8585,7 @@ SpriteRenderer:
   m_SortingLayer: -3
   m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 69ec0d1c26461b94c960a363abf962b7, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.67058825, g: 0.44705883, b: 0.34901962, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0

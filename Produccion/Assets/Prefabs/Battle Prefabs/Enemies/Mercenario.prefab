@@ -103,9 +103,9 @@ MonoBehaviour:
   characterName: Mercenario
   currentHP: 100
   maxHP: 100
-  dexterity: 25
+  dexterity: 15
   strength: 25
-  defence: 25
-  meleeWeaponDamage: 50
-  rangeWeaponDamage: 50
+  defence: 20
+  meleeWeaponDamage: 20
+  rangeWeaponDamage: 20
   isDead: 0
