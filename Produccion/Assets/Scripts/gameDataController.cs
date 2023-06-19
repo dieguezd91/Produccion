@@ -6,6 +6,7 @@ using System.IO;
 public class gameDataController : MonoBehaviour
 {
     public GameObject player;
+    public PlayerStats playerStats;
 
     private string saveArchives;
     public gameData gameData = new gameData();
@@ -13,9 +14,13 @@ public class gameDataController : MonoBehaviour
     private void Awake()
     {
         saveArchives = Application.dataPath + "/datos.json";
-        player = GameObject.FindGameObjectWithTag("Player");
     }
 
+    private void Start()
+    {
+        player = GameManager.instance.player;
+        playerStats = GameManager.instance.player.GetComponent<PlayerStats>();
+    }
     public void LoadData()
     {
         if (File.Exists(saveArchives))
@@ -23,9 +28,9 @@ public class gameDataController : MonoBehaviour
             string content = File.ReadAllText(saveArchives);
             gameData = JsonUtility.FromJson<gameData>(content);
 
-            Debug.Log("Player's position: " + gameData.position);
-
             player.transform.position = gameData.position;
+            playerStats.currentHP = gameData.lifePoints;
+            Inventory.instance.credits = gameData.credits;
         }
         else
         {
@@ -37,7 +42,10 @@ public class gameDataController : MonoBehaviour
     {
         gameData newData = new gameData()
         {
-            position = player.transform.position
+            position = player.transform.position,
+            lifePoints = playerStats.currentHP,
+            credits = Inventory.instance.credits,
+
         };
 
         string JSONchain = JsonUtility.ToJson(newData);

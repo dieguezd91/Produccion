@@ -5,4 +5,6 @@ using UnityEngine;
 public class gameData
 {
     public Vector3 position;
+    public int lifePoints;
+    public int credits;
 }
