@@ -51,6 +51,8 @@ public class BattleManager : MonoBehaviour
     [SerializeField] TextMeshProUGUI damageReceived;
     [SerializeField] TextMeshProUGUI damageDealt;
 
+    [SerializeField] TextMeshProUGUI log;
+
     private int amountOfXp;
 
     public bool allEnemiesAreDead = true;
@@ -366,9 +368,9 @@ public class BattleManager : MonoBehaviour
         //iguala el valor del da�o a critico si es necesario
         damageToGive = CalculateCritical(damageToGive);
         Debug.Log(activeCharacters[currentTurn].characterName + " use range attack and cause " + (int)damageAmount + "(" + damageToGive + ") of damage to " + activeCharacters[selectedCharacterToAttack]);
+        StartCoroutine(UpdateLog(activeCharacters[currentTurn].characterName + " use range attack and cause " + (int)damageAmount + "(" + damageToGive + ") of damage to " + activeCharacters[selectedCharacterToAttack]));
 
         StartCoroutine(ShowDamage(damageToGive));
-        Debug.Log("Take damage " + damageToGive);
         activeCharacters[selectedCharacterToAttack].TakeHPDamage(damageToGive);
     }
 
@@ -382,9 +384,9 @@ public class BattleManager : MonoBehaviour
         if (damageToGive <= 0)
             damageToGive = 0;
         Debug.Log(activeCharacters[currentTurn].characterName + " use melee attack and cause " + (int)damageAmount + "(" + damageToGive + ") of damage to " + activeCharacters[selectedCharacterToAttack]);
+        StartCoroutine(UpdateLog(activeCharacters[currentTurn].characterName + " use melee attack and cause " + (int)damageAmount + "(" + damageToGive + ") of damage to " + activeCharacters[selectedCharacterToAttack]));
 
         StartCoroutine(ShowDamage(damageToGive));
-        Debug.Log("Take damage " + damageToGive);
         activeCharacters[selectedCharacterToAttack].TakeHPDamage(damageToGive);
     }
 
@@ -393,6 +395,7 @@ public class BattleManager : MonoBehaviour
         if (UnityEngine.Random.value <= 0.1f)// si es critico multiplica x2
         {
             Debug.Log("Critical hit! instead of " + damageToGive + " points. " + (damageToGive * 2));
+            StartCoroutine(UpdateLog("Critical hit! instead of " + damageToGive + " points. " + (damageToGive * 2)));
 
             return (damageToGive * 2);
         }
@@ -546,15 +549,26 @@ public class BattleManager : MonoBehaviour
         if (currentTurn == 0)
         {
             damageDealt.text = damage.ToString();
-            yield return new WaitForSeconds(2f);
+            yield return new WaitForSeconds(5f);
             damageDealt.text = string.Empty;
         }
         else if (currentTurn == 1)
         {
             damageReceived.text = damage.ToString();
-            yield return new WaitForSeconds(2f);
+            yield return new WaitForSeconds(5f);
             damageReceived.text = string.Empty;
         }
     }
+
+    IEnumerator UpdateLog(string newText)
+    {
+        log.text += "\n" + newText;
+        if (log.isTextOverflowing)
+        {
+            Debug.Log("Overflowing");
+            log.text = string.Empty;
+            log.text += newText;
+        }
+        yield return new WaitForSeconds(2f);
+    }
 }
-    

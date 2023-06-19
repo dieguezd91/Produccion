@@ -95,6 +95,7 @@ MonoBehaviour:
   - {fileID: 116928169423360527}
   damageReceived: {fileID: 6607566565194583737}
   damageDealt: {fileID: 7113254807630270880}
+  log: {fileID: 7816298543029630632}
   allEnemiesAreDead: 1
   allPlayersAreDead: 1
 --- !u!1 &116928167659591806
@@ -3099,7 +3100,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: New Text
+  m_text: Batalla!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3c521e4d7a1976546aae7b5c00951f44, type: 2}
   m_sharedMaterial: {fileID: -5709013910873464010, guid: 3c521e4d7a1976546aae7b5c00951f44, type: 2}
@@ -3126,15 +3127,15 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 35
+  m_fontSizeBase: 35
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 1
-  m_VerticalAlignment: 2048
+  m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -3162,7 +3163,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 44.807735, y: 23.486776, z: -787.3991, w: -144.75441}
+  m_margin: {x: 44.807735, y: 23.486776, z: -787.3991, w: -96.42204}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
