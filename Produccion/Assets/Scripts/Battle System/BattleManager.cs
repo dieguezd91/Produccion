@@ -107,6 +107,7 @@ public class BattleManager : MonoBehaviour
     {
         Destroy(lastEnemy);
         enemyGO = enemy;
+
         if (!isBattleActive)
         {
             SettingUpBattle();
@@ -119,6 +120,8 @@ public class BattleManager : MonoBehaviour
             waitingForTurn = true;
             currentTurn = 0;//Random.Range(0, activeCharacters.Count);
         }
+        GameManager.instance.player.SetActive(false);
+        //enemyGO.SetActive(false);
     }
 
     private void AddingEnemies(string enemiesToSpawn)
@@ -257,15 +260,19 @@ public class BattleManager : MonoBehaviour
                 PlayerStats.instance.AddXP(amountOfXp);
                 MenuManager.instance.AddCreditsUI();
                 ExportPlayerStats(0);
+                GameManager.instance.player.SetActive(true);
+                //enemyGO.SetActive(true);
                 Destroy(enemyGO);
-                Debug.Log("Won");
+                Debug.Log("Victoria!");
 
             }
             else if (allPlayersAreDead)
             {
-                Debug.Log("Lost");
                 ExportPlayerStats(0);
+                GameManager.instance.player.SetActive(true);
+                //enemyGO.SetActive(true);
                 GameManager.instance.RespawnPlayer();
+                Debug.Log("Derrota...");
             }
 
 
@@ -367,8 +374,8 @@ public class BattleManager : MonoBehaviour
 
         //iguala el valor del da�o a critico si es necesario
         damageToGive = CalculateCritical(damageToGive);
-        Debug.Log(activeCharacters[currentTurn].characterName + " use range attack and cause " + (int)damageAmount + "(" + damageToGive + ") of damage to " + activeCharacters[selectedCharacterToAttack]);
-        StartCoroutine(UpdateLog(activeCharacters[currentTurn].characterName + " use range attack and cause " + (int)damageAmount + "(" + damageToGive + ") of damage to " + activeCharacters[selectedCharacterToAttack]));
+        Debug.Log(activeCharacters[currentTurn].characterName + " usa ataque a rango y causa " + (int)damageAmount + "(" + damageToGive + ") de daño a " + activeCharacters[selectedCharacterToAttack].characterName);
+        StartCoroutine(UpdateLog(activeCharacters[currentTurn].characterName + " usa ataque a rango y causa " + (int)damageAmount + "(" + damageToGive + ") de daño a " + activeCharacters[selectedCharacterToAttack].characterName));
 
         StartCoroutine(ShowDamage(damageToGive));
         activeCharacters[selectedCharacterToAttack].TakeHPDamage(damageToGive);
@@ -383,8 +390,8 @@ public class BattleManager : MonoBehaviour
         int damageToGive = (int)damageAmount;
         if (damageToGive <= 0)
             damageToGive = 0;
-        Debug.Log(activeCharacters[currentTurn].characterName + " use melee attack and cause " + (int)damageAmount + "(" + damageToGive + ") of damage to " + activeCharacters[selectedCharacterToAttack]);
-        StartCoroutine(UpdateLog(activeCharacters[currentTurn].characterName + " use melee attack and cause " + (int)damageAmount + "(" + damageToGive + ") of damage to " + activeCharacters[selectedCharacterToAttack]));
+        Debug.Log(activeCharacters[currentTurn].characterName + " usa ataque melee y causa " + (int)damageAmount + "(" + damageToGive + ") de daño a " + activeCharacters[selectedCharacterToAttack].characterName);
+        StartCoroutine(UpdateLog(activeCharacters[currentTurn].characterName + " usa ataque melee y causa " + (int)damageAmount + "(" + damageToGive + ") de daño a " + activeCharacters[selectedCharacterToAttack].characterName));
 
         StartCoroutine(ShowDamage(damageToGive));
         activeCharacters[selectedCharacterToAttack].TakeHPDamage(damageToGive);
@@ -394,8 +401,8 @@ public class BattleManager : MonoBehaviour
     {
         if (UnityEngine.Random.value <= 0.1f)// si es critico multiplica x2
         {
-            Debug.Log("Critical hit! instead of " + damageToGive + " points. " + (damageToGive * 2));
-            StartCoroutine(UpdateLog("Critical hit! instead of " + damageToGive + " points. " + (damageToGive * 2)));
+            Debug.Log("Golpe crítico! En lugar de " + damageToGive + " puntos, " + (damageToGive * 2));
+            StartCoroutine(UpdateLog("Golpe crítico! en lugar de " + damageToGive + " puntos, " + (damageToGive * 2)));
 
             return (damageToGive * 2);
         }
