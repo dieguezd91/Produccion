@@ -195,14 +195,6 @@ public class BattleManager : MonoBehaviour
         PlayerStats player = GameManager.instance.GetPlayerStats()[i];
 
         player.currentHP = activeCharacters[i].currentHP;
-        player.maxHP = activeCharacters[i].maxHP;
-
-        player.dexterity = activeCharacters[i].dexterity;
-        player.strength = activeCharacters[i].strength;
-        player.defence = activeCharacters[i].defence;
-
-        player.meleeDamage = activeCharacters[i].meleeWeaponDamage;
-        player.rangeDamage = activeCharacters[i].rangeWeaponDamage;
     }
 
     private void SettingUpBattle()
@@ -255,13 +247,14 @@ public class BattleManager : MonoBehaviour
 
         if (allEnemiesAreDead || allPlayersAreDead)
         {
+            GameManager.instance.player.SetActive(true);
+            //enemyGO.SetActive(true);
+
             if (allEnemiesAreDead)
             {
                 PlayerStats.instance.AddXP(amountOfXp);
                 MenuManager.instance.AddCreditsUI();
                 ExportPlayerStats(0);
-                GameManager.instance.player.SetActive(true);
-                //enemyGO.SetActive(true);
                 Destroy(enemyGO);
                 Debug.Log("Victoria!");
 
@@ -269,19 +262,16 @@ public class BattleManager : MonoBehaviour
             else if (allPlayersAreDead)
             {
                 ExportPlayerStats(0);
-                GameManager.instance.player.SetActive(true);
-                //enemyGO.SetActive(true);
                 GameManager.instance.RespawnPlayer();
                 Debug.Log("Derrota...");
             }
-
 
             GameManager.instance.battleIsActive = false;
             isBattleActive = false;
             battleScene.gameObject.SetActive(false);
             worldCamera.gameObject.SetActive(true);
             battleCamera.gameObject.SetActive(true);
-
+            log.text = string.Empty;
         }
         else
         {

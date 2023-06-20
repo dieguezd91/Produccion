@@ -106,7 +106,7 @@ MonoBehaviour:
   amountOfAffect: 0
   affectType: 0
   weaponDexterity: 0
-  weaponStrength: 5
+  weaponStrength: 7
   isStackable: 0
   amount: 1
 --- !u!61 &4148716458519559726

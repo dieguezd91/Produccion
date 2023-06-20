@@ -21,12 +21,9 @@ public class PlayerStats : MonoBehaviour
     [SerializeField] public int maxHP = 100;
     [SerializeField] public int currentHP;
 
-    [SerializeField] public int dexterity;
-    [SerializeField] public int strength;
-    [SerializeField] public int defence;
-
-    [SerializeField] GameObject expUp;
-    [SerializeField] Text experienceGained;
+    public int dexterity;
+    public int strength;
+    public int defence;
 
     public string equippedMeleeWeaponName;
     public string equippedRangeWeaponName;
@@ -58,11 +55,6 @@ public class PlayerStats : MonoBehaviour
         }
     }
 
-    private void Update()
-    {
-      
-    }
-
     public void AddXP(int amountOfXp)
     {
         int amountToGive = UnityEngine.Random.Range(105, 250);
@@ -72,15 +64,6 @@ public class PlayerStats : MonoBehaviour
         if(currentXP > xpForNextLevel[playerLevel])
             LevelUp();
 
-        if(playerLevel % 2 == 0)
-        {
-            dexterity++;
-            strength++;
-        }
-        else
-        {
-            defence++;
-        }
         Debug.Log(currentXP);
         //expUp.SetActive(true);
         //ShowExpGained(amountToGive);
@@ -88,10 +71,22 @@ public class PlayerStats : MonoBehaviour
 
     void LevelUp()
     {
+        Debug.Log(playerLevel);
+        if (playerLevel % 2 == 0)
+        {
+            Debug.Log("Gain DXT and STRG");
+            dexterity += 2;
+            strength += 2;
+        }
+        else
+        {
+            Debug.Log("Gain DFC");
+            defence += 2;
+        }
+
         currentXP -= xpForNextLevel[playerLevel];
         playerLevel++;
-        levelUp.SetActive(true);
-        StartCoroutine(Wait());
+        StartCoroutine(ShowLevelUpSign());
     }
 
     public void AddHP(int amountHPToAdd)
@@ -118,8 +113,9 @@ public class PlayerStats : MonoBehaviour
         rangeDamage = equipedRangeWeapon.weaponDexterity;
     }
         
-    IEnumerator Wait()
+    IEnumerator ShowLevelUpSign()
     {
+        levelUp.SetActive(true);
         yield return new WaitForSeconds(2f);
         levelUp.SetActive(false);
     }
