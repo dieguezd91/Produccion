@@ -303,11 +303,11 @@ public class BattleManager : MonoBehaviour
     {
         List<int> players = new List<int>();
 
-        for (int i = 0; i < activeCharacters.Count; i++)
+        for (int n = 0; n < activeCharacters.Count; n++)
         {
-            if (activeCharacters[i].IsPlayer() && activeCharacters[i].currentHP > 0)
+            if (activeCharacters[n].IsPlayer() && activeCharacters[n].currentHP > 0)
             {
-                players.Add(i);
+                players.Add(n);
             }
         }
         int selectedPlayerToAttack = players[UnityEngine.Random.Range(0, players.Count)];
@@ -328,7 +328,9 @@ public class BattleManager : MonoBehaviour
         }*/
 
         int movePower = 1;
-        DealRangeDamageToCharacters(selectedPlayerToAttack, movePower);
+        int i = UnityEngine.Random.Range(1, 10);
+        if (i <= 5) DealRangeDamageToCharacters(selectedPlayerToAttack, movePower);
+        else DealMeleeDamageToCharacters(selectedPlayerToAttack, movePower);
 
         UpdatePlayerStats();
     }

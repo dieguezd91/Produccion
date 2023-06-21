@@ -103,9 +103,9 @@ MonoBehaviour:
   characterName: Jefe Mercenario
   currentHP: 100
   maxHP: 100
-  dexterity: 20
+  dexterity: 15
   strength: 20
   defence: 20
-  meleeWeaponDamage: 35
-  rangeWeaponDamage: 35
+  meleeWeaponDamage: 25
+  rangeWeaponDamage: 25
   isDead: 0
