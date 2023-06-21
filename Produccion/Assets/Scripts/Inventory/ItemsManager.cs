@@ -8,6 +8,8 @@ public class ItemsManager : MonoBehaviour
     public enum ItemType { Item, MeleeWeapon, RangeWeapon}
     public ItemType itemType;
 
+    [SerializeField] ItemsManager item;
+
     public string itemName, itemDescription;
     public int valueCoins;
     public Sprite icon;
@@ -54,7 +56,7 @@ public class ItemsManager : MonoBehaviour
     {
         if(collision.CompareTag("Player"))
         {
-            Inventory.instance.AddItems(this);
+            Inventory.instance.AddItems(item);
             SelfDestroy();
             Debug.Log("colision");
         }

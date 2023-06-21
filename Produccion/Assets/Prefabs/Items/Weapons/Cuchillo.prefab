@@ -99,6 +99,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: 1
+  item: {fileID: 4148716458519559724}
   itemName: Cuchillo
   itemDescription: Un cuchillo de carnicero
   valueCoins: 25

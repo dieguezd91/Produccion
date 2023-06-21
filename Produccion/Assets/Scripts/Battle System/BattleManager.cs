@@ -60,6 +60,7 @@ public class BattleManager : MonoBehaviour
     public bool allPlayersAreDead = true;
 
 
+
     void Awake()
     {
         if (instance != null && instance != this)
@@ -453,7 +454,6 @@ public class BattleManager : MonoBehaviour
         if (UnityEngine.Random.value > chanceToRunAway)
         {
             //Hay 50% de chances de no poder escapar y perdes el turno
-
             StartCoroutine(ScapingTime());
         }
         else
