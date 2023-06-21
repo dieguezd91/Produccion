@@ -38,7 +38,7 @@ public class EventScript : MonoBehaviour
     {
         if(fightAfter == true)
         {
-            BattleManager.instance.StartBattle(null, enemies);
+            BattleManager.instance.StartBattle(this.gameObject, enemies);
         }
     }
 }

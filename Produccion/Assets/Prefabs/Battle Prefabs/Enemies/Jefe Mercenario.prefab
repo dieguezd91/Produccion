@@ -104,8 +104,8 @@ MonoBehaviour:
   currentHP: 100
   maxHP: 100
   dexterity: 20
-  strength: 25
+  strength: 20
   defence: 20
-  meleeWeaponDamage: 40
-  rangeWeaponDamage: 40
+  meleeWeaponDamage: 35
+  rangeWeaponDamage: 35
   isDead: 0

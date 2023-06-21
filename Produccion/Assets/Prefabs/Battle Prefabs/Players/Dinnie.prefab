@@ -104,9 +104,9 @@ MonoBehaviour:
   characterName: Dinnie
   currentHP: 100
   maxHP: 100
-  dexterity: 30
-  strength: 30
-  defence: 1
+  dexterity: 25
+  strength: 25
+  defence: 0
   meleeWeaponDamage: 0
   rangeWeaponDamage: 0
   isDead: 0

@@ -8684,18 +8684,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 40653136566858797, guid: df092f85b3317ad4f8029bb6b3dea30c, type: 3}
-      propertyPath: itemsDescription
-      value: 
-      objectReference: {fileID: 1523339330}
-    - target: {fileID: 1122234672572671797, guid: df092f85b3317ad4f8029bb6b3dea30c, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
-      value: 
-      objectReference: {fileID: 40653136566858797, guid: df092f85b3317ad4f8029bb6b3dea30c, type: 3}
-    - target: {fileID: 1122234672572671797, guid: df092f85b3317ad4f8029bb6b3dea30c, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: CloseCharacterChoicePanel
-      objectReference: {fileID: 0}
     - target: {fileID: 1254512454038625421, guid: df092f85b3317ad4f8029bb6b3dea30c, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -8808,30 +8796,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4501658709926246758, guid: df092f85b3317ad4f8029bb6b3dea30c, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4501658709926246758, guid: df092f85b3317ad4f8029bb6b3dea30c, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4501658709926246758, guid: df092f85b3317ad4f8029bb6b3dea30c, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4501658709926246758, guid: df092f85b3317ad4f8029bb6b3dea30c, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4501658709926246758, guid: df092f85b3317ad4f8029bb6b3dea30c, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4501658709926246758, guid: df092f85b3317ad4f8029bb6b3dea30c, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5795686016075450229, guid: df092f85b3317ad4f8029bb6b3dea30c, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -8891,14 +8855,6 @@ PrefabInstance:
     - target: {fileID: 6428783080348288619, guid: df092f85b3317ad4f8029bb6b3dea30c, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7848645830846530934, guid: df092f85b3317ad4f8029bb6b3dea30c, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1356320151}
-    - target: {fileID: 7848645830846530934, guid: df092f85b3317ad4f8029bb6b3dea30c, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: OpenCharacterChoicePanel
       objectReference: {fileID: 0}
     - target: {fileID: 8865759172759514377, guid: df092f85b3317ad4f8029bb6b3dea30c, type: 3}
       propertyPath: m_AnchorMax.y
@@ -9879,17 +9835,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.0972223, y: 1.59}
   m_EdgeRadius: 0
---- !u!114 &1356320151 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 40653136566858797, guid: df092f85b3317ad4f8029bb6b3dea30c, type: 3}
-  m_PrefabInstance: {fileID: 786176710}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d471b0ffe2016e4eba720a26d27707a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1404028613
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10188,11 +10133,6 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 9043735441576769638, guid: 9c0fea7e9de435a4ca8c41e78182372a, type: 3}
   m_PrefabInstance: {fileID: 2055772730}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1523339330 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5009272999846005538, guid: df092f85b3317ad4f8029bb6b3dea30c, type: 3}
-  m_PrefabInstance: {fileID: 786176710}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &1584823346 stripped
 Transform:

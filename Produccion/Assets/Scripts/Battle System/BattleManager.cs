@@ -5,6 +5,7 @@ using System.Reflection;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using static System.Runtime.CompilerServices.RuntimeHelpers;
 
 public class BattleManager : MonoBehaviour
 {
@@ -107,6 +108,7 @@ public class BattleManager : MonoBehaviour
     {
         Destroy(lastEnemy);
         enemyGO = enemy;
+        log.text = string.Empty;
 
         if (!isBattleActive)
         {
@@ -271,7 +273,6 @@ public class BattleManager : MonoBehaviour
             battleScene.gameObject.SetActive(false);
             worldCamera.gameObject.SetActive(true);
             battleCamera.gameObject.SetActive(true);
-            log.text = string.Empty;
         }
         else
         {
@@ -308,7 +309,6 @@ public class BattleManager : MonoBehaviour
                 players.Add(i);
             }
         }
-
         int selectedPlayerToAttack = players[UnityEngine.Random.Range(0, players.Count)];
 
         int selectedAttack = UnityEngine.Random.Range(0, activeCharacters[currentTurn].AttackMovesAvailable().Length);
@@ -449,18 +449,20 @@ public class BattleManager : MonoBehaviour
 
     public void RunAway()
     {
+        //enemyGO.SetActive(true);
         if (UnityEngine.Random.value > chanceToRunAway)
         {
             //Hay 50% de chances de no poder escapar y perdes el turno
-            isBattleActive = false;
-            battleScene.SetActive(false);
-            worldCamera.gameObject.SetActive(true);
+
+            StartCoroutine(ScapingTime());
         }
         else
         {
+            StartCoroutine(UpdateLog("Intentas escapar pero fallas."));
             NextTurn();
         }
         ExportPlayerStats(0);
+
     }
 
     public void UpdateItemsInInventory()
@@ -567,5 +569,19 @@ public class BattleManager : MonoBehaviour
             log.text += newText;
         }
         yield return new WaitForSeconds(2f);
+    }
+
+    IEnumerator ScapingTime()
+    {
+        Collider2D enemyCollider = enemyGO.GetComponent<Collider2D>();
+        enemyCollider.enabled = false;
+        StartCoroutine(UpdateLog("Intentas escapar y lo lográs."));
+        yield return new WaitForSeconds(2f);
+        GameManager.instance.player.SetActive(true);
+        isBattleActive = false;
+        battleScene.SetActive(false);
+        worldCamera.gameObject.SetActive(true);
+        yield return new WaitForSeconds(3f);
+        enemyCollider.enabled = true;
     }
 }
