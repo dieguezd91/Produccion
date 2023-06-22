@@ -9,19 +9,24 @@ public class EventScript : MonoBehaviour
     [SerializeField] private DialogueManager dialogueManagerInstance;
     Inventory inventory;
 
-    public bool fightAfter;
+    public bool beforeFight;
+    //public bool afterFight;
     public string enemies;
     public bool lockDoor;
     public bool onlyOnTutorial;
     public GameObject door;
+    //[SerializeField] Collider2D collider;
 
     private void Start()
     {
+        //BattleManager.instance.OnBattleEnd += Activate;
+        //collider = GetComponent<Collider2D>();
         inventory = GameManager.instance.GetComponent<Inventory>();
         dialogueManagerInstance.OnDialogueEnd += Fight;
 
         if (onlyOnTutorial && inventory.hasRookiePistol)
             this.gameObject.SetActive(false);
+
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -36,9 +41,14 @@ public class EventScript : MonoBehaviour
 
     private void Fight(object sender,EventArgs e)
     {
-        if(fightAfter == true)
+        if(beforeFight == true)
         {
             BattleManager.instance.StartBattle(this.gameObject, enemies, false);
         }
     }
+
+    //private void Activate(object sender, EventArgs e)
+    //{
+    //    collider.enabled = true;
+    //}
 }

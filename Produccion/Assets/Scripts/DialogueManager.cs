@@ -10,6 +10,7 @@ public class DialogueManager : MonoBehaviour
     public PlayerController player;
     Animator animator;
 
+    public bool afterFightDialogue;
     public bool disableAfter;
     [SerializeField] GameObject collisionEvent;
     [SerializeField] GameObject objectToDisable;
@@ -21,7 +22,7 @@ public class DialogueManager : MonoBehaviour
     int index;
 
     float lastSpeed;
-
+    
     public event EventHandler OnDialogueEnd;
 
     public void Start()

@@ -132,7 +132,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7720495035560547092, guid: 6e2bae30def3cd8419d4023646a53b17, type: 3}
       propertyPath: m_RootOrder
-      value: 18
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 7720495035560547092, guid: 6e2bae30def3cd8419d4023646a53b17, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7988,6 +7988,177 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8950019174119425279, guid: df092f85b3317ad4f8029bb6b3dea30c, type: 3}
   m_PrefabInstance: {fileID: 786176710}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &223397756
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7720495035560547092, guid: 6e2bae30def3cd8419d4023646a53b17, type: 3}
+      propertyPath: m_RootOrder
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 7720495035560547092, guid: 6e2bae30def3cd8419d4023646a53b17, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3.044259
+      objectReference: {fileID: 0}
+    - target: {fileID: 7720495035560547092, guid: 6e2bae30def3cd8419d4023646a53b17, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.026913736
+      objectReference: {fileID: 0}
+    - target: {fileID: 7720495035560547092, guid: 6e2bae30def3cd8419d4023646a53b17, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.10103667
+      objectReference: {fileID: 0}
+    - target: {fileID: 7720495035560547092, guid: 6e2bae30def3cd8419d4023646a53b17, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7720495035560547092, guid: 6e2bae30def3cd8419d4023646a53b17, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7720495035560547092, guid: 6e2bae30def3cd8419d4023646a53b17, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7720495035560547092, guid: 6e2bae30def3cd8419d4023646a53b17, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7720495035560547092, guid: 6e2bae30def3cd8419d4023646a53b17, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7720495035560547092, guid: 6e2bae30def3cd8419d4023646a53b17, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7720495035560547092, guid: 6e2bae30def3cd8419d4023646a53b17, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7720495035560547093, guid: 6e2bae30def3cd8419d4023646a53b17, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1927302180}
+    - target: {fileID: 7720495035560547093, guid: 6e2bae30def3cd8419d4023646a53b17, type: 3}
+      propertyPath: disableAfter
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7720495035560547093, guid: 6e2bae30def3cd8419d4023646a53b17, type: 3}
+      propertyPath: collisionEvent
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7720495035560547093, guid: 6e2bae30def3cd8419d4023646a53b17, type: 3}
+      propertyPath: lines.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7720495035560547093, guid: 6e2bae30def3cd8419d4023646a53b17, type: 3}
+      propertyPath: lines.Array.data[0]
+      value: 'Dinnie: Veo que tienes potencial. Per necesitas mejorar tu equipamiento.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 7720495035560547093, guid: 6e2bae30def3cd8419d4023646a53b17, type: 3}
+      propertyPath: lines.Array.data[1]
+      value: "Robert: Gracias. Supongo que no tienes un arma por ah\xED para darme..."
+      objectReference: {fileID: 0}
+    - target: {fileID: 7720495035560547093, guid: 6e2bae30def3cd8419d4023646a53b17, type: 3}
+      propertyPath: lines.Array.data[2]
+      value: 'Dinnie: Jaja, puedes quedarte con la pistola que esta sobre mi escritorio
+        pero vas a tener que pagarmela.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 7720495035560547093, guid: 6e2bae30def3cd8419d4023646a53b17, type: 3}
+      propertyPath: lines.Array.data[3]
+      value: "Dinnie: Te recomiendo que te recuperes antes de salir. Puedes utilizar
+        esa inyecci\xF3n o dormir una siesta (Presionar espacio sobre la cama)."
+      objectReference: {fileID: 0}
+    - target: {fileID: 7720495035560547093, guid: 6e2bae30def3cd8419d4023646a53b17, type: 3}
+      propertyPath: lines.Array.data[4]
+      value: 'Robert: Ya veo, gracias. Sobre el arma... me deje mi billetera en el
+        bar.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 7720495035560547093, guid: 6e2bae30def3cd8419d4023646a53b17, type: 3}
+      propertyPath: lines.Array.data[5]
+      value: 'Dinnie: Tienes suerte de que este de humor. Toma el arma y ve a buscarla.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 7720495035560547093, guid: 6e2bae30def3cd8419d4023646a53b17, type: 3}
+      propertyPath: lines.Array.data[6]
+      value: 'Robert: De acuerdo, gracias otra vez.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 7720495035560547093, guid: 6e2bae30def3cd8419d4023646a53b17, type: 3}
+      propertyPath: lines.Array.data[7]
+      value: "Dinnie: Por supuesto, no hay algo que no ocurra en m\xED ciudad sin
+        que yo sepa. Esos primor, no era m\xE1s que peones Omni-Techs de la gran
+        corporaci\xF3n Nemesis."
+      objectReference: {fileID: 0}
+    - target: {fileID: 7720495035560547093, guid: 6e2bae30def3cd8419d4023646a53b17, type: 3}
+      propertyPath: lines.Array.data[8]
+      value: "Dinnie: Nemesis se dedica a control el flujo de informaci\xF3n de todos
+        los habitantes de Neo city. Nada entra o sale sin su permiso."
+      objectReference: {fileID: 0}
+    - target: {fileID: 7720495035560547093, guid: 6e2bae30def3cd8419d4023646a53b17, type: 3}
+      propertyPath: lines.Array.data[9]
+      value: "Dinnie: \xBFMe ayudarias a sabotearlos? "
+      objectReference: {fileID: 0}
+    - target: {fileID: 7720495035560547093, guid: 6e2bae30def3cd8419d4023646a53b17, type: 3}
+      propertyPath: lines.Array.data[10]
+      value: 'Robert: Quiero darles su merecido'
+      objectReference: {fileID: 0}
+    - target: {fileID: 7720495035560547093, guid: 6e2bae30def3cd8419d4023646a53b17, type: 3}
+      propertyPath: lines.Array.data[11]
+      value: "Dinnie: De acuerdo, pero vas a tener que pagarme tu estad\xEDa."
+      objectReference: {fileID: 0}
+    - target: {fileID: 7720495035560547093, guid: 6e2bae30def3cd8419d4023646a53b17, type: 3}
+      propertyPath: lines.Array.data[12]
+      value: "Robert: Carajo... Perd\xED mi billetera en el bar."
+      objectReference: {fileID: 0}
+    - target: {fileID: 7720495035560547093, guid: 6e2bae30def3cd8419d4023646a53b17, type: 3}
+      propertyPath: lines.Array.data[13]
+      value: 'Dinnie: Toma el arma de mi escritorio y ve a recuperarla.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 7720495035560547093, guid: 6e2bae30def3cd8419d4023646a53b17, type: 3}
+      propertyPath: lines.Array.data[14]
+      value: 'Dinnie: Toma el arma de mi escritorio y ve a recuperarla.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 7720495035560547093, guid: 6e2bae30def3cd8419d4023646a53b17, type: 3}
+      propertyPath: lines.Array.data[15]
+      value: 'Dinnie: Toma el arma de mi escritorio y ve a recuperarla.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 7720495035560547093, guid: 6e2bae30def3cd8419d4023646a53b17, type: 3}
+      propertyPath: lines.Array.data[16]
+      value: 'Dinnie: Toma el arma de mi escritorio y ve a recuperarla.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 7720495035560547093, guid: 6e2bae30def3cd8419d4023646a53b17, type: 3}
+      propertyPath: lines.Array.data[17]
+      value: 'Dinnie: Toma el arma de mi escritorio y ve a recuperarla.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 7720495035560547094, guid: 6e2bae30def3cd8419d4023646a53b17, type: 3}
+      propertyPath: m_Name
+      value: After Fight Dialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 7720495035560547094, guid: 6e2bae30def3cd8419d4023646a53b17, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6e2bae30def3cd8419d4023646a53b17, type: 3}
+--- !u!1 &223397757 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7720495035560547094, guid: 6e2bae30def3cd8419d4023646a53b17, type: 3}
+  m_PrefabInstance: {fileID: 223397756}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &223397758 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7720495035560547093, guid: 6e2bae30def3cd8419d4023646a53b17, type: 3}
+  m_PrefabInstance: {fileID: 223397756}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 223397757}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1823353c87dd024448f72fd52a77a6ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &288652062
 GameObject:
   m_ObjectHideFlags: 0
@@ -8154,7 +8325,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &445988666
 PrefabInstance:
@@ -8165,7 +8336,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2976986416159150028, guid: 5523c2a8f36db97439918291f7ec9ae1, type: 3}
       propertyPath: m_RootOrder
-      value: 17
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 2976986416159150028, guid: 5523c2a8f36db97439918291f7ec9ae1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8781,7 +8952,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 25
+  m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &731212815 stripped
 GameObject:
@@ -8797,7 +8968,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7277363986584689379, guid: b704549afed9e8445881ad0bda96f2a6, type: 3}
       propertyPath: m_RootOrder
-      value: 22
+      value: 24
       objectReference: {fileID: 0}
     - target: {fileID: 7277363986584689379, guid: b704549afed9e8445881ad0bda96f2a6, type: 3}
       propertyPath: m_LocalScale.x
@@ -8882,7 +9053,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3590787135677872518, guid: df092f85b3317ad4f8029bb6b3dea30c, type: 3}
       propertyPath: m_RootOrder
-      value: 24
+      value: 26
       objectReference: {fileID: 0}
     - target: {fileID: 3590787135677872518, guid: df092f85b3317ad4f8029bb6b3dea30c, type: 3}
       propertyPath: m_AnchorMax.x
@@ -9111,7 +9282,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1395730696270280856, guid: b3d2f8d83aba2814290876fc518be8f8, type: 3}
       propertyPath: m_RootOrder
-      value: 20
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 1395730696270280856, guid: b3d2f8d83aba2814290876fc518be8f8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9229,7 +9400,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7720495035560547092, guid: 6e2bae30def3cd8419d4023646a53b17, type: 3}
       propertyPath: m_RootOrder
-      value: 15
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 7720495035560547092, guid: 6e2bae30def3cd8419d4023646a53b17, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9289,7 +9460,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7720495035560547093, guid: 6e2bae30def3cd8419d4023646a53b17, type: 3}
       propertyPath: lines.Array.data[0]
-      value: "Robert: \xBFD\xF3nde estoy? "
+      value: 'Robert: Donde estoy? '
       objectReference: {fileID: 0}
     - target: {fileID: 7720495035560547093, guid: 6e2bae30def3cd8419d4023646a53b17, type: 3}
       propertyPath: lines.Array.data[1]
@@ -9297,7 +9468,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7720495035560547093, guid: 6e2bae30def3cd8419d4023646a53b17, type: 3}
       propertyPath: lines.Array.data[2]
-      value: "Robert: \xBFQui\xE9n sos?"
+      value: 'Robert: Quien eres?'
       objectReference: {fileID: 0}
     - target: {fileID: 7720495035560547093, guid: 6e2bae30def3cd8419d4023646a53b17, type: 3}
       propertyPath: lines.Array.data[3]
@@ -9310,43 +9481,43 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7720495035560547093, guid: 6e2bae30def3cd8419d4023646a53b17, type: 3}
       propertyPath: lines.Array.data[5]
-      value: "Dinnie: Bonita pelea la de anoche, diria que tienes talento... tal
-        vez. De seguro no sabes quienes eran esos tipos rudos, \xBFVerdad?"
+      value: 'Dinnie: Bonita pelea la de anoche. Tienes suerte de que haya podido
+        sacarte de ahi antes de que te maten.'
       objectReference: {fileID: 0}
     - target: {fileID: 7720495035560547093, guid: 6e2bae30def3cd8419d4023646a53b17, type: 3}
       propertyPath: lines.Array.data[6]
-      value: "Robert: Claramente no son mis amigos, \xBFvos si?"
+      value: 'Robert: Gracias... supongo. Esos mercenarios ya me tienen cansado.'
       objectReference: {fileID: 0}
     - target: {fileID: 7720495035560547093, guid: 6e2bae30def3cd8419d4023646a53b17, type: 3}
       propertyPath: lines.Array.data[7]
-      value: "Dinnie: Por supuesto, no hay algo que no ocurra en m\xED ciudad sin
-        que yo sepa. Esos primor, no era m\xE1s que peones Omni-Techs de la gran
-        corporaci\xF3n Nemesis."
+      value: 'Dinnie: Comparto el sentimiento. Desde que Nemesis controla la ciudad
+        con sus matones, mi negocio cae en picado.'
       objectReference: {fileID: 0}
     - target: {fileID: 7720495035560547093, guid: 6e2bae30def3cd8419d4023646a53b17, type: 3}
       propertyPath: lines.Array.data[8]
-      value: "Dinnie: Nemesis se dedica a control el flujo de informaci\xF3n de todos
-        los habitantes de Neo city. Nada entra o sale sin su permiso."
+      value: 'Dinnie: Con ellos al mando, nada entra ni sale de la ciudad sin que
+        lo sepan.'
       objectReference: {fileID: 0}
     - target: {fileID: 7720495035560547093, guid: 6e2bae30def3cd8419d4023646a53b17, type: 3}
       propertyPath: lines.Array.data[9]
-      value: "Dinnie: \xBFMe ayudarias a sabotearlos? "
+      value: 'Robert: Cual es tu negocio?'
       objectReference: {fileID: 0}
     - target: {fileID: 7720495035560547093, guid: 6e2bae30def3cd8419d4023646a53b17, type: 3}
       propertyPath: lines.Array.data[10]
-      value: 'Robert: Quiero darles su merecido'
+      value: "Dinnie: Las armas de la pared no te sugieren nada? Trafico armas, cari\xF1o."
       objectReference: {fileID: 0}
     - target: {fileID: 7720495035560547093, guid: 6e2bae30def3cd8419d4023646a53b17, type: 3}
       propertyPath: lines.Array.data[11]
-      value: "Dinnie: De acuerdo, pero vas a tener que pagarme tu estad\xEDa."
+      value: 'Dinnie: Hablando de eso, me vendria bien una mano. Me ayudas a sabotearlos? '
       objectReference: {fileID: 0}
     - target: {fileID: 7720495035560547093, guid: 6e2bae30def3cd8419d4023646a53b17, type: 3}
       propertyPath: lines.Array.data[12]
-      value: "Robert: Carajo... Perd\xED mi billetera en el bar."
+      value: 'Robert: Estaba ahogando mis penas en el bar porque esos malditos me
+        desalojaron. Dejame vivir aqui y tenemos un trato.'
       objectReference: {fileID: 0}
     - target: {fileID: 7720495035560547093, guid: 6e2bae30def3cd8419d4023646a53b17, type: 3}
       propertyPath: lines.Array.data[13]
-      value: 'Dinnie: Toma el arma de mi escritorio y ve a recuperarla.'
+      value: 'Dinnie: De acuerdo. Pero primero muestrame de que estas hecho.'
       objectReference: {fileID: 0}
     - target: {fileID: 7720495035560547093, guid: 6e2bae30def3cd8419d4023646a53b17, type: 3}
       propertyPath: lines.Array.data[14]
@@ -9423,7 +9594,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3898644280530377690, guid: f2a701de30b0ebf46a1762f6af235349, type: 3}
       propertyPath: m_RootOrder
-      value: 21
+      value: 23
       objectReference: {fileID: 0}
     - target: {fileID: 3898644280530377690, guid: f2a701de30b0ebf46a1762f6af235349, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9520,7 +9691,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8958934450127123627, guid: f73f40a194348d54c8614455e88432a8, type: 3}
       propertyPath: m_RootOrder
-      value: 19
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 8958934450127123627, guid: f73f40a194348d54c8614455e88432a8, type: 3}
       propertyPath: m_LocalScale.x
@@ -9590,7 +9761,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 116928167587642210, guid: fc72844b2bc96684e8026b1035fb1b5a, type: 3}
       propertyPath: m_RootOrder
-      value: 23
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 116928167587642210, guid: fc72844b2bc96684e8026b1035fb1b5a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9720,8 +9891,93 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1511315540
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2976986416159150028, guid: 5523c2a8f36db97439918291f7ec9ae1, type: 3}
+      propertyPath: m_RootOrder
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 2976986416159150028, guid: 5523c2a8f36db97439918291f7ec9ae1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.51
+      objectReference: {fileID: 0}
+    - target: {fileID: 2976986416159150028, guid: 5523c2a8f36db97439918291f7ec9ae1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 2976986416159150028, guid: 5523c2a8f36db97439918291f7ec9ae1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 4.4943895
+      objectReference: {fileID: 0}
+    - target: {fileID: 2976986416159150028, guid: 5523c2a8f36db97439918291f7ec9ae1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2976986416159150028, guid: 5523c2a8f36db97439918291f7ec9ae1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2976986416159150028, guid: 5523c2a8f36db97439918291f7ec9ae1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2976986416159150028, guid: 5523c2a8f36db97439918291f7ec9ae1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2976986416159150028, guid: 5523c2a8f36db97439918291f7ec9ae1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2976986416159150028, guid: 5523c2a8f36db97439918291f7ec9ae1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2976986416159150028, guid: 5523c2a8f36db97439918291f7ec9ae1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2976986416159150030, guid: 5523c2a8f36db97439918291f7ec9ae1, type: 3}
+      propertyPath: m_Name
+      value: After Fight Event
+      objectReference: {fileID: 0}
+    - target: {fileID: 2976986416159150031, guid: 5523c2a8f36db97439918291f7ec9ae1, type: 3}
+      propertyPath: onlyOnTutorial
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2976986416159150031, guid: 5523c2a8f36db97439918291f7ec9ae1, type: 3}
+      propertyPath: dialogueManager
+      value: 
+      objectReference: {fileID: 223397757}
+    - target: {fileID: 2976986416159150031, guid: 5523c2a8f36db97439918291f7ec9ae1, type: 3}
+      propertyPath: dialogueManagerInstance
+      value: 
+      objectReference: {fileID: 223397758}
+    - target: {fileID: 8195148227352407592, guid: 5523c2a8f36db97439918291f7ec9ae1, type: 3}
+      propertyPath: m_Size.x
+      value: 2.870353
+      objectReference: {fileID: 0}
+    - target: {fileID: 8195148227352407592, guid: 5523c2a8f36db97439918291f7ec9ae1, type: 3}
+      propertyPath: m_Size.y
+      value: 4.01137
+      objectReference: {fileID: 0}
+    - target: {fileID: 8195148227352407592, guid: 5523c2a8f36db97439918291f7ec9ae1, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.0018347502
+      objectReference: {fileID: 0}
+    - target: {fileID: 8195148227352407592, guid: 5523c2a8f36db97439918291f7ec9ae1, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.30001545
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5523c2a8f36db97439918291f7ec9ae1, type: 3}
 --- !u!1 &1529499234
 GameObject:
   m_ObjectHideFlags: 0
