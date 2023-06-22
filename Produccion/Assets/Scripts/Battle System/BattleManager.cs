@@ -45,7 +45,8 @@ public class BattleManager : MonoBehaviour
     [SerializeField] ItemsManager selectedItem;
     [SerializeField] GameObject itemSlotContainer;
     [SerializeField] Transform itemSlotContainerParent;
-    [SerializeField] Text itemName, itemDescription;
+    [SerializeField] Text itemName, itemDescriptionText;
+    [SerializeField] GameObject itemDescription;
 
     [SerializeField] GameObject characterChoicePanel;
     [SerializeField] Text[] playerChoiceName;
@@ -501,7 +502,8 @@ public class BattleManager : MonoBehaviour
     {
         selectedItem = itemToUse;
         itemName.text = itemToUse.itemName;
-        itemDescription.text = itemToUse.itemDescription;
+        itemDescriptionText.text = itemToUse.itemDescription;
+        itemDescription.SetActive(true);
     }
 
     public void OpenCharacterMenu()
@@ -517,7 +519,7 @@ public class BattleManager : MonoBehaviour
                     playerChoiceName[i].text = activePlayer.playerName;
 
                     bool activePlayerInHierarchy = activePlayer.gameObject.activeInHierarchy;
-                    playerChoiceName[i].transform.parent.gameObject.SetActive(activePlayerInHierarchy);
+                    playerChoiceName[i].transform.parent.gameObject.SetActive(true);
                 }
             }
         }
@@ -533,16 +535,8 @@ public class BattleManager : MonoBehaviour
         Inventory.instance.RemoveItem(selectedItem);
 
         UpdatePlayerStats();
-        CloseCharacterChoicePanel();
         UpdateItemsInInventory();
-        itemsToUseMenu.SetActive(false);
         NextTurn();
-    }
-
-    public void CloseCharacterChoicePanel()
-    {
-        characterChoicePanel.SetActive(false);
-        itemsToUseMenu.SetActive(false);
     }
 
     IEnumerator ShowDamage(int damage)
