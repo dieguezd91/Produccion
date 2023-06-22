@@ -19,6 +19,7 @@ public class BattleManager : MonoBehaviour
     [SerializeField] List<BattleCharacters> activeCharacters = new List<BattleCharacters>();
     [SerializeField] GameObject lastEnemy;
     [SerializeField] GameObject enemyGO;
+    Collider2D enemyCollider;
 
     [SerializeField] Transform playersPositions;
     [SerializeField] Transform enemiesPositions;
@@ -59,7 +60,7 @@ public class BattleManager : MonoBehaviour
     public bool allEnemiesAreDead = true;
     public bool allPlayersAreDead = true;
 
-
+    public bool randomBattle;
 
     void Awake()
     {
@@ -93,22 +94,25 @@ public class BattleManager : MonoBehaviour
                 if (activeCharacters[currentTurn].IsPlayer())
                 {
                     UIButtonHolder.SetActive(true);
-                    Debug.Log("Activar botones");
                 }
                 else
                 {
                     UIButtonHolder.SetActive(false);
                     StartCoroutine(EnemyMoveCoroutine());
-                    Debug.Log("Desactivar botones");
                 }
             }
         }
     }
 
-    public void StartBattle(GameObject enemy, string enemiesToSpawn)
+    public void StartBattle(GameObject enemy, string enemiesToSpawn, bool isRandom)
     {
+        randomBattle = isRandom;
         Destroy(lastEnemy);
-        enemyGO = enemy;
+        if (enemy != null)
+        {
+            enemyGO = enemy;
+            enemyCollider = enemyGO.GetComponent<Collider2D>();
+        }
         log.text = string.Empty;
 
         if (!isBattleActive)
@@ -205,7 +209,7 @@ public class BattleManager : MonoBehaviour
         isBattleActive = true;
         GameManager.instance.battleIsActive = true;
 
-        battleScene.gameObject.SetActive(true);
+        battleScene.SetActive(true);
         worldCamera.gameObject.SetActive(false);
         battleCamera.gameObject.SetActive(true);
     }
@@ -258,7 +262,7 @@ public class BattleManager : MonoBehaviour
                 PlayerStats.instance.AddXP(amountOfXp);
                 MenuManager.instance.AddCreditsUI();
                 ExportPlayerStats(0);
-                Destroy(enemyGO);
+                if(!randomBattle)   Destroy(enemyGO);
                 Debug.Log("Victoria!");
 
             }
@@ -269,11 +273,7 @@ public class BattleManager : MonoBehaviour
                 Debug.Log("Derrota...");
             }
 
-            GameManager.instance.battleIsActive = false;
-            isBattleActive = false;
-            battleScene.gameObject.SetActive(false);
-            worldCamera.gameObject.SetActive(true);
-            battleCamera.gameObject.SetActive(true);
+            EndBattle();
         }
         else
         {
@@ -575,15 +575,20 @@ public class BattleManager : MonoBehaviour
 
     IEnumerator ScapingTime()
     {
-        Collider2D enemyCollider = enemyGO.GetComponent<Collider2D>();
-        enemyCollider.enabled = false;
+        if (!randomBattle)  enemyCollider.enabled = false;
         StartCoroutine(UpdateLog("Intentas escapar y lo lográs."));
         yield return new WaitForSeconds(2f);
-        GameManager.instance.player.SetActive(true);
-        isBattleActive = false;
-        battleScene.SetActive(false);
-        worldCamera.gameObject.SetActive(true);
+        EndBattle();
         yield return new WaitForSeconds(3f);
-        enemyCollider.enabled = true;
+        if(!randomBattle) enemyCollider.enabled = true;
+    }
+
+    private void EndBattle()
+    {
+        GameManager.instance.player.SetActive(true);
+        GameManager.instance.battleIsActive = false;
+        isBattleActive = false;
+        worldCamera.gameObject.SetActive(true);
+        battleScene.SetActive(false);
     }
 }

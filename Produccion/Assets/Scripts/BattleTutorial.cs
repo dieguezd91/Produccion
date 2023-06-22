@@ -6,6 +6,6 @@ public class BattleTutorial : MonoBehaviour
 {
     public void StartBattleTutorial()
     {
-        BattleManager.instance.StartBattle(null, "Dinnie");
+        BattleManager.instance.StartBattle(null, "Dinnie", false);
     }
 }

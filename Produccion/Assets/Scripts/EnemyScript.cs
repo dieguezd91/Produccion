@@ -22,7 +22,7 @@ public class EnemyScript : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            BattleManager.instance.StartBattle(this.gameObject, names);
+            BattleManager.instance.StartBattle(this.gameObject, names, false);
         }
     }
 }

@@ -9,18 +9,14 @@ public class RandomBattle : MonoBehaviour
     {
         if (collider.CompareTag("Player"))
         {
-            Debug.Log("Colision");
-
             int i = Random.Range(1, 101);
-            Debug.Log(i);
             string enemy;
             if (i <= 5) enemy = "Mercenario";
             else enemy = "Maton";
 
             if ( i <= 10)
             {
-                Debug.Log("Combate");
-                BattleManager.instance.StartBattle(null, enemy);
+                BattleManager.instance.StartBattle(null, enemy, true);
             }
         }
     }
