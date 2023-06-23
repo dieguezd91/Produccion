@@ -5,7 +5,7 @@ using UnityEngine;
 public class BattleCharacters : MonoBehaviour
 {
     [SerializeField] bool isPlayer;
-    [SerializeField] string[] attacksAvailable;
+    [SerializeField] public string[] attacksAvailable;
 
     public string characterName;
     public int currentHP, maxHP, dexterity, strength, defence, meleeWeaponDamage, rangeWeaponDamage;

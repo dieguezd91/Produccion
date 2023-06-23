@@ -38,8 +38,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1, y: 0}
-  m_SizeDelta: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -1.111, y: 0}
+  m_SizeDelta: {x: 0.9015, y: 1}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!212 &2602763356489088502
 SpriteRenderer:
@@ -82,8 +82,8 @@ SpriteRenderer:
   m_SortingLayerID: -575943747
   m_SortingLayer: -3
   m_SortingOrder: 0
-  m_Sprite: {fileID: 975517880, guid: b5d0f773dd1992b44afa426b68aabbff, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Sprite: {fileID: 7482667652216324306, guid: 7e61058f9a205094dbe145d4c8dedcfd, type: 3}
+  m_Color: {r: 0.5283019, g: 0.51085794, b: 0.51085794, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -144,10 +144,10 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.45, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 1, y: 0.5}
     oldSize: {x: 1, y: 1}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
@@ -257,8 +257,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2602763357807888514}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.319, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 0.5, z: 1}
+  m_LocalPosition: {x: -0.009, y: 0, z: 0}
+  m_LocalScale: {x: 0.94232404, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2602763356887473405}
@@ -305,8 +305,8 @@ SpriteRenderer:
   m_SortingLayerID: -575943747
   m_SortingLayer: -3
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1293053462, guid: b5d0f773dd1992b44afa426b68aabbff, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Sprite: {fileID: 7482667652216324306, guid: 7e61058f9a205094dbe145d4c8dedcfd, type: 3}
+  m_Color: {r: 0.3301887, g: 0.3068263, b: 0.3068263, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -332,7 +332,7 @@ BoxCollider2D:
   m_Offset: {x: -0.5, y: -1.6909643}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 1, y: 0.5}
     oldSize: {x: 1, y: 1}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
@@ -418,8 +418,8 @@ SpriteRenderer:
   m_SortingLayerID: -575943747
   m_SortingLayer: -3
   m_SortingOrder: 0
-  m_Sprite: {fileID: -796103014, guid: 1cbfa071893b5d74ab141c395d730952, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Sprite: {fileID: 7482667652216324306, guid: 9f90d2a1dec7cb540ad2f104f7cfd8e8, type: 3}
+  m_Color: {r: 0.2264151, g: 0.21680313, b: 0.21680313, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0

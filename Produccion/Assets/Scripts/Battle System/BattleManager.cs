@@ -331,9 +331,16 @@ public class BattleManager : MonoBehaviour
         }*/
 
         int movePower = 1;
-        int i = UnityEngine.Random.Range(1, 10);
-        if (i <= 5) DealRangeDamageToCharacters(selectedPlayerToAttack, movePower);
-        else DealMeleeDamageToCharacters(selectedPlayerToAttack, movePower);
+        if (activeCharacters[currentTurn].attacksAvailable.Length == 2)
+        {
+            int i = UnityEngine.Random.Range(1, 10);
+            if (i <= 5) DealRangeDamageToCharacters(selectedPlayerToAttack, movePower);
+            else DealMeleeDamageToCharacters(selectedPlayerToAttack, movePower);
+        }
+        else if (activeCharacters[currentTurn].attacksAvailable[0] == "Ataque melee") DealMeleeDamageToCharacters(selectedPlayerToAttack, movePower);
+        else if (activeCharacters[currentTurn].attacksAvailable[0] == "Ataque rango") DealRangeDamageToCharacters(selectedPlayerToAttack, movePower);
+
+
 
         UpdatePlayerStats();
     }
@@ -370,8 +377,8 @@ public class BattleManager : MonoBehaviour
 
         //iguala el valor del da�o a critico si es necesario
         damageToGive = CalculateCritical(damageToGive);
-        Debug.Log(activeCharacters[currentTurn].characterName + " usa ataque a rango y causa " + (int)damageAmount + "(" + damageToGive + ") de daño a " + activeCharacters[selectedCharacterToAttack].characterName);
-        StartCoroutine(UpdateLog(activeCharacters[currentTurn].characterName + " usa ataque a rango y causa " + (int)damageAmount + "(" + damageToGive + ") de daño a " + activeCharacters[selectedCharacterToAttack].characterName));
+        Debug.Log(activeCharacters[currentTurn].characterName + " usa ataque a rango y causa " + (int)damageAmount + "(" + damageToGive + ") de dano a " + activeCharacters[selectedCharacterToAttack].characterName);
+        StartCoroutine(UpdateLog(activeCharacters[currentTurn].characterName + " usa ataque a rango y causa " + (int)damageAmount + "(" + damageToGive + ") de dano a " + activeCharacters[selectedCharacterToAttack].characterName));
 
         StartCoroutine(ShowDamage(damageToGive));
         activeCharacters[selectedCharacterToAttack].TakeHPDamage(damageToGive);
@@ -386,8 +393,8 @@ public class BattleManager : MonoBehaviour
         int damageToGive = (int)damageAmount;
         if (damageToGive <= 0)
             damageToGive = 0;
-        Debug.Log(activeCharacters[currentTurn].characterName + " usa ataque melee y causa " + (int)damageAmount + "(" + damageToGive + ") de daño a " + activeCharacters[selectedCharacterToAttack].characterName);
-        StartCoroutine(UpdateLog(activeCharacters[currentTurn].characterName + " usa ataque melee y causa " + (int)damageAmount + "(" + damageToGive + ") de daño a " + activeCharacters[selectedCharacterToAttack].characterName));
+        Debug.Log(activeCharacters[currentTurn].characterName + " usa ataque melee y causa " + (int)damageAmount + "(" + damageToGive + ") de dano a " + activeCharacters[selectedCharacterToAttack].characterName);
+        StartCoroutine(UpdateLog(activeCharacters[currentTurn].characterName + " usa ataque melee y causa " + (int)damageAmount + "(" + damageToGive + ") de dano a " + activeCharacters[selectedCharacterToAttack].characterName));
 
         StartCoroutine(ShowDamage(damageToGive));
         activeCharacters[selectedCharacterToAttack].TakeHPDamage(damageToGive);
@@ -559,20 +566,21 @@ public class BattleManager : MonoBehaviour
 
     IEnumerator UpdateLog(string newText)
     {
-        log.text += "\n" + newText;
-        if (log.isTextOverflowing)
-        {
-            Debug.Log("Overflowing");
-            log.text = string.Empty;
-            log.text += newText;
-        }
+        log.text = string.Empty;
+        log.text += newText;
+        //if (log.isTextOverflowing)
+        //{
+        //    Debug.Log("Overflowing");
+        //    log.text = string.Empty;
+        //    log.text += newText;
+        //}
         yield return new WaitForSeconds(2f);
     }
 
     IEnumerator ScapingTime()
     {
         if (!randomBattle)  enemyCollider.enabled = false;
-        StartCoroutine(UpdateLog("Intentas escapar y lo lográs."));
+        StartCoroutine(UpdateLog("Intentas escapar y lo logras."));
         yield return new WaitForSeconds(2f);
         EndBattle();
         yield return new WaitForSeconds(3f);
