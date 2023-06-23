@@ -7315,7 +7315,7 @@ PrefabInstance:
       objectReference: {fileID: 1927302180}
     - target: {fileID: 7720495035560547093, guid: 6e2bae30def3cd8419d4023646a53b17, type: 3}
       propertyPath: disableAfter
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7720495035560547093, guid: 6e2bae30def3cd8419d4023646a53b17, type: 3}
       propertyPath: collisionEvent

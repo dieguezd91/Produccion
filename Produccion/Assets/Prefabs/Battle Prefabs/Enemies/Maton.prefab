@@ -108,5 +108,5 @@ MonoBehaviour:
   strength: 20
   defence: 15
   meleeWeaponDamage: 15
-  rangeWeaponDamage: 5
+  rangeWeaponDamage: 10
   isDead: 0
