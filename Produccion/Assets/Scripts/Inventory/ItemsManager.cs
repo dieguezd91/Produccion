@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class ItemsManager : MonoBehaviour
 {
+    public static ItemsManager instance;
+
     public enum ItemType { Item, MeleeWeapon, RangeWeapon}
     public ItemType itemType;
 
@@ -22,6 +24,19 @@ public class ItemsManager : MonoBehaviour
 
     public bool isStackable;
     public int amount;
+
+    private void Start()
+    {
+        if (instance != null && instance != this)
+        {
+            Destroy(this.gameObject);
+        }
+        else
+        {
+            instance = this;
+        }
+        DontDestroyOnLoad(gameObject);
+    }
 
     public void UseItem(int characterToUseOn)
     {
