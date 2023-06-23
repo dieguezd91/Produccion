@@ -66,11 +66,11 @@ public class MenuManager : MonoBehaviour
             OpenCloseInventory();
         }
 
-        if (Input.GetKeyDown(KeyCode.R))
-        {
-            AddCreditsUI();
-            Debug.Log("Nuevos creditos");
-        }
+        //if (Input.GetKeyDown(KeyCode.R))
+        //{
+        //    AddCreditsUI();
+        //    Debug.Log("Nuevos creditos");
+        //}
         CreditsUI.text = Inventory.instance.credits.ToString();
     }
 
@@ -210,7 +210,7 @@ public class MenuManager : MonoBehaviour
 
     public void AddCreditsUI()
     {
-        int creditsToGive = UnityEngine.Random.Range(25, 100);
+        int creditsToGive = Random.Range(25, 100);
         newCreditsUI.gameObject.SetActive(true);
         newCreditsUI.text = "+" + creditsToGive.ToString();
         newCreditsUI.gameObject.SetActive(false);
