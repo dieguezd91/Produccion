@@ -28,9 +28,11 @@ public class gameDataController : MonoBehaviour
             string content = File.ReadAllText(saveArchives);
             gameData = JsonUtility.FromJson<gameData>(content);
 
+            Inventory.instance.credits = gameData.credits;
+            playerStats.currentXP = gameData.xp;
+            playerStats.playerLevel = gameData.level;
             player.transform.position = gameData.position;
             playerStats.currentHP = gameData.lifePoints;
-            Inventory.instance.credits = gameData.credits;
         }
         else
         {
@@ -44,8 +46,9 @@ public class gameDataController : MonoBehaviour
         {
             position = player.transform.position,
             lifePoints = playerStats.currentHP,
+            xp = playerStats.currentXP,
+            level = playerStats.playerLevel,
             credits = Inventory.instance.credits,
-
         };
 
         string JSONchain = JsonUtility.ToJson(newData);
