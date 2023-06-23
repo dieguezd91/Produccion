@@ -8050,7 +8050,7 @@ PrefabInstance:
     - target: {fileID: 7720495035560547093, guid: 6e2bae30def3cd8419d4023646a53b17, type: 3}
       propertyPath: collisionEvent
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 771379033}
     - target: {fileID: 7720495035560547093, guid: 6e2bae30def3cd8419d4023646a53b17, type: 3}
       propertyPath: lines.Array.size
       value: 7
@@ -8958,6 +8958,11 @@ Transform:
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1395730696270280859, guid: b3d2f8d83aba2814290876fc518be8f8, type: 3}
   m_PrefabInstance: {fileID: 1104714958}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &771379033 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2976986416159150030, guid: 5523c2a8f36db97439918291f7ec9ae1, type: 3}
+  m_PrefabInstance: {fileID: 1511315540}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &772427078
 PrefabInstance:
@@ -9948,6 +9953,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: After Fight Event
       objectReference: {fileID: 0}
+    - target: {fileID: 2976986416159150030, guid: 5523c2a8f36db97439918291f7ec9ae1, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2976986416159150031, guid: 5523c2a8f36db97439918291f7ec9ae1, type: 3}
+      propertyPath: afterFight
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2976986416159150031, guid: 5523c2a8f36db97439918291f7ec9ae1, type: 3}
       propertyPath: onlyOnTutorial
       value: 1
@@ -9967,6 +9980,10 @@ PrefabInstance:
     - target: {fileID: 8195148227352407592, guid: 5523c2a8f36db97439918291f7ec9ae1, type: 3}
       propertyPath: m_Size.y
       value: 4.01137
+      objectReference: {fileID: 0}
+    - target: {fileID: 8195148227352407592, guid: 5523c2a8f36db97439918291f7ec9ae1, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8195148227352407592, guid: 5523c2a8f36db97439918291f7ec9ae1, type: 3}
       propertyPath: m_Offset.x
@@ -19676,6 +19693,10 @@ PrefabInstance:
       objectReference: {fileID: 1781255035}
     - target: {fileID: 2976986416159150031, guid: 5523c2a8f36db97439918291f7ec9ae1, type: 3}
       propertyPath: fightAfter
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2976986416159150031, guid: 5523c2a8f36db97439918291f7ec9ae1, type: 3}
+      propertyPath: beforeFight
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2976986416159150031, guid: 5523c2a8f36db97439918291f7ec9ae1, type: 3}

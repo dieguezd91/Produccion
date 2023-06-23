@@ -10,7 +10,6 @@ public class DialogueManager : MonoBehaviour
     public PlayerController player;
     Animator animator;
 
-    public bool afterFightDialogue;
     public bool disableAfter;
     [SerializeField] GameObject collisionEvent;
     [SerializeField] GameObject objectToDisable;

@@ -10,17 +10,17 @@ public class EventScript : MonoBehaviour
     Inventory inventory;
 
     public bool beforeFight;
-    //public bool afterFight;
+    public bool afterFight;
     public string enemies;
     public bool lockDoor;
     public bool onlyOnTutorial;
     public GameObject door;
-    //[SerializeField] Collider2D collider;
+    [SerializeField] Collider2D colider;
 
     private void Start()
     {
-        //BattleManager.instance.OnBattleEnd += Activate;
-        //collider = GetComponent<Collider2D>();
+        BattleManager.instance.OnBattleEnd += Activate;
+        colider = GetComponent<Collider2D>();
         inventory = GameManager.instance.GetComponent<Inventory>();
         dialogueManagerInstance.OnDialogueEnd += Fight;
 
@@ -47,8 +47,9 @@ public class EventScript : MonoBehaviour
         }
     }
 
-    //private void Activate(object sender, EventArgs e)
-    //{
-    //    collider.enabled = true;
-    //}
+    private void Activate(object sender, EventArgs e)
+    {
+        if(afterFight == true)
+            colider.enabled = true;
+    }
 }

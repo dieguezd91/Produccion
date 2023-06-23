@@ -63,7 +63,7 @@ public class BattleManager : MonoBehaviour
 
     public bool randomBattle;
 
-    //public event EventHandler OnBattleEnd;
+    public event EventHandler OnBattleEnd;
 
     void Awake()
     {
@@ -586,6 +586,6 @@ public class BattleManager : MonoBehaviour
         isBattleActive = false;
         worldCamera.gameObject.SetActive(true);
         battleScene.SetActive(false);
-        //OnBattleEnd?.Invoke(this, EventArgs.Empty);
+        OnBattleEnd?.Invoke(this, EventArgs.Empty);
     }
 }
