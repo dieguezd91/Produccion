@@ -26,7 +26,6 @@ public class EventScript : MonoBehaviour
 
         if (onlyOnTutorial && inventory.hasRookiePistol)
             this.gameObject.SetActive(false);
-
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -49,7 +48,7 @@ public class EventScript : MonoBehaviour
 
     private void Activate(object sender, EventArgs e)
     {
-        if(afterFight == true)
+        if(afterFight == true && colider != null)
             colider.enabled = true;
     }
 }
