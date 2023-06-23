@@ -63,23 +63,7 @@ public class MenuManager : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.V) && !BattleManager.instance.isBattleActive && !GameManager.instance.chatting && !GameManager.instance.inStore)
         {
-            if (menu.activeInHierarchy)
-            {
-                if (ConfirmQuit.activeInHierarchy)
-                    ConfirmQuit.SetActive(false);
-                menu.SetActive(false);
-                player.moveSpeed = lastSpeed;
-            }
-            else
-            {
-                lastSpeed = player.moveSpeed;
-                player.moveSpeed = 0;
-                UpdateStats();
-                menu.SetActive(true);
-                inventoryPanel.SetActive(false);
-                statsPanel.SetActive(false);
-                characterInfo.SetActive(true);
-            }
+            OpenCloseInventory();
         }
 
         if (Input.GetKeyDown(KeyCode.R))
@@ -201,6 +185,27 @@ public class MenuManager : MonoBehaviour
     {
         characterChoicePanel.SetActive(false);
         itemsDescription.SetActive(false);
+    }
+
+    public void OpenCloseInventory()
+    {
+        if (menu.activeInHierarchy)
+        {
+            if (ConfirmQuit.activeInHierarchy)
+                ConfirmQuit.SetActive(false);
+            menu.SetActive(false);
+            player.moveSpeed = lastSpeed;   
+        }
+        else
+        {
+            lastSpeed = player.moveSpeed;
+            player.moveSpeed = 0;
+            UpdateStats();
+            menu.SetActive(true);
+            inventoryPanel.SetActive(false);
+            statsPanel.SetActive(false);
+            characterInfo.SetActive(true);
+        }
     }
 
     public void AddCreditsUI()

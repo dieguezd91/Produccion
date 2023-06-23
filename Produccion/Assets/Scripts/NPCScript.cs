@@ -8,14 +8,13 @@ public class NPCScript : MonoBehaviour
     public GameObject menu;
     void Update()
     {
-        if (Physics2D.OverlapCircle(transform.position, 3f).CompareTag("Player"))
-        {
-            pjNearby = true;
-        }
+        if (Physics2D.OverlapCircle(transform.position, 3f).CompareTag("Player")) pjNearby = true;
         else pjNearby = false;
 
         if (pjNearby && Input.GetKeyDown(KeyCode.Space))
         {
+            if(MenuManager.instance.menu.activeInHierarchy)
+                MenuManager.instance.OpenCloseInventory();
             menu.SetActive(true);
             GameManager.instance.inStore = true;
         }
