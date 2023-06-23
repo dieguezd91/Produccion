@@ -36,9 +36,11 @@ public class MenuManager : MonoBehaviour
     public GameObject itemsDescription;
     [SerializeField] Text[] itemsCharacterChoiceNames;
 
-
     [SerializeField] TextMeshProUGUI newCreditsUI;
     [SerializeField] TextMeshProUGUI CreditsUI;
+
+    PlayerController player;
+    float lastSpeed;
 
     private void Awake()
     {
@@ -52,6 +54,10 @@ public class MenuManager : MonoBehaviour
         }
         DontDestroyOnLoad(gameObject);
     }
+    private void Start()
+    {
+        player = GameManager.instance.player.GetComponent<PlayerController>();
+    }
 
     private void Update()
     {
@@ -62,15 +68,17 @@ public class MenuManager : MonoBehaviour
                 if (ConfirmQuit.activeInHierarchy)
                     ConfirmQuit.SetActive(false);
                 menu.SetActive(false);
+                player.moveSpeed = lastSpeed;
             }
             else
             {
+                lastSpeed = player.moveSpeed;
+                player.moveSpeed = 0;
                 UpdateStats();
                 menu.SetActive(true);
                 inventoryPanel.SetActive(false);
                 statsPanel.SetActive(false);
                 characterInfo.SetActive(true);
-                 
             }
         }
 
@@ -79,7 +87,6 @@ public class MenuManager : MonoBehaviour
             AddCreditsUI();
             Debug.Log("Nuevos creditos");
         }
-
         CreditsUI.text = Inventory.instance.credits.ToString();
     }
 
