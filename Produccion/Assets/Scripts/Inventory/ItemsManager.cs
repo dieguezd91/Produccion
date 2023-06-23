@@ -41,9 +41,12 @@ public class ItemsManager : MonoBehaviour
     public void UseItem(int characterToUseOn)
     {
         PlayerStats selectedCharacter = GameManager.instance.GetPlayerStats()[characterToUseOn]; 
+
         if(affectType == AffectType.HP)
-        {
+        {            
             selectedCharacter.AddHP(amountOfAffect);
+            if (selectedCharacter.currentHP > selectedCharacter.maxHP)
+                selectedCharacter.currentHP = selectedCharacter.maxHP;
         }
         if(itemType == ItemType.MeleeWeapon)
         {

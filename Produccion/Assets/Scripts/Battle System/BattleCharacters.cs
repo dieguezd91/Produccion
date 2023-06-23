@@ -47,7 +47,8 @@ public class BattleCharacters : MonoBehaviour
         {
             if(itemToUse.affectType == ItemsManager.AffectType.HP)
             {
-                AddHP(itemToUse.amountOfAffect);
+                if (PlayerStats.instance.currentHP < PlayerStats.instance.maxHP)
+                    AddHP(itemToUse.amountOfAffect);
             }            
         }
     }

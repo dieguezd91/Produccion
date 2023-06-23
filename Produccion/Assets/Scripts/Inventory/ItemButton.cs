@@ -8,9 +8,7 @@ public class ItemButton : MonoBehaviour
     public ItemsManager itemOnButton;
     
     public void Press()
-    {        
-
-
+    {
         if(BattleManager.instance.itemsToUseMenu.activeInHierarchy)
         {
             BattleManager.instance.SelectedItemToUse(itemOnButton);
