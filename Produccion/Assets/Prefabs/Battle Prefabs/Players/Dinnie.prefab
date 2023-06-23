@@ -102,8 +102,8 @@ MonoBehaviour:
   - Ataque melee
   - Ataque rango
   characterName: Dinnie
-  currentHP: 100
-  maxHP: 100
+  currentHP: 50
+  maxHP: 50
   dexterity: 25
   strength: 25
   defence: 0

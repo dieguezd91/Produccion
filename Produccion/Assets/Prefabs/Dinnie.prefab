@@ -112,8 +112,6 @@ MonoBehaviour:
   dexterity: 15
   strength: 5
   defence: 15
-  expUp: {fileID: 0}
-  experienceGained: {fileID: 0}
   equippedMeleeWeaponName: 
   equippedRangeWeaponName: 
   meleeDamage: 0
