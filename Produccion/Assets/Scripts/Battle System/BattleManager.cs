@@ -267,6 +267,8 @@ public class BattleManager : MonoBehaviour
                 ExportPlayerStats(0);
                 if(!randomBattle)   Destroy(enemyGO);
                 Debug.Log("Victoria!");
+                if(randomBattle)
+                    OnBattleEnd?.Invoke(this, EventArgs.Empty);
 
             }
             else if (allPlayersAreDead)
@@ -467,6 +469,7 @@ public class BattleManager : MonoBehaviour
         {
             //Hay 50% de chances de no poder escapar y perdes el turno
             StartCoroutine(ScapingTime());
+            OnBattleEnd?.Invoke(this, EventArgs.Empty);
         }
         else
         {
@@ -594,6 +597,5 @@ public class BattleManager : MonoBehaviour
         isBattleActive = false;
         worldCamera.gameObject.SetActive(true);
         battleScene.SetActive(false);
-        OnBattleEnd?.Invoke(this, EventArgs.Empty);
     }
 }
