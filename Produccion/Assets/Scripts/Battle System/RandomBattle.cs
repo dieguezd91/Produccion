@@ -37,7 +37,7 @@ public class RandomBattle : MonoBehaviour
     IEnumerator Inmunity()
     {
         colider.enabled = false;
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(5f);
         colider.enabled = true;
     }
 }
