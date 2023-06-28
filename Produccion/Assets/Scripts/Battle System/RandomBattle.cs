@@ -18,8 +18,8 @@ public class RandomBattle : MonoBehaviour
         {
             int i = UnityEngine.Random.Range(1, 101);
             string enemy;
-            if (i <= 5) enemy = "Mercenario";
-            else enemy = "Maton";
+            if (i <= 5) enemy = "Vagabundo";
+            else enemy = "Traficante";
 
             if ( i <= 10)
             {

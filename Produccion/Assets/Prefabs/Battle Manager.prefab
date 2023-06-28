@@ -63,6 +63,8 @@ MonoBehaviour:
   - {fileID: 8299695002426701587, guid: 1e1a0015764f0094385e535b6f28cf26, type: 3}
   - {fileID: 5464349049900020014, guid: d4a9d1e5880f17446a99e56903db116e, type: 3}
   - {fileID: 8299695002426701587, guid: 9a8a92a444d8fc146af882fbf68ea043, type: 3}
+  - {fileID: 5347475773130916875, guid: 1114fe74c2fb0444c9c468c392b75578, type: 3}
+  - {fileID: 5347475773130916875, guid: 98d35dfa78a639b41b9e9c4745babe3f, type: 3}
   currentTurn: 0
   waitingForTurn: 0
   UIButtonHolder: {fileID: 116928167884403414}
