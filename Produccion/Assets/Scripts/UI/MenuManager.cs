@@ -109,7 +109,7 @@ public class MenuManager : MonoBehaviour
     {
         PlayerStats playerSelected = playerStats[playerSelectedNumber];
         
-        statName.text = playerSelected.playerName;
+        //statName.text = playerSelected.playerName;
         statCredits.text = Inventory.instance.credits.ToString();
 
         statHP.text = playerSelected.currentHP.ToString() + "/" + playerSelected.maxHP;
