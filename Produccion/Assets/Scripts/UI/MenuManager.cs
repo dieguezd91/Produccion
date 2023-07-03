@@ -67,12 +67,12 @@ public class MenuManager : MonoBehaviour
         {
             OpenCloseInventory();
         }
+        else if(Input.GetKeyDown(KeyCode.Escape) && menu.activeInHierarchy && !BattleManager.instance.isBattleActive && !GameManager.instance.chatting && !GameManager.instance.inStore)
+        {
+            OpenCloseInventory();
+        }
 
-        //if (Input.GetKeyDown(KeyCode.R))
-        //{
-        //    AddCreditsUI();
-        //    Debug.Log("Nuevos creditos");
-        //}
+
         CreditsUI.text = Inventory.instance.credits.ToString();
     }
 
