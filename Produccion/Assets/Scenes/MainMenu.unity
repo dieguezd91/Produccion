@@ -639,18 +639,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6552828567014436053, guid: 962dae77554e4864bb23b425ec1cac1a, type: 3}
-      propertyPath: m_Text
-      value: JUGAR
-      objectReference: {fileID: 0}
-    - target: {fileID: 6552828568029363200, guid: 962dae77554e4864bb23b425ec1cac1a, type: 3}
-      propertyPath: m_Text
-      value: SALIR
-      objectReference: {fileID: 0}
-    - target: {fileID: 6552828568513141799, guid: 962dae77554e4864bb23b425ec1cac1a, type: 3}
-      propertyPath: m_Text
-      value: OPCIONES
-      objectReference: {fileID: 0}
     - target: {fileID: 6552828568520824066, guid: 962dae77554e4864bb23b425ec1cac1a, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
