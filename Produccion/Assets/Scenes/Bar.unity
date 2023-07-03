@@ -1098,7 +1098,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 2095082407
   m_SortingLayer: -1
-  m_SortingOrder: 2
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: f732b3035b4714745bc6162c1aed8f0f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2325,7 +2325,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 2095082407
   m_SortingLayer: -1
-  m_SortingOrder: 3
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0ee8a8ad719b99947a033d87404c9517, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2943,8 +2943,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0028650423, y: 0.1910759}
-  m_Size: {x: 1.7781193, y: 0.7726995}
+  m_Offset: {x: -0.005881111, y: -0.2208083}
+  m_Size: {x: 1.6977761, y: 0.73778546}
   m_Direction: 1
 --- !u!212 &688786124
 SpriteRenderer:
@@ -3862,6 +3862,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &836614141 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1023917621793773397, guid: f2a701de30b0ebf46a1762f6af235349, type: 3}
+  m_PrefabInstance: {fileID: 1189710139}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &878027704
 GameObject:
   m_ObjectHideFlags: 0
@@ -8990,9 +8995,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -575943747
-  m_SortingLayer: -3
-  m_SortingOrder: 1
+  m_SortingLayerID: 2095082407
+  m_SortingLayer: -1
+  m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: d89b7f7dda89ccf4caa727e88b76caa0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -15758,12 +15763,26 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8757958218246885331, guid: f2a701de30b0ebf46a1762f6af235349, type: 3}
   m_PrefabInstance: {fileID: 1189710139}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 836614141}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0d15019e3f338774e9b800f45e194ebe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2100068161
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 836614141}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 494ef28247a6e5849aff40be4cbb6500, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questNames: []
+  questCompleted: 
 --- !u!1 &2111295600
 GameObject:
   m_ObjectHideFlags: 0

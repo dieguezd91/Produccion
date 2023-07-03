@@ -9611,7 +9611,7 @@ PrefabInstance:
     - target: {fileID: 7720495035560547093, guid: 6e2bae30def3cd8419d4023646a53b17, type: 3}
       propertyPath: lines.Array.data[3]
       value: 'Dinnie: Te recomiendo que te recuperes antes de salir. Puedes utilizar
-        esa inyeccion o dormir una siesta (Presionar espacio sobre la cama).'
+        esa inyeccion o dormir una siesta (Presiona espacio sobre la cama).'
       objectReference: {fileID: 0}
     - target: {fileID: 7720495035560547093, guid: 6e2bae30def3cd8419d4023646a53b17, type: 3}
       propertyPath: lines.Array.data[4]
@@ -10230,8 +10230,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 2095082407
+  m_SortingLayer: -1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0336800a2f9c192478662dcc304535af, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -10978,7 +10978,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7720495035560547093, guid: 6e2bae30def3cd8419d4023646a53b17, type: 3}
       propertyPath: lines.Array.data[7]
-      value: 'Dinnie: Comparto el sentimiento. Desde que Nemesis controla la ciudad
+      value: 'Dinnie: Comparto el sentimiento. Desde que Omni Tech controla la ciudad
         con sus matones, mi negocio cae en picado.'
       objectReference: {fileID: 0}
     - target: {fileID: 7720495035560547093, guid: 6e2bae30def3cd8419d4023646a53b17, type: 3}
