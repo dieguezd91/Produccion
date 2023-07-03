@@ -1,14 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
+using TMPro;
 
 public class PickUpItem : MonoBehaviour
 {
     [SerializeField] GameObject item;
     [SerializeField] ItemsManager invItem;
     [SerializeField] GameObject door;
-    [SerializeField] GameObject dialogue;
+    [SerializeField] GameObject dialogueToDisable;
     Inventory inventory;
 
     private void Start()
@@ -22,7 +24,7 @@ public class PickUpItem : MonoBehaviour
     {
         item.SetActive(false);
         door.SetActive(true);
-        dialogue.SetActive(false);
+        dialogueToDisable.SetActive(false);
         Inventory.instance.hasRookiePistol = true;
         Inventory.instance.itemsList.Add(invItem);
         GameManager.instance.tutorial = false;

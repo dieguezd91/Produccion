@@ -39,6 +39,8 @@ public class MenuManager : MonoBehaviour
     [SerializeField] TextMeshProUGUI newCreditsUI;
     [SerializeField] TextMeshProUGUI CreditsUI;
 
+    public TextMeshProUGUI instruction;
+
     PlayerController player;
     float lastSpeed;
 

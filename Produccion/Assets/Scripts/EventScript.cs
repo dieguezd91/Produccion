@@ -16,6 +16,7 @@ public class EventScript : MonoBehaviour
     public bool onlyOnTutorial;
     public GameObject door;
     [SerializeField] Collider2D colider;
+    [SerializeField] FastTravelScript travelScript;
 
     private void Start()
     {
@@ -40,15 +41,11 @@ public class EventScript : MonoBehaviour
 
     private void Fight(object sender,EventArgs e)
     {
-        if(beforeFight == true)
-        {
-            BattleManager.instance.StartBattle(this.gameObject, enemies, false);
-        }
+        if(beforeFight) BattleManager.instance.StartBattle(this.gameObject, enemies, false);
     }
 
     private void Activate(object sender, EventArgs e)
     {
-        if(afterFight == true && colider != null)
-            colider.enabled = true;
+        if(afterFight && colider != null) colider.enabled = true;
     }
 }
