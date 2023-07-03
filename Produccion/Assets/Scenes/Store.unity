@@ -12728,6 +12728,17 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1908074925 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 986750035450597465, guid: 3b4efe27a958a4949b130a85c18f6b7e, type: 3}
+  m_PrefabInstance: {fileID: 1356396789982194473}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1922619651
 GameObject:
   m_ObjectHideFlags: 0
@@ -13493,6 +13504,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1356396789423963809, guid: 3b4efe27a958a4949b130a85c18f6b7e, type: 3}
+      propertyPath: credits
+      value: 
+      objectReference: {fileID: 1908074925}
     - target: {fileID: 1356396789423963809, guid: 3b4efe27a958a4949b130a85c18f6b7e, type: 3}
       propertyPath: totalCoinsText
       value: 

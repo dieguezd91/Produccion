@@ -103,7 +103,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c83092746c473124180da0fd9c466d65, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  garage: {x: -49.7, y: 8.87}
+  garage: {x: -49.7, y: 8.88}
+  noCredits: {fileID: 0}
 --- !u!61 &2705886384109585508
 BoxCollider2D:
   m_ObjectHideFlags: 0

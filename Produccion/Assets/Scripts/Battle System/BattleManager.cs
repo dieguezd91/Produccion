@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Reflection;
 using TMPro;
+using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.UI;
 using static System.Runtime.CompilerServices.RuntimeHelpers;
@@ -192,6 +193,8 @@ public class BattleManager : MonoBehaviour
         activeCharacters[i].currentHP = player.currentHP;
         activeCharacters[i].maxHP = player.maxHP;
 
+        activeCharacters[i].level = player.playerLevel;
+
         activeCharacters[i].dexterity = player.dexterity;
         activeCharacters[i].strength = player.strength;
         activeCharacters[i].defence = player.defence;
@@ -205,6 +208,8 @@ public class BattleManager : MonoBehaviour
         PlayerStats player = GameManager.instance.GetPlayerStats()[i];
 
         player.currentHP = activeCharacters[i].currentHP;
+        if (PlayerStats.instance.playerLevel > activeCharacters[i].level)
+            PlayerStats.instance.currentHP = PlayerStats.instance.maxHP;
     }
 
     private void SettingUpBattle()
@@ -265,9 +270,9 @@ public class BattleManager : MonoBehaviour
                 PlayerStats.instance.AddXP(amountOfXp);
                 MenuManager.instance.AddCreditsUI();
                 ExportPlayerStats(0);
-                if(!randomBattle)   Destroy(enemyGO);
+                if (!randomBattle)   Destroy(enemyGO);
                 Debug.Log("Victoria!");
-                if(randomBattle)
+                  if (randomBattle)
                     OnBattleEnd?.Invoke(this, EventArgs.Empty);
 
             }
@@ -379,8 +384,8 @@ public class BattleManager : MonoBehaviour
 
         //iguala el valor del da�o a critico si es necesario
         damageToGive = CalculateCritical(damageToGive);
-        Debug.Log(activeCharacters[currentTurn].characterName + " usa ataque a rango y causa " + (int)damageAmount + "(" + damageToGive + ") de dano a " + activeCharacters[selectedCharacterToAttack].characterName);
-        StartCoroutine(UpdateLog(activeCharacters[currentTurn].characterName + " usa ataque a rango y causa " + (int)damageAmount + "(" + damageToGive + ") de dano a " + activeCharacters[selectedCharacterToAttack].characterName));
+        Debug.Log(activeCharacters[currentTurn].characterName + " usa ataque a rango y causa " + (int)damageAmount + " de dano a " + activeCharacters[selectedCharacterToAttack].characterName);
+        StartCoroutine(UpdateLog(activeCharacters[currentTurn].characterName + " usa ataque a rango y causa " + (int)damageAmount + " de dano a " + activeCharacters[selectedCharacterToAttack].characterName));
 
         StartCoroutine(ShowDamage(damageToGive));
         activeCharacters[selectedCharacterToAttack].TakeHPDamage(damageToGive);
@@ -395,8 +400,8 @@ public class BattleManager : MonoBehaviour
         int damageToGive = (int)damageAmount;
         if (damageToGive <= 0)
             damageToGive = 0;
-        Debug.Log(activeCharacters[currentTurn].characterName + " usa ataque melee y causa " + (int)damageAmount + "(" + damageToGive + ") de dano a " + activeCharacters[selectedCharacterToAttack].characterName);
-        StartCoroutine(UpdateLog(activeCharacters[currentTurn].characterName + " usa ataque melee y causa " + (int)damageAmount + "(" + damageToGive + ") de dano a " + activeCharacters[selectedCharacterToAttack].characterName));
+        Debug.Log(activeCharacters[currentTurn].characterName + " usa ataque melee y causa " + (int)damageAmount + " de dano a " + activeCharacters[selectedCharacterToAttack].characterName);
+        StartCoroutine(UpdateLog(activeCharacters[currentTurn].characterName + " usa ataque melee y causa " + (int)damageAmount + " de dano a " + activeCharacters[selectedCharacterToAttack].characterName));
 
         StartCoroutine(ShowDamage(damageToGive));
         activeCharacters[selectedCharacterToAttack].TakeHPDamage(damageToGive);
@@ -429,6 +434,10 @@ public class BattleManager : MonoBehaviour
 
                     playerHealthSlider[i].maxValue = playerData.maxHP;
                     playerHealthSlider[i].value = playerData.currentHP;
+
+                    PlayerStats player = GameManager.instance.GetPlayerStats()[i];
+                    activeCharacters[i].meleeWeaponDamage = player.meleeDamage;
+                    activeCharacters[i].rangeWeaponDamage = player.rangeDamage;
                 }
                 else
                 {
@@ -545,6 +554,7 @@ public class BattleManager : MonoBehaviour
     {
         activeCharacters[selectedPlayer].UseItemInBattle(selectedItem);
         Inventory.instance.RemoveItem(selectedItem);
+        StartCoroutine(UpdateLog(activeCharacters[currentTurn].characterName + " usa " + selectedItem.name + " y se cura " + selectedItem.amountOfAffect + " puntos de vida."));
 
         UpdatePlayerStats();
         UpdateItemsInInventory();

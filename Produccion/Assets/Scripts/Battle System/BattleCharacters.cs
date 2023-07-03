@@ -10,6 +10,7 @@ public class BattleCharacters : MonoBehaviour
     public string characterName;
     public int currentHP, maxHP, dexterity, strength, defence, meleeWeaponDamage, rangeWeaponDamage;
     public bool isDead;
+    public int level;
 
     public bool IsPlayer()
     {
@@ -50,6 +51,18 @@ public class BattleCharacters : MonoBehaviour
                 if (PlayerStats.instance.currentHP < PlayerStats.instance.maxHP)
                     AddHP(itemToUse.amountOfAffect);
             }            
+        }
+        else if(itemToUse.itemType == ItemsManager.ItemType.MeleeWeapon)
+        {
+            PlayerStats.instance.equipedMeleeWeapon = itemToUse;
+            PlayerStats.instance.meleeDamage = itemToUse.weaponStrength;
+            PlayerStats.instance.equippedMeleeWeaponName = itemToUse.name;
+        }
+        else if(itemToUse.itemType == ItemsManager.ItemType.RangeWeapon)
+        {
+            PlayerStats.instance.equipedRangeWeapon = itemToUse;
+            PlayerStats.instance.rangeDamage = itemToUse.weaponDexterity;
+            PlayerStats.instance.equippedRangeWeaponName = itemToUse.name;
         }
     }
 

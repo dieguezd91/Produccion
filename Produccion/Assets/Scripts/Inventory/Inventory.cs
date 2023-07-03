@@ -11,7 +11,7 @@ public class Inventory : MonoBehaviour
     public static Inventory instance;
     public List<ItemsManager> itemsList;
     public int credits;
-    public bool hasRookiePistol;
+    public bool hasCompletedDinniedTutorial;
 
     private void Start()
     {

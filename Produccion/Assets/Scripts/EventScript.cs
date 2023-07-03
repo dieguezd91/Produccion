@@ -25,7 +25,7 @@ public class EventScript : MonoBehaviour
         inventory = GameManager.instance.GetComponent<Inventory>();
         dialogueManagerInstance.OnDialogueEnd += Fight;
 
-        if (onlyOnTutorial && inventory.hasRookiePistol)
+        if (onlyOnTutorial && inventory.hasCompletedDinniedTutorial)
             this.gameObject.SetActive(false);
     }
 

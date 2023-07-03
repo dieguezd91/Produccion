@@ -10,6 +10,7 @@ public class StoreScript : MonoBehaviour
     [SerializeField] List<ItemsManager> itemInfo;
     [SerializeField] GameObject storeItemTemplate;
     Inventory playerInventory;
+    [SerializeField] TextMeshProUGUI credits;
 
     void Start()
     {
@@ -26,5 +27,10 @@ public class StoreScript : MonoBehaviour
 
             Instantiate(itemTemplate, transform);
         }
+    }
+
+    private void Update()
+    {
+        credits.text = Inventory.instance.credits.ToString();
     }
 }

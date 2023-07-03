@@ -16,7 +16,7 @@ public class PickUpItem : MonoBehaviour
     private void Start()
     {
         inventory = GameManager.instance.GetComponent<Inventory>();
-        if(inventory.hasRookiePistol)
+        if(inventory.hasCompletedDinniedTutorial)
             item.SetActive(false);
     }
 
@@ -25,7 +25,7 @@ public class PickUpItem : MonoBehaviour
         item.SetActive(false);
         door.SetActive(true);
         dialogueToDisable.SetActive(false);
-        Inventory.instance.hasRookiePistol = true;
+        Inventory.instance.hasCompletedDinniedTutorial = true;
         Inventory.instance.itemsList.Add(invItem);
         GameManager.instance.tutorial = false;
     }
