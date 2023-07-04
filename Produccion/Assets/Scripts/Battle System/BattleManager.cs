@@ -68,6 +68,8 @@ public class BattleManager : MonoBehaviour
 
     public event EventHandler OnBattleEnd;
 
+    [SerializeField] AudioClip[] clips;
+
     void Awake()
     {
         if (instance != null && instance != this)
@@ -365,6 +367,8 @@ public class BattleManager : MonoBehaviour
 
         DealRangeDamageToCharacters(selectEnemyTarget, movePower);
 
+        AudioManager.instance.PlaySound(clips[1]);
+
         NextTurn();
     }
 
@@ -374,6 +378,8 @@ public class BattleManager : MonoBehaviour
         int movePower = 1;
 
         DealMeleeDamageToCharacters(selectEnemyTarget, movePower);
+
+        AudioManager.instance.PlaySound(clips[0]);
 
         NextTurn();
     }

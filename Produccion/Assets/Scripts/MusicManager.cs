@@ -8,22 +8,35 @@ public class MusicManager : MonoBehaviour
     MusicManager instance;
     AudioSource audioSource;
     AudioClip activeClip;
-    AudioClip[] songs;
+    [SerializeField] AudioClip[] songs;
 
     private void Awake()
     {
-        if (instance == null) instance = this;
-        else if (instance != this && instance != null) Destroy(this);
-        DontDestroyOnLoad(this);
+        if (instance != null && instance != this)
+        {
+            Destroy(gameObject);
+        }
+        else
+        {
+            instance = this;
+        }
+        DontDestroyOnLoad(gameObject);
     }
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
+        if (audioSource.isPlaying) audioSource.Stop();
+        audioSource.Play();
     }
 
     private void Update()
     {
-        switch(SceneManagerScript.instance.scene)
+        CheckActiveClip();
+    }
+
+    void CheckActiveClip()
+    {
+        switch (SceneManagerScript.instance.scene)
         {
             case "MainMenu":
                 activeClip = songs[0];
@@ -43,8 +56,9 @@ public class MusicManager : MonoBehaviour
             case "Fabrica":
                 activeClip = songs[3];
                 break;
+            default:
+                break;
         }
         audioSource.clip = activeClip;
-        audioSource.Play();
     }
 }

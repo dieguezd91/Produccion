@@ -6,7 +6,7 @@ using TMPro;
 
 public class DialogueManager : MonoBehaviour
 {
-    AudioSource audioSource;
+    [SerializeField] AudioClip clip;
     public TextMeshProUGUI dialogueText;
     public PlayerController player;
     Animator animator;
@@ -29,7 +29,6 @@ public class DialogueManager : MonoBehaviour
     {
         player = GameManager.instance.player.GetComponent<PlayerController>();
         animator = GameManager.instance.player.GetComponent<Animator>();
-        audioSource = GetComponent<AudioSource>();
         dialogueText.text = string.Empty;
         StartDialogue();
         lastSpeed = player.moveSpeed;
@@ -61,7 +60,6 @@ public class DialogueManager : MonoBehaviour
         animator.enabled = false;
         dialogueText.text = string.Empty;
         index = 0;
-        AudioManager.instance.audioSource = audioSource;
         StartCoroutine(WriteLine());
     }
 
@@ -70,7 +68,7 @@ public class DialogueManager : MonoBehaviour
         foreach (char letter in lines[index].ToCharArray())
         {
             dialogueText.text += letter;
-            AudioManager.instance.PlaySound(audioSource.clip);
+            AudioManager.instance.PlaySound(clip);
             yield return new WaitForSeconds(textSpeed);
         }
     }
