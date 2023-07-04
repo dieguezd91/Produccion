@@ -15,8 +15,10 @@ public class BattleManager : MonoBehaviour
     bool inventoryIsOpen;
 
     [SerializeField] GameObject battleScene;
-    [SerializeField] Camera battleCamera;
-    [SerializeField] Camera worldCamera;
+    public Camera battleCamera;
+    public AudioListener battleAudioListener;
+    public Camera worldCamera;
+    public AudioListener worldAudioListener;
     [SerializeField] List<BattleCharacters> activeCharacters = new List<BattleCharacters>();
     [SerializeField] GameObject lastEnemy;
     [SerializeField] GameObject enemyGO;
@@ -82,6 +84,8 @@ public class BattleManager : MonoBehaviour
     private void Start()
     {
         worldCamera = PlayerController.instance.worldCamera.GetComponent<Camera>();
+        worldAudioListener = worldCamera.gameObject.GetComponent<AudioListener>();
+        battleAudioListener = battleCamera.gameObject.GetComponent<AudioListener>();
     }
 
     void Update()
@@ -220,6 +224,8 @@ public class BattleManager : MonoBehaviour
         battleScene.SetActive(true);
         worldCamera.gameObject.SetActive(false);
         battleCamera.gameObject.SetActive(true);
+        worldAudioListener.enabled = false;
+        battleAudioListener.enabled = true;
     }
 
     private void NextTurn()
@@ -606,6 +612,9 @@ public class BattleManager : MonoBehaviour
         GameManager.instance.battleIsActive = false;
         isBattleActive = false;
         worldCamera.gameObject.SetActive(true);
+        battleCamera.gameObject.SetActive(false);
+        worldAudioListener.enabled = true;
+        battleAudioListener.enabled = false;
         battleScene.SetActive(false);
     }
 }
