@@ -1,0 +1,3423 @@
+fileFormatVersion: 2
+guid: 0b6876d95d79b034c93400b7b293c876
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 54
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: tile nivel 2_0
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 781
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afef16d57e41dd44cb21c5b8ae186e07
+      internalID: -2037768477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_1
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 781
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d227c51efe5c137488b2cac5d40bf015
+      internalID: -1220331165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_2
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 781
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e424b8ef3a5d284b94caeedec17420e
+      internalID: 910984000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_3
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 781
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0aced809c6ea5384bae5afdfe374a2fa
+      internalID: -415434059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_4
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 781
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08caa4526515bc7439d407f51efd60b9
+      internalID: -1326865016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_5
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 781
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94c9a97c11b28a748be175d7d5b57df0
+      internalID: -1736438495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_6
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 781
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc2a2cc50a35a9c42bddf1c7a6b61833
+      internalID: 1963217179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_7
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 781
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7e18db138ff3cf43b90a6cdd5615513
+      internalID: -19208787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_8
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 781
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 329f221ca35301f429804e645d37d739
+      internalID: 541570202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_9
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 781
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a43f8d93bf5ff1d45a293cb7227a6541
+      internalID: -2118352670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_10
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 726
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b75c49dd4bf3bf47847d0a7b9ff571d
+      internalID: 352577969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_11
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 726
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 382d9c3858026ed4f9fc87a698ff4c7d
+      internalID: 922900840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_12
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 726
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b135babef72d594895a4abf80c7c598
+      internalID: 940606404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_13
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 726
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a7dd6821b1f57d4abbda7252bc8b7ac
+      internalID: -950510717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_14
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 726
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c74a8385c78ec7547bbbc4cfad9b37f9
+      internalID: 734839873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_15
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 726
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0128db9d86dbdd6409e4db2bd75ce4e2
+      internalID: 1946700117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_16
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 726
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98f164d600a10874c9d49d110fe9ef84
+      internalID: 563726457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_17
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 726
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2032f79cffa9c994dab97227173f16a2
+      internalID: -1950821779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_18
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 726
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 005a3f38159c8fc4a9bb98f204dcbddd
+      internalID: 1954741659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_19
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 726
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc8e35cd9541aee479966d54a76439ba
+      internalID: -372214129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_20
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 671
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf18b97854095814b96e3dac797b3106
+      internalID: 166966402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_21
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 671
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 382847d177f44124dbb56511b43f3f97
+      internalID: 2007006722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_22
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 671
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4eefbfd4421e5bc4291d656174c10e68
+      internalID: 1228334781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_23
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 671
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54128f75fa44fb94590897f6e5ffaea6
+      internalID: 65844153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_24
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 671
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa77b7303aaf82044b60218c3f683862
+      internalID: 297950614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_25
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 671
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35ddfe008273d53468be70359328f9b7
+      internalID: -1189889624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_26
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 671
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee122c1856a013c49889c3e4ae3aed1b
+      internalID: -416379476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_27
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 671
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86fda3063a1c3514da0c9e864f648f56
+      internalID: 632529710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_28
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 671
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e665b04a9fd5bfe40a9ae3b862adef00
+      internalID: 1457739009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_29
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 671
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11ed0d4f3754d7542b8f81e9d4804ede
+      internalID: 524515801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_30
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 616
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9621b6a34cffe84995477b162dfb538
+      internalID: 615778196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_31
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 616
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0c1d127502963446bedd3a160d8d58f
+      internalID: -2113238385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_32
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 616
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2074fb358a08feb44bc6a1813d1bb00d
+      internalID: 1329436021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_33
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 616
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a598b865793a659409a87bfb6e9daea7
+      internalID: 1217144955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_34
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 616
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26583e01420e169428b431a79a9cc08b
+      internalID: 49162077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_35
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 616
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b38615a8bf81e945b5f12ff677ad0f6
+      internalID: -696207803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_36
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 616
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fcd7f8cf2a704d4ab3d71e88b8008d4
+      internalID: 847105282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_37
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 616
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc951a778f6c7204cb4f96f35fdb8966
+      internalID: 1991314749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_38
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 616
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 995a7dda9d9470b4b871a8b5170c5f68
+      internalID: 1970568906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_39
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 616
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7c85d72a989f8947a56aa64bcc22d91
+      internalID: -1139761013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_40
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 561
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4eea40920b50b744aa7aeb222c30e2f9
+      internalID: 1725166244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_41
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 561
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4b9fa12710c6a34dadf155a73673b59
+      internalID: 339071224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_42
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 561
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f18167237b829c44b7db6e431be1348
+      internalID: -1963373148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_43
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 561
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10e0b77756677a5428d2cf69d4036d8c
+      internalID: -2110355569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_44
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 561
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af57e872112ddab41923b19044960edf
+      internalID: -349826022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_45
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 561
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 765125fb194888f4185017936be7337c
+      internalID: 1407951473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_46
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 561
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7856ab791cf599489aed6c87b905a3b
+      internalID: 1284882895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_47
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 561
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17c273f92d1370e4fbd4292a5de2ab17
+      internalID: 385273529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_48
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 561
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff19f4daf19e8e1408c65323de500fa2
+      internalID: -365659359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_49
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 561
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5af88679575bb73499abee9580d75808
+      internalID: 1059066865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_50
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 506
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ca33e97918810441a02fb5bbbfc5d05
+      internalID: -1593623185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_51
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 506
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 048a93c911a390041a74398a2632b679
+      internalID: 122238318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_52
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 506
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab59eb2f5cddaa840a268728f37ac9a3
+      internalID: -223759920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_53
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 506
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70d02acc9b64d854bbc4b2690c96075c
+      internalID: -766004979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_54
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 506
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cc4b61a9227a2a4bb46ca60c2435a5a
+      internalID: 1264558226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_55
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 506
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b33db5daeb31a743bf8d80cb630ec5e
+      internalID: 366131936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_56
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 506
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 086b648cb40e2e244b736d7b30b86811
+      internalID: -1648662340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_57
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 506
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1963c3486543d5d4eac689f695e77548
+      internalID: -388842892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_58
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 506
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 283478e9b227f2941b78c95722b034aa
+      internalID: -1290067842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_59
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 506
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2648a1bebaf437d4b9488eee05713884
+      internalID: -1976095458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_60
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 451
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 987f0ea5d76ff42418f9543fb0d6f892
+      internalID: -1473453474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_61
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 451
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adcc49fc739f0164d9447b5d1effac93
+      internalID: -775448275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_62
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 451
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68d94dc7c8fba32469a3ced1c15f37e8
+      internalID: -1525318080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_63
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 451
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc937988015ee58449b1db55ab375a31
+      internalID: 1646316050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_64
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 451
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67a7798908190b6499e9f76ce929e568
+      internalID: -1836016659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_65
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 451
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c2fb578ea7dd4140b54c5e6f3c9d896
+      internalID: 1477014260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_66
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 451
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f464476127e29b04cb319846e5b0b0a2
+      internalID: 861780691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_67
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 451
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 194cb5a32d13e3e4abd3e7bd3c667d9e
+      internalID: 1486366182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_68
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 451
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32623b9188cf6df4c90cd0428b6cf656
+      internalID: -2070422229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_69
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 451
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bf18da06ba82c24996857f11e663476
+      internalID: -1443953985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_70
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 396
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d42901de363d2054d8e523913ebe0106
+      internalID: -1989715552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_71
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 396
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 034670da792f0a14697b7c49260dbcc2
+      internalID: 1467665707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_72
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 396
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88dd3c1cf10519541aee8386bc13dfbe
+      internalID: 2005403241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_73
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 396
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c02bc8e7cc84d84ba8608af8361c685
+      internalID: 1101367125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_74
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 396
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7c2404ccd8bb2045b132a3b14b73334
+      internalID: 729302150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_75
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 396
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 286d275ad4505834cbc6c07184bf5ac0
+      internalID: 524633891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_76
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 396
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aaa0ad00deda7f549ad57ff5b282ecfa
+      internalID: -900886519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_77
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 396
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2110fb6186a8e642a5d56d7350247e6
+      internalID: 158084561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_78
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 396
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8eb3192451d9f5d449f012832685a48b
+      internalID: 761384875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_79
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 396
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9fc62ca70628de47b97ea885a86cd1f
+      internalID: -1243346522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_80
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 341
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e28030becbbec64b98aac39b1731381
+      internalID: -773476056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_81
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 341
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92fea1ab147f6ef439c8c86a72c126f7
+      internalID: 839732172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_82
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 341
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c0eb4b2631953248a29867a4e5024cc
+      internalID: -2020728236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_83
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 341
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c4fdac122a76e2478b7aea10917ccfd
+      internalID: 2053178313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_84
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 341
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf1f6e0ed8a14e44c8f66ff2c0c82f5d
+      internalID: -1057858878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_85
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 341
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 502fb6a39df942c489ae9b3170d5db24
+      internalID: 602761255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_86
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 341
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54d4405f204c19043b9127fc42d4e07f
+      internalID: 1784169760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_87
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 341
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57cb1e185fbcdcd4ea2f285a12f3f30c
+      internalID: 1944193907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_88
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 341
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7631480f0ff60a841a2c12b37d0739e6
+      internalID: 1958961345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_89
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 341
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adb042031bb05934da5270f99495bf2a
+      internalID: -1476052437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_90
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 286
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 594ba0f436ffa464c999a93d2416c93a
+      internalID: -870035684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_91
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 286
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6373ff26bb29ae34d995be455fa31ce3
+      internalID: 1698593369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_92
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 286
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd2e5be7d0bafc248ab71c402af61f4f
+      internalID: 509931444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_93
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 286
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b493a4efd02d76c4ab6ed152c2a5c44f
+      internalID: -21231540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_94
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 286
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b434100fbfa63e428a359d140928452
+      internalID: 655927850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_95
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 286
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7abcbe886ca0e54c80b2d9fb4aae717
+      internalID: 1607459533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_96
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 286
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1648c9c4e03ba374dacac62febe7f302
+      internalID: -392014436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_97
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 286
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 742da0d4c4822fe448eb1a56c1043e5f
+      internalID: 1175065663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_98
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 286
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 540a044bb73420a4f81a52d530c247ba
+      internalID: -135809766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_99
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 286
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b630bcc71724df241895a9a9d6eb6db8
+      internalID: -375151306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_100
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 231
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bac92d9c169defc4eb22b197b45d9612
+      internalID: -1390159645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_101
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 231
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8625b8d3e5e1ba542a6f9549c11479ff
+      internalID: 1359881616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_102
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 231
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 842184eef90247f4c9db179dc5432c4d
+      internalID: -2143069129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_103
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 231
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b8f9b2c1e2621c42b91d9f9808471c9
+      internalID: 274046691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_104
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 231
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57b419720553d994d8eaa91c169c1680
+      internalID: -903399615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_105
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 231
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3a5b3ea14b2ff140891c4cc835211b0
+      internalID: 1206915706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_106
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 231
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b52b4b984bbc6a4aa645bf2c5b04e29
+      internalID: -1378207978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_107
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 231
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 673932dfead836043a01a47ec1448a70
+      internalID: 281802123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_108
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 231
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d78c4962072608049a296777da407e3f
+      internalID: -881788383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_109
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 231
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eba5cfe5a0b1ec546b3de79f8a4ad2d6
+      internalID: -2046194390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_110
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 176
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd5a73d7963145441a3740d3b6045591
+      internalID: 1381543062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_111
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 176
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7df3b00fbd011eb48b3e94d0894b20f6
+      internalID: 369664560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_112
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 176
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6e99bad61941d440a27491c911dd51b
+      internalID: 1361592429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_113
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 176
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d343b3258279f254bba242ac56db5bc5
+      internalID: -810052245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_114
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 176
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e57e9d154c752146a40f5820c4c8c1c
+      internalID: 2047373580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_115
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 176
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b0c4dd7de8dcb348bf425c09c1ee6fc
+      internalID: -822191103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_116
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 176
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee32035e9d935fc49a6d30ef7000be10
+      internalID: -1460158555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_117
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 176
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a0c517cc20ec6247b7ae319a4b29c9c
+      internalID: -1128421064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_118
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 176
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5084df93fd305e74daa64a74ff9b077f
+      internalID: -350127280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_119
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 176
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5460c0443ad3df4aa726b01e9d57ce6
+      internalID: 1867340217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_120
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 121
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c66663eed9d8a04fa63ca300f6eef59
+      internalID: -686544465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_121
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 121
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a6953e0f1f0a3345bab5662c24f1529
+      internalID: 1089218500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_122
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 121
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05886c1e3abd82a478803abf49ab26b3
+      internalID: 341762628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_123
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 121
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8451c6b8048e5414c9a602bdba81fed2
+      internalID: 1222089711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_124
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 121
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 210d6c2e9cbf7a44f8f1beabb7fa2170
+      internalID: 1075156051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_125
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 121
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d66728f99d1e5784a84ead67ad3da069
+      internalID: -1247469688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_126
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 121
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63a8a5682ab14484ba42641cdeac2f34
+      internalID: 1479360374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_127
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 121
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5137aa377f08f144b846b3cd36fc90fe
+      internalID: -1977211006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_128
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 121
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 072eac9593a23b344bacfb32b770c196
+      internalID: -1338019530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_129
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 121
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c3d5fc0d696eb0489887ab9fc79cdb9
+      internalID: 140957231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_130
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 66
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90e35ce5dd9e8fa49a29fda693ff38b1
+      internalID: -36295532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_131
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 66
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b112ae89c1614e46af366af3ee7a0a3
+      internalID: 398669994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_132
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 66
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c0b2c84c1f5fc34a9868a40b29bd68b
+      internalID: 804911434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_133
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 66
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9039df4ce719ab4b9b05fc04b04c15d
+      internalID: -1377735763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_134
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 66
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdb421146d374e74e8dc41c8af0ec7fb
+      internalID: 1632143737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_135
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 66
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c03e2a94189a78b4cb76cf6e512272fc
+      internalID: -2095445996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_136
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 66
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 248d570529c34de43bf887d2870c6d33
+      internalID: -1248009433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_137
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 66
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28fac31cce4b38145b9eb390fe8969cf
+      internalID: 114513824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_138
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 66
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd935ab6e2facd447a300d5fa06014cb
+      internalID: -534223850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_139
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 66
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87a31910fecce6245b1da15c38c30a19
+      internalID: -28680155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_140
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 11
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b61da7ece48fd2d42968f16cb69f27b6
+      internalID: 1772458968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_141
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 11
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f675a3e8cded84489a3ca56c2d7d129
+      internalID: -2104691293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_142
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 11
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a53f76743daff354a8b7d0c4522f89ee
+      internalID: 1585896254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_143
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 11
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0269c7f20dc4a6448bf3c5c9de90538
+      internalID: 149950352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_144
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 11
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 842c9bfb556667347a669d61d8042ecf
+      internalID: 1452470891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_145
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 11
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa8b34ab4de012d4c8079c08bbce0527
+      internalID: 1019550577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_146
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 11
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6049f8b61e7c3674888658e7b697d431
+      internalID: 267790340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_147
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 11
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab5e5870d8298484895c391a4ecb0409
+      internalID: 623311755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_148
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 11
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7347d24a753c80a459361599c80dee53
+      internalID: -504891223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile nivel 2_149
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 11
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17453628e177fbd4b86e42945e8ca492
+      internalID: -1792864071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      tile nivel 2_0: -2037768477
+      tile nivel 2_1: -1220331165
+      tile nivel 2_10: 352577969
+      tile nivel 2_100: -1390159645
+      tile nivel 2_101: 1359881616
+      tile nivel 2_102: -2143069129
+      tile nivel 2_103: 274046691
+      tile nivel 2_104: -903399615
+      tile nivel 2_105: 1206915706
+      tile nivel 2_106: -1378207978
+      tile nivel 2_107: 281802123
+      tile nivel 2_108: -881788383
+      tile nivel 2_109: -2046194390
+      tile nivel 2_11: 922900840
+      tile nivel 2_110: 1381543062
+      tile nivel 2_111: 369664560
+      tile nivel 2_112: 1361592429
+      tile nivel 2_113: -810052245
+      tile nivel 2_114: 2047373580
+      tile nivel 2_115: -822191103
+      tile nivel 2_116: -1460158555
+      tile nivel 2_117: -1128421064
+      tile nivel 2_118: -350127280
+      tile nivel 2_119: 1867340217
+      tile nivel 2_12: 940606404
+      tile nivel 2_120: -686544465
+      tile nivel 2_121: 1089218500
+      tile nivel 2_122: 341762628
+      tile nivel 2_123: 1222089711
+      tile nivel 2_124: 1075156051
+      tile nivel 2_125: -1247469688
+      tile nivel 2_126: 1479360374
+      tile nivel 2_127: -1977211006
+      tile nivel 2_128: -1338019530
+      tile nivel 2_129: 140957231
+      tile nivel 2_13: -950510717
+      tile nivel 2_130: -36295532
+      tile nivel 2_131: 398669994
+      tile nivel 2_132: 804911434
+      tile nivel 2_133: -1377735763
+      tile nivel 2_134: 1632143737
+      tile nivel 2_135: -2095445996
+      tile nivel 2_136: -1248009433
+      tile nivel 2_137: 114513824
+      tile nivel 2_138: -534223850
+      tile nivel 2_139: -28680155
+      tile nivel 2_14: 734839873
+      tile nivel 2_140: 1772458968
+      tile nivel 2_141: -2104691293
+      tile nivel 2_142: 1585896254
+      tile nivel 2_143: 149950352
+      tile nivel 2_144: 1452470891
+      tile nivel 2_145: 1019550577
+      tile nivel 2_146: 267790340
+      tile nivel 2_147: 623311755
+      tile nivel 2_148: -504891223
+      tile nivel 2_149: -1792864071
+      tile nivel 2_15: 1946700117
+      tile nivel 2_16: 563726457
+      tile nivel 2_17: -1950821779
+      tile nivel 2_18: 1954741659
+      tile nivel 2_19: -372214129
+      tile nivel 2_2: 910984000
+      tile nivel 2_20: 166966402
+      tile nivel 2_21: 2007006722
+      tile nivel 2_22: 1228334781
+      tile nivel 2_23: 65844153
+      tile nivel 2_24: 297950614
+      tile nivel 2_25: -1189889624
+      tile nivel 2_26: -416379476
+      tile nivel 2_27: 632529710
+      tile nivel 2_28: 1457739009
+      tile nivel 2_29: 524515801
+      tile nivel 2_3: -415434059
+      tile nivel 2_30: 615778196
+      tile nivel 2_31: -2113238385
+      tile nivel 2_32: 1329436021
+      tile nivel 2_33: 1217144955
+      tile nivel 2_34: 49162077
+      tile nivel 2_35: -696207803
+      tile nivel 2_36: 847105282
+      tile nivel 2_37: 1991314749
+      tile nivel 2_38: 1970568906
+      tile nivel 2_39: -1139761013
+      tile nivel 2_4: -1326865016
+      tile nivel 2_40: 1725166244
+      tile nivel 2_41: 339071224
+      tile nivel 2_42: -1963373148
+      tile nivel 2_43: -2110355569
+      tile nivel 2_44: -349826022
+      tile nivel 2_45: 1407951473
+      tile nivel 2_46: 1284882895
+      tile nivel 2_47: 385273529
+      tile nivel 2_48: -365659359
+      tile nivel 2_49: 1059066865
+      tile nivel 2_5: -1736438495
+      tile nivel 2_50: -1593623185
+      tile nivel 2_51: 122238318
+      tile nivel 2_52: -223759920
+      tile nivel 2_53: -766004979
+      tile nivel 2_54: 1264558226
+      tile nivel 2_55: 366131936
+      tile nivel 2_56: -1648662340
+      tile nivel 2_57: -388842892
+      tile nivel 2_58: -1290067842
+      tile nivel 2_59: -1976095458
+      tile nivel 2_6: 1963217179
+      tile nivel 2_60: -1473453474
+      tile nivel 2_61: -775448275
+      tile nivel 2_62: -1525318080
+      tile nivel 2_63: 1646316050
+      tile nivel 2_64: -1836016659
+      tile nivel 2_65: 1477014260
+      tile nivel 2_66: 861780691
+      tile nivel 2_67: 1486366182
+      tile nivel 2_68: -2070422229
+      tile nivel 2_69: -1443953985
+      tile nivel 2_7: -19208787
+      tile nivel 2_70: -1989715552
+      tile nivel 2_71: 1467665707
+      tile nivel 2_72: 2005403241
+      tile nivel 2_73: 1101367125
+      tile nivel 2_74: 729302150
+      tile nivel 2_75: 524633891
+      tile nivel 2_76: -900886519
+      tile nivel 2_77: 158084561
+      tile nivel 2_78: 761384875
+      tile nivel 2_79: -1243346522
+      tile nivel 2_8: 541570202
+      tile nivel 2_80: -773476056
+      tile nivel 2_81: 839732172
+      tile nivel 2_82: -2020728236
+      tile nivel 2_83: 2053178313
+      tile nivel 2_84: -1057858878
+      tile nivel 2_85: 602761255
+      tile nivel 2_86: 1784169760
+      tile nivel 2_87: 1944193907
+      tile nivel 2_88: 1958961345
+      tile nivel 2_89: -1476052437
+      tile nivel 2_9: -2118352670
+      tile nivel 2_90: -870035684
+      tile nivel 2_91: 1698593369
+      tile nivel 2_92: 509931444
+      tile nivel 2_93: -21231540
+      tile nivel 2_94: 655927850
+      tile nivel 2_95: 1607459533
+      tile nivel 2_96: -392014436
+      tile nivel 2_97: 1175065663
+      tile nivel 2_98: -135809766
+      tile nivel 2_99: -375151306
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
