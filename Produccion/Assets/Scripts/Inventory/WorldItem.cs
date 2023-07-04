@@ -12,7 +12,6 @@ public class WorldItem : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            Debug.Log("item recogido");
             gameObject.SetActive(false);
             Inventory.instance.AddItems(item);
         }

@@ -65,6 +65,7 @@ public class BattleManager : MonoBehaviour
     public bool allPlayersAreDead = true;
 
     public bool randomBattle;
+    public bool dinniesBattle;
 
     public event EventHandler OnBattleEnd;
 
@@ -280,7 +281,7 @@ public class BattleManager : MonoBehaviour
                 ExportPlayerStats(0);
                 if (!randomBattle)   Destroy(enemyGO);
                 Debug.Log("Victoria!");
-                  if (randomBattle)
+                  if (randomBattle || dinniesBattle)
                     OnBattleEnd?.Invoke(this, EventArgs.Empty);
 
             }

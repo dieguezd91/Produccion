@@ -24,6 +24,6 @@ public class InstructionScript : MonoBehaviour
         instructionText.gameObject.SetActive(true);
         yield return new WaitForSeconds(2);
         instructionText.gameObject.SetActive(false);
-        this.gameObject.SetActive(false);
+        enabled = false;
     }
 }

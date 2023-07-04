@@ -25,8 +25,8 @@ public class EventScript : MonoBehaviour
         inventory = GameManager.instance.GetComponent<Inventory>();
         dialogueManagerInstance.OnDialogueEnd += Fight;
 
-        if (onlyOnTutorial && inventory.hasCompletedDinniedTutorial)
-            this.gameObject.SetActive(false);
+        if (onlyOnTutorial && inventory.hasCompletedDinniesTutorial)
+            gameObject.SetActive(false);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -41,7 +41,7 @@ public class EventScript : MonoBehaviour
 
     private void Fight(object sender,EventArgs e)
     {
-        if(beforeFight) BattleManager.instance.StartBattle(this.gameObject, enemies, false);
+        if(beforeFight) BattleManager.instance.StartBattle(gameObject, enemies, true);
     }
 
     private void Activate(object sender, EventArgs e)
