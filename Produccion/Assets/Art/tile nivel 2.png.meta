@@ -113,7 +113,7 @@ TextureImporter:
         width: 54
         height: 54
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -134,7 +134,7 @@ TextureImporter:
         width: 54
         height: 54
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -155,7 +155,7 @@ TextureImporter:
         width: 54
         height: 54
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -176,7 +176,7 @@ TextureImporter:
         width: 54
         height: 54
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -197,7 +197,7 @@ TextureImporter:
         width: 54
         height: 54
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -218,7 +218,7 @@ TextureImporter:
         width: 54
         height: 54
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -239,7 +239,7 @@ TextureImporter:
         width: 54
         height: 54
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -260,7 +260,7 @@ TextureImporter:
         width: 54
         height: 54
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -281,7 +281,7 @@ TextureImporter:
         width: 54
         height: 54
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -302,7 +302,7 @@ TextureImporter:
         width: 54
         height: 54
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -323,7 +323,7 @@ TextureImporter:
         width: 54
         height: 54
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -344,7 +344,7 @@ TextureImporter:
         width: 54
         height: 54
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -365,7 +365,7 @@ TextureImporter:
         width: 54
         height: 54
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -386,7 +386,7 @@ TextureImporter:
         width: 54
         height: 54
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -407,7 +407,7 @@ TextureImporter:
         width: 54
         height: 54
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -428,7 +428,7 @@ TextureImporter:
         width: 54
         height: 54
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -449,7 +449,7 @@ TextureImporter:
         width: 54
         height: 54
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -470,7 +470,7 @@ TextureImporter:
         width: 54
         height: 54
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -491,7 +491,7 @@ TextureImporter:
         width: 54
         height: 54
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -512,7 +512,7 @@ TextureImporter:
         width: 54
         height: 54
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -533,7 +533,7 @@ TextureImporter:
         width: 54
         height: 54
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -554,7 +554,7 @@ TextureImporter:
         width: 54
         height: 54
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -575,7 +575,7 @@ TextureImporter:
         width: 54
         height: 54
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -596,7 +596,7 @@ TextureImporter:
         width: 54
         height: 54
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -617,7 +617,7 @@ TextureImporter:
         width: 54
         height: 54
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -638,7 +638,7 @@ TextureImporter:
         width: 54
         height: 54
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -659,7 +659,7 @@ TextureImporter:
         width: 54
         height: 54
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -675,12 +675,12 @@ TextureImporter:
       name: tile nivel 2_27
       rect:
         serializedVersion: 2
-        x: 419
-        y: 671
+        x: 528
+        y: 666
         width: 54
         height: 54
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -696,12 +696,12 @@ TextureImporter:
       name: tile nivel 2_28
       rect:
         serializedVersion: 2
-        x: 474
-        y: 671
+        x: 473
+        y: 666
         width: 54
         height: 54
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -709,27 +709,6 @@ TextureImporter:
       bones: []
       spriteID: e665b04a9fd5bfe40a9ae3b862adef00
       internalID: 1457739009
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tile nivel 2_29
-      rect:
-        serializedVersion: 2
-        x: 529
-        y: 671
-        width: 54
-        height: 54
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 11ed0d4f3754d7542b8f81e9d4804ede
-      internalID: 524515801
       vertices: []
       indices: 
       edges: []
@@ -743,7 +722,7 @@ TextureImporter:
         width: 54
         height: 54
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -764,7 +743,7 @@ TextureImporter:
         width: 54
         height: 54
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -785,7 +764,7 @@ TextureImporter:
         width: 54
         height: 54
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -806,7 +785,7 @@ TextureImporter:
         width: 54
         height: 54
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -827,7 +806,7 @@ TextureImporter:
         width: 54
         height: 54
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -848,7 +827,7 @@ TextureImporter:
         width: 54
         height: 54
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -856,90 +835,6 @@ TextureImporter:
       bones: []
       spriteID: 2b38615a8bf81e945b5f12ff677ad0f6
       internalID: -696207803
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tile nivel 2_36
-      rect:
-        serializedVersion: 2
-        x: 364
-        y: 616
-        width: 54
-        height: 54
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3fcd7f8cf2a704d4ab3d71e88b8008d4
-      internalID: 847105282
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tile nivel 2_37
-      rect:
-        serializedVersion: 2
-        x: 419
-        y: 616
-        width: 54
-        height: 54
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cc951a778f6c7204cb4f96f35fdb8966
-      internalID: 1991314749
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tile nivel 2_38
-      rect:
-        serializedVersion: 2
-        x: 474
-        y: 616
-        width: 54
-        height: 54
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 995a7dda9d9470b4b871a8b5170c5f68
-      internalID: 1970568906
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tile nivel 2_39
-      rect:
-        serializedVersion: 2
-        x: 529
-        y: 616
-        width: 54
-        height: 54
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d7c85d72a989f8947a56aa64bcc22d91
-      internalID: -1139761013
       vertices: []
       indices: 
       edges: []
@@ -953,7 +848,7 @@ TextureImporter:
         width: 54
         height: 54
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -974,7 +869,7 @@ TextureImporter:
         width: 54
         height: 54
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -995,7 +890,7 @@ TextureImporter:
         width: 54
         height: 54
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1016,7 +911,7 @@ TextureImporter:
         width: 54
         height: 54
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1024,132 +919,6 @@ TextureImporter:
       bones: []
       spriteID: 10e0b77756677a5428d2cf69d4036d8c
       internalID: -2110355569
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tile nivel 2_44
-      rect:
-        serializedVersion: 2
-        x: 254
-        y: 561
-        width: 54
-        height: 54
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: af57e872112ddab41923b19044960edf
-      internalID: -349826022
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tile nivel 2_45
-      rect:
-        serializedVersion: 2
-        x: 309
-        y: 561
-        width: 54
-        height: 54
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 765125fb194888f4185017936be7337c
-      internalID: 1407951473
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tile nivel 2_46
-      rect:
-        serializedVersion: 2
-        x: 364
-        y: 561
-        width: 54
-        height: 54
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d7856ab791cf599489aed6c87b905a3b
-      internalID: 1284882895
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tile nivel 2_47
-      rect:
-        serializedVersion: 2
-        x: 419
-        y: 561
-        width: 54
-        height: 54
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 17c273f92d1370e4fbd4292a5de2ab17
-      internalID: 385273529
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tile nivel 2_48
-      rect:
-        serializedVersion: 2
-        x: 474
-        y: 561
-        width: 54
-        height: 54
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ff19f4daf19e8e1408c65323de500fa2
-      internalID: -365659359
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tile nivel 2_49
-      rect:
-        serializedVersion: 2
-        x: 529
-        y: 561
-        width: 54
-        height: 54
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5af88679575bb73499abee9580d75808
-      internalID: 1059066865
       vertices: []
       indices: 
       edges: []
@@ -1163,7 +932,7 @@ TextureImporter:
         width: 54
         height: 54
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1184,7 +953,7 @@ TextureImporter:
         width: 54
         height: 54
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1205,7 +974,7 @@ TextureImporter:
         width: 54
         height: 54
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1226,7 +995,7 @@ TextureImporter:
         width: 54
         height: 54
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1234,132 +1003,6 @@ TextureImporter:
       bones: []
       spriteID: 70d02acc9b64d854bbc4b2690c96075c
       internalID: -766004979
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tile nivel 2_54
-      rect:
-        serializedVersion: 2
-        x: 254
-        y: 506
-        width: 54
-        height: 54
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8cc4b61a9227a2a4bb46ca60c2435a5a
-      internalID: 1264558226
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tile nivel 2_55
-      rect:
-        serializedVersion: 2
-        x: 309
-        y: 506
-        width: 54
-        height: 54
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6b33db5daeb31a743bf8d80cb630ec5e
-      internalID: 366131936
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tile nivel 2_56
-      rect:
-        serializedVersion: 2
-        x: 364
-        y: 506
-        width: 54
-        height: 54
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 086b648cb40e2e244b736d7b30b86811
-      internalID: -1648662340
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tile nivel 2_57
-      rect:
-        serializedVersion: 2
-        x: 419
-        y: 506
-        width: 54
-        height: 54
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1963c3486543d5d4eac689f695e77548
-      internalID: -388842892
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tile nivel 2_58
-      rect:
-        serializedVersion: 2
-        x: 474
-        y: 506
-        width: 54
-        height: 54
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 283478e9b227f2941b78c95722b034aa
-      internalID: -1290067842
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tile nivel 2_59
-      rect:
-        serializedVersion: 2
-        x: 529
-        y: 506
-        width: 54
-        height: 54
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2648a1bebaf437d4b9488eee05713884
-      internalID: -1976095458
       vertices: []
       indices: 
       edges: []
@@ -1373,7 +1016,7 @@ TextureImporter:
         width: 54
         height: 54
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1394,7 +1037,7 @@ TextureImporter:
         width: 54
         height: 54
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1415,7 +1058,7 @@ TextureImporter:
         width: 54
         height: 54
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1436,7 +1079,7 @@ TextureImporter:
         width: 54
         height: 54
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1452,12 +1095,12 @@ TextureImporter:
       name: tile nivel 2_64
       rect:
         serializedVersion: 2
-        x: 254
-        y: 451
+        x: 266
+        y: 356
         width: 54
         height: 54
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1473,12 +1116,12 @@ TextureImporter:
       name: tile nivel 2_65
       rect:
         serializedVersion: 2
-        x: 309
-        y: 451
+        x: 265
+        y: 411
         width: 54
         height: 54
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1494,12 +1137,12 @@ TextureImporter:
       name: tile nivel 2_66
       rect:
         serializedVersion: 2
-        x: 364
-        y: 451
+        x: 320
+        y: 410
         width: 54
         height: 54
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1515,12 +1158,12 @@ TextureImporter:
       name: tile nivel 2_67
       rect:
         serializedVersion: 2
-        x: 419
-        y: 451
+        x: 265
+        y: 301
         width: 54
         height: 54
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1528,48 +1171,6 @@ TextureImporter:
       bones: []
       spriteID: 194cb5a32d13e3e4abd3e7bd3c667d9e
       internalID: 1486366182
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tile nivel 2_68
-      rect:
-        serializedVersion: 2
-        x: 474
-        y: 451
-        width: 54
-        height: 54
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 32623b9188cf6df4c90cd0428b6cf656
-      internalID: -2070422229
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tile nivel 2_69
-      rect:
-        serializedVersion: 2
-        x: 529
-        y: 451
-        width: 54
-        height: 54
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1bf18da06ba82c24996857f11e663476
-      internalID: -1443953985
       vertices: []
       indices: 
       edges: []
@@ -1583,7 +1184,7 @@ TextureImporter:
         width: 54
         height: 54
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1604,7 +1205,7 @@ TextureImporter:
         width: 54
         height: 54
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1625,7 +1226,7 @@ TextureImporter:
         width: 54
         height: 54
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1646,7 +1247,7 @@ TextureImporter:
         width: 54
         height: 54
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1662,12 +1263,12 @@ TextureImporter:
       name: tile nivel 2_74
       rect:
         serializedVersion: 2
-        x: 254
-        y: 396
+        x: 320
+        y: 301
         width: 54
         height: 54
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1683,12 +1284,12 @@ TextureImporter:
       name: tile nivel 2_75
       rect:
         serializedVersion: 2
-        x: 309
-        y: 396
+        x: 375
+        y: 301
         width: 54
         height: 54
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1704,12 +1305,12 @@ TextureImporter:
       name: tile nivel 2_76
       rect:
         serializedVersion: 2
-        x: 364
-        y: 396
+        x: 374
+        y: 356
         width: 54
         height: 54
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1717,69 +1318,6 @@ TextureImporter:
       bones: []
       spriteID: aaa0ad00deda7f549ad57ff5b282ecfa
       internalID: -900886519
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tile nivel 2_77
-      rect:
-        serializedVersion: 2
-        x: 419
-        y: 396
-        width: 54
-        height: 54
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d2110fb6186a8e642a5d56d7350247e6
-      internalID: 158084561
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tile nivel 2_78
-      rect:
-        serializedVersion: 2
-        x: 474
-        y: 396
-        width: 54
-        height: 54
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8eb3192451d9f5d449f012832685a48b
-      internalID: 761384875
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tile nivel 2_79
-      rect:
-        serializedVersion: 2
-        x: 529
-        y: 396
-        width: 54
-        height: 54
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b9fc62ca70628de47b97ea885a86cd1f
-      internalID: -1243346522
       vertices: []
       indices: 
       edges: []
@@ -1793,7 +1331,7 @@ TextureImporter:
         width: 54
         height: 54
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1814,7 +1352,7 @@ TextureImporter:
         width: 54
         height: 54
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1835,7 +1373,7 @@ TextureImporter:
         width: 54
         height: 54
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1856,7 +1394,7 @@ TextureImporter:
         width: 54
         height: 54
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1864,132 +1402,6 @@ TextureImporter:
       bones: []
       spriteID: 0c4fdac122a76e2478b7aea10917ccfd
       internalID: 2053178313
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tile nivel 2_84
-      rect:
-        serializedVersion: 2
-        x: 254
-        y: 341
-        width: 54
-        height: 54
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bf1f6e0ed8a14e44c8f66ff2c0c82f5d
-      internalID: -1057858878
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tile nivel 2_85
-      rect:
-        serializedVersion: 2
-        x: 309
-        y: 341
-        width: 54
-        height: 54
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 502fb6a39df942c489ae9b3170d5db24
-      internalID: 602761255
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tile nivel 2_86
-      rect:
-        serializedVersion: 2
-        x: 364
-        y: 341
-        width: 54
-        height: 54
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 54d4405f204c19043b9127fc42d4e07f
-      internalID: 1784169760
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tile nivel 2_87
-      rect:
-        serializedVersion: 2
-        x: 419
-        y: 341
-        width: 54
-        height: 54
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 57cb1e185fbcdcd4ea2f285a12f3f30c
-      internalID: 1944193907
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tile nivel 2_88
-      rect:
-        serializedVersion: 2
-        x: 474
-        y: 341
-        width: 54
-        height: 54
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7631480f0ff60a841a2c12b37d0739e6
-      internalID: 1958961345
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tile nivel 2_89
-      rect:
-        serializedVersion: 2
-        x: 529
-        y: 341
-        width: 54
-        height: 54
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: adb042031bb05934da5270f99495bf2a
-      internalID: -1476052437
       vertices: []
       indices: 
       edges: []
@@ -2003,7 +1415,7 @@ TextureImporter:
         width: 54
         height: 54
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2024,7 +1436,7 @@ TextureImporter:
         width: 54
         height: 54
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2045,7 +1457,7 @@ TextureImporter:
         width: 54
         height: 54
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2066,7 +1478,7 @@ TextureImporter:
         width: 54
         height: 54
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2074,132 +1486,6 @@ TextureImporter:
       bones: []
       spriteID: b493a4efd02d76c4ab6ed152c2a5c44f
       internalID: -21231540
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tile nivel 2_94
-      rect:
-        serializedVersion: 2
-        x: 254
-        y: 286
-        width: 54
-        height: 54
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7b434100fbfa63e428a359d140928452
-      internalID: 655927850
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tile nivel 2_95
-      rect:
-        serializedVersion: 2
-        x: 309
-        y: 286
-        width: 54
-        height: 54
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a7abcbe886ca0e54c80b2d9fb4aae717
-      internalID: 1607459533
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tile nivel 2_96
-      rect:
-        serializedVersion: 2
-        x: 364
-        y: 286
-        width: 54
-        height: 54
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1648c9c4e03ba374dacac62febe7f302
-      internalID: -392014436
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tile nivel 2_97
-      rect:
-        serializedVersion: 2
-        x: 419
-        y: 286
-        width: 54
-        height: 54
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 742da0d4c4822fe448eb1a56c1043e5f
-      internalID: 1175065663
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tile nivel 2_98
-      rect:
-        serializedVersion: 2
-        x: 474
-        y: 286
-        width: 54
-        height: 54
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 540a044bb73420a4f81a52d530c247ba
-      internalID: -135809766
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tile nivel 2_99
-      rect:
-        serializedVersion: 2
-        x: 529
-        y: 286
-        width: 54
-        height: 54
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b630bcc71724df241895a9a9d6eb6db8
-      internalID: -375151306
       vertices: []
       indices: 
       edges: []
@@ -2213,7 +1499,7 @@ TextureImporter:
         width: 54
         height: 54
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2234,7 +1520,7 @@ TextureImporter:
         width: 54
         height: 54
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2255,7 +1541,7 @@ TextureImporter:
         width: 54
         height: 54
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2276,7 +1562,7 @@ TextureImporter:
         width: 54
         height: 54
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2293,11 +1579,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 254
-        y: 231
+        y: 232
         width: 54
         height: 54
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2314,11 +1600,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 309
-        y: 231
+        y: 233
         width: 54
         height: 54
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2334,12 +1620,12 @@ TextureImporter:
       name: tile nivel 2_106
       rect:
         serializedVersion: 2
-        x: 364
-        y: 231
+        x: 362
+        y: 230
         width: 54
         height: 54
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2352,36 +1638,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tile nivel 2_107
-      rect:
-        serializedVersion: 2
-        x: 419
-        y: 231
-        width: 54
-        height: 54
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 673932dfead836043a01a47ec1448a70
-      internalID: 281802123
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: tile nivel 2_108
       rect:
         serializedVersion: 2
-        x: 474
+        x: 459
         y: 231
         width: 54
         height: 54
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2397,12 +1662,12 @@ TextureImporter:
       name: tile nivel 2_109
       rect:
         serializedVersion: 2
-        x: 529
+        x: 513
         y: 231
         width: 54
         height: 54
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2423,7 +1688,7 @@ TextureImporter:
         width: 54
         height: 54
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2444,7 +1709,7 @@ TextureImporter:
         width: 54
         height: 54
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2465,7 +1730,7 @@ TextureImporter:
         width: 54
         height: 54
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2486,7 +1751,7 @@ TextureImporter:
         width: 54
         height: 54
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2507,7 +1772,7 @@ TextureImporter:
         width: 54
         height: 54
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2528,7 +1793,7 @@ TextureImporter:
         width: 54
         height: 54
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2549,7 +1814,7 @@ TextureImporter:
         width: 54
         height: 54
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2570,7 +1835,7 @@ TextureImporter:
         width: 54
         height: 54
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2591,7 +1856,7 @@ TextureImporter:
         width: 54
         height: 54
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2612,7 +1877,7 @@ TextureImporter:
         width: 54
         height: 54
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2633,7 +1898,7 @@ TextureImporter:
         width: 54
         height: 54
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2654,7 +1919,7 @@ TextureImporter:
         width: 54
         height: 54
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2675,7 +1940,7 @@ TextureImporter:
         width: 54
         height: 54
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2696,7 +1961,7 @@ TextureImporter:
         width: 54
         height: 54
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2717,7 +1982,7 @@ TextureImporter:
         width: 54
         height: 54
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2738,7 +2003,7 @@ TextureImporter:
         width: 54
         height: 54
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2759,7 +2024,7 @@ TextureImporter:
         width: 54
         height: 54
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2780,7 +2045,7 @@ TextureImporter:
         width: 54
         height: 54
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2801,7 +2066,7 @@ TextureImporter:
         width: 54
         height: 54
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2822,7 +2087,7 @@ TextureImporter:
         width: 54
         height: 54
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2843,7 +2108,7 @@ TextureImporter:
         width: 54
         height: 54
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2864,7 +2129,7 @@ TextureImporter:
         width: 54
         height: 54
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2885,7 +2150,7 @@ TextureImporter:
         width: 54
         height: 54
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2906,7 +2171,7 @@ TextureImporter:
         width: 54
         height: 54
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2927,7 +2192,7 @@ TextureImporter:
         width: 54
         height: 54
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2948,7 +2213,7 @@ TextureImporter:
         width: 54
         height: 54
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2969,7 +2234,7 @@ TextureImporter:
         width: 54
         height: 54
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2990,7 +2255,7 @@ TextureImporter:
         width: 54
         height: 54
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3011,7 +2276,7 @@ TextureImporter:
         width: 54
         height: 54
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3032,7 +2297,7 @@ TextureImporter:
         width: 54
         height: 54
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3053,7 +2318,7 @@ TextureImporter:
         width: 54
         height: 54
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3074,7 +2339,7 @@ TextureImporter:
         width: 54
         height: 54
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3095,7 +2360,7 @@ TextureImporter:
         width: 54
         height: 54
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3116,7 +2381,7 @@ TextureImporter:
         width: 54
         height: 54
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3137,7 +2402,7 @@ TextureImporter:
         width: 54
         height: 54
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3158,7 +2423,7 @@ TextureImporter:
         width: 54
         height: 54
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3179,7 +2444,7 @@ TextureImporter:
         width: 54
         height: 54
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3200,7 +2465,7 @@ TextureImporter:
         width: 54
         height: 54
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3221,7 +2486,7 @@ TextureImporter:
         width: 54
         height: 54
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3242,7 +2507,7 @@ TextureImporter:
         width: 54
         height: 54
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
