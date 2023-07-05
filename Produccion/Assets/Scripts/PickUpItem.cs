@@ -22,8 +22,8 @@ public class PickUpItem : MonoBehaviour
         inventory = GameManager.instance.GetComponent<Inventory>();
         if(inventory.hasCompletedDinniesTutorial)
             item.SetActive(false);
-        if (openDoorAfterFight)
-            BattleManager.instance.OnBattleEnd += OpenDoor;
+        //if (openDoorAfterFight)
+        //    BattleManager.instance.OnBattleEnd += OpenDoor;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -32,11 +32,14 @@ public class PickUpItem : MonoBehaviour
         Inventory.instance.itemsList.Add(invItem);
         GameManager.instance.tutorial = false;
         eventToEnable.enabled = true;
+        door.SetActive(true);
+        objectToDisable.SetActive(false);
+        Inventory.instance.hasCompletedDinniesTutorial = true;
     }
 
     void OpenDoor(object sender, EventArgs e)
     {
-        door.SetActive(!door.activeInHierarchy);
+        door.SetActive(true);
         objectToDisable.SetActive(false);
         Inventory.instance.hasCompletedDinniesTutorial = true;
     }

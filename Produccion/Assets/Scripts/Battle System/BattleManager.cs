@@ -118,6 +118,7 @@ public class BattleManager : MonoBehaviour
     public void StartBattle(GameObject enemy, string enemiesToSpawn, bool isRandom)
     {
         randomBattle = isRandom;
+        dinniesBattle = isRandom;
         Destroy(lastEnemy);
         if (enemy != null)
         {

@@ -24,7 +24,6 @@ public class EventScript : MonoBehaviour
         colider = GetComponent<Collider2D>();
         inventory = GameManager.instance.GetComponent<Inventory>();
         dialogueManagerInstance.OnDialogueEnd += Fight;
-
         if (onlyOnTutorial && inventory.hasCompletedDinniesTutorial)
             gameObject.SetActive(false);
     }
@@ -34,6 +33,7 @@ public class EventScript : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             dialogueManager.SetActive(true);
+            //dialogueManager.GetComponent<DialogueManager>().StartDialogue();
             if (lockDoor)
                 door.SetActive(false);
         }

@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.Animations;
 
 public class DialogueManager : MonoBehaviour
 {
@@ -31,8 +32,6 @@ public class DialogueManager : MonoBehaviour
         animator = GameManager.instance.player.GetComponent<Animator>();
         dialogueText.text = string.Empty;
         StartDialogue();
-        lastSpeed = player.moveSpeed;
-        player.moveSpeed = 0;
         if(disableAfter)
             collisionEvent.SetActive(false);
     }
@@ -55,9 +54,11 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue()
     {
+        lastSpeed = player.moveSpeed;
+        player.moveSpeed = 0;
         MenuManager.instance.menu.SetActive(false);
         GameManager.instance.chatting = true;
-        animator.enabled = false;
+        //animator.enabled = false;
         dialogueText.text = string.Empty;
         index = 0;
         StartCoroutine(WriteLine());
@@ -83,13 +84,18 @@ public class DialogueManager : MonoBehaviour
         }
         else
         {
-            OnDialogueEnd?.Invoke(this, EventArgs.Empty);
-            gameObject.SetActive(false);
-            if(objectToDisable != null)
-                objectToDisable.SetActive(false);
-            player.moveSpeed = lastSpeed;
-            GameManager.instance.chatting = false;
-            animator.enabled = true;
+            EndDialogue();
         }
+    }
+
+    void EndDialogue()
+    {
+        OnDialogueEnd?.Invoke(this, EventArgs.Empty);
+        gameObject.SetActive(false);
+        if (objectToDisable != null)
+            objectToDisable.SetActive(false);
+        player.moveSpeed = lastSpeed;
+        GameManager.instance.chatting = false;
+        //animator.enabled = true;
     }
 }

@@ -217,6 +217,5 @@ public class MenuManager : MonoBehaviour
         newCreditsUI.text = "+" + creditsToGive.ToString();
         newCreditsUI.gameObject.SetActive(false);
         Inventory.instance.AddCredits(creditsToGive);
-        Debug.Log("Ganaste " + creditsToGive.ToString() + " creditos");
     }
 }
