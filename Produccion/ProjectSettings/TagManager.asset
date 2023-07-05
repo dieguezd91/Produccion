@@ -11,6 +11,7 @@ TagManager:
   - Buildings
   - Weapons
   - Aliado
+  - Codigos
   layers:
   - Default
   - TransparentFX
@@ -19,7 +20,7 @@ TagManager:
   - Water
   - UI
   - TileMap
-  - 
+  - Puertas
   - 
   - RandomBattle
   - 
