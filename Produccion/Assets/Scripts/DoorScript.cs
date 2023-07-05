@@ -8,6 +8,14 @@ public class DoorScript : MonoBehaviour
     public string place;
     public bool pjNearby;
     public LayerMask layer;
+    Inventory inventory;
+
+    private void Start()
+    {
+        inventory = GameManager.instance.GetComponent<Inventory>();
+        gameObject.SetActive(inventory.hasCompletedDinniesTutorial);
+        Debug.Log("door" + gameObject.activeInHierarchy);
+    }
 
     void Update()
     {

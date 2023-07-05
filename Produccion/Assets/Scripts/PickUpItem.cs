@@ -15,6 +15,7 @@ public class PickUpItem : MonoBehaviour
     [SerializeField] GameObject objectToDisable;
     [SerializeField] Collider2D eventToEnable;
     Inventory inventory;
+    [SerializeField] bool addToInv;
 
     private void Start()
     {
@@ -35,8 +36,7 @@ public class PickUpItem : MonoBehaviour
 
     void OpenDoor(object sender, EventArgs e)
     {
-        Debug.Log("aaaa");
-        door.SetActive(true);
+        door.SetActive(!door.activeInHierarchy);
         objectToDisable.SetActive(false);
         Inventory.instance.hasCompletedDinniesTutorial = true;
     }
