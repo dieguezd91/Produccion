@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
-using TMPro;
 using System;
 
 public class PickUpItem : MonoBehaviour
