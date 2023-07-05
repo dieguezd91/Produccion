@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 1351706124606416983}
   - component: {fileID: 6359834448094414087}
   - component: {fileID: 1854213060587305280}
+  - component: {fileID: 263588815652903450}
+  - component: {fileID: 5290853936960892111}
   m_Layer: 14
   m_Name: Police
   m_TagString: Enemy
@@ -98,7 +100,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c653b9edf4e5a344ac2bab2f9791252, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  names: Policia
+  names: Ninja
 --- !u!114 &1854213060587305280
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -111,3 +113,55 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41a3539b280cdc94588eda2c4b178ca0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!61 &263588815652903450
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1351706124606416980}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.018269628, y: -0.0064334273}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5225919, y: 0.3767714}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.5418599, y: 0.7406759}
+  m_EdgeRadius: 0
+--- !u!61 &5290853936960892111
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1351706124606416980}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.022591889, y: 0.12322861}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5225919, y: 0.3767714}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0

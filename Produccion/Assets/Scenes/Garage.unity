@@ -10861,6 +10861,7 @@ MonoBehaviour:
   door: {fileID: 1851495154}
   objectToDisable: {fileID: 1748559273}
   eventToEnable: {fileID: 840684552}
+  addToInv: 1
 --- !u!114 &926890367
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11225,8 +11226,16 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 27787649106789280, guid: f73f40a194348d54c8614455e88432a8, type: 3}
+      propertyPath: entry
+      value: 
+      objectReference: {fileID: 1851495154}
+    - target: {fileID: 27787649106789280, guid: f73f40a194348d54c8614455e88432a8, type: 3}
       propertyPath: place
       value: Ciudad
+      objectReference: {fileID: 0}
+    - target: {fileID: 27787649106789280, guid: f73f40a194348d54c8614455e88432a8, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 27787649106789280, guid: f73f40a194348d54c8614455e88432a8, type: 3}
       propertyPath: layer.m_Bits
