@@ -9,18 +9,23 @@ public class QuestManager : MonoBehaviour
     [SerializeField] bool[] questCompleted;
 
     public static QuestManager instance;
-    
+
+    private void Awake()
+    {
+        if (instance != null && instance != this) Destroy(gameObject);
+        else instance = this;
+        DontDestroyOnLoad(gameObject);
+    }
     void Start()
     {
-        instance = this;
-        questCompleted = new bool[questNames.Length];    
+        questCompleted = new bool[questNames.Length];
     }
 
     public int GetQuestNumber(string questToFind)
     {
-        for(int i = 0; i < questNames.Length; i++)
+        for (int i = 0; i < questNames.Length; i++)
         {
-            if(questNames[i] == questToFind)
+            if (questNames[i] == questToFind)
             {
                 return i;
             }
@@ -33,13 +38,7 @@ public class QuestManager : MonoBehaviour
     public bool CheckIfComplete(string questToCheck)
     {
         int questNumberToCheck = GetQuestNumber(questToCheck);
-
-        if(questNumberToCheck != 0)
-        {
             return questCompleted[questNumberToCheck];
-        }
-
-        return false;
     }
 
     public void UpdateQuestObjects()
@@ -59,14 +58,6 @@ public class QuestManager : MonoBehaviour
     {
         int questNumberToCheck = GetQuestNumber(questToMark);
         questCompleted[questNumberToCheck] = true;
-
-        UpdateQuestObjects();
-    }
-
-    public void MarkQuestIncomplete(string questToMark)
-    {
-        int questNumberToCheck = GetQuestNumber(questToMark);
-        questCompleted[questNumberToCheck] = false;
 
         UpdateQuestObjects();
     }
