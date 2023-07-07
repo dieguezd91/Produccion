@@ -212,7 +212,7 @@ public class MenuManager : MonoBehaviour
 
     public void AddCreditsUI()
     {
-        int creditsToGive = Random.Range(25, 100);
+        int creditsToGive = Random.Range(25, 50);
         newCreditsUI.gameObject.SetActive(true);
         newCreditsUI.text = "+" + creditsToGive.ToString();
         newCreditsUI.gameObject.SetActive(false);

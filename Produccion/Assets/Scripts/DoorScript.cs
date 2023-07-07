@@ -14,7 +14,6 @@ public class DoorScript : MonoBehaviour
     {
         inventory = GameManager.instance.GetComponent<Inventory>();
         gameObject.SetActive(inventory.hasCompletedDinniesTutorial);
-        Debug.Log("door " + gameObject.activeInHierarchy);
     }
 
     void Update()

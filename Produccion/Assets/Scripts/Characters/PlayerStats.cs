@@ -57,7 +57,7 @@ public class PlayerStats : MonoBehaviour
 
     public void AddXP(int amountOfXp)
     {
-        int amountToGive = UnityEngine.Random.Range(105, 250);
+        int amountToGive = Random.Range(105, 200);
         Debug.Log(currentXP);
         Debug.Log(amountOfXp);
         currentXP += amountToGive;

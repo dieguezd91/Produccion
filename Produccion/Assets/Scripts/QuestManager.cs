@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -9,18 +10,33 @@ public class QuestManager : MonoBehaviour
     [SerializeField] bool[] questCompleted;
 
     public static QuestManager instance;
-    
+
+    public event EventHandler OnQuestMarked;
+
+    private void Awake()
+    {
+        if (instance != null && instance != this) Destroy(gameObject);
+        else instance = this;
+        DontDestroyOnLoad(gameObject);
+    }
+
     void Start()
     {
         instance = this;
         questCompleted = new bool[questNames.Length];    
     }
 
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.T))
+            MarkQuestComplete("Vencer a Dinnie");
+    }
+
     public int GetQuestNumber(string questToFind)
     {
-        for(int i = 0; i < questNames.Length; i++)
+        for (int i = 0; i < questNames.Length; i++)
         {
-            if(questNames[i] == questToFind)
+            if (questNames[i] == questToFind)
             {
                 return i;
             }
@@ -36,39 +52,32 @@ public class QuestManager : MonoBehaviour
 
         if(questNumberToCheck != 0)
         {
+            Debug.Log(questNumberToCheck);
             return questCompleted[questNumberToCheck];
         }
 
         return false;
     }
 
-    public void UpdateQuestObjects()
-    {
-        QuestObject[] questObjects = FindObjectsOfType<QuestObject>();
+    //public void UpdateQuestObjects()
+    //{
+    //    QuestObject[] questObjects = FindObjectsOfType<QuestObject>();
 
-        if(questObjects.Length > 0)
-        {
-            foreach(QuestObject questObject in questObjects)
-            {
-                questObject.CheckForCompletion();
-            }
-        }
-    }
+    //    if(questObjects.Length > 0)
+    //    {
+    //        foreach(QuestObject questObject in questObjects)
+    //        {
+    //            questObject.CheckForCompletion();
+    //        }
+    //    }
+    //}
 
     public void MarkQuestComplete(string questToMark)
     {
         int questNumberToCheck = GetQuestNumber(questToMark);
         questCompleted[questNumberToCheck] = true;
 
-        UpdateQuestObjects();
+        OnQuestMarked?.Invoke(this, EventArgs.Empty);
+        //UpdateQuestObjects();
     }
-
-    public void MarkQuestIncomplete(string questToMark)
-    {
-        int questNumberToCheck = GetQuestNumber(questToMark);
-        questCompleted[questNumberToCheck] = false;
-
-        UpdateQuestObjects();
-    }
-
 }
