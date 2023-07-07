@@ -10110,7 +10110,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: SMG
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 9068209622523353785, guid: c98a8d1ee04b5934fb3ea92b378369b7, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c98a8d1ee04b5934fb3ea92b378369b7, type: 3}
 --- !u!1001 &897889262
 PrefabInstance:
@@ -11260,11 +11261,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6899567739217000430, guid: ba1d66376efc4744d8d363ef63f450da, type: 3}
       propertyPath: m_Size.x
-      value: 0.75
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 6899567739217000430, guid: ba1d66376efc4744d8d363ef63f450da, type: 3}
       propertyPath: m_Size.y
-      value: 0.75
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 6899567739217000430, guid: ba1d66376efc4744d8d363ef63f450da, type: 3}
       propertyPath: m_Offset.x
@@ -11528,7 +11529,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1612909640611839299, guid: f73f40a194348d54c8614455e88432a8, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2805283400018486682, guid: f73f40a194348d54c8614455e88432a8, type: 3}
       propertyPath: m_LocalScale.x
@@ -12997,6 +12998,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 342267776077053163, guid: ba1d66376efc4744d8d363ef63f450da, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 342267776077053163, guid: ba1d66376efc4744d8d363ef63f450da, type: 3}
       propertyPath: questToCheck
       value: Vencer Jefe Mercenario
       objectReference: {fileID: 0}
@@ -13086,6 +13091,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ba1d66376efc4744d8d363ef63f450da, type: 3}
+--- !u!1 &1856384315 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9222204182325777538, guid: ba1d66376efc4744d8d363ef63f450da, type: 3}
+  m_PrefabInstance: {fileID: 1203243856}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1856384316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1856384315}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19dd168363d242945a6187bc2b862b4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item: {fileID: 3195020073775177081, guid: d273341357a59974e8f608ebe567d1ae, type: 3}
 --- !u!1 &1883409797
 GameObject:
   m_ObjectHideFlags: 0
