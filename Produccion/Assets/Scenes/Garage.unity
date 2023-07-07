@@ -9536,7 +9536,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 342267776077053163, guid: ba1d66376efc4744d8d363ef63f450da, type: 3}
       propertyPath: questToCheck
-      value: 
+      value: a
       objectReference: {fileID: 0}
     - target: {fileID: 342267776077053163, guid: ba1d66376efc4744d8d363ef63f450da, type: 3}
       propertyPath: questToComplete
@@ -9548,7 +9548,7 @@ PrefabInstance:
       objectReference: {fileID: 1748962089}
     - target: {fileID: 342267776077053163, guid: ba1d66376efc4744d8d363ef63f450da, type: 3}
       propertyPath: activateIfComplete
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3399480477414570665, guid: ba1d66376efc4744d8d363ef63f450da, type: 3}
       propertyPath: m_RootOrder
