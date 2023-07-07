@@ -589,7 +589,7 @@ public class BattleManager : MonoBehaviour
         activeCharacters[selectedPlayer].UseItemInBattle(selectedItem);
         Inventory.instance.RemoveItem(selectedItem);
         StartCoroutine(UpdateLog(activeCharacters[currentTurn].characterName + " usa " + selectedItem.name + " y se cura " + selectedItem.amountOfAffect + " puntos de vida."));
-
+        StartCoroutine(ShowEffect(selectedItem.amountOfAffect, true));
         UpdatePlayerStats();
         UpdateItemsInInventory();
         NextTurn();
