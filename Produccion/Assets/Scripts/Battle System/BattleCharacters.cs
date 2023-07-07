@@ -66,8 +66,9 @@ public class BattleCharacters : MonoBehaviour
         }
     }
 
-    private void AddHP(int amountOfAffect)
+    public void AddHP(int amountOfAffect)
     {
         currentHP += amountOfAffect;
+        if (currentHP > maxHP) currentHP = maxHP;
     }
 }

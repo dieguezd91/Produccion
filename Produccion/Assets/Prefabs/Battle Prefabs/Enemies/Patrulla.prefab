@@ -99,7 +99,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlayer: 0
   attacksAvailable:
-  - Ataque rango
+  - Ataque melee
   characterName: Patrulla
   currentHP: 50
   maxHP: 50
@@ -109,3 +109,4 @@ MonoBehaviour:
   meleeWeaponDamage: 25
   rangeWeaponDamage: 15
   isDead: 0
+  level: 0

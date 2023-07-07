@@ -334,7 +334,7 @@ public class BattleManager : MonoBehaviour
         }
         int selectedPlayerToAttack = players[UnityEngine.Random.Range(0, players.Count)];
 
-        int selectedAttack = UnityEngine.Random.Range(0, activeCharacters[currentTurn].AttackMovesAvailable().Length);
+        //int selectedAttack = UnityEngine.Random.Range(0, activeCharacters[currentTurn].AttackMovesAvailable().Length);
 
         /*for(int i = 0; i < battleMovesList.Length; i++)
         {
@@ -350,15 +350,24 @@ public class BattleManager : MonoBehaviour
         }*/
 
         int movePower = 1;
+        if (activeCharacters[currentTurn].attacksAvailable.Length == 3)
+        {
+            int n = UnityEngine.Random.Range(1, 10);
+            if (n >= 9) Heal();
+            else if (n >= 5) DealRangeDamageToCharacters(selectedPlayerToAttack, movePower);
+            else DealMeleeDamageToCharacters(selectedPlayerToAttack, movePower);
+        }
         if (activeCharacters[currentTurn].attacksAvailable.Length == 2)
         {
             int i = UnityEngine.Random.Range(1, 10);
             if (i <= 5) DealRangeDamageToCharacters(selectedPlayerToAttack, movePower);
             else DealMeleeDamageToCharacters(selectedPlayerToAttack, movePower);
         }
-        else if (activeCharacters[currentTurn].attacksAvailable[0] == "Ataque melee") DealMeleeDamageToCharacters(selectedPlayerToAttack, movePower);
-        else if (activeCharacters[currentTurn].attacksAvailable[0] == "Ataque rango") DealRangeDamageToCharacters(selectedPlayerToAttack, movePower);
-
+        if (activeCharacters[currentTurn].attacksAvailable.Length == 1)
+        {
+            if (activeCharacters[currentTurn].attacksAvailable[0] == "Ataque melee") DealMeleeDamageToCharacters(selectedPlayerToAttack, movePower);
+            else if (activeCharacters[currentTurn].attacksAvailable[0] == "Ataque rango") DealRangeDamageToCharacters(selectedPlayerToAttack, movePower);
+        }
 
 
         UpdatePlayerStats();
@@ -403,7 +412,7 @@ public class BattleManager : MonoBehaviour
         Debug.Log(activeCharacters[currentTurn].characterName + " usa ataque a rango y causa " + (int)damageAmount + " de dano a " + activeCharacters[selectedCharacterToAttack].characterName);
         StartCoroutine(UpdateLog(activeCharacters[currentTurn].characterName + " usa ataque a rango y causa " + (int)damageAmount + " de dano a " + activeCharacters[selectedCharacterToAttack].characterName));
 
-        StartCoroutine(ShowDamage(damageToGive));
+        StartCoroutine(ShowEffect(damageToGive, false));
         activeCharacters[selectedCharacterToAttack].TakeHPDamage(damageToGive);
     }
 
@@ -419,7 +428,7 @@ public class BattleManager : MonoBehaviour
         Debug.Log(activeCharacters[currentTurn].characterName + " usa ataque melee y causa " + (int)damageAmount + " de dano a " + activeCharacters[selectedCharacterToAttack].characterName);
         StartCoroutine(UpdateLog(activeCharacters[currentTurn].characterName + " usa ataque melee y causa " + (int)damageAmount + " de dano a " + activeCharacters[selectedCharacterToAttack].characterName));
 
-        StartCoroutine(ShowDamage(damageToGive));
+        StartCoroutine(ShowEffect(damageToGive, false));
         activeCharacters[selectedCharacterToAttack].TakeHPDamage(damageToGive);
     }
 
@@ -434,6 +443,14 @@ public class BattleManager : MonoBehaviour
         }
         // sino hace el daño normal
         return damageToGive;
+    }
+
+    private void Heal()
+    {
+        activeCharacters[currentTurn].AddHP(50);
+        StartCoroutine(UpdateLog(activeCharacters[currentTurn].name + " se cura 50 puntos de vida."));
+        StartCoroutine(ShowEffect(50, true));
+        Debug.Log("Heal");
     }
 
     private void UpdatePlayerStats()
@@ -578,20 +595,43 @@ public class BattleManager : MonoBehaviour
         NextTurn();
     }
 
-    IEnumerator ShowDamage(int damage)
+    IEnumerator ShowEffect(int damage, bool healing)
     {
-        if (currentTurn == 0)
+        if(!healing)
         {
-            damageDealt.text = damage.ToString();
-            yield return new WaitForSeconds(5f);
-            damageDealt.text = string.Empty;
+            damageDealt.color = Color.red;
+            damageDealt.color = Color.red;
+            if (currentTurn == 0)
+            {
+                damageDealt.text = "-" + damage.ToString();
+                yield return new WaitForSeconds(5f);
+                damageDealt.text = string.Empty;
+            }
+            else if (currentTurn == 1)
+            {
+                damageReceived.text = "-" + damage.ToString();
+                yield return new WaitForSeconds(5f);
+                damageReceived.text = string.Empty;
+            }
         }
-        else if (currentTurn == 1)
+        else
         {
-            damageReceived.text = damage.ToString();
-            yield return new WaitForSeconds(5f);
-            damageReceived.text = string.Empty;
+            damageDealt.color = Color.green;
+            damageDealt.color = Color.green;
+            if (currentTurn == 1)
+            {
+                damageDealt.text = "+" + damage.ToString();
+                yield return new WaitForSeconds(5f);
+                damageDealt.text = string.Empty;
+            }
+            else if (currentTurn == 0)
+            {
+                damageReceived.text = "+" + damage.ToString();
+                yield return new WaitForSeconds(5f);
+                damageReceived.text = string.Empty;
+            }
         }
+
     }
 
     IEnumerator UpdateLog(string newText)
