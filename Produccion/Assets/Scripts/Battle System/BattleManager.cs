@@ -117,6 +117,7 @@ public class BattleManager : MonoBehaviour
 
     public void StartBattle(GameObject enemy, string enemiesToSpawn, bool isRandom)
     {
+        Debug.Log("Batalla!");
         randomBattle = isRandom;
         dinniesBattle = isRandom;
         Destroy(lastEnemy);
@@ -491,6 +492,7 @@ public class BattleManager : MonoBehaviour
         if (UnityEngine.Random.value > chanceToRunAway)
         {
             //Hay 50% de chances de no poder escapar y perdes el turno
+            Debug.Log("Huir");
             StartCoroutine(ScapingTime());
             OnBattleEnd?.Invoke(this, EventArgs.Empty);
         }
@@ -610,8 +612,10 @@ public class BattleManager : MonoBehaviour
         StartCoroutine(UpdateLog("Intentas escapar y lo logras."));
         yield return new WaitForSeconds(2f);
         EndBattle();
+        Debug.Log(Time.time);
         yield return new WaitForSeconds(3f);
-        if(!randomBattle) enemyCollider.enabled = true;
+        Debug.Log(Time.time);
+        if (!randomBattle) enemyCollider.enabled = true;
     }
 
     private void EndBattle()

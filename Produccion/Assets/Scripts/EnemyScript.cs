@@ -10,6 +10,7 @@ public class EnemyScript : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
+            Debug.Log("Colision");
             BattleManager.instance.StartBattle(this.gameObject, names, false);
         }
     }
