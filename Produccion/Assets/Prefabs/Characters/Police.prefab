@@ -98,7 +98,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c653b9edf4e5a344ac2bab2f9791252, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  names: Ninja
+  names: Policia
 --- !u!114 &1854213060587305280
 MonoBehaviour:
   m_ObjectHideFlags: 0

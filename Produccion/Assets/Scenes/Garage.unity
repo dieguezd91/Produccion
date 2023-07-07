@@ -11134,8 +11134,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7720495035560547093, guid: 6e2bae30def3cd8419d4023646a53b17, type: 3}
       propertyPath: lines.Array.data[3]
-      value: "Dinnie: Soy Dinnie, Conocida tambien como la tecnica, mecanica, etc.
-        etc...  \xBFY tu, dulzura?"
+      value: 'Dinnie: Soy Dinnie, Conocida tambien como la tecnica, mecanica, etc.
+        etc...  Y tu, dulzura?'
       objectReference: {fileID: 0}
     - target: {fileID: 7720495035560547093, guid: 6e2bae30def3cd8419d4023646a53b17, type: 3}
       propertyPath: lines.Array.data[4]
@@ -11166,7 +11166,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7720495035560547093, guid: 6e2bae30def3cd8419d4023646a53b17, type: 3}
       propertyPath: lines.Array.data[10]
-      value: "Dinnie: Las armas de la pared no te sugieren nada? Trafico armas, cari\xF1o."
+      value: 'Dinnie: Las armas de la pared no te sugieren nada? Trafico armas, bombon.'
       objectReference: {fileID: 0}
     - target: {fileID: 7720495035560547093, guid: 6e2bae30def3cd8419d4023646a53b17, type: 3}
       propertyPath: lines.Array.data[11]
@@ -11508,11 +11508,6 @@ Transform:
   m_Father: {fileID: 926890364}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1363586643 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 9068209622523353787, guid: 4ca29c73fc9e13541ac2418322db39cd, type: 3}
-  m_PrefabInstance: {fileID: 2037347622}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1374856841
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11874,99 +11869,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5523c2a8f36db97439918291f7ec9ae1, type: 3}
---- !u!1001 &1613934740
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 342267776077053163, guid: ba1d66376efc4744d8d363ef63f450da, type: 3}
-      propertyPath: active
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 342267776077053163, guid: ba1d66376efc4744d8d363ef63f450da, type: 3}
-      propertyPath: questToCheck
-      value: Vencer a Dinnie
-      objectReference: {fileID: 0}
-    - target: {fileID: 342267776077053163, guid: ba1d66376efc4744d8d363ef63f450da, type: 3}
-      propertyPath: questToComplete
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 342267776077053163, guid: ba1d66376efc4744d8d363ef63f450da, type: 3}
-      propertyPath: objectToActivate
-      value: 
-      objectReference: {fileID: 1363586643}
-    - target: {fileID: 342267776077053163, guid: ba1d66376efc4744d8d363ef63f450da, type: 3}
-      propertyPath: activateIfComplete
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3399480477414570665, guid: ba1d66376efc4744d8d363ef63f450da, type: 3}
-      propertyPath: m_RootOrder
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 3399480477414570665, guid: ba1d66376efc4744d8d363ef63f450da, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.38
-      objectReference: {fileID: 0}
-    - target: {fileID: 3399480477414570665, guid: ba1d66376efc4744d8d363ef63f450da, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -2.55
-      objectReference: {fileID: 0}
-    - target: {fileID: 3399480477414570665, guid: ba1d66376efc4744d8d363ef63f450da, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.12720113
-      objectReference: {fileID: 0}
-    - target: {fileID: 3399480477414570665, guid: ba1d66376efc4744d8d363ef63f450da, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3399480477414570665, guid: ba1d66376efc4744d8d363ef63f450da, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3399480477414570665, guid: ba1d66376efc4744d8d363ef63f450da, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3399480477414570665, guid: ba1d66376efc4744d8d363ef63f450da, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3399480477414570665, guid: ba1d66376efc4744d8d363ef63f450da, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3399480477414570665, guid: ba1d66376efc4744d8d363ef63f450da, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3399480477414570665, guid: ba1d66376efc4744d8d363ef63f450da, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6899567739217000430, guid: ba1d66376efc4744d8d363ef63f450da, type: 3}
-      propertyPath: m_Size.x
-      value: 0.6631254
-      objectReference: {fileID: 0}
-    - target: {fileID: 6899567739217000430, guid: ba1d66376efc4744d8d363ef63f450da, type: 3}
-      propertyPath: m_Size.y
-      value: 0.8324659
-      objectReference: {fileID: 0}
-    - target: {fileID: 6899567739217000430, guid: ba1d66376efc4744d8d363ef63f450da, type: 3}
-      propertyPath: m_Offset.x
-      value: 0.11429626
-      objectReference: {fileID: 0}
-    - target: {fileID: 6899567739217000430, guid: ba1d66376efc4744d8d363ef63f450da, type: 3}
-      propertyPath: m_Offset.y
-      value: 0.038098693
-      objectReference: {fileID: 0}
-    - target: {fileID: 9222204182325777538, guid: ba1d66376efc4744d8d363ef63f450da, type: 3}
-      propertyPath: m_Name
-      value: QuestObject Syringe
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: ba1d66376efc4744d8d363ef63f450da, type: 3}
 --- !u!1001 &1652923631
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22137,23 +22039,23 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 2055697538}
+    m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 9068209622523353735, guid: 4ca29c73fc9e13541ac2418322db39cd, type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 9068209622523353735, guid: 4ca29c73fc9e13541ac2418322db39cd, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.15
+      value: 0.53
       objectReference: {fileID: 0}
     - target: {fileID: 9068209622523353735, guid: 4ca29c73fc9e13541ac2418322db39cd, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.08
+      value: -2.47
       objectReference: {fileID: 0}
     - target: {fileID: 9068209622523353735, guid: 4ca29c73fc9e13541ac2418322db39cd, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.12720113
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9068209622523353735, guid: 4ca29c73fc9e13541ac2418322db39cd, type: 3}
       propertyPath: m_LocalRotation.w
@@ -22189,15 +22091,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9068209622523353787, guid: 4ca29c73fc9e13541ac2418322db39cd, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ca29c73fc9e13541ac2418322db39cd, type: 3}
---- !u!4 &2055697538 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 3399480477414570665, guid: ba1d66376efc4744d8d363ef63f450da, type: 3}
-  m_PrefabInstance: {fileID: 1613934740}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2086008368
 PrefabInstance:
   m_ObjectHideFlags: 0
