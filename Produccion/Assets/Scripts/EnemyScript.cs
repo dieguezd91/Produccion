@@ -1,5 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
+
 using UnityEngine;
 
 public class EnemyScript : MonoBehaviour
@@ -10,7 +9,6 @@ public class EnemyScript : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            Debug.Log("Colision");
             BattleManager.instance.StartBattle(this.gameObject, names, false);
         }
     }

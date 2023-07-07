@@ -612,9 +612,7 @@ public class BattleManager : MonoBehaviour
         StartCoroutine(UpdateLog("Intentas escapar y lo logras."));
         yield return new WaitForSeconds(2f);
         EndBattle();
-        Debug.Log(Time.time);
         yield return new WaitForSeconds(3f);
-        Debug.Log(Time.time);
         if (!randomBattle) enemyCollider.enabled = true;
     }
 

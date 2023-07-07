@@ -11,7 +11,7 @@ public class QuestManager : MonoBehaviour
 
     public static QuestManager instance;
 
-    public event EventHandler OnQuestMarked;
+    //public event EventHandler OnQuestMarked;
 
     private void Awake()
     {
@@ -50,13 +50,8 @@ public class QuestManager : MonoBehaviour
     {
         int questNumberToCheck = GetQuestNumber(questToCheck);
 
-        if(questNumberToCheck != 0)
-        {
-            Debug.Log(questNumberToCheck);
-            return questCompleted[questNumberToCheck];
-        }
-
-        return false;
+        Debug.Log(questNumberToCheck);
+        return questCompleted[questNumberToCheck];
     }
 
     //public void UpdateQuestObjects()
@@ -77,7 +72,7 @@ public class QuestManager : MonoBehaviour
         int questNumberToCheck = GetQuestNumber(questToMark);
         questCompleted[questNumberToCheck] = true;
 
-        OnQuestMarked?.Invoke(this, EventArgs.Empty);
+        //OnQuestMarked?.Invoke(this, EventArgs.Empty);
         //UpdateQuestObjects();
     }
 }

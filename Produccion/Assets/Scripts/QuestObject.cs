@@ -11,22 +11,25 @@ public class QuestObject : MonoBehaviour
     [SerializeField] string questToCheck;
     [SerializeField] bool activateIfComplete;
     [SerializeField] string questToComplete;
+    bool changedState = false;
 
     private void Start()
     {
-        CheckForCompletion(null, EventArgs.Empty);
-        QuestManager.instance.OnQuestMarked += CheckForCompletion;
+        //CheckForCompletion();
+        //QuestManager.instance.OnQuestMarked += CheckForCompletion;
     }
     private void Update()
     {
         active = objectToActivate.activeInHierarchy;
+        CheckForCompletion();
     }
 
-    public void CheckForCompletion(object sender, EventArgs e)
+    public void CheckForCompletion()
     {
         if (QuestManager.instance.CheckIfComplete(questToCheck))
         {
             objectToActivate.SetActive(activateIfComplete);
+            //changedState = true;
         }
     }
 
