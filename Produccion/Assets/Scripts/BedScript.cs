@@ -7,7 +7,7 @@ public class BedScript : MonoBehaviour
 {
     PlayerStats player;
     [SerializeField] GameObject HPRestoredSign;
-    bool pjNearBy;
+    public bool pjNearBy;
 
     private void Start()
     {
@@ -16,7 +16,7 @@ public class BedScript : MonoBehaviour
 
     private void Update()
     {
-        pjNearBy = Physics2D.OverlapBox(transform.position, transform.localScale, 0f);
+        pjNearBy = Physics2D.OverlapBox(transform.position, transform.localScale, 0f).CompareTag("Player");
 
         if(pjNearBy && Input.GetKeyDown(KeyCode.Space))
         {

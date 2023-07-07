@@ -117,6 +117,7 @@ public class BattleManager : MonoBehaviour
 
     public void StartBattle(GameObject enemy, string enemiesToSpawn, bool isRandom)
     {
+        Debug.Log(isRandom);
         Debug.Log("Batalla!");
         randomBattle = isRandom;
         dinniesBattle = isRandom;
