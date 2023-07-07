@@ -13,7 +13,7 @@ public class DoorScript : MonoBehaviour
     private void Start()
     {
         inventory = GameManager.instance.GetComponent<Inventory>();
-        gameObject.SetActive(inventory.hasCompletedDinniesTutorial);
+        //gameObject.SetActive(inventory.hasCompletedDinniesTutorial);
     }
 
     void Update()

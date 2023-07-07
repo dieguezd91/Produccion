@@ -32,6 +32,8 @@ public class SceneManagerScript : MonoBehaviour
         if (newScene == "Fabrica" || newScene == "Central de seguridad" || newScene == "Omni-Tech")
             AudioManager.instance.lockedUpSFX.enabled = true;
         else AudioManager.instance.lockedUpSFX.enabled = false;
+        if (newScene == "MainMenu")
+            GameManager.instance.player.GetComponent<SpriteRenderer>().enabled = false;
         SceneManager.LoadScene(newScene);
     }
 

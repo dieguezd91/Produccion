@@ -11,7 +11,6 @@ public class QuestObject : MonoBehaviour
     [SerializeField] string questToCheck;
     [SerializeField] bool activateIfComplete;
     [SerializeField] string questToComplete;
-    bool changedState = false;
 
     private void Start()
     {
