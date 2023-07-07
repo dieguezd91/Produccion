@@ -29,7 +29,7 @@ public class SceneManagerScript : MonoBehaviour
         CheckActiveClip();
         MusicManager.instance.audioSource.clip = MusicManager.instance.activeClip;
         MusicManager.instance.audioSource.Play();
-        if (newScene == "Fabrica" || newScene == "Central de seguridad")
+        if (newScene == "Fabrica" || newScene == "Central de seguridad" || newScene == "Omni-Tech")
             AudioManager.instance.lockedUpSFX.enabled = true;
         else AudioManager.instance.lockedUpSFX.enabled = false;
         SceneManager.LoadScene(newScene);
@@ -52,7 +52,7 @@ public class SceneManagerScript : MonoBehaviour
                 MusicManager.instance.activeClip = MusicManager.instance.songs[1];
                 break;
             case "Garage":
-                MusicManager.instance.activeClip = MusicManager.instance.songs[1];
+                MusicManager.instance.activeClip = null;
                 break;
             case "Ciudad":
                 MusicManager.instance.activeClip = MusicManager.instance.songs[0];
@@ -62,6 +62,12 @@ public class SceneManagerScript : MonoBehaviour
                 break;
             case "Fabrica":
                 MusicManager.instance.activeClip = MusicManager.instance.songs[2];
+                break;
+            case "Central de seguridad":
+                MusicManager.instance.activeClip = MusicManager.instance.songs[4];
+                break;
+            case "Omni-Tech":
+                MusicManager.instance.activeClip = MusicManager.instance.songs[3];
                 break;
             default:
                 break;

@@ -18,10 +18,4 @@ public class MusicManager : MonoBehaviour
         audioSource = GetComponent<AudioSource>();
         Debug.Log(activeClip);
     }
-
-    void Start()
-    {
-    }
-
-
 }

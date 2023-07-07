@@ -353,7 +353,7 @@ public class BattleManager : MonoBehaviour
         if (activeCharacters[currentTurn].attacksAvailable.Length == 3)
         {
             int n = UnityEngine.Random.Range(1, 10);
-            if (n >= 9) Heal();
+            if (n == 10) Heal();
             else if (n >= 5) DealRangeDamageToCharacters(selectedPlayerToAttack, movePower);
             else DealMeleeDamageToCharacters(selectedPlayerToAttack, movePower);
         }
@@ -600,7 +600,7 @@ public class BattleManager : MonoBehaviour
         if(!healing)
         {
             damageDealt.color = Color.red;
-            damageDealt.color = Color.red;
+            damageReceived.color = Color.red;
             if (currentTurn == 0)
             {
                 damageDealt.text = "-" + damage.ToString();
@@ -617,7 +617,7 @@ public class BattleManager : MonoBehaviour
         else
         {
             damageDealt.color = Color.green;
-            damageDealt.color = Color.green;
+            damageReceived.color = Color.green;
             if (currentTurn == 1)
             {
                 damageDealt.text = "+" + damage.ToString();

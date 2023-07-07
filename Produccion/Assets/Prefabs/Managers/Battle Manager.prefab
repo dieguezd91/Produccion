@@ -70,6 +70,7 @@ MonoBehaviour:
   - {fileID: 8299695002426701587, guid: d19cfc9499eb538408df21838b497dab, type: 3}
   - {fileID: 8299695002426701587, guid: 268704479d8177c438734e08d4e00d2f, type: 3}
   - {fileID: 8299695002426701587, guid: d52cdc6ee0c6127408f3616949a30df2, type: 3}
+  - {fileID: 5464349049900020014, guid: 3436af79790babe428bbcaedeee9f7c6, type: 3}
   currentTurn: 0
   waitingForTurn: 0
   UIButtonHolder: {fileID: 116928167884403414}
@@ -2575,7 +2576,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4278190335
-  m_fontColor: {r: 1, g: 0, b: 0, a: 1}
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2710,7 +2711,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4278255484
-  m_fontColor: {r: 0.48595786, g: 1, b: 0, a: 1}
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
