@@ -20,7 +20,7 @@ public class DoorScript : MonoBehaviour
     {
         pjNearby = Physics2D.OverlapBox(transform.position, transform.localScale, 0f, layer);
 
-        if (pjNearby)
+        if (pjNearby && Input.GetKeyDown(KeyCode.Space))
         {
             if(place != "Ciudad")   GameManager.instance.lastPosition = GameManager.instance.player.transform.position - new Vector3(0f, 0.5f,0f);
             SceneManagerScript.instance.LoadScene(place);
