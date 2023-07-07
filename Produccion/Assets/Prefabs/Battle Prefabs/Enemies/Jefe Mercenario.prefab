@@ -108,8 +108,9 @@ MonoBehaviour:
   strength: 20
   defence: 20
   meleeWeaponDamage: 25
-  rangeWeaponDamage: 25
+  rangeWeaponDamage: 0
   isDead: 0
+  level: 0
 --- !u!114 &677583408949531351
 MonoBehaviour:
   m_ObjectHideFlags: 0
