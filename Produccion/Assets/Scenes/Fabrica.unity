@@ -7916,10 +7916,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3049642395088880294, guid: 8352d621c6e6f2e4cb430d805b409438, type: 3}
+      propertyPath: m_Volume
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 3049642395088880294, guid: 8352d621c6e6f2e4cb430d805b409438, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 7a217d9889fc79647a2245c0cfca117e, type: 3}
+    - target: {fileID: 6739592818589577399, guid: 8352d621c6e6f2e4cb430d805b409438, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6739592818589577399, guid: 8352d621c6e6f2e4cb430d805b409438, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8326126628153326117, guid: 8352d621c6e6f2e4cb430d805b409438, type: 3}
       propertyPath: m_Name
       value: AudioManager
       objectReference: {fileID: 0}
+    - target: {fileID: 8326126628153326122, guid: 8352d621c6e6f2e4cb430d805b409438, type: 3}
+      propertyPath: lockedUpSFX
+      value: 
+      objectReference: {fileID: 161114405}
+    - target: {fileID: 8326126628153326122, guid: 8352d621c6e6f2e4cb430d805b409438, type: 3}
+      propertyPath: lockedUpClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 7a217d9889fc79647a2245c0cfca117e, type: 3}
     - target: {fileID: 8326126628153326123, guid: 8352d621c6e6f2e4cb430d805b409438, type: 3}
       propertyPath: m_RootOrder
       value: 18
@@ -7966,6 +7990,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8352d621c6e6f2e4cb430d805b409438, type: 3}
+--- !u!82 &161114405 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 3049642395088880294, guid: 8352d621c6e6f2e4cb430d805b409438, type: 3}
+  m_PrefabInstance: {fileID: 161114404}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &182870098
 PrefabInstance:
   m_ObjectHideFlags: 0

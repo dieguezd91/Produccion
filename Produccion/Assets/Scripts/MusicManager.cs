@@ -16,7 +16,6 @@ public class MusicManager : MonoBehaviour
         else instance = this;
         DontDestroyOnLoad(gameObject);
         audioSource = GetComponent<AudioSource>();
-        Debug.Log("Start");
         Debug.Log(activeClip);
     }
 

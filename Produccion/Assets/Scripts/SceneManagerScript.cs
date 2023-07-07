@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -28,6 +29,9 @@ public class SceneManagerScript : MonoBehaviour
         CheckActiveClip();
         MusicManager.instance.audioSource.clip = MusicManager.instance.activeClip;
         MusicManager.instance.audioSource.Play();
+        if (newScene == "Fabrica" || newScene == "Central de seguridad")
+            AudioManager.instance.lockedUpSFX.enabled = true;
+        else AudioManager.instance.lockedUpSFX.enabled = false;
         SceneManager.LoadScene(newScene);
     }
 
@@ -43,32 +47,21 @@ public class SceneManagerScript : MonoBehaviour
         {
             case "MainMenu":
                 MusicManager.instance.activeClip = MusicManager.instance.songs[0];
-                Debug.Log(MusicManager.instance.audioSource.isPlaying);
                 break;
             case "Bar":
                 MusicManager.instance.activeClip = MusicManager.instance.songs[1];
-                Debug.Log(MusicManager.instance.audioSource.isPlaying);
-                //MusicManager.instance.audioSource.Play();
                 break;
             case "Garage":
                 MusicManager.instance.activeClip = MusicManager.instance.songs[1];
-                Debug.Log(MusicManager.instance.audioSource.isPlaying);
-                //MusicManager.instance.audioSource.Play();
                 break;
             case "Ciudad":
                 MusicManager.instance.activeClip = MusicManager.instance.songs[0];
-                Debug.Log(MusicManager.instance.audioSource.isPlaying);
-                //MusicManager.instance.audioSource.Play();
                 break;
             case "Store":
                 MusicManager.instance.activeClip = MusicManager.instance.songs[0];
-                Debug.Log(MusicManager.instance.audioSource.isPlaying);
-                //MusicManager.instance.audioSource.Play();
                 break;
             case "Fabrica":
                 MusicManager.instance.activeClip = MusicManager.instance.songs[2];
-                Debug.Log(MusicManager.instance.audioSource.isPlaying);
-                //MusicManager.instance.audioSource.Play();
                 break;
             default:
                 break;

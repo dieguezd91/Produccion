@@ -50,7 +50,6 @@ public class QuestManager : MonoBehaviour
     {
         int questNumberToCheck = GetQuestNumber(questToCheck);
 
-        Debug.Log(questNumberToCheck);
         return questCompleted[questNumberToCheck];
     }
 

@@ -8,7 +8,7 @@ public class AudioManager : MonoBehaviour
     public static AudioManager instance;
 
     public AudioSource audioSource;
-    AudioListener audioListener;
+    public AudioSource lockedUpSFX;
 
     private void Awake()
     {
