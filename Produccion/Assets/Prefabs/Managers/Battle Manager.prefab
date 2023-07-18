@@ -1287,7 +1287,7 @@ MonoBehaviour:
       - m_Target: {fileID: 116928167587642211}
         m_TargetAssemblyTypeName: BattleManager, Assembly-CSharp
         m_MethodName: PlayerMeleeAttack
-        m_Mode: 5
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1931,7 +1931,7 @@ MonoBehaviour:
       - m_Target: {fileID: 116928167587642211}
         m_TargetAssemblyTypeName: BattleManager, Assembly-CSharp
         m_MethodName: PlayerRangeAttack
-        m_Mode: 5
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine

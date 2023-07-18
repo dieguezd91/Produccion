@@ -349,59 +349,60 @@ public class BattleManager : MonoBehaviour
             }
         }*/
 
-        int movePower = 1;
         if (activeCharacters[currentTurn].attacksAvailable.Length == 3)
         {
             int n = UnityEngine.Random.Range(1, 10);
             if (n == 10) Heal();
-            else if (n >= 5) DealRangeDamageToCharacters(selectedPlayerToAttack, movePower);
-            else DealMeleeDamageToCharacters(selectedPlayerToAttack, movePower);
+            else if (n >= 5) DealRangeDamageToCharacters(selectedPlayerToAttack);
+            else DealMeleeDamageToCharacters(selectedPlayerToAttack);
         }
         if (activeCharacters[currentTurn].attacksAvailable.Length == 2)
         {
             int i = UnityEngine.Random.Range(1, 10);
-            if (i <= 5) DealRangeDamageToCharacters(selectedPlayerToAttack, movePower);
-            else DealMeleeDamageToCharacters(selectedPlayerToAttack, movePower);
+            if (i <= 5) DealRangeDamageToCharacters(selectedPlayerToAttack);
+            else DealMeleeDamageToCharacters(selectedPlayerToAttack);
         }
         if (activeCharacters[currentTurn].attacksAvailable.Length == 1)
         {
-            if (activeCharacters[currentTurn].attacksAvailable[0] == "Ataque melee") DealMeleeDamageToCharacters(selectedPlayerToAttack, movePower);
-            else if (activeCharacters[currentTurn].attacksAvailable[0] == "Ataque rango") DealRangeDamageToCharacters(selectedPlayerToAttack, movePower);
+            if (activeCharacters[currentTurn].attacksAvailable[0] == "Ataque melee") DealMeleeDamageToCharacters(selectedPlayerToAttack);
+            else if (activeCharacters[currentTurn].attacksAvailable[0] == "Ataque rango") DealRangeDamageToCharacters(selectedPlayerToAttack);
         }
 
-
+        StartCoroutine(Shake(activeCharacters[0].GetComponent<Rigidbody2D>()));
         UpdatePlayerStats();
     }
 
-    public void PlayerRangeAttack(string moveName)
+    public void PlayerRangeAttack()
     {
+        Debug.Log("AtaqueRango");
         int selectEnemyTarget = 1;
-        int movePower = 1;
 
-        DealRangeDamageToCharacters(selectEnemyTarget, movePower);
+        DealRangeDamageToCharacters(selectEnemyTarget);
 
         AudioManager.instance.PlaySound(clips[1]);
 
+        StartCoroutine(Shake(activeCharacters[1].GetComponent<Rigidbody2D>()));
         NextTurn();
     }
 
-    public void PlayerMeleeAttack(string moveName)
+    public void PlayerMeleeAttack()
     {
+        Debug.Log("AtaqueMelee");
         int selectEnemyTarget = 1;
-        int movePower = 1;
 
-        DealMeleeDamageToCharacters(selectEnemyTarget, movePower);
+        DealMeleeDamageToCharacters(selectEnemyTarget);
 
         AudioManager.instance.PlaySound(clips[0]);
 
+        StartCoroutine(Shake(activeCharacters[1].GetComponent<Rigidbody2D>()));
         NextTurn();
     }
 
-    private void DealRangeDamageToCharacters(int selectedCharacterToAttack, int movePower = 1)
+    private void DealRangeDamageToCharacters(int selectedCharacterToAttack)
     {
         float attackPower = activeCharacters[currentTurn].dexterity + activeCharacters[currentTurn].rangeWeaponDamage;
         float defenceAmount = activeCharacters[selectedCharacterToAttack].defence;
-        float damageAmount = (attackPower - defenceAmount) * movePower * UnityEngine.Random.Range(0.8f, 1.2f);
+        float damageAmount = (attackPower - defenceAmount) * UnityEngine.Random.Range(0.8f, 1.2f);
 
         int damageToGive = (int)damageAmount;
         if (damageToGive <= 0)
@@ -416,11 +417,11 @@ public class BattleManager : MonoBehaviour
         activeCharacters[selectedCharacterToAttack].TakeHPDamage(damageToGive);
     }
 
-    private void DealMeleeDamageToCharacters(int selectedCharacterToAttack, int movePower = 1)
+    private void DealMeleeDamageToCharacters(int selectedCharacterToAttack)
     {
         float attackPower = activeCharacters[currentTurn].strength + activeCharacters[currentTurn].meleeWeaponDamage;
         float defenceAmount = activeCharacters[selectedCharacterToAttack].defence;
-        float damageAmount = (attackPower - defenceAmount) * movePower * UnityEngine.Random.Range(0.8f, 1.2f);
+        float damageAmount = (attackPower - defenceAmount) * UnityEngine.Random.Range(0.8f, 1.2f);
 
         int damageToGive = (int)damageAmount;
         if (damageToGive <= 0)
@@ -668,5 +669,24 @@ public class BattleManager : MonoBehaviour
         worldAudioListener.enabled = true;
         battleAudioListener.enabled = false;
         battleScene.SetActive(false);
+    }
+    public IEnumerator Shake(Rigidbody2D rb)
+    {
+        Vector2 originalPos = rb.position;
+        Debug.Log("Shaking");
+        int directionX;
+        int directionY;
+
+        for (int i = 0; i < 5; i++)
+        {
+            directionY = UnityEngine.Random.Range(-1, 2);
+            directionX = UnityEngine.Random.Range(-1, 2);
+
+            rb.velocity = new Vector2(directionX, directionY) * 10;
+            Debug.Log(directionX + " " + directionY);
+            yield return new WaitForSeconds(0.05f);
+            rb.velocity = Vector2.zero;
+            rb.position = originalPos;
+        }
     }
 }

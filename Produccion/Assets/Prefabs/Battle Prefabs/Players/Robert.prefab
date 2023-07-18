@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 2571527035519455419}
   - component: {fileID: 691022896001453319}
   - component: {fileID: 8869506991540711628}
+  - component: {fileID: -6482945917512314587}
+  - component: {fileID: 970243796701863186}
   m_Layer: 0
   m_Name: Robert
   m_TagString: Untagged
@@ -111,3 +113,36 @@ MonoBehaviour:
   rangeWeaponDamage: 0
   isDead: 0
   level: 0
+--- !u!50 &-6482945917512314587
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2350444843868487804}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!114 &970243796701863186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2350444843868487804}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16b4d1d0ee0acf44a89297cbc331854e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
