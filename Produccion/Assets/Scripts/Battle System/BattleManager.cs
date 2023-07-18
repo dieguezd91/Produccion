@@ -512,7 +512,8 @@ public class BattleManager : MonoBehaviour
             //Hay 50% de chances de no poder escapar y perdes el turno
             Debug.Log("Huir");
             StartCoroutine(ScapingTime());
-            OnBattleEnd?.Invoke(this, EventArgs.Empty);
+            if(randomBattle || dinniesBattle)
+                OnBattleEnd?.Invoke(this, EventArgs.Empty);
         }
         else
         {

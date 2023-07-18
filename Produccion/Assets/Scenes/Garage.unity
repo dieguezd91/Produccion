@@ -9690,30 +9690,30 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7720495035560547093, guid: 6e2bae30def3cd8419d4023646a53b17, type: 3}
       propertyPath: lines.Array.data[0]
-      value: 'Dinnie: Veo que tienes potencial. Pero necesitas mejorar tu equipamiento.'
+      value: 'Dinnie: Veo que tienes potencial. Pero necesitas mejorar tu equipamiento
+        si quieres sobrevivir alli afuera.'
       objectReference: {fileID: 0}
     - target: {fileID: 7720495035560547093, guid: 6e2bae30def3cd8419d4023646a53b17, type: 3}
       propertyPath: lines.Array.data[1]
-      value: 'Robert: Gracias. Supongo que no tienes un arma por ahi para darme...'
+      value: 'Robert: Gracias. Supongo que no puedes dejarme la pistola, verdad?'
       objectReference: {fileID: 0}
     - target: {fileID: 7720495035560547093, guid: 6e2bae30def3cd8419d4023646a53b17, type: 3}
       propertyPath: lines.Array.data[2]
-      value: 'Dinnie: Jaja, puedes quedarte con la pistola que esta sobre mi escritorio
-        pero vas a tener que pagarmela.'
+      value: 'Dinnie: Si me la pagas, es tuya...'
       objectReference: {fileID: 0}
     - target: {fileID: 7720495035560547093, guid: 6e2bae30def3cd8419d4023646a53b17, type: 3}
       propertyPath: lines.Array.data[3]
-      value: 'Dinnie: Te recomiendo que te recuperes antes de salir. Puedes utilizar
-        esa inyeccion o dormir una siesta (Presiona espacio sobre la cama).'
+      value: 'Robert: Ya veo, gracias. Pero me deje mi billetera en el bar.'
       objectReference: {fileID: 0}
     - target: {fileID: 7720495035560547093, guid: 6e2bae30def3cd8419d4023646a53b17, type: 3}
       propertyPath: lines.Array.data[4]
-      value: 'Robert: Ya veo, gracias. Sobre el arma... me deje mi billetera en el
-        bar.'
+      value: 'Dinnie: Tienes suerte de que este de buen humor. Toma el arma y ve
+        a buscarla.'
       objectReference: {fileID: 0}
     - target: {fileID: 7720495035560547093, guid: 6e2bae30def3cd8419d4023646a53b17, type: 3}
       propertyPath: lines.Array.data[5]
-      value: 'Dinnie: Tienes suerte de que este de humor. Toma el arma y ve a buscarla.'
+      value: 'Dinnie: Te recomiendo que te recuperes antes de salir. Puedes utilizar
+        esa inyeccion o dormir una siesta (Presiona espacio sobre la cama).'
       objectReference: {fileID: 0}
     - target: {fileID: 7720495035560547093, guid: 6e2bae30def3cd8419d4023646a53b17, type: 3}
       propertyPath: lines.Array.data[6]
@@ -10991,7 +10991,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.15756178, y: 0.35451525}
+  m_Offset: {x: 0.05689287, y: -0.36411452}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -11002,7 +11002,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.3634357, y: 1.7090305}
+  m_Size: {x: 1.8804636, y: 1.1173434}
   m_EdgeRadius: 0
 --- !u!114 &1046128145
 MonoBehaviour:
@@ -11026,7 +11026,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1046128143}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.6, y: -2.49, z: 12.889464}
+  m_LocalPosition: {x: 8.98, y: -4.97, z: 12.889464}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

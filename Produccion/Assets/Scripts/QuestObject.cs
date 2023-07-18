@@ -12,11 +12,6 @@ public class QuestObject : MonoBehaviour
     [SerializeField] bool activateIfComplete;
     [SerializeField] string questToComplete;
 
-    private void Start()
-    {
-        //CheckForCompletion();
-        //QuestManager.instance.OnQuestMarked += CheckForCompletion;
-    }
     private void Update()
     {
         active = objectToActivate.activeInHierarchy;
@@ -28,7 +23,6 @@ public class QuestObject : MonoBehaviour
         if (QuestManager.instance.CheckIfComplete(questToCheck))
         {
             objectToActivate.SetActive(activateIfComplete);
-            //changedState = true;
         }
     }
 
@@ -36,8 +30,9 @@ public class QuestObject : MonoBehaviour
     {
         if (collision.CompareTag("Player") && active)
         {
-            activateIfComplete = false;
+            //activateIfComplete = false;
             QuestManager.instance.MarkQuestComplete(questToComplete);
+            gameObject.SetActive(false);
         }
     }
 }
