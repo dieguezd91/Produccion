@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using UnityEditor.Experimental.GraphView;
 
 public class TemplateStoreItem : MonoBehaviour
 {
@@ -33,5 +34,15 @@ public class TemplateStoreItem : MonoBehaviour
     {
         playerInventory.credits -= price;
         playerInventory.AddItems(item);
+    }
+
+    public void SellItem()
+    {
+        if (playerInventory.itemsList.Contains(item))
+        {
+            playerInventory.credits += price;
+            playerInventory.RemoveItem(item);
+        }
+        else Debug.Log("No posees este item");
     }
 }
