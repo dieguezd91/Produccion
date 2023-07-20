@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
+using UnityEngine.UI;
 
 public class AudioManager : MonoBehaviour
 {
@@ -9,6 +10,8 @@ public class AudioManager : MonoBehaviour
 
     public AudioSource audioSource;
     public AudioSource lockedUpSFX;
+    float volume;
+    public Slider volumeSlider;
 
     private void Awake()
     {
@@ -21,6 +24,13 @@ public class AudioManager : MonoBehaviour
             instance = this;
         }
         DontDestroyOnLoad(gameObject);
+        audioSource = GetComponent<AudioSource>();
+        audioSource.volume = volume;
+    }
+    private void Update()
+    {
+        audioSource.volume = volumeSlider.value;
+        volume = volumeSlider.value;
     }
 
     public void PlaySound(AudioClip clip)

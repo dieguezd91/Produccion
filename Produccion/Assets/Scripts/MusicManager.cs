@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
+using UnityEngine.UI;
 
 public class MusicManager : MonoBehaviour
 {
@@ -9,6 +10,8 @@ public class MusicManager : MonoBehaviour
     public AudioSource audioSource;
     public AudioClip activeClip;
     public AudioClip[] songs;
+    public Slider volumeSlider;
+    float volume;
 
     private void Awake()
     {
@@ -16,6 +19,12 @@ public class MusicManager : MonoBehaviour
         else instance = this;
         DontDestroyOnLoad(gameObject);
         audioSource = GetComponent<AudioSource>();
-        Debug.Log(activeClip);
+        audioSource.volume = volume;
+    }
+
+    private void Update()
+    {
+        audioSource.volume = volumeSlider.value;
+        volume = volumeSlider.value;
     }
 }
