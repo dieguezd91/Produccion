@@ -91,6 +91,7 @@ public class DialogueManager : MonoBehaviour
     void EndDialogue()
     {
         OnDialogueEnd?.Invoke(this, EventArgs.Empty);
+        //dialogueText.text = string.Empty;
         gameObject.SetActive(false);
         if (objectToDisable != null)
             objectToDisable.SetActive(false);
