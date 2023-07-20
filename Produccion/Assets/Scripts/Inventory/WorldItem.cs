@@ -14,6 +14,9 @@ public class WorldItem : MonoBehaviour
         {
             gameObject.SetActive(false);
             Inventory.instance.AddItems(item);
+            int index = CollectedItemsManager.instance.GetItemNumber(gameObject);
+            Debug.Log(index);
+            CollectedItemsManager.instance.collected[index] = true;
         }
     }
 }

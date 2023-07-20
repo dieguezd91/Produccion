@@ -68,16 +68,6 @@ public class ItemsManager : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if(collision.CompareTag("Player"))
-        {
-            Inventory.instance.AddItems(this);
-            SelfDestroy();
-            Debug.Log("colision");
-        }
-    }
-
     public void SelfDestroy()
     {
         gameObject.SetActive(false);

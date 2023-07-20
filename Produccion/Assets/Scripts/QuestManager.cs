@@ -22,14 +22,7 @@ public class QuestManager : MonoBehaviour
 
     void Start()
     {
-        instance = this;
-        questCompleted = new bool[questNames.Length];    
-    }
-
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.T))
-            MarkQuestComplete("Vencer a Dinnie");
+        questCompleted = new bool[questNames.Length];
     }
 
     public int GetQuestNumber(string questToFind)

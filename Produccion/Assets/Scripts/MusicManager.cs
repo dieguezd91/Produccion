@@ -24,7 +24,10 @@ public class MusicManager : MonoBehaviour
 
     private void Update()
     {
-        audioSource.volume = volumeSlider.value;
-        volume = volumeSlider.value;
+        if(volumeSlider != null)
+        {
+            audioSource.volume = volumeSlider.value;
+            volume = volumeSlider.value;
+        }
     }
 }

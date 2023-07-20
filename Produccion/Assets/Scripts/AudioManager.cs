@@ -27,10 +27,14 @@ public class AudioManager : MonoBehaviour
         audioSource = GetComponent<AudioSource>();
         audioSource.volume = volume;
     }
+
     private void Update()
     {
-        audioSource.volume = volumeSlider.value;
-        volume = volumeSlider.value;
+        if(volumeSlider != null)
+        {
+            audioSource.volume = volumeSlider.value;
+            volume = volumeSlider.value;
+        }
     }
 
     public void PlaySound(AudioClip clip)
