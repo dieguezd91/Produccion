@@ -12,6 +12,11 @@ public class QuestObject : MonoBehaviour
     [SerializeField] bool activateIfComplete;
     [SerializeField] string questToComplete;
 
+    private void Start()
+    {
+        if (QuestManager.instance.CheckIfComplete(questToCheck))
+            gameObject.SetActive(activateIfComplete);
+    }
     private void Update()
     {
         active = objectToActivate.activeInHierarchy;
