@@ -105,11 +105,11 @@ MonoBehaviour:
   characterName: Maton
   currentHP: 100
   maxHP: 100
-  dexterity: 15
-  strength: 20
-  defence: 15
-  meleeWeaponDamage: 15
-  rangeWeaponDamage: 10
+  dexterity: 25
+  strength: 30
+  defence: 25
+  meleeWeaponDamage: 25
+  rangeWeaponDamage: 20
   isDead: 0
   level: 0
 --- !u!50 &-4991573318160452786
