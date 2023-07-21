@@ -12,6 +12,8 @@ public class EventScript : MonoBehaviour
     public bool beforeFight;
     public bool afterFight;
     public string enemies;
+    bool isBossBattle;
+    bool isDinniesBattle;
     public bool lockDoor;
     public bool onlyOnTutorial;
     public GameObject door;
@@ -20,7 +22,11 @@ public class EventScript : MonoBehaviour
 
     private void Start()
     {
-        BattleManager.instance.OnBattleEnd += Activate;
+        if (enemies == "Jefe Mercenario" || enemies == "Jefe Central" || enemies == "CEO de OMNI TECH")
+            isBossBattle = true;
+        if(enemies == "Dinnie")
+            isDinniesBattle = true;
+            BattleManager.instance.OnBattleEnd += Activate;
         colider = GetComponent<Collider2D>();
         inventory = GameManager.instance.GetComponent<Inventory>();
         dialogueManagerInstance.OnDialogueEnd += Fight;
@@ -41,7 +47,7 @@ public class EventScript : MonoBehaviour
 
     private void Fight(object sender,EventArgs e)
     {
-        if(beforeFight) BattleManager.instance.StartBattle(gameObject, enemies, true);
+        if (beforeFight) BattleManager.instance.StartBattle(gameObject, enemies, isDinniesBattle, false, isBossBattle);
     }
 
     private void Activate(object sender, EventArgs e)

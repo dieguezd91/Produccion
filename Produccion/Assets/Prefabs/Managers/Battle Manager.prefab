@@ -74,6 +74,7 @@ MonoBehaviour:
   currentTurn: 0
   waitingForTurn: 0
   UIButtonHolder: {fileID: 116928167884403414}
+  runAwayButton: {fileID: 116928167725022296}
   battleMovesList:
   - moveName: Ataque melee
     movePower: 15
@@ -109,6 +110,7 @@ MonoBehaviour:
   allPlayersAreDead: 1
   randomBattle: 0
   dinniesBattle: 0
+  bossBattle: 0
   clips:
   - {fileID: 8300000, guid: 30d32a32685bee5469cd15054da9a130, type: 3}
   - {fileID: 8300000, guid: dab36a22d67d27c4d8af1a9548b1e19f, type: 3}

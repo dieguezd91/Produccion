@@ -48,7 +48,6 @@ public class SceneManagerScript : MonoBehaviour
     }
     void CheckActiveClip()
     {
-        Debug.Log("Check");
         switch (scene)
         {
             case "MainMenu":

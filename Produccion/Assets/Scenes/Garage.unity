@@ -12282,6 +12282,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8300000, guid: dab36a22d67d27c4d8af1a9548b1e19f, type: 3}
     - target: {fileID: 116928167587642220, guid: fc72844b2bc96684e8026b1035fb1b5a, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 116928167587642220, guid: fc72844b2bc96684e8026b1035fb1b5a, type: 3}
       propertyPath: m_Name
       value: Battle Manager
       objectReference: {fileID: 0}

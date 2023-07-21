@@ -10,8 +10,23 @@ public class DisableButtonsOnTutorial : MonoBehaviour
 
     void Update()
     {
-        runButton.SetActive(!GameManager.instance.tutorial);
-        itemsButton.SetActive(!GameManager.instance.tutorial);
-        rangeButton.SetActive(!GameManager.instance.tutorial);
+        if (BattleManager.instance.bossBattle || BattleManager.instance.dinniesBattle)
+        {
+            runButton.SetActive(false);
+            itemsButton.SetActive(true);
+            rangeButton.SetActive(true);
+        }
+        else if(GameManager.instance.tutorial)
+        {
+            runButton.SetActive(false);
+            itemsButton.SetActive(false);
+            rangeButton.SetActive(false);
+        }
+        else
+        {
+            runButton.SetActive(true);
+            itemsButton.SetActive(true);
+            rangeButton.SetActive(true);
+        }
     }
 }

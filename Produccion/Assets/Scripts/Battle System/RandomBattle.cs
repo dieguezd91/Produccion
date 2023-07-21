@@ -24,7 +24,7 @@ public class RandomBattle : MonoBehaviour
             if ( i <= 10)
             {
                 Debug.Log("Combate random!");
-                BattleManager.instance.StartBattle(null, enemy, true);
+                BattleManager.instance.StartBattle(null, enemy, false, true, false);
             }
         }
     }

@@ -66,6 +66,7 @@ public class BattleManager : MonoBehaviour
 
     public bool randomBattle;
     public bool dinniesBattle;
+    public bool bossBattle;
 
     public event EventHandler OnBattleEnd;
 
@@ -115,12 +116,13 @@ public class BattleManager : MonoBehaviour
         }
     }
 
-    public void StartBattle(GameObject enemy, string enemiesToSpawn, bool isRandom)
+    public void StartBattle(GameObject enemy, string enemiesToSpawn, bool isDinniesBAttle, bool isRandomBattle, bool isBossBattle)
     {
-        Debug.Log(isRandom);
         Debug.Log("Batalla!");
-        randomBattle = isRandom;
-        dinniesBattle = isRandom;
+        randomBattle = isRandomBattle;
+        dinniesBattle = isDinniesBAttle;
+        bossBattle = isBossBattle;
+
         Destroy(lastEnemy);
         if (enemy != null)
         {
@@ -675,7 +677,6 @@ public class BattleManager : MonoBehaviour
     public IEnumerator Shake(Rigidbody2D rb)
     {
         Vector2 originalPos = rb.position;
-        Debug.Log("Shaking");
         int directionX;
         int directionY;
 
@@ -685,7 +686,6 @@ public class BattleManager : MonoBehaviour
             directionX = UnityEngine.Random.Range(-1, 2);
 
             rb.velocity = new Vector2(directionX, directionY) * 10;
-            Debug.Log(directionX + " " + directionY);
             yield return new WaitForSeconds(0.05f);
             rb.velocity = Vector2.zero;
             rb.position = originalPos;
