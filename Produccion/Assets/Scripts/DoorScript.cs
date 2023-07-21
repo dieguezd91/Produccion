@@ -22,7 +22,7 @@ public class DoorScript : MonoBehaviour
 
         if (pjNearby && Input.GetKeyDown(KeyCode.Space))
         {
-            if(place != "Ciudad")   GameManager.instance.lastPosition = GameManager.instance.player.transform.position - new Vector3(0f, 0.5f,0f);
+            if(place != "Ciudad") GameManager.instance.lastPosition = GameManager.instance.player.transform.position - new Vector3(0f, 0.5f,0f);
             SceneManagerScript.instance.LoadScene(place);
         }
     }

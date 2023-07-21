@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
     public static GameManager instance;
     public bool battleIsActive;
     public bool tutorial;
+    public bool respawned;
     public bool chatting;
     public bool inStore;
 
@@ -36,13 +37,12 @@ public class GameManager : MonoBehaviour
     {
         return playerStats;
     }
-
     public void RespawnPlayer()
     {
         SceneManagerScript.instance.scene = "Garage";
         lastPosition = new Vector2(-50f, 8.7f);
         SceneManagerScript.instance.LoadScene("Garage");
-        player.transform.position = new Vector2(-6.88f, 2.95f);
+        respawned = true;
         PlayerStats.instance.currentHP = PlayerStats.instance.maxHP;
     }
 }
