@@ -178,6 +178,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: QuestManager
       objectReference: {fileID: 0}
+    - target: {fileID: 8595873208298874643, guid: f59046c5cee95e24884e06bd6f86937d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f59046c5cee95e24884e06bd6f86937d, type: 3}
 --- !u!114 &134818054 stripped

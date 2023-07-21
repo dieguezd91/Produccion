@@ -23278,34 +23278,6 @@ PrefabInstance:
       propertyPath: MissionCompletedUI
       value: 
       objectReference: {fileID: 872998431}
-    - target: {fileID: 4426671845418817767, guid: f59046c5cee95e24884e06bd6f86937d, type: 3}
-      propertyPath: questDescriptions.Array.size
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 4426671845418817767, guid: f59046c5cee95e24884e06bd6f86937d, type: 3}
-      propertyPath: questDescriptions.Array.data[0]
-      value: Comienza a jugar
-      objectReference: {fileID: 0}
-    - target: {fileID: 4426671845418817767, guid: f59046c5cee95e24884e06bd6f86937d, type: 3}
-      propertyPath: questDescriptions.Array.data[1]
-      value: Completa el tutorial venciendo a Dinnie en su garage
-      objectReference: {fileID: 0}
-    - target: {fileID: 4426671845418817767, guid: f59046c5cee95e24884e06bd6f86937d, type: 3}
-      propertyPath: questDescriptions.Array.data[2]
-      value: Ve al bar y recupera tu billetera
-      objectReference: {fileID: 0}
-    - target: {fileID: 4426671845418817767, guid: f59046c5cee95e24884e06bd6f86937d, type: 3}
-      propertyPath: questDescriptions.Array.data[3]
-      value: Ve a Omni-Tech Industries y derrota al Jefe Mercenario
-      objectReference: {fileID: 0}
-    - target: {fileID: 4426671845418817767, guid: f59046c5cee95e24884e06bd6f86937d, type: 3}
-      propertyPath: questDescriptions.Array.data[4]
-      value: Ve a Central Security y vence al Jefe de Seguridad
-      objectReference: {fileID: 0}
-    - target: {fileID: 4426671845418817767, guid: f59046c5cee95e24884e06bd6f86937d, type: 3}
-      propertyPath: questDescriptions.Array.data[5]
-      value: Ve a Omni-Tech HQ y derrota al CEO de Omni-Tech
-      objectReference: {fileID: 0}
     - target: {fileID: 6744360193768397833, guid: f59046c5cee95e24884e06bd6f86937d, type: 3}
       propertyPath: m_Name
       value: QuestManager

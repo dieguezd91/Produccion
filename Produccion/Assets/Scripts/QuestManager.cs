@@ -10,7 +10,7 @@ public class QuestManager : MonoBehaviour
 
     [SerializeField] string[] questNames;
     [SerializeField] string[] questDescriptions;
-    [SerializeField] bool[] questCompleted;
+    public bool[] questCompleted;
 
     public static QuestManager instance;
 
@@ -68,7 +68,8 @@ public class QuestManager : MonoBehaviour
         int questNumberToCheck = GetQuestNumber(questToMark);
         questCompleted[questNumberToCheck] = true;
 
-        StartCoroutine(ShowUI());
+        if(questToMark != "a")
+            StartCoroutine(ShowUI());
         //OnQuestMarked?.Invoke(this, EventArgs.Empty);
         //UpdateQuestObjects();
     }

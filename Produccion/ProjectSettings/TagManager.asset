@@ -12,6 +12,8 @@ TagManager:
   - Weapons
   - Aliado
   - Codigos
+  - MissionPanel
+  - MissionCompleted
   layers:
   - Default
   - TransparentFX
