@@ -512,6 +512,8 @@ public class BattleManager : MonoBehaviour
         {
             //Hay 50% de chances de no poder escapar y perdes el turno
             Debug.Log("Huir");
+            NextTurn();
+            //waitingForTurn = true;
             StartCoroutine(ScapingTime());
             if(randomBattle || dinniesBattle)
                 OnBattleEnd?.Invoke(this, EventArgs.Empty);
