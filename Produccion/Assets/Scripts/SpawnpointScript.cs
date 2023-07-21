@@ -1,4 +1,5 @@
- using System.Collections;
+using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -6,38 +7,39 @@ public class SpawnpointScript : MonoBehaviour
 {
     public GameObject player;
     public Transform spawnpoint;
-    public static SpawnpointScript instance;
     public Transform alternativeSpawn;
+    public static SpawnpointScript instance;
 
     void Start()
     {
         player = GameManager.instance.player;
+        Spawn();
+    }
 
-        switch(SceneManagerScript.instance.scene)
+    public void Spawn()
+    {
+        Debug.Log("spawnMethod");
+        switch (SceneManagerScript.instance.scene)
         {
             case "Bar":
-                if (GameManager.instance.tutorial) Spawn(alternativeSpawn.position);
-                else Spawn(spawnpoint.position);
+                if (GameManager.instance.tutorial) player.transform.position = alternativeSpawn.position;
+                else  player.transform.position = spawnpoint.position;
                 break;
             case "Ciudad":
-                Spawn(GameManager.instance.lastPosition);
+                player.transform.position = GameManager.instance.lastPosition;
                 break;
             case "Garage":
                 if (GameManager.instance.respawned)
                 {
-                    Spawn(alternativeSpawn.position);
+                    Debug.Log(GameManager.instance.respawned);
+                    player.transform.position = alternativeSpawn.position;
                     GameManager.instance.respawned = false;
                 }
-                else Spawn(spawnpoint.position);
+                else player.transform.position = spawnpoint.position;
                 break;
             default:
-                Spawn(spawnpoint.position);
+                player.transform.position = spawnpoint.position;
                 break;
         }
-    }
-
-    public void Spawn(Vector3 spawnpoint)
-    {
-        player.transform.position = spawnpoint;
     }
 }

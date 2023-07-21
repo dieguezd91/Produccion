@@ -77,13 +77,13 @@ public class QuestManager : MonoBehaviour
     IEnumerator ShowUI()
     {
         MissionCompletedUI.SetActive(true);
-        int currentMission = SetObjectiveDescription();
+        int currentMission = GetObjectiveDescription();
         newObjective.text = questDescriptions[currentMission];
         yield return new WaitForSeconds(6.5f);
         MissionCompletedUI.SetActive(false);
     }
 
-    int SetObjectiveDescription()
+    int GetObjectiveDescription()
     {
         for(int i = 0; i < questCompleted.Length; i++)
         {

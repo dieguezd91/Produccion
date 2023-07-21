@@ -11035,6 +11035,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1573408135, guid: b704549afed9e8445881ad0bda96f2a6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1573408135, guid: b704549afed9e8445881ad0bda96f2a6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7277363986584689379, guid: b704549afed9e8445881ad0bda96f2a6, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -25178,7 +25186,7 @@ Tilemap:
       m_AnimatedSprites:
       - {fileID: 1431388427, guid: 0da1e18ae9aa8414a8f02225e9e4ea9c, type: 3}
       - {fileID: -943247112, guid: 0da1e18ae9aa8414a8f02225e9e4ea9c, type: 3}
-      m_AnimationSpeed: 3
+      m_AnimationSpeed: 3.0000002
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: -9, y: -1, z: 0}
@@ -25322,7 +25330,7 @@ Tilemap:
       m_AnimatedSprites:
       - {fileID: 1431388427, guid: 0da1e18ae9aa8414a8f02225e9e4ea9c, type: 3}
       - {fileID: -943247112, guid: 0da1e18ae9aa8414a8f02225e9e4ea9c, type: 3}
-      m_AnimationSpeed: 3
+      m_AnimationSpeed: 3.0000002
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: -8, y: 2, z: 0}

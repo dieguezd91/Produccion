@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Threading;
 using UnityEngine;
+using System;
 using UnityEngine.SceneManagement;
 
 public class SceneManagerScript : MonoBehaviour
@@ -10,6 +11,8 @@ public class SceneManagerScript : MonoBehaviour
     public string scene;
 
     public Vector2 spawnpoint;
+
+    public event EventHandler OnSceneLoaded;
 
     private void Awake()
     {
@@ -24,6 +27,7 @@ public class SceneManagerScript : MonoBehaviour
     }
     public void LoadScene(string newScene)
     {
+        Debug.Log(newScene + " loaded");
         MusicManager.instance.audioSource.Stop();
         scene = newScene;
         CheckActiveClip();
