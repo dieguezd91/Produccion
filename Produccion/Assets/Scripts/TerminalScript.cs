@@ -10,7 +10,6 @@ public class TerminalScript : MonoBehaviour
 
     void Update()
     {
-        Debug.Log(playerNearBy);
         playerNearBy = Physics2D.OverlapBox(referencePoint.position, referencePoint.localScale, 0).CompareTag("Player");
 
         if (playerNearBy && Input.GetKeyDown(KeyCode.Space))

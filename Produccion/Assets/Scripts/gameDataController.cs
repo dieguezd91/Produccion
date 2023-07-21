@@ -31,8 +31,12 @@ public class gameDataController : MonoBehaviour
             Inventory.instance.credits = gameData.credits;
             playerStats.currentXP = gameData.xp;
             playerStats.playerLevel = gameData.level;
-            player.transform.position = gameData.position;
+            SceneManagerScript.instance.LoadScene(gameData.scene);
             playerStats.currentHP = gameData.lifePoints;
+            playerStats.strength = gameData.strength;
+            playerStats.dexterity = gameData.dexterity;
+            playerStats.defence = gameData.defence;
+            QuestManager.instance.questCompleted = gameData.completedQuests;
         }
         else
         {
@@ -47,8 +51,13 @@ public class gameDataController : MonoBehaviour
             position = player.transform.position,
             lifePoints = playerStats.currentHP,
             xp = playerStats.currentXP,
+            dexterity = playerStats.dexterity,
+            strength = playerStats.strength,
+            defence = playerStats.defence,
             level = playerStats.playerLevel,
             credits = Inventory.instance.credits,
+            scene = SceneManagerScript.instance.scene,
+            completedQuests = QuestManager.instance.questCompleted,
         };
 
         string JSONchain = JsonUtility.ToJson(newData);

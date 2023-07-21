@@ -39,8 +39,7 @@ public class GameManager : MonoBehaviour
     }
     public void RespawnPlayer()
     {
-        SceneManagerScript.instance.scene = "Garage";
-        lastPosition = new Vector2(-50f, 8.7f);
+        lastPosition = new Vector2(-50f, 9f);
         SceneManagerScript.instance.LoadScene("Garage");
         respawned = true;
         PlayerStats.instance.currentHP = PlayerStats.instance.maxHP;
