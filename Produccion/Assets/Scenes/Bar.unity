@@ -4094,17 +4094,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &817000919 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7768019100313753059, guid: df092f85b3317ad4f8029bb6b3dea30c, type: 3}
-  m_PrefabInstance: {fileID: 1949965583}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &821562682
 GameObject:
   m_ObjectHideFlags: 0
@@ -4216,11 +4205,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &872998431 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5098132684087813656, guid: df092f85b3317ad4f8029bb6b3dea30c, type: 3}
-  m_PrefabInstance: {fileID: 1949965583}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &878027704
 GameObject:
   m_ObjectHideFlags: 0
@@ -23270,14 +23254,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4426671845418817767, guid: f59046c5cee95e24884e06bd6f86937d, type: 3}
-      propertyPath: newObjective
-      value: 
-      objectReference: {fileID: 817000919}
-    - target: {fileID: 4426671845418817767, guid: f59046c5cee95e24884e06bd6f86937d, type: 3}
-      propertyPath: MissionCompletedUI
-      value: 
-      objectReference: {fileID: 872998431}
     - target: {fileID: 6744360193768397833, guid: f59046c5cee95e24884e06bd6f86937d, type: 3}
       propertyPath: m_Name
       value: QuestManager
