@@ -1,17 +1,21 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 public class QuestManager : MonoBehaviour
 {
 
     [SerializeField] string[] questNames;
+    [SerializeField] string[] questDescriptions;
     [SerializeField] bool[] questCompleted;
 
     public static QuestManager instance;
 
-    //public event EventHandler OnQuestMarked;
+    [SerializeField] GameObject MissionCompletedUI;
+    [SerializeField] TextMeshProUGUI newObjective;
 
     private void Awake()
     {
@@ -64,7 +68,27 @@ public class QuestManager : MonoBehaviour
         int questNumberToCheck = GetQuestNumber(questToMark);
         questCompleted[questNumberToCheck] = true;
 
+        StartCoroutine(ShowUI());
         //OnQuestMarked?.Invoke(this, EventArgs.Empty);
         //UpdateQuestObjects();
+    }
+
+    IEnumerator ShowUI()
+    {
+        MissionCompletedUI.SetActive(true);
+        int currentMission = SetObjectiveDescription();
+        newObjective.text = questDescriptions[currentMission];
+        yield return new WaitForSeconds(6.5f);
+        MissionCompletedUI.SetActive(false);
+    }
+
+    int SetObjectiveDescription()
+    {
+        for(int i = 0; i < questCompleted.Length; i++)
+        {
+            if (!questCompleted[i]) return i;
+        }
+
+        return 0;
     }
 }
