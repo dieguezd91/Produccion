@@ -72,6 +72,8 @@ public class BattleManager : MonoBehaviour
 
     [SerializeField] AudioClip[] clips;
 
+    RandomBattle randomCombat;
+
     void Awake()
     {
         if (instance != null && instance != this)
@@ -128,6 +130,10 @@ public class BattleManager : MonoBehaviour
         {
             enemyGO = enemy;
             enemyCollider = enemyGO.GetComponent<Collider2D>();
+        }
+        if(randomBattle)
+        {
+            randomCombat = enemy.GetComponent<RandomBattle>();
         }
         log.text = string.Empty;
 
@@ -370,7 +376,7 @@ public class BattleManager : MonoBehaviour
             else if (activeCharacters[currentTurn].attacksAvailable[0] == "Ataque rango") DealRangeDamageToCharacters(selectedPlayerToAttack);
         }
 
-        StartCoroutine(Shake(activeCharacters[0].GetComponent<Rigidbody2D>()));
+        //StartCoroutine(Shake(activeCharacters[0].GetComponent<Rigidbody2D>()));
         UpdatePlayerStats();
     }
 
@@ -383,7 +389,7 @@ public class BattleManager : MonoBehaviour
 
         AudioManager.instance.PlaySound(clips[1]);
 
-        StartCoroutine(Shake(activeCharacters[1].GetComponent<Rigidbody2D>()));
+        //StartCoroutine(Shake(activeCharacters[1].GetComponent<Rigidbody2D>()));
         NextTurn();
     }
 
@@ -396,7 +402,7 @@ public class BattleManager : MonoBehaviour
 
         AudioManager.instance.PlaySound(clips[0]);
 
-        StartCoroutine(Shake(activeCharacters[1].GetComponent<Rigidbody2D>()));
+        //StartCoroutine(Shake(activeCharacters[1].GetComponent<Rigidbody2D>()));
         NextTurn();
     }
 
@@ -673,6 +679,7 @@ public class BattleManager : MonoBehaviour
         worldAudioListener.enabled = true;
         battleAudioListener.enabled = false;
         battleScene.SetActive(false);
+        if(randomBattle) StartCoroutine(randomCombat.Inmunity());
     }
     public IEnumerator Shake(Rigidbody2D rb)
     {

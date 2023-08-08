@@ -10,7 +10,7 @@ public class RandomBattle : MonoBehaviour
     private void Start()
     {
         colider = GetComponent<Collider2D>();
-        BattleManager.instance.OnBattleEnd += Scape;
+        //BattleManager.instance.OnBattleEnd += Scape;
     }
     private void OnTriggerEnter2D(Collider2D collider)
     {
@@ -24,7 +24,7 @@ public class RandomBattle : MonoBehaviour
             if ( i <= 10)
             {
                 Debug.Log("Combate random!");
-                BattleManager.instance.StartBattle(null, enemy, false, true, false);
+                BattleManager.instance.StartBattle(gameObject, enemy, false, true, false);
             }
         }
     }
@@ -34,8 +34,9 @@ public class RandomBattle : MonoBehaviour
         StartCoroutine(Inmunity());
     }
 
-    IEnumerator Inmunity()
+    public IEnumerator Inmunity()
     {
+        Debug.Log("aaaaa");
         colider.enabled = false;
         yield return new WaitForSeconds(5f);
         colider.enabled = true;
