@@ -331,6 +331,7 @@ public class BattleManager : MonoBehaviour
 
     private void EnemyAttack()
     {
+        StartCoroutine(Shake(activeCharacters[0].GetComponent<Rigidbody2D>()));
         List<int> players = new List<int>();
 
         for (int n = 0; n < activeCharacters.Count; n++)
@@ -376,33 +377,28 @@ public class BattleManager : MonoBehaviour
             else if (activeCharacters[currentTurn].attacksAvailable[0] == "Ataque rango") DealRangeDamageToCharacters(selectedPlayerToAttack);
         }
 
-        //StartCoroutine(Shake(activeCharacters[0].GetComponent<Rigidbody2D>()));
         UpdatePlayerStats();
     }
 
     public void PlayerRangeAttack()
     {
+        StartCoroutine(Shake(activeCharacters[1].GetComponent<Rigidbody2D>()));
         Debug.Log("AtaqueRango");
-        int selectEnemyTarget = 1;
-
-        DealRangeDamageToCharacters(selectEnemyTarget);
+        DealRangeDamageToCharacters(1);
 
         AudioManager.instance.PlaySound(clips[1]);
 
-        //StartCoroutine(Shake(activeCharacters[1].GetComponent<Rigidbody2D>()));
         NextTurn();
     }
 
     public void PlayerMeleeAttack()
     {
+        StartCoroutine(Shake(activeCharacters[1].GetComponent<Rigidbody2D>()));
         Debug.Log("AtaqueMelee");
-        int selectEnemyTarget = 1;
-
-        DealMeleeDamageToCharacters(selectEnemyTarget);
+        DealMeleeDamageToCharacters(1);
 
         AudioManager.instance.PlaySound(clips[0]);
 
-        //StartCoroutine(Shake(activeCharacters[1].GetComponent<Rigidbody2D>()));
         NextTurn();
     }
 
