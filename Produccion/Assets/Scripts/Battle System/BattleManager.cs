@@ -73,12 +73,14 @@ public class BattleManager : MonoBehaviour
     [SerializeField] AudioClip[] clips;
 
     RandomBattle randomCombat;
+    float lastRandomBattle;
+    [SerializeField] float inmunityTime;
 
     void Awake()
     {
         if (instance != null && instance != this)
         {
-            Destroy(this.gameObject);
+            Destroy(gameObject);
         }
         else
         {
@@ -92,6 +94,7 @@ public class BattleManager : MonoBehaviour
         worldCamera = PlayerController.instance.worldCamera.GetComponent<Camera>();
         worldAudioListener = worldCamera.gameObject.GetComponent<AudioListener>();
         battleAudioListener = battleCamera.gameObject.GetComponent<AudioListener>();
+        lastRandomBattle = 0;
     }
 
     void Update()
@@ -125,15 +128,21 @@ public class BattleManager : MonoBehaviour
         dinniesBattle = isDinniesBAttle;
         bossBattle = isBossBattle;
 
+        if (randomBattle)
+        {
+            if (Time.time > lastRandomBattle + inmunityTime)
+                randomCombat = enemy.GetComponent<RandomBattle>();
+            else
+            {
+                Debug.Log("Combate evitado");
+                return;
+            }
+        }
         Destroy(lastEnemy);
         if (enemy != null)
         {
             enemyGO = enemy;
             enemyCollider = enemyGO.GetComponent<Collider2D>();
-        }
-        if(randomBattle)
-        {
-            randomCombat = enemy.GetComponent<RandomBattle>();
         }
         log.text = string.Empty;
 
@@ -675,7 +684,12 @@ public class BattleManager : MonoBehaviour
         worldAudioListener.enabled = true;
         battleAudioListener.enabled = false;
         battleScene.SetActive(false);
-        if(randomBattle) StartCoroutine(randomCombat.Inmunity());
+        if (randomBattle)
+        {
+            Debug.Log(lastRandomBattle);
+            lastRandomBattle = Time.time;
+            StartCoroutine(randomCombat.Inmunity());
+        }
     }
     public IEnumerator Shake(Rigidbody2D rb)
     {
