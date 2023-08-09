@@ -130,7 +130,7 @@ public class BattleManager : MonoBehaviour
 
         if (randomBattle)
         {
-            if (Time.time > lastRandomBattle + inmunityTime)
+            if (Time.time >= lastRandomBattle + inmunityTime)
                 randomCombat = enemy.GetComponent<RandomBattle>();
             else
             {
