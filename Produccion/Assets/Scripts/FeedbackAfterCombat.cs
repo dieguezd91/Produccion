@@ -12,7 +12,7 @@ public class FeedbackAfterCombat : MonoBehaviour
     public IEnumerator ShowNewCredits(string creditsGained)
     {
         Debug.Log("Show new credits");
-        creditsGainedText.text = $"+{creditsGained} creditos";
+        creditsGainedText.text = $"+{creditsGained} NeoCoins";
         creditsGainedText.gameObject.SetActive(true);
         yield return new WaitForSeconds(5f);
         creditsGainedText.gameObject.SetActive(false);
