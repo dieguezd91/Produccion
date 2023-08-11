@@ -11,20 +11,16 @@ public class FeedbackAfterCombat : MonoBehaviour
 
     public IEnumerator ShowNewCredits(string creditsGained)
     {
-        Debug.Log("Show new credits");
         creditsGainedText.text = $"+{creditsGained} NeoCoins";
         creditsGainedText.gameObject.SetActive(true);
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(3f);
         creditsGainedText.gameObject.SetActive(false);
-        Debug.Log("New credits shown");
     }
     public IEnumerator ShowLifeRestored()
     {
-        Debug.Log("Show life restored");
         lifeRestoredText.SetActive(true);
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(3f);
         lifeRestoredText.SetActive(false);
-        Debug.Log("Life restored shown");
     }
 
 

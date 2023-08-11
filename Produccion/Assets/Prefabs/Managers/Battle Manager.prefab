@@ -114,6 +114,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 30d32a32685bee5469cd15054da9a130, type: 3}
   - {fileID: 8300000, guid: dab36a22d67d27c4d8af1a9548b1e19f, type: 3}
   inmunityTime: 10
+  rewardsTexts: {fileID: 0}
 --- !u!1 &116928167659591806
 GameObject:
   m_ObjectHideFlags: 0
@@ -354,7 +355,7 @@ MonoBehaviour:
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_DisabledColor: {r: 0.23584908, g: 0.23584908, b: 0.23584908, a: 1}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -503,9 +504,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2bb1b172f903884a9da61a8db3775dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  runButton: {fileID: 116928167725022296}
-  itemsButton: {fileID: 116928169418225324}
-  rangeButton: {fileID: 116928169292437684}
+  runButton: {fileID: 116928167725022302}
+  rangeButton: {fileID: 116928169292437674}
 --- !u!1 &116928167928392572
 GameObject:
   m_ObjectHideFlags: 0
@@ -1911,7 +1911,7 @@ MonoBehaviour:
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_DisabledColor: {r: 0.23529412, g: 0.23529412, b: 0.23529412, a: 1}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:

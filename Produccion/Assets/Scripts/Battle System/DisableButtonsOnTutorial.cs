@@ -1,32 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class DisableButtonsOnTutorial : MonoBehaviour
 {
-    public GameObject runButton;
-    public GameObject itemsButton;
-    public GameObject rangeButton;
+    public Button runButton;
+    public Button rangeButton;
 
     void Update()
     {
-        if (BattleManager.instance.bossBattle || BattleManager.instance.dinniesBattle)
-        {
-            runButton.SetActive(false);
-            itemsButton.SetActive(true);
-            rangeButton.SetActive(true);
-        }
+        if (BattleManager.instance.bossBattle || BattleManager.instance.dinniesBattle)  
+            runButton.interactable = false;
         else if(GameManager.instance.tutorial)
-        {
-            runButton.SetActive(false);
-            itemsButton.SetActive(false);
-            rangeButton.SetActive(false);
-        }
+            runButton.interactable = false; 
+        if (PlayerStats.instance.equipedRangeWeapon != null)
+            rangeButton.interactable = true;
         else
-        {
-            runButton.SetActive(true);
-            itemsButton.SetActive(true);
-            rangeButton.SetActive(true);
-        }
+            rangeButton.interactable = false;        
     }
 }
