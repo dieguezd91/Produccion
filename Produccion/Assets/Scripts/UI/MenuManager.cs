@@ -40,6 +40,7 @@ public class MenuManager : MonoBehaviour
     [SerializeField] TextMeshProUGUI CreditsUI;
 
     public TextMeshProUGUI instruction;
+    [SerializeField] FeedbackAfterCombat rewardsTexts;
 
     PlayerController player;
     float lastSpeed;
@@ -217,5 +218,6 @@ public class MenuManager : MonoBehaviour
         newCreditsUI.text = "+" + creditsToGive.ToString();
         newCreditsUI.gameObject.SetActive(false);
         Inventory.instance.AddCredits(creditsToGive);
+        StartCoroutine(rewardsTexts.ShowNewCredits(creditsToGive.ToString()));
     }
 }

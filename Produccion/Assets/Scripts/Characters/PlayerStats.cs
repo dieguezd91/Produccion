@@ -33,6 +33,8 @@ public class PlayerStats : MonoBehaviour
 
     public ItemsManager equipedMeleeWeapon, equipedRangeWeapon;
 
+    [SerializeField] FeedbackAfterCombat rewardsTexts;
+
     private void Start()
     {
         if (instance != null && instance != this)
@@ -87,6 +89,7 @@ public class PlayerStats : MonoBehaviour
         currentXP -= xpForNextLevel[playerLevel];
         playerLevel++;
         StartCoroutine(ShowLevelUpSign());
+        StartCoroutine(rewardsTexts.ShowLifeRestored());
     }
 
     public void AddHP(int amountHPToAdd)

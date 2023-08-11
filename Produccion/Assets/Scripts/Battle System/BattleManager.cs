@@ -76,6 +76,8 @@ public class BattleManager : MonoBehaviour
     float lastRandomBattle;
     [SerializeField] float inmunityTime;
 
+    [SerializeField] FeedbackAfterCombat rewardsTexts;
+
     void Awake()
     {
         if (instance != null && instance != this)
@@ -303,7 +305,8 @@ public class BattleManager : MonoBehaviour
                 Debug.Log("Victoria!");
                   if (randomBattle || dinniesBattle)
                     OnBattleEnd?.Invoke(this, EventArgs.Empty);
-
+                if(bossBattle)
+                    StartCoroutine(rewardsTexts.ShowLifeRestored());
             }
             else if (allPlayersAreDead)
             {
