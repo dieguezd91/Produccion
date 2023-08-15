@@ -102,6 +102,30 @@ public class BattleManager : MonoBehaviour
     void Update()
     {
         CheckPlayerButtonHolder();
+
+        Debug.Log("Ammo check");
+        if (PlayerStats.instance.equipedRangeWeapon != null)
+        {
+            Debug.Log(PlayerStats.instance.equipedRangeWeapon.itemName);
+            switch (PlayerStats.instance.equipedRangeWeapon.itemName)
+            {
+                case "Escopeta":
+                    if (Inventory.instance.shotgunAmmo > 0)
+                        Inventory.instance.hasAmmo = true;
+                    else Inventory.instance.hasAmmo = false;
+                    break;
+                case "Subfusil":
+                    if (Inventory.instance.SMGAmmo > 0)
+                        Inventory.instance.hasAmmo = true;
+                    else Inventory.instance.hasAmmo = false;
+                    break;
+                case "Pistola":
+                    if (Inventory.instance.pistolAmmo > 0)
+                        Inventory.instance.hasAmmo = true;
+                    else Inventory.instance.hasAmmo = false;
+                    break;
+            }
+        }
     }
 
     private void CheckPlayerButtonHolder()
@@ -230,6 +254,12 @@ public class BattleManager : MonoBehaviour
 
         activeCharacters[i].meleeWeaponDamage = player.meleeDamage;
         activeCharacters[i].rangeWeaponDamage = player.rangeDamage;
+
+        if (i == 0 && player.equipedRangeWeapon != null)
+        {
+            activeCharacters[i].equipedRangeWeapon = player.equipedRangeWeapon;
+            Debug.Log(player.equipedRangeWeapon.itemName + " equipada");
+        }
     }
 
     private void ExportPlayerStats(int i)
@@ -396,7 +426,25 @@ public class BattleManager : MonoBehaviour
     {
         StartCoroutine(Shake(activeCharacters[1].GetComponent<Rigidbody2D>()));
         Debug.Log("AtaqueRango");
-        DealRangeDamageToCharacters(1);
+        if (Inventory.instance.hasAmmo)
+        {
+            DealRangeDamageToCharacters(1);
+            switch (activeCharacters[currentTurn].equipedRangeWeapon.itemName)
+            {
+                case "Pistola":
+                    Inventory.instance.pistolAmmo--;
+                    break;
+                case "Subfusil":
+                    Inventory.instance.SMGAmmo--;
+                    break;
+                case "Escopeta":
+                    Inventory.instance.shotgunAmmo--;
+                    break;
+                default:
+                    Debug.Log("No weapon equiped");
+                    break;
+            }
+        }
 
         AudioManager.instance.PlaySound(clips[1]);
 

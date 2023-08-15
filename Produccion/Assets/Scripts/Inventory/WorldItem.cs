@@ -13,7 +13,10 @@ public class WorldItem : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             gameObject.SetActive(false);
-            Inventory.instance.AddItems(item);
+            if (item.itemType == ItemsManager.ItemType.Ammo)
+                item.UseItem(0);
+            else
+                Inventory.instance.AddItems(item);
             //int index = CollectedItemsManager.instance.GetItemNumber(gameObject);
             //CollectedItemsManager.instance.collected[index] = true;
         }

@@ -7,7 +7,7 @@ public class ItemsManager : MonoBehaviour
 {
     public static ItemsManager instance;
 
-    public enum ItemType { Item, MeleeWeapon, RangeWeapon}
+    public enum ItemType { Item, MeleeWeapon, RangeWeapon, Ammo}
     public ItemType itemType;
 
     public string itemName, itemDescription;
@@ -16,7 +16,7 @@ public class ItemsManager : MonoBehaviour
 
     public int amountOfAffect;
 
-    public enum AffectType { HP }
+    public enum AffectType { HP}
     public AffectType affectType;
 
     public int weaponDexterity;
@@ -29,7 +29,7 @@ public class ItemsManager : MonoBehaviour
     {
         if (instance != null && instance != this)
         {
-            Destroy(this.gameObject);
+            Destroy(gameObject);
         }
         else
         {
@@ -40,9 +40,27 @@ public class ItemsManager : MonoBehaviour
 
     public void UseItem(int characterToUseOn)
     {
-        PlayerStats selectedCharacter = GameManager.instance.GetPlayerStats()[characterToUseOn]; 
-
-        if(affectType == AffectType.HP)
+        PlayerStats selectedCharacter = GameManager.instance.GetPlayerStats()[characterToUseOn];
+        
+        if (itemType == ItemType.Ammo)
+        {
+            Debug.Log("Obtener munición");
+            Debug.Log(itemName);
+            switch (itemName)
+            {
+                case "MunicionPistola":
+                    Inventory.instance.pistolAmmo += 3;
+                    Debug.Log("Municion de pistola obtenida");
+                    break;
+                case "MunicionEscopeta":
+                    Inventory.instance.shotgunAmmo += 3;
+                    break;
+                case "MunicionSubfusil":
+                    Inventory.instance.SMGAmmo += 3;
+                    break;
+            }
+        }
+        else if (affectType == AffectType.HP)
         {            
             selectedCharacter.AddHP(amountOfAffect);
             if (selectedCharacter.currentHP > selectedCharacter.maxHP)

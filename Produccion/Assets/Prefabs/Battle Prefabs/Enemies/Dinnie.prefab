@@ -112,6 +112,7 @@ MonoBehaviour:
   rangeWeaponDamage: 0
   isDead: 0
   level: 0
+  equipedRangeWeapon: {fileID: 0}
 --- !u!50 &-3957738318746994636
 Rigidbody2D:
   serializedVersion: 4

@@ -14,7 +14,7 @@ public class DisableButtonsOnTutorial : MonoBehaviour
             runButton.interactable = false;
         else if(GameManager.instance.tutorial)
             runButton.interactable = false; 
-        if (PlayerStats.instance.equipedRangeWeapon != null)
+        if (PlayerStats.instance.equipedRangeWeapon != null && Inventory.instance.hasAmmo == true)
             rangeButton.interactable = true;
         else
             rangeButton.interactable = false;        

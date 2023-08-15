@@ -13,6 +13,13 @@ public class Inventory : MonoBehaviour
     public int credits;
     public bool hasCompletedDinniesTutorial;
 
+    //AMMO
+    public int pistolAmmo;
+    public int shotgunAmmo;
+    public int SMGAmmo;
+    public bool hasAmmo;
+
+
     private void Start()
     {
         if (instance != null && instance != this)
