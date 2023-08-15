@@ -28,10 +28,10 @@ public class gameDataController : MonoBehaviour
             string content = File.ReadAllText(saveArchives);
             gameData = JsonUtility.FromJson<gameData>(content);
 
+            SceneManagerScript.instance.LoadScene(gameData.scene);
             Inventory.instance.credits = gameData.credits;
             playerStats.currentXP = gameData.xp;
             playerStats.playerLevel = gameData.level;
-            SceneManagerScript.instance.LoadScene(gameData.scene);
             playerStats.currentHP = gameData.lifePoints;
             playerStats.strength = gameData.strength;
             playerStats.dexterity = gameData.dexterity;
