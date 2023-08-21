@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2883702999994761639}
   - component: {fileID: 2883702999994761633}
   m_Layer: 8
-  m_Name: PistolBullet
+  m_Name: ShotgunShells
   m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -75,7 +75,7 @@ SpriteRenderer:
   m_SortingLayerID: 2095082407
   m_SortingLayer: -1
   m_SortingOrder: -1
-  m_Sprite: {fileID: 21300000, guid: db8f07b84c69631429fd9ad7604ceb35, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7b64b91cc5c33c642923483c978dcf13, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -99,16 +99,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: 3
-  itemName: Balas de pistola
-  itemDescription: 'Caja de balas de pistola '
-  valueCoins: 7
-  icon: {fileID: 21300000, guid: db8f07b84c69631429fd9ad7604ceb35, type: 3}
+  itemName: Cartuchos de escopeta
+  itemDescription: Dos cartuchos de escopeta
+  valueCoins: 10
+  icon: {fileID: 21300000, guid: 7b64b91cc5c33c642923483c978dcf13, type: 3}
   amountOfAffect: 0
   affectType: 0
   weaponDexterity: 0
   weaponStrength: 0
   isStackable: 1
-  amount: 7
+  amount: 2
 --- !u!61 &2883702999994761633
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -57,6 +57,8 @@ public class BattleManager : MonoBehaviour
     [SerializeField] TextMeshProUGUI damageReceived;
     [SerializeField] TextMeshProUGUI damageDealt;
 
+    [SerializeField] Text amountOfAmmo;
+
     [SerializeField] TextMeshProUGUI log;
 
     private int amountOfXp;
@@ -126,6 +128,8 @@ public class BattleManager : MonoBehaviour
                     break;
             }
         }
+
+        amountOfAmmo.text = Inventory.instance.pistolAmmo.ToString();
     }
 
     private void CheckPlayerButtonHolder()
