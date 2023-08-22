@@ -14,7 +14,10 @@ public class WorldItem : MonoBehaviour
         {
             gameObject.SetActive(false);
             if (item.itemType == ItemsManager.ItemType.Ammo)
+            {
                 item.UseItem(0);
+            }
+
             else
                 Inventory.instance.AddItems(item);
             //int index = CollectedItemsManager.instance.GetItemNumber(gameObject);

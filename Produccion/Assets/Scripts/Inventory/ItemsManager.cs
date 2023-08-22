@@ -48,8 +48,9 @@ public class ItemsManager : MonoBehaviour
             Debug.Log(itemName);
             switch (itemName)
             {
-                case "MunicionPistola":
-                    Inventory.instance.pistolAmmo += 3;
+                case "Balas de pistola":
+                    Inventory.instance.pistolAmmo += amount;
+                    Inventory.instance.AddItems(instance);
                     Debug.Log("Municion de pistola obtenida");
                     break;
                 case "MunicionEscopeta":
