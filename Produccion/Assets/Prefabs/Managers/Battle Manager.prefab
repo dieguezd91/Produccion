@@ -104,7 +104,7 @@ MonoBehaviour:
   - {fileID: 116928169423360527}
   damageReceived: {fileID: 6607566565194583737}
   damageDealt: {fileID: 7113254807630270880}
-  amountOfAmmo: {fileID: 0}
+  amountOfAmmo: {fileID: 8272503577964483511}
   log: {fileID: 7816298543029630632}
   allEnemiesAreDead: 1
   allPlayersAreDead: 1
