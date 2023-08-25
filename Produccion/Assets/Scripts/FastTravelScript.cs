@@ -8,7 +8,7 @@ public class FastTravelScript : MonoBehaviour
 {
     [SerializeField] Vector2 garage;
     GameObject player;
-    bool playerNear;
+    public bool playerNear;
     [SerializeField] TextMeshProUGUI noCredits;
 
     private void Start()
@@ -18,9 +18,6 @@ public class FastTravelScript : MonoBehaviour
 
     private void Update()
     {
-        if (Physics2D.OverlapBox(new Vector2(transform.position.x, transform.position.y - 0.5f), new Vector2(3, 1.25f), 0).CompareTag("Player")) playerNear = true;
-        else playerNear = false;
-
         if (playerNear && Input.GetKeyDown(KeyCode.Space)) Travel();
     }
 
@@ -38,5 +35,15 @@ public class FastTravelScript : MonoBehaviour
     private void OnDrawGizmos()
     {
         Gizmos.DrawCube(new Vector2(transform.position.x, transform.position.y - 0.5f), new Vector2(3, 1.25f));
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player")) playerNear = true;
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player")) playerNear = false;
     }
 }

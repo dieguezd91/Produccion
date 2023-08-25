@@ -10,14 +10,17 @@ public class TerminalScript : MonoBehaviour
 
     void Update()
     {
-        playerNearBy = Physics2D.OverlapBox(referencePoint.position, referencePoint.localScale, 0).CompareTag("Player");
-
         if (playerNearBy && Input.GetKeyDown(KeyCode.Space))
             dialogue.SetActive(true);
     }
 
-    private void OnDrawGizmos()
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        Gizmos.DrawCube(referencePoint.position, referencePoint.localScale);
+        if (collision.CompareTag("Player")) playerNearBy = true;
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player")) playerNearBy = false;
     }
 }

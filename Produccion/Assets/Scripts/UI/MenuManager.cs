@@ -40,7 +40,7 @@ public class MenuManager : MonoBehaviour
     [SerializeField] TextMeshProUGUI CreditsUI;
 
     public TextMeshProUGUI instruction;
-    [SerializeField] FeedbackAfterCombat rewardsTexts;
+    public FeedbackAfterCombat rewardsTexts;
 
     PlayerController player;
     float lastSpeed;

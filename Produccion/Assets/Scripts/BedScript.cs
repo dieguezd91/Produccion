@@ -11,21 +11,16 @@ public class BedScript : MonoBehaviour
     private void Start()
     {
         player = GameManager.instance.player.GetComponent<PlayerStats>();
+        HPRestoredSign = MenuManager.instance.rewardsTexts.lifeRestoredText;
     }
 
     private void Update()
     {
-        pjNearBy = Physics2D.OverlapBox(transform.position, transform.localScale, 0f).CompareTag("Player");
-
         if(pjNearBy && Input.GetKeyDown(KeyCode.Space))
         {
             player.currentHP = player.maxHP;
             StartCoroutine(ShowSign());
         }
-    }
-    private void OnDrawGizmos()
-    {
-        Gizmos.DrawCube(transform.position, new Vector2(2.5f, 3f));
     }
 
     private IEnumerator ShowSign()
@@ -33,5 +28,14 @@ public class BedScript : MonoBehaviour
         HPRestoredSign.SetActive(true);
         yield return new WaitForSeconds(2f);
         HPRestoredSign.SetActive(false);
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player")) pjNearBy = true;
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player")) pjNearBy = false;
     }
 }
