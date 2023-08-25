@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class FeedbackAfterCombat : MonoBehaviour
 {
-    [SerializeField] GameObject lifeRestoredText;
+    public GameObject lifeRestoredText;
     [SerializeField] TextMeshProUGUI creditsGainedText;
 
     public IEnumerator ShowNewCredits(string creditsGained)

@@ -102,7 +102,6 @@ public class BattleManager : MonoBehaviour
     {
         CheckPlayerButtonHolder();
 
-        Debug.Log("Ammo check");
         if (PlayerStats.instance.equipedRangeWeapon != null)
         {
             Debug.Log(PlayerStats.instance.equipedRangeWeapon.itemName);
