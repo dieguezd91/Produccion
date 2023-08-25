@@ -22,14 +22,8 @@ public class Inventory : MonoBehaviour
 
     private void Start()
     {
-        if (instance != null && instance != this)
-        {
-            Destroy(this.gameObject);
-        }
-        else
-        {
-            instance = this;
-        }
+        if (instance != null && instance != this) Destroy(gameObject);
+        else instance = this;
         DontDestroyOnLoad(gameObject);
 
         itemsList = new List<ItemsManager>();
@@ -37,52 +31,79 @@ public class Inventory : MonoBehaviour
 
     public void AddItems(ItemsManager item)
     {
-        if (item.isStackable)
+        if(item.itemType == ItemsManager.ItemType.Ammo)
         {
-            bool itemAlreadyInInventory = false;
-
-            foreach (ItemsManager itemInInventory in itemsList)
+            item.UseItem(0);
+        }
+        else
+        {
+            if (item.isStackable)
             {
-                if (itemInInventory.itemName == item.itemName)
+                bool itemAlreadyInInventory = false;
+
+                foreach (ItemsManager itemInInventory in itemsList)
                 {
-                    itemInInventory.amount++;
-                    itemAlreadyInInventory = true;
+                    if (itemInInventory.itemName == item.itemName)
+                    {
+                        itemInInventory.amount++;
+                        itemAlreadyInInventory = true;
+                    }
+                }
+
+                if (!itemAlreadyInInventory)
+                {
+                    itemsList.Add(item);
                 }
             }
-
-            if (!itemAlreadyInInventory)
+            else
             {
                 itemsList.Add(item);
             }
         }
-        else
-        {
-            itemsList.Add(item);
-        }
+        
     }
 
     public void RemoveItem(ItemsManager item)
     {
-        if (item.isStackable)
+        if(item.itemType == ItemsManager.ItemType.Ammo)
         {
-            ItemsManager inventoryItem = null;
-            foreach (ItemsManager itemInInventory in itemsList)
+            switch(item.itemName)
             {
-                if (itemInInventory.itemName == item.itemName)
-                {
-                    itemInInventory.amount--;
-                    inventoryItem = itemInInventory;
-                }
-            }
-
-            if (inventoryItem != null && inventoryItem.amount <= 0)
-            {
-                itemsList.Remove(inventoryItem);
+                case "Balas de pistola":
+                    pistolAmmo--;
+                    break;
+                case "Cartuchos de escopeta":
+                    shotgunAmmo--;
+                    break;
+                case "Balas de subfusil":
+                    SMGAmmo--;
+                    break;
             }
         }
         else
         {
-            itemsList.Remove(item);
+            if (item.isStackable)
+            {
+                ItemsManager inventoryItem = null;
+                foreach (ItemsManager itemInInventory in itemsList)
+                {
+                    if (itemInInventory.itemName == item.itemName)
+                    {
+                        itemInInventory.amount--;
+                        inventoryItem = itemInInventory;
+                    }
+                }
+
+                if (inventoryItem != null && inventoryItem.amount <= 0)
+                {
+                    itemsList.Remove(inventoryItem);
+                }
+            }
+            else
+            {
+                itemsList.Remove(item);
+            }
+
         }
     }
 

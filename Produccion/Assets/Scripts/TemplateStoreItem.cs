@@ -37,11 +37,44 @@ public class TemplateStoreItem : MonoBehaviour
 
     public void SellItem()
     {
-        if (playerInventory.itemsList.Contains(item))
+        if(item.itemType != ItemsManager.ItemType.Ammo)
         {
-            playerInventory.credits += price;
-            playerInventory.RemoveItem(item);
+            if (playerInventory.itemsList.Contains(item))
+            {
+                playerInventory.credits += price;
+                playerInventory.RemoveItem(item);
+            }
+            else Debug.Log("No posees este item");
         }
-        else Debug.Log("No posees este item");
+        else
+        {
+            switch (item.itemName)
+            {
+                case "Balas de pistola":
+                    if (Inventory.instance.pistolAmmo > 0)
+                    {
+                        Inventory.instance.pistolAmmo--;
+                        playerInventory.credits += price;
+                    }
+                    else Debug.Log("No posees este item");
+                    break;
+                case "Cartuchos de escopeta":
+                    if (Inventory.instance.shotgunAmmo > 0)
+                    {
+                        Inventory.instance.shotgunAmmo--;
+                        playerInventory.credits += price;
+                    }
+                    else Debug.Log("No posees este item");
+                    break;
+                case "Balas de subfusil":
+                    if (Inventory.instance.SMGAmmo > 0)
+                    {
+                        Inventory.instance.SMGAmmo--;
+                        playerInventory.credits += price;
+                    }
+                    else Debug.Log("No posees este item");
+                    break;
+            }
+        }
     }
 }
