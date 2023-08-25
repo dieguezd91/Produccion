@@ -51,9 +51,6 @@ public class BattleManager : MonoBehaviour
     [SerializeField] Text itemName, itemDescriptionText;
     [SerializeField] GameObject itemDescription;
 
-    [SerializeField] GameObject characterChoicePanel;
-    [SerializeField] Text[] playerChoiceName;
-
     [SerializeField] TextMeshProUGUI damageReceived;
     [SerializeField] TextMeshProUGUI damageDealt;
 
@@ -631,29 +628,6 @@ public class BattleManager : MonoBehaviour
         itemDescription.SetActive(true);
     }
 
-    public void OpenCharacterMenu()
-    {
-        if (selectedItem)
-        {
-            characterChoicePanel.SetActive(true);
-            for (int i = 0; i < activeCharacters.Count; i++)
-            {
-                if (activeCharacters[i].IsPlayer())
-                {
-                    PlayerStats activePlayer = GameManager.instance.GetPlayerStats()[i];
-                    playerChoiceName[i].text = activePlayer.playerName;
-
-                    bool activePlayerInHierarchy = activePlayer.gameObject.activeInHierarchy;
-                    playerChoiceName[i].transform.parent.gameObject.SetActive(true);
-                }
-            }
-        }
-        else
-        {
-            Debug.Log("no item selected");
-        }
-    }
-
     public void UseItemButton(int selectedPlayer)
     {
         activeCharacters[selectedPlayer].UseItemInBattle(selectedItem);
@@ -662,6 +636,7 @@ public class BattleManager : MonoBehaviour
         StartCoroutine(ShowEffect(selectedItem.amountOfAffect, true));
         UpdatePlayerStats();
         UpdateItemsInInventory();
+        itemsToUseMenu.SetActive(false);
         NextTurn();
     }
 
