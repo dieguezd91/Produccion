@@ -163,31 +163,7 @@ public class MenuManager : MonoBehaviour
     public void UseItem(int selectedCharacter)
     {
         activeItem.UseItem(selectedCharacter);
-        OpenCharacterChoicePanel();
         DiscardItem();
-    }
-
-    public void OpenCharacterChoicePanel()
-    {
-        characterChoicePanel.SetActive(true);
-
-        if (activeItem)
-        {
-            for (int i = 0; i < playerStats.Length; i++)
-            {
-                PlayerStats activePlayer = GameManager.instance.GetPlayerStats()[i];
-                itemsCharacterChoiceNames[i].text = activePlayer.playerName;
-
-                bool activePlayerAvailable = activePlayer.gameObject.activeInHierarchy;
-                itemsCharacterChoiceNames[i].transform.parent.gameObject.SetActive(activePlayerAvailable);
-            }
-        }
-    }
-
-    public void CloseCharacterChoicePanel()
-    {
-        characterChoicePanel.SetActive(false);
-        itemsDescription.SetActive(false);
     }
 
     public void OpenCloseInventory()
