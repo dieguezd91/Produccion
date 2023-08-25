@@ -36909,13 +36909,33 @@ PrefabInstance:
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 7705510061202412979, guid: b3d2f8d83aba2814290876fc518be8f8, type: 3}
+      propertyPath: defence
+      value: 34
+      objectReference: {fileID: 0}
+    - target: {fileID: 7705510061202412979, guid: b3d2f8d83aba2814290876fc518be8f8, type: 3}
       propertyPath: levelUp
       value: 
       objectReference: {fileID: 155725979}
     - target: {fileID: 7705510061202412979, guid: b3d2f8d83aba2814290876fc518be8f8, type: 3}
+      propertyPath: strength
+      value: 39
+      objectReference: {fileID: 0}
+    - target: {fileID: 7705510061202412979, guid: b3d2f8d83aba2814290876fc518be8f8, type: 3}
+      propertyPath: dexterity
+      value: 39
+      objectReference: {fileID: 0}
+    - target: {fileID: 7705510061202412979, guid: b3d2f8d83aba2814290876fc518be8f8, type: 3}
       propertyPath: rewardsTexts
       value: 
       objectReference: {fileID: 958144169}
+    - target: {fileID: 7705510061202412979, guid: b3d2f8d83aba2814290876fc518be8f8, type: 3}
+      propertyPath: equipedMeleeWeapon
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7705510061202412979, guid: b3d2f8d83aba2814290876fc518be8f8, type: 3}
+      propertyPath: equipedRangeWeapon
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b3d2f8d83aba2814290876fc518be8f8, type: 3}
 --- !u!1001 &1117682462
@@ -37061,9 +37081,37 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 3215382351134247269, guid: f2a701de30b0ebf46a1762f6af235349, type: 3}
+      propertyPath: shotgunAmmo
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 3215382351134247269, guid: f2a701de30b0ebf46a1762f6af235349, type: 3}
       propertyPath: hasRookiePistol
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3215382351134247269, guid: f2a701de30b0ebf46a1762f6af235349, type: 3}
+      propertyPath: itemsList.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3215382351134247269, guid: f2a701de30b0ebf46a1762f6af235349, type: 3}
+      propertyPath: itemsList.Array.data[0]
+      value: 
+      objectReference: {fileID: 5535137720794825954, guid: e1ddba5c1271b984da6c43be22c19719, type: 3}
+    - target: {fileID: 3215382351134247269, guid: f2a701de30b0ebf46a1762f6af235349, type: 3}
+      propertyPath: itemsList.Array.data[1]
+      value: 
+      objectReference: {fileID: 5535137720794825954, guid: e1ddba5c1271b984da6c43be22c19719, type: 3}
+    - target: {fileID: 3215382351134247269, guid: f2a701de30b0ebf46a1762f6af235349, type: 3}
+      propertyPath: itemsList.Array.data[2]
+      value: 
+      objectReference: {fileID: 5535137720794825954, guid: e1ddba5c1271b984da6c43be22c19719, type: 3}
+    - target: {fileID: 3215382351134247269, guid: f2a701de30b0ebf46a1762f6af235349, type: 3}
+      propertyPath: itemsList.Array.data[3]
+      value: 
+      objectReference: {fileID: 6088158150903226158, guid: 32c06fc1e954d8d4bbe6e5f431381196, type: 3}
+    - target: {fileID: 3215382351134247269, guid: f2a701de30b0ebf46a1762f6af235349, type: 3}
+      propertyPath: itemsList.Array.data[4]
+      value: 
+      objectReference: {fileID: 2429002998738944890, guid: 69c37fa6057eec94d971ff310ea02bc6, type: 3}
     - target: {fileID: 3898644280530377690, guid: f2a701de30b0ebf46a1762f6af235349, type: 3}
       propertyPath: m_RootOrder
       value: 3

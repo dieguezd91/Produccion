@@ -387,7 +387,8 @@ public class BattleManager : MonoBehaviour
         if (activeCharacters[currentTurn].attacksAvailable.Length == 3)
         {
             int n = UnityEngine.Random.Range(1, 10);
-            if (n == 10) Heal();
+            Debug.Log(n);
+            if (n == 9) Heal();
             else if (n >= 5) DealRangeDamageToCharacters(selectedPlayerToAttack);
             else DealMeleeDamageToCharacters(selectedPlayerToAttack);
         }

@@ -106,13 +106,15 @@ MonoBehaviour:
   characterName: CEO de OMNI TECH
   currentHP: 200
   maxHP: 200
-  dexterity: 40
-  strength: 40
-  defence: 30
-  meleeWeaponDamage: 20
-  rangeWeaponDamage: 20
+  dexterity: 35
+  strength: 35
+  defence: 35
+  meleeWeaponDamage: 12
+  rangeWeaponDamage: 29
   isDead: 0
   level: 0
+  equipedRangeWeapon: {fileID: 0}
+  equipedMeleeWeapon: {fileID: 0}
 --- !u!50 &6921204807715655055
 Rigidbody2D:
   serializedVersion: 4
