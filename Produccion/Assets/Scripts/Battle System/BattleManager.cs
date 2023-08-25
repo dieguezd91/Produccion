@@ -599,8 +599,6 @@ public class BattleManager : MonoBehaviour
     {
         if (!inventoryIsOpen && isBattleActive)
             itemsToUseMenu.SetActive(true);
-        else
-            itemsToUseMenu.SetActive(false);
         inventoryIsOpen = !inventoryIsOpen;
 
         foreach (Transform itemSlot in itemSlotContainerParent)
