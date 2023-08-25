@@ -1,12 +1,9 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Reflection;
 using TMPro;
-using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.UI;
-using static System.Runtime.CompilerServices.RuntimeHelpers;
 
 public class BattleManager : MonoBehaviour
 {
@@ -112,21 +109,23 @@ public class BattleManager : MonoBehaviour
                     if (Inventory.instance.shotgunAmmo > 0)
                         Inventory.instance.hasAmmo = true;
                     else Inventory.instance.hasAmmo = false;
+                    amountOfAmmo.text = Inventory.instance.shotgunAmmo.ToString();                    
                     break;
                 case "Subfusil":
                     if (Inventory.instance.SMGAmmo > 0)
                         Inventory.instance.hasAmmo = true;
                     else Inventory.instance.hasAmmo = false;
+                    amountOfAmmo.text = Inventory.instance.SMGAmmo.ToString();
                     break;
                 case "Pistola":
                     if (Inventory.instance.pistolAmmo > 0)
                         Inventory.instance.hasAmmo = true;
                     else Inventory.instance.hasAmmo = false;
+                    amountOfAmmo.text = Inventory.instance.pistolAmmo.ToString();
                     break;
             }
         }
 
-        amountOfAmmo.text = Inventory.instance.pistolAmmo.ToString();
     }
 
     private void CheckPlayerButtonHolder()
@@ -386,21 +385,6 @@ public class BattleManager : MonoBehaviour
         }
         int selectedPlayerToAttack = players[UnityEngine.Random.Range(0, players.Count)];
 
-        //int selectedAttack = UnityEngine.Random.Range(0, activeCharacters[currentTurn].AttackMovesAvailable().Length);
-
-        /*for(int i = 0; i < battleMovesList.Length; i++)
-        {
-            if(battleMovesList[i].moveName == activeCharacters[currentTurn].AttackMovesAvailable()[selectedAttack])
-            {
-                PARA LAS ANIMACIONES
-                Instantiate(
-                    battleMovesList[i],
-                    activeCharacters[selectedPlayerToAttack].transform.position,
-                    activeCharacters[selectedPlayerToAttack].transform.rotation
-                    );
-            }
-        }*/
-
         if (activeCharacters[currentTurn].attacksAvailable.Length == 3)
         {
             int n = UnityEngine.Random.Range(1, 10);
@@ -427,24 +411,22 @@ public class BattleManager : MonoBehaviour
     {
         StartCoroutine(Shake(activeCharacters[1].GetComponent<Rigidbody2D>()));
         Debug.Log("AtaqueRango");
-        if (Inventory.instance.hasAmmo)
+        DealRangeDamageToCharacters(1);
+        switch (activeCharacters[0].equipedRangeWeapon.itemName)
         {
-            DealRangeDamageToCharacters(1);
-            switch (activeCharacters[currentTurn].equipedRangeWeapon.itemName)
-            {
-                case "Pistola":
-                    Inventory.instance.pistolAmmo--;
-                    break;
-                case "Subfusil":
-                    Inventory.instance.SMGAmmo--;
-                    break;
-                case "Escopeta":
-                    Inventory.instance.shotgunAmmo--;
-                    break;
-                default:
-                    Debug.Log("No weapon equiped");
-                    break;
-            }
+            case "Pistola":
+                Inventory.instance.pistolAmmo--;
+                Debug.Log("shot");
+                break;
+            case "Subfusil":
+                Inventory.instance.SMGAmmo--;
+                break;
+            case "Escopeta":
+                Inventory.instance.shotgunAmmo--;
+                break;
+            default:
+                Debug.Log("No weapon equiped");
+                break;
         }
 
         AudioManager.instance.PlaySound(clips[1]);
@@ -507,6 +489,7 @@ public class BattleManager : MonoBehaviour
 
             return (damageToGive * 2);
         }
+
         // sino hace el daño normal
         return damageToGive;
     }
@@ -537,6 +520,8 @@ public class BattleManager : MonoBehaviour
                     PlayerStats player = GameManager.instance.GetPlayerStats()[i];
                     activeCharacters[i].meleeWeaponDamage = player.meleeDamage;
                     activeCharacters[i].rangeWeaponDamage = player.rangeDamage;
+                    activeCharacters[i].equipedRangeWeapon = player.equipedRangeWeapon;
+                    activeCharacters[i].equipedMeleeWeapon = player.equipedMeleeWeapon;
                 }
                 else
                 {

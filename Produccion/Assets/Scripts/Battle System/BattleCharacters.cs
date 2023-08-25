@@ -12,7 +12,7 @@ public class BattleCharacters : MonoBehaviour
     public bool isDead;
     public int level;
 
-    public ItemsManager equipedRangeWeapon;
+    public ItemsManager equipedRangeWeapon, equipedMeleeWeapon;
 
 
     private void Update()

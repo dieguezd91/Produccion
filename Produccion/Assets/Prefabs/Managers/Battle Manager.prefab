@@ -99,9 +99,6 @@ MonoBehaviour:
   itemName: {fileID: 116928168833973808}
   itemDescriptionText: {fileID: 116928168967730632}
   itemDescription: {fileID: 116928168192207245}
-  characterChoicePanel: {fileID: 0}
-  playerChoiceName:
-  - {fileID: 0}
   damageReceived: {fileID: 6607566565194583737}
   damageDealt: {fileID: 7113254807630270880}
   amountOfAmmo: {fileID: 8272503577964483511}

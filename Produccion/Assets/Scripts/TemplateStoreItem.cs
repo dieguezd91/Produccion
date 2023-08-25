@@ -51,25 +51,25 @@ public class TemplateStoreItem : MonoBehaviour
             switch (item.itemName)
             {
                 case "Balas de pistola":
-                    if (Inventory.instance.pistolAmmo > 0)
+                    if (Inventory.instance.pistolAmmo >= 7)
                     {
-                        Inventory.instance.pistolAmmo--;
+                        Inventory.instance.pistolAmmo -= 7;
                         playerInventory.credits += price;
                     }
                     else Debug.Log("No posees este item");
                     break;
                 case "Cartuchos de escopeta":
-                    if (Inventory.instance.shotgunAmmo > 0)
+                    if (Inventory.instance.shotgunAmmo >= 2)
                     {
-                        Inventory.instance.shotgunAmmo--;
+                        Inventory.instance.shotgunAmmo -= 2;
                         playerInventory.credits += price;
                     }
                     else Debug.Log("No posees este item");
                     break;
                 case "Balas de subfusil":
-                    if (Inventory.instance.SMGAmmo > 0)
+                    if (Inventory.instance.SMGAmmo >= 10)
                     {
-                        Inventory.instance.SMGAmmo--;
+                        Inventory.instance.SMGAmmo -= 10;
                         playerInventory.credits += price;
                     }
                     else Debug.Log("No posees este item");

@@ -49,14 +49,14 @@ public class ItemsManager : MonoBehaviour
             switch (itemName)
             {
                 case "Balas de pistola":
-                    Inventory.instance.pistolAmmo++;
+                    Inventory.instance.pistolAmmo += 7;
                     Debug.Log("Municion de pistola obtenida");
                     break;
                 case "Cartuchos de escopeta":
-                    Inventory.instance.shotgunAmmo++;
+                    Inventory.instance.shotgunAmmo += 2;
                     break;
                 case "Balas de subfusil":
-                    Inventory.instance.SMGAmmo++;
+                    Inventory.instance.SMGAmmo +=10;
                     break;
             }
         }
