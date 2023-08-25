@@ -131,15 +131,15 @@ MonoBehaviour:
   levelUp: {fileID: 0}
   maxHP: 100
   currentHP: 100
-  dexterity: 25
-  strength: 25
-  defence: 30
+  dexterity: 15
+  strength: 15
+  defence: 10
   equippedMeleeWeaponName: 
   equippedRangeWeaponName: 
   meleeDamage: 0
   rangeDamage: 0
-  equipedMeleeWeapon: {fileID: 4148716458519559724, guid: 18fa4b966b5fcdc4ea2daa821b112a38, type: 3}
-  equipedRangeWeapon: {fileID: 3195020073775177081, guid: d273341357a59974e8f608ebe567d1ae, type: 3}
+  equipedMeleeWeapon: {fileID: 0}
+  equipedRangeWeapon: {fileID: 0}
   rewardsTexts: {fileID: 0}
 --- !u!61 &1395730696270280838
 BoxCollider2D:
