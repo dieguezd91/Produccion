@@ -10,12 +10,6 @@ public class DisableAfterBattle : MonoBehaviour
         BattleManager.instance.OnBattleEnd += Deactivate;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     void Deactivate(object sender, EventArgs e)
     {
         gameObject.SetActive(false);

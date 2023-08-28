@@ -34,7 +34,15 @@ public class SceneManagerScript : MonoBehaviour
             AudioManager.instance.lockedUpSFX.enabled = true;
         else AudioManager.instance.lockedUpSFX.enabled = false;
         if (newScene == "MainMenu")
-            GameManager.instance.player.GetComponent<SpriteRenderer>().enabled = false;
+        {
+            Destroy(GameManager.instance.player);
+            Destroy(GameManager.instance.gameObject);
+            Destroy(QuestManager.instance.gameObject);
+            Destroy(BattleManager.instance.gameObject);
+            Destroy(MenuManager.instance.gameObject);
+            Destroy(MusicManager.instance.gameObject);
+            Destroy(AudioManager.instance.gameObject);
+        }
         SceneManager.LoadScene(newScene);
     }
 

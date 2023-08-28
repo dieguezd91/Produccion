@@ -26,7 +26,7 @@ public class EventScript : MonoBehaviour
             isBossBattle = true;
         if(enemies == "Dinnie")
             isDinniesBattle = true;
-            BattleManager.instance.OnBattleEnd += Activate;
+        BattleManager.instance.OnBattleEnd += Activate;
         colider = GetComponent<Collider2D>();
         inventory = GameManager.instance.GetComponent<Inventory>();
         dialogueManagerInstance.OnDialogueEnd += Fight;
@@ -39,7 +39,6 @@ public class EventScript : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             dialogueManager.SetActive(true);
-            //dialogueManager.GetComponent<DialogueManager>().StartDialogue();
             if (lockDoor)
                 door.SetActive(false);
         }
