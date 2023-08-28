@@ -11,8 +11,6 @@ public class SceneManagerScript : MonoBehaviour
 
     public Vector2 spawnpoint;
 
-    public event EventHandler OnSceneLoaded;
-
     private void Awake()
     {
         if (instance != null && instance != this)

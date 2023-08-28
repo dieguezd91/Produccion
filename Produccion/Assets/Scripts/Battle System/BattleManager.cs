@@ -67,6 +67,7 @@ public class BattleManager : MonoBehaviour
     public event EventHandler OnBattleEnd;
 
     [SerializeField] AudioClip[] clips;
+    AudioSource combatSong;
 
     RandomBattle randomCombat;
     float lastRandomBattle;
@@ -92,6 +93,7 @@ public class BattleManager : MonoBehaviour
         worldCamera = PlayerController.instance.worldCamera.GetComponent<Camera>();
         worldAudioListener = worldCamera.gameObject.GetComponent<AudioListener>();
         battleAudioListener = battleCamera.gameObject.GetComponent<AudioListener>();
+        combatSong = MusicManager.instance.GetComponent<AudioSource>();
         lastRandomBattle = 0;
     }
 
@@ -280,6 +282,9 @@ public class BattleManager : MonoBehaviour
         battleCamera.gameObject.SetActive(true);
         worldAudioListener.enabled = false;
         battleAudioListener.enabled = true;
+        MusicManager.instance.audioSource.Stop();
+        combatSong.clip = MusicManager.instance.songs[4];
+        MusicManager.instance.audioSource.Play();
     }
 
     private void NextTurn()
@@ -701,6 +706,9 @@ public class BattleManager : MonoBehaviour
             lastRandomBattle = Time.time;
             StartCoroutine(randomCombat.Inmunity());
         }
+        combatSong.Stop();
+        combatSong.clip = MusicManager.instance.activeClip;
+        combatSong.Play();
     }
     public IEnumerator Shake(Rigidbody2D rb)
     {
