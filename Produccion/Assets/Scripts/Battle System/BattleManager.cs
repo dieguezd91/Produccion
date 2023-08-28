@@ -416,7 +416,6 @@ public class BattleManager : MonoBehaviour
         {
             case "Pistola":
                 Inventory.instance.pistolAmmo--;
-                Debug.Log("shot");
                 break;
             case "Subfusil":
                 Inventory.instance.SMGAmmo--;
@@ -428,8 +427,7 @@ public class BattleManager : MonoBehaviour
                 Debug.Log("No weapon equiped");
                 break;
         }
-
-        AudioManager.instance.PlaySound(clips[1]);
+        AudioManager.instance.selectRangeAttackSFX(activeCharacters[0].equipedRangeWeapon);
 
         NextTurn();
     }

@@ -12,6 +12,9 @@ public class AudioManager : MonoBehaviour
     public AudioSource lockedUpSFX;
     float volume;
     public Slider volumeSlider;
+    [SerializeField] AudioClip pistolSFX;
+    [SerializeField] AudioClip SMGSFX;
+    [SerializeField] AudioClip shotgunSFX;
 
     private void Awake()
     {
@@ -41,5 +44,28 @@ public class AudioManager : MonoBehaviour
     {
         audioSource.clip = clip;
         audioSource.Play();
+    }
+
+    public void selectRangeAttackSFX(ItemsManager weapon)
+    {
+        AudioClip clip;
+        switch (weapon.itemName)
+        {
+            case "Pistola":
+                clip = pistolSFX;
+                PlaySound(clip);
+                break;
+            case "Subfusil":
+                clip = SMGSFX;
+                PlaySound(clip);
+                break;
+            case "Escopeta":
+                clip = shotgunSFX;
+                PlaySound(clip);
+                break;
+            default:
+                Debug.Log("Error rangeSFX");
+                break;
+        }
     }
 }
