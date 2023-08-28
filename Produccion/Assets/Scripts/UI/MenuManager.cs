@@ -112,7 +112,6 @@ public class MenuManager : MonoBehaviour
     {
         PlayerStats playerSelected = playerStats[playerSelectedNumber];
         
-        //statName.text = playerSelected.playerName;
         statCredits.text = Inventory.instance.credits.ToString();
 
         statHP.text = playerSelected.currentHP.ToString() + "/" + playerSelected.maxHP;
@@ -189,7 +188,7 @@ public class MenuManager : MonoBehaviour
 
     public void AddCreditsUI()
     {
-        int creditsToGive = Random.Range(25, 50);
+        int creditsToGive = Random.Range(20, 30);
         newCreditsUI.gameObject.SetActive(true);
         newCreditsUI.text = "+" + creditsToGive.ToString();
         newCreditsUI.gameObject.SetActive(false);

@@ -62,8 +62,6 @@ public class PlayerStats : MonoBehaviour
             LevelUp();
 
         Debug.Log(currentXP);
-        //expUp.SetActive(true);
-        //ShowExpGained(amountToGive);
     }
 
     void LevelUp()
@@ -118,9 +116,4 @@ public class PlayerStats : MonoBehaviour
         levelUp.SetActive(false);
     }
 
-    //IEnumerator ShowExpGained(int amountToGive)
-    //{
-    //    experienceGained.text = "+ " + amountToGive.ToString() + " de experiencia";
-    //    yield return amountToGive;
-    //}
 }

@@ -56,6 +56,7 @@ public class BattleManager : MonoBehaviour
     [SerializeField] TextMeshProUGUI log;
 
     private int amountOfXp;
+    private int ammoRewards;
 
     public bool allEnemiesAreDead = true;
     public bool allPlayersAreDead = true;
@@ -186,7 +187,6 @@ public class BattleManager : MonoBehaviour
             currentTurn = 0;//Random.Range(0, activeCharacters.Count);
         }
         GameManager.instance.player.SetActive(false);
-        //enemyGO.SetActive(false);
     }
 
     private void AddingEnemies(string enemiesToSpawn)
@@ -304,6 +304,8 @@ public class BattleManager : MonoBehaviour
         bool allEnemiesAreDead = true;
         bool allPlayersAreDead = true;
 
+        int ammoRewards = UnityEngine.Random.Range(3, 5);        
+
         for (int i = 0; i < activeCharacters.Count; i++)
         {
             if (activeCharacters[i].currentHP < 0)
@@ -334,6 +336,8 @@ public class BattleManager : MonoBehaviour
             {
                 PlayerStats.instance.AddXP(amountOfXp);
                 MenuManager.instance.AddCreditsUI();
+                Inventory.instance.pistolAmmo += ammoRewards;
+                StartCoroutine(rewardsTexts.ShowAmmoRewards(ammoRewards.ToString()));
                 ExportPlayerStats(0);
                 if (!randomBattle)   Destroy(enemyGO);
                 Debug.Log("Victoria!");
@@ -705,11 +709,12 @@ public class BattleManager : MonoBehaviour
             Debug.Log(lastRandomBattle);
             lastRandomBattle = Time.time;
             StartCoroutine(randomCombat.Inmunity());
-        }
+        }        
         combatSong.Stop();
         combatSong.clip = MusicManager.instance.activeClip;
         combatSong.Play();
     }
+
     public IEnumerator Shake(Rigidbody2D rb)
     {
         Vector2 originalPos = rb.position;
