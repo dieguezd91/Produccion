@@ -45,6 +45,10 @@ public class MenuManager : MonoBehaviour
     PlayerController player;
     float lastSpeed;
 
+    [SerializeField] TextMeshProUGUI pistolAmmoText;
+    [SerializeField] TextMeshProUGUI SMGAmmoText;
+    [SerializeField] TextMeshProUGUI shotgunShellText;
+
     private void Awake()
     {
         if (instance != null && instance != this)
@@ -75,6 +79,9 @@ public class MenuManager : MonoBehaviour
 
 
         CreditsUI.text = Inventory.instance.credits.ToString();
+        pistolAmmoText.text = Inventory.instance.pistolAmmo.ToString();
+        SMGAmmoText.text = Inventory.instance.SMGAmmo.ToString();
+        shotgunShellText.text = Inventory.instance.shotgunAmmo.ToString();
     }
 
     public void UpdateStats()

@@ -53,24 +53,10 @@ public class PlayerController : MonoBehaviour
             animator.SetFloat("Speed", input.sqrMagnitude);
 
         }
-        
-        CheckForEncounters();
     }
 
     private void FixedUpdate()
     {
         rb.MovePosition(rb.position + input * moveSpeed * Time.deltaTime);
     }
-
-    private void CheckForEncounters()
-    {
-        if (Physics2D.OverlapCircle(transform.position, 0.2f, enemiesLayer) != null)
-        {
-            if(UnityEngine.Random.Range(1, 101) <= 10)
-            {
-                Debug.Log("Un enemigo te ataca");
-            }
-        }
-    }
-
 }

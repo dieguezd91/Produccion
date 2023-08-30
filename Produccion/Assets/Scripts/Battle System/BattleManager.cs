@@ -76,6 +76,7 @@ public class BattleManager : MonoBehaviour
 
     [SerializeField] FeedbackAfterCombat rewardsTexts;
 
+
     void Awake()
     {
         if (instance != null && instance != this)

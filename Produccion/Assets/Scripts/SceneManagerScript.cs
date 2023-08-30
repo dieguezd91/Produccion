@@ -22,6 +22,7 @@ public class SceneManagerScript : MonoBehaviour
             instance = this;
         }
     }
+
     public void LoadScene(string newScene)
     {
         Debug.Log(newScene + " loaded");
