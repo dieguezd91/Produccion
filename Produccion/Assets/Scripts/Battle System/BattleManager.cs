@@ -67,7 +67,6 @@ public class BattleManager : MonoBehaviour
 
     public event EventHandler OnBattleEnd;
 
-    [SerializeField] AudioClip[] clips;
     AudioSource combatSong;
 
     RandomBattle randomCombat;
@@ -448,7 +447,8 @@ public class BattleManager : MonoBehaviour
         Debug.Log("AtaqueMelee");
         DealMeleeDamageToCharacters(1);
 
-        AudioManager.instance.PlaySound(clips[0]);
+        if (activeCharacters[0].equipedRangeWeapon == null) AudioManager.instance.SelectMeleeAttackSFX(null);
+        else AudioManager.instance.SelectMeleeAttackSFX(activeCharacters[0].equipedRangeWeapon);
 
         NextTurn();
     }

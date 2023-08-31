@@ -12,6 +12,10 @@ public class AudioManager : MonoBehaviour
     public AudioSource lockedUpSFX;
     float volume;
     public Slider volumeSlider;
+    [SerializeField] AudioClip punchSFX;
+    [SerializeField] AudioClip knifeSFX;
+    [SerializeField] AudioClip batSFX;
+    [SerializeField] AudioClip katanaSFX;
     [SerializeField] AudioClip pistolSFX;
     [SerializeField] AudioClip SMGSFX;
     [SerializeField] AudioClip shotgunSFX;
@@ -66,6 +70,36 @@ public class AudioManager : MonoBehaviour
             default:
                 Debug.Log("Error rangeSFX");
                 break;
+        }
+    }
+    public void SelectMeleeAttackSFX(ItemsManager weapon)
+    {
+        AudioClip clip;
+        if(weapon == null)
+        {
+            clip = punchSFX;
+            PlaySound(clip);
+        }
+        else
+        {
+            switch (weapon.itemName)
+            {
+                case "Cuchillo":
+                    clip = knifeSFX;
+                    PlaySound(clip);
+                    break;
+                case "Bate":
+                    clip = batSFX;
+                    PlaySound(clip);
+                    break;
+                case "Katana":
+                    clip = katanaSFX;
+                    PlaySound(clip);
+                    break;
+                default:
+                    Debug.Log("Error meleeSFX");
+                    break;
+            }
         }
     }
 }
