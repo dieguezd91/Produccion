@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -33,10 +34,8 @@ public class CombatButtonsHandler : MonoBehaviour
         else if (BattleManager.instance.randomBattle)
             runButton.interactable = true;
 
-        if (PlayerStats.instance.equipedRangeWeapon != null && Inventory.instance.hasAmmo == true)
-            rangeButton.interactable = true;
-        else
-            rangeButton.interactable = false;
+        if (PlayerStats.instance.equipedRangeWeapon != null && Inventory.instance.hasAmmo == true) rangeButton.interactable = true;
+        else rangeButton.interactable = false;
     }
 
 
@@ -63,8 +62,14 @@ public class CombatButtonsHandler : MonoBehaviour
         }
         meleeButtonImage.SetNativeSize();
 
-        if (PlayerStats.instance.equipedRangeWeapon != null && rangeButton.isActiveAndEnabled)
+        if(PlayerStats.instance.equipedRangeWeapon == null)
         {
+            rangeButtonImage.sprite = null;
+            rangeButtonImage.color = Color.clear;
+        }
+        else
+        {
+            rangeButtonImage.color = Color.white;
             switch (PlayerStats.instance.equipedRangeWeapon.itemName)
             {
                 case "Pistola":
@@ -77,7 +82,7 @@ public class CombatButtonsHandler : MonoBehaviour
                     rangeButtonImage.sprite = shotgunSprite;
                     break;
             }
+            rangeButtonImage.SetNativeSize();
         }
-        rangeButtonImage.SetNativeSize();
     }
 }
