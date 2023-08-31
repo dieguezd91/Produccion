@@ -106,13 +106,15 @@ MonoBehaviour:
   characterName: Jefe Central
   currentHP: 100
   maxHP: 100
-  dexterity: 30
-  strength: 30
-  defence: 40
-  meleeWeaponDamage: 30
-  rangeWeaponDamage: 35
+  dexterity: 20
+  strength: 25
+  defence: 25
+  meleeWeaponDamage: 20
+  rangeWeaponDamage: 20
   isDead: 0
   level: 0
+  equipedRangeWeapon: {fileID: 0}
+  equipedMeleeWeapon: {fileID: 0}
 --- !u!114 &677583408949531351
 MonoBehaviour:
   m_ObjectHideFlags: 0
