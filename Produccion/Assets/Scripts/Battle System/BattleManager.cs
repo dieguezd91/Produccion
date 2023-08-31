@@ -448,7 +448,7 @@ public class BattleManager : MonoBehaviour
         DealMeleeDamageToCharacters(1);
 
         if (activeCharacters[0].equipedRangeWeapon == null) AudioManager.instance.SelectMeleeAttackSFX(null);
-        else AudioManager.instance.SelectMeleeAttackSFX(activeCharacters[0].equipedMeleeWeapon);
+        else AudioManager.instance.SelectMeleeAttackSFX(activeCharacters[0].equipedRangeWeapon);
 
         NextTurn();
     }

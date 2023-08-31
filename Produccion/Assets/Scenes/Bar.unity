@@ -3572,22 +3572,6 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 642647253371831140, guid: fc72844b2bc96684e8026b1035fb1b5a, type: 3}
-      propertyPath: m_Color.a
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 642647253371831140, guid: fc72844b2bc96684e8026b1035fb1b5a, type: 3}
-      propertyPath: m_Color.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 642647253371831140, guid: fc72844b2bc96684e8026b1035fb1b5a, type: 3}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 642647253371831140, guid: fc72844b2bc96684e8026b1035fb1b5a, type: 3}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 1047428149736874328, guid: fc72844b2bc96684e8026b1035fb1b5a, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
