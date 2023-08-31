@@ -57,13 +57,13 @@ public class SceneManagerScript : MonoBehaviour
         switch (scene)
         {
             case "MainMenu":
-                MusicManager.instance.activeClip = MusicManager.instance.songs[0];
+                MusicManager.instance.activeClip = MusicManager.instance.songs[6];
                 break;
             case "Bar":
                 MusicManager.instance.activeClip = MusicManager.instance.songs[1];
                 break;
             case "Garage":
-                MusicManager.instance.activeClip = null;
+                MusicManager.instance.activeClip = MusicManager.instance.songs[5];
                 break;
             case "Ciudad":
                 MusicManager.instance.activeClip = MusicManager.instance.songs[0];

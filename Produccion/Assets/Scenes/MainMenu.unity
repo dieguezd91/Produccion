@@ -1887,6 +1887,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1383219731215087073, guid: 748743a0f275c864a825393af7e7a909, type: 3}
+      propertyPath: activeClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 2b8e03a87448b3e4b81b63a3787eb160, type: 3}
+    - target: {fileID: 1383219731215087073, guid: 748743a0f275c864a825393af7e7a909, type: 3}
       propertyPath: audioSource
       value: 
       objectReference: {fileID: 1456286748}
@@ -1901,7 +1905,7 @@ PrefabInstance:
     - target: {fileID: 1383219731215087079, guid: 748743a0f275c864a825393af7e7a909, type: 3}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: 564342a62491034469635a06bad08573, type: 3}
+      objectReference: {fileID: 8300000, guid: 2b8e03a87448b3e4b81b63a3787eb160, type: 3}
     - target: {fileID: 1383219731215087079, guid: 748743a0f275c864a825393af7e7a909, type: 3}
       propertyPath: m_PlayOnAwake
       value: 1
