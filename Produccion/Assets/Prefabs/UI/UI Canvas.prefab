@@ -574,7 +574,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lifeRestoredText: {fileID: 3961666664060764031}
   creditsGainedText: {fileID: 5355511168155634756}
-  ammoGainedText: {fileID: 0}
+  ammoGainedText: {fileID: 5046170796007797330}
 --- !u!1 &2641772721340579120
 GameObject:
   m_ObjectHideFlags: 0
